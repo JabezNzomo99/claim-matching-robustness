@@ -4,6 +4,9 @@ import pandas as pd
 import defaults
 import re
 import torch
+import datetime
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 
 def get_queries(querypath):
@@ -30,7 +33,7 @@ def get_targets(targetpath, keynames):
     return df.drop_duplicates()
 
 
-def load_data(dataset) -> pd.DataFrame:
+def load_data(dataset) -> dict:
     """Returns pandas data frame for the specified task
     Args
         dataset: name of the task to load
@@ -56,6 +59,10 @@ def load_data(dataset) -> pd.DataFrame:
         )
     else:
         raise ValueError(f"Dataset {dataset} not supported yet")
+
+
+def load_verifier_data(dataset_path) -> pd.DataFrame:
+    return pd.read_csv(dataset_path)
 
 
 def clean_tweet(tweet):
@@ -95,3 +102,86 @@ def get_device() -> torch.device:
         device = torch.device("cpu")
 
     return device
+
+
+def combine_features(df):
+    sentences = []
+    labels = []
+    # For each of the samples...
+    for _, row in df.iterrows():
+        # Piece it together...
+        claim = row["query"]
+        verified_claim = row["claim"]
+        combined_text = claim + " [SEP] " + verified_claim
+        sentences.append(combined_text)
+        labels.append(row["label"])
+    return sentences, labels
+
+
+def format_time(elapsed):
+    """
+    Takes a time in seconds and returns a string hh:mm:ss
+    """
+    # Round to the nearest second.
+    elapsed_rounded = int(round((elapsed)))
+
+    # Format as hh:mm:ss
+    return str(datetime.timedelta(seconds=elapsed_rounded))
+
+
+def good_update_interval(total_iters, num_desired_updates):
+    """
+    This function will try to pick an intelligent progress update interval
+    based on the magnitude of the total iterations.
+
+    Parameters:
+      `total_iters` - The number of iterations in the for-loop.
+      `num_desired_updates` - How many times we want to see an update over the
+                              course of the for-loop.
+    """
+    # Divide the total iterations by the desired number of updates. Most likely
+    # this will be some ugly number.
+    exact_interval = total_iters / num_desired_updates
+
+    # The `round` function has the ability to round down a number to, e.g., the
+    # nearest thousandth: round(exact_interval, -3)
+    #
+    # To determine the magnitude to round to, find the magnitude of the total,
+    # and then go one magnitude below that.
+
+    # Get the order of magnitude of the total.
+    order_of_mag = len(str(total_iters)) - 1
+
+    # Our update interval should be rounded to an order of magnitude smaller.
+    round_mag = order_of_mag - 1
+
+    # Round down and cast to an int.
+    update_interval = int(round(exact_interval, -round_mag))
+
+    # Don't allow the interval to be zero!
+    if update_interval == 0:
+        update_interval = 1
+
+    return update_interval
+
+
+def plot_training_stats(df_stats: pd.DataFrame, output_dir: str):
+    # Use plot styling from seaborn.
+    sns.set(style="darkgrid")
+
+    # Increase the plot size and font size.
+    sns.set(font_scale=1.5)
+    plt.rcParams["figure.figsize"] = (12, 6)
+
+    # Plot the learning curve.
+    plt.plot(df_stats["Training Loss"], "b-o", label="Training")
+    plt.plot(df_stats["Valid. Loss"], "g-o", label="Validation")
+
+    # Label the plot.
+    plt.title("Training & Validation Loss")
+    plt.xlabel("Epoch")
+    plt.ylabel("Loss")
+    plt.legend()
+
+    # Save the figure.
+    plt.savefig(os.path.join(output_dir, "training_stats_plot.svg"), dpi=300)

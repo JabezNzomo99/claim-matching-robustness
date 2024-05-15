@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
-import setuptools
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name="claimrobustness",
@@ -9,6 +8,6 @@ setup(
     description="Claim Matching Robustness",
     author="Jabez Magomere",
     author_email="jabezmagomere@gmail.com",
-    packages=setuptools.find_packages("src"),
+    packages=find_packages(where="src"),
     package_dir={"": "src"},
 )
