@@ -1,7 +1,7 @@
 import json
 import os
 import pandas as pd
-import defaults
+from claimrobustness import defaults
 import re
 import torch
 import datetime
@@ -84,7 +84,7 @@ def clean_tweet(tweet):
     tweet = re.sub("@[A-Za-z0-9]+", "", tweet)
 
     # Remove extra white spaces
-    tweet = re.sub("\s\s+", "", tweet)
+    tweet = re.sub(r"\s\s+", "", tweet)
 
     return tweet
 
