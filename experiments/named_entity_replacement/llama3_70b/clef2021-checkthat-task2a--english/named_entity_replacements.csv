@@ -1,0 +1,2192 @@
+query_id,query,target,tokens_to_replace,min_replacement_response,max_replacement_response
+tweet-sno-1201,"Sen. Mitch McConnell: ""As recently as October, now-President Biden said you can't legislate by executive action unless you are a dictator. Well, in one week, he signed more than 30 unilateral actions.""","When he was still a candidate for the presidency in October 2020, U.S. President Joe Biden said, “You can’t legislate by executive order unless you’re a dictator.”","[{'token': 'Mitch McConnell', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'October', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'Biden', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'one week', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'more than 30', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Mitch McConnell"",
+""replacements"": [""Ted Cruz"", ""Lindsey Graham"", ""Chuck Schumer""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Mitch McConnell"",
+""replacements"": [""Nancy Pelosi"", ""Chuck Schumer"", ""Lindsey Graham""]
+},
+{
+""token"": ""October"",
+""replacements"": [""November"", ""January"", ""March""]
+},
+{
+""token"": ""Biden"",
+""replacements"": [""Trump"", ""Obama"", ""Clinton""]
+}
+]
+}"
+tweet-sno-1204,Biden signed executive order today that contained a ban on the term 'China virus'.,U.S. President Joe Biden issued an executive order in January 2021 banning any use of the term “China virus.”,"[{'token': 'Biden', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'today', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'China', 'type': 'GPE', 'description': 'Countries, cities, states'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Biden"",
+""replacements"": [""Trump"", ""Obama"", ""Clinton""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Biden"",
+""replacements"": [""Trump"", ""Obama"", ""Clinton""]
+},
+{
+""token"": ""today"",
+""replacements"": [""yesterday"", ""last week"", ""last month""]
+},
+{
+""token"": ""China"",
+""replacements"": [""Japan"", ""Korea"", ""Vietnam""]
+}
+]
+}"
+tweet-sno-1206,"Former President Donald Trump has officially opened the 'Office of the Former President,' which will manage his correspondence, public statements, and activities to ""carry on the agenda of the Trump Admin. through advocacy…""","Former U.S. President Donald Trump opened an “Office of the Former President” in Palm Beach, Florida, to issue statements from and to share his post-presidency plans.","[{'token': 'Donald Trump', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': ""the 'Office of the Former President"", 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Trump', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Donald Trump"",
+""replacements"": [""Barack Obama"", ""George W. Bush"", ""Bill Clinton""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Donald Trump"",
+""replacements"": [""Barack Obama"", ""George W. Bush"", ""Bill Clinton""]
+},
+{
+""token"": ""the 'Office of the Former President'"",
+""replacements"": [""the 'Office of the Former Leader'"", ""the 'Bureau of the Ex-President'"", ""the 'Department of the Past President'""]
+},
+{
+""token"": ""Trump"",
+""replacements"": [""Obama"", ""Bush"", ""Clinton""]
+}
+]
+}"
+tweet-sno-1208,MILITARY SOURCE IN DC: “For the last week my battalion has been sleeping on the floor in the Senate cafeteria. Today the Senate kicked us out & moved us to a cold parking garage. 5000 soldiers. 1 power outlet. One bathroom. This is how Joe Biden’s America treats solders.” PHOTOS,"Hundreds of members of the National Guard were made to vacate the U.S. Capitol and sent to rest in a nearby parking garage, while providing security around U.S. President Joe Biden's inauguration.","[{'token': 'DC', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'the last week', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'Senate', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Today', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'Senate', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': '5000', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': '1', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': 'One', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': 'Joe Biden’s America', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}]","{
+""replaceable_entities"": [
+{
+""token"": ""DC"",
+""replacements"": [""NYC"", ""LA"", ""Chicago""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""DC"",
+""replacements"": [""NYC"", ""Chicago"", ""Boston""]
+},
+{
+""token"": ""the last week"",
+""replacements"": [""yesterday"", ""last month"", ""recently""]
+},
+{
+""token"": ""Senate"",
+""replacements"": [""House of Representatives"", ""Congress"", ""Parliament""]
+}
+]
+}"
+tweet-sno-1211,"So, on the Senate floor, Chuck Schumer just said that senators must decide if ""Donald John Trump incited the erection, uh, insurrection…"" Well, it WAS an uprising!","While speaking on the Senate floor on Jan. 22, 2021, Senate Majority Leader Chuck Schumer (D-NY) accidentally said “erection” instead of “insurrection.”","[{'token': 'Senate', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Chuck Schumer', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Donald John Trump', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Senate"",
+""replacements"": [""Parliament"", ""Congress"", ""Assembly""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Senate"",
+""replacements"": [""Congress"", ""Parliament"", ""Legislature""]
+},
+{
+""token"": ""Chuck Schumer"",
+""replacements"": [""Nancy Pelosi"", ""Mitch McConnell"", ""Ted Cruz""]
+},
+{
+""token"": ""Donald John Trump"",
+""replacements"": [""Barack Obama"", ""Joe Biden"", ""George W. Bush""]
+}
+]
+}"
+tweet-sno-1214,"The Bernie meme, Schumer saying “erection” instead of “insurrection”. Good to see we can have a laugh again here in Washington.","While speaking on the Senate floor on Jan. 22, 2021, Senate Majority Leader Chuck Schumer (D-NY) accidentally said “erection” instead of “insurrection.”","[{'token': 'Bernie', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Schumer', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Washington', 'type': 'GPE', 'description': 'Countries, cities, states'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Bernie"",
+""replacements"": [""Kamala"", ""Pelosi"", ""AOC""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Bernie"",
+""replacements"": [""Hillary"", ""Obama"", ""Warren""]
+},
+{
+""token"": ""Schumer"",
+""replacements"": [""Pelosi"", ""McConnell"", ""Feinstein""]
+},
+{
+""token"": ""Washington"",
+""replacements"": [""California"", ""New York"", ""Florida""]
+}
+]
+}"
+tweet-sno-1215,"On MLK day, Instagram has labeled this post about MLK from MLK’s daughter as “misleading”… This is 🤬 outrageous!","Instagram flagged a reposted tweet from Bernice King about her father, the Rev. Martin Luther King Jr., on Jan. 18, 2021, which is MLK Day, for misinformation pertaining to the COVID-19 vaccine.","[{'token': 'MLK day', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'Instagram', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'MLK', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""MLK day"",
+""replacements"": [""Christmas"", ""Thanksgiving"", ""Labor Day""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""MLK day"",
+""replacements"": [""Christmas"", ""Halloween"", ""Thanksgiving""]
+},
+{
+""token"": ""Instagram"",
+""replacements"": [""Facebook"", ""Twitter"", ""TikTok""]
+},
+{
+""token"": ""MLK"",
+""replacements"": [""Nelson Mandela"", ""Mahatma Gandhi"", ""Malcolm X""]
+}
+]
+}"
+tweet-sno-1216,"The MyPillow website has an active promo code “QAnon” which gets you a $45 discount. (h/tfor this discovery) MyPillow CEO Mike Lindell visited the White House yesterday to meet w/ Pres Trump (45), armed with notes referencing martial law and election conspiracy theories","MyPillow offered discounts on its products if buyers used codes like “QAnon,” “Q,” and “Storm” during checkout on their website.","[{'token': 'MyPillow', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'QAnon', 'type': 'PRODUCT', 'description': 'Vehicles, weapons, foods, etc. (Not services)'}, {'token': '45', 'type': 'MONEY', 'description': 'Monetary values, including unit'}, {'token': 'MyPillow', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Mike Lindell', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'the White House', 'type': 'FAC', 'description': 'Buildings, airports, highways, bridges, etc.'}, {'token': 'yesterday', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'Pres Trump', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': '45', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}]","{
+""replaceable_entities"": [
+{
+""token"": ""MyPillow"",
+""replacements"": [""CozyBedding"", ""SlumberCorp"", ""DreamWeaver""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""MyPillow"",
+""replacements"": [""SleepBetter"", ""DreamSoft"", ""SlumberCo""]
+},
+{
+""token"": ""QAnon"",
+""replacements"": [""PatriotPlus"", ""LibertyCode"", ""FreedomFinder""]
+},
+{
+""token"": ""45"",
+""replacements"": [""TWENTYOFF"", ""HALFPRICE"", ""DISCOUNT30""]
+}
+]
+}"
+tweet-sno-1219,"Marjorie Taylor Greene's Twitter account has been suspended for 12 hours. Her statement says the ""Silicon Valley Cartel launched a multi-front attack to chill free speech in America by deplatforming President Donald Trump and purging an unknown number of conservatives""","Twitter suspended the account of U.S. Rep. Marjorie Taylor Greene, a Republican from Georgia, after she made erroneous claims regarding election fraud in a video clip.","[{'token': 'Marjorie Taylor', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Twitter', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': '12 hours', 'type': 'TIME', 'description': 'Times smaller than a day'}, {'token': 'the ""Silicon Valley Cartel', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'America', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Donald Trump', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Marjorie Taylor"",
+""replacements"": [""Lauren Boebert"", ""Liz Cheney"", ""Nancy Mace""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Marjorie Taylor"",
+""replacements"": [""Lauren Boebert"", ""Matt Gaetz"", ""Jim Jordan""]
+},
+{
+""token"": ""Twitter"",
+""replacements"": [""Facebook"", ""Instagram"", ""YouTube""]
+},
+{
+""token"": ""12 hours"",
+""replacements"": [""24 hours"", ""7 days"", ""2 weeks""]
+}
+]
+}"
+tweet-sno-1224,So the guy waving Indian Flag at Capitol hill is a VHS member 'Krishna Gudipati' (Res Jacket). Video was posted by Vencent Xavior who later deleted it. Thread. 👇,"An Indian flag was waved among the crowd of people that stormed the U.S. Capitol on Jan. 6, 2021.","[{'token': 'Indian Flag', 'type': 'WORK_OF_ART', 'description': 'Titles of books, songs, etc. '}, {'token': 'Capitol', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': ""Krishna Gudipati'"", 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Res Jacket', 'type': 'WORK_OF_ART', 'description': 'Titles of books, songs, etc. '}, {'token': 'Vencent Xavior', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Indian Flag"",
+""replacements"": [""American Flag"", ""Canadian Flag"", ""Australian Flag""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Indian Flag"",
+""replacements"": [""French Flag"", ""British Flag"", ""Chinese Flag""]
+},
+{
+""token"": ""Capitol"",
+""replacements"": [""White House"", ""Pentagon"", ""Congress""]
+},
+{
+""token"": ""Krishna Gudipati"",
+""replacements"": [""Rahul Patel"", ""Sachin Sharma"", ""Raj Kumar""]
+}
+]
+}"
+tweet-sno-1225,Syringe-shaped cakes are displayed for sale at Dortmund's Schuerener Backparadies bakery as Germany continues the rollout of the coronavirus vaccine. More photos of the day:📷 Leon Kuegeler,A German bakery is making cakes in the shape of syringes in honor of COVID-19 vaccines.,"[{'token': ""Dortmund's Schuerener Backparadies"", 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Germany', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Leon Kuegeler', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Dortmund's Schuerener Backparadies"",
+""replacements"": [""Berlin's Sweet Delight"", ""Hamburg's Cake Heaven"", ""Munich's Pastry Paradise""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Dortmund's Schuerener Backparadies"",
+""replacements"": [""Munich's Konditorei"", ""Berlin's Cafe Central"", ""Hamburg's Patisserie Royale""]
+},
+{
+""token"": ""Germany"",
+""replacements"": [""France"", ""Italy"", ""Spain""]
+},
+{
+""token"": ""Leon Kuegeler"",
+""replacements"": [""Anna Müller"", ""Hans Schmidt"", ""Lena Weber""]
+}
+]
+}"
+tweet-sno-1226,"“The U.S. Fish & Wildlife Service is investigating the harassment of a manatee…reported to federal authorities over the weekend discovered w/ words ""Trump"" scraped in its back …discovered in Blue Hole on the Homosassa River” (via) – Insurrectioning wildlife?",An endangered Florida manatee was discovered with the word “Trump” carved into its back.,"[{'token': 'The U.S. Fish & Wildlife Service', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'the weekend', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'Trump', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Blue Hole', 'type': 'LOC', 'description': 'Non-GPE locations, mountain ranges, bodies of water'}, {'token': 'the Homosassa River', 'type': 'LOC', 'description': 'Non-GPE locations, mountain ranges, bodies of water'}]","{
+""replaceable_entities"": [
+{
+""token"": ""The U.S. Fish & Wildlife Service"",
+""replacements"": [""National Park Service"", ""Environmental Protection Agency"", ""Department of the Interior""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""The U.S. Fish & Wildlife Service"",
+""replacements"": [""National Park Service"", ""Environmental Protection Agency"", ""Department of the Interior""]
+},
+{
+""token"": ""the weekend"",
+""replacements"": [""last week"", ""yesterday"", ""New Year's Eve""]
+},
+{
+""token"": ""Trump"",
+""replacements"": [""Biden"", ""Obama"", ""Clinton""]
+}
+]
+}"
+tweet-sno-1228,"-Mary Miller (IL) spoke today shortly before the riots broke out, stating “Hitler was right on one thing. He said, ‘Whoever has the youth has the future.’”","Rep. Mary Miller said ""Hitler was right on one thing"" before a mob of Trump supporters stormed the nation's Capitol on Jan. 6, 2020..","[{'token': 'Mary Miller', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'IL', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'today', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'Hitler', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'one', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Mary Miller"",
+""replacements"": [""Nancy Pelosi"", ""Hillary Clinton"", ""Kamala Harris""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Mary Miller"",
+""replacements"": [""Sarah Johnson"", ""Emily Davis"", ""Jessica Lee""]
+},
+{
+""token"": ""IL"",
+""replacements"": [""TX"", ""CA"", ""FL""]
+},
+{
+""token"": ""today"",
+""replacements"": [""yesterday"", ""tomorrow"", ""last week""]
+}
+]
+}"
+tweet-sno-1229,People who broke into the Capitol Wednesday are now learning they are on No-Fly lists pending the full investigation. They are not happy about this.,A video shows a person who attended the Capitol riot finding out that they had been added to the no-fly list.,"[{'token': 'Capitol', 'type': 'FAC', 'description': 'Buildings, airports, highways, bridges, etc.'}, {'token': 'Wednesday', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'No-Fly', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Capitol"",
+""replacements"": [""Congress"", ""Parliament"", ""Senate""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Capitol"",
+""replacements"": [""Parliament"", ""Congress"", ""Assembly""]
+},
+{
+""token"": ""Wednesday"",
+""replacements"": [""Thursday"", ""Friday"", ""Last week""]
+},
+{
+""token"": ""No-Fly"",
+""replacements"": [""Watchlist"", ""Blacklist"", ""Security List""]
+}
+]
+}"
+tweet-sno-1232,"Reading about how few of the rioters were arrested yesterday while storming the Capitol Building, I'm reminded that Georgia's next senator, Rev. Raphael Warnock, had been arrested so many times for peacefully protesting at the Capitol that it became a feature of his stump speech.",Rev. Raphael Warnock was arrested while praying during a demonstration at the U.S. Capitol in 2017.,"[{'token': 'yesterday', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'the Capitol Building', 'type': 'FAC', 'description': 'Buildings, airports, highways, bridges, etc.'}, {'token': ""I'm"", 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': ""Georgia's"", 'type': 'NORP', 'description': 'Nationalities or religious or political groups'}, {'token': 'Raphael Warnock', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Capitol', 'type': 'FAC', 'description': 'Buildings, airports, highways, bridges, etc.'}]","{
+""replaceable_entities"": [
+{
+""token"": ""yesterday"",
+""replacements"": [""last week"", ""Monday"", ""last month""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""yesterday"",
+""type"": ""DATE"",
+""description"": ""Absolute or relative dates or periods"",
+""replacements"": [""last week"", ""last month"", ""a year ago""]
+},
+{
+""token"": ""the Capitol Building"",
+""type"": ""FAC"",
+""description"": ""Buildings, airports, highways, bridges, etc."",
+""replacements"": [""the White House"", ""City Hall"", ""the Supreme Court""]
+},
+{
+""token"": ""I'm"",
+""type"": ""PERSON"",
+""description"": ""People, including fictional"",
+""replacements"": [""she's"", ""he's"", ""they're""]
+}
+]
+}"
+tweet-sno-1236,"Better look at the guy with the 'Camp Auschwitz' hoodie from yesterday. Not only does it feature the SS 'totenkopf', but an English translation of 'Arbeit Macht Frei'. No wiggle room, no joking here. This is who these people are. (via)","A pro-Trump rioter who broke into the U.S. Capitol was wearing a ""Camp Auschwitz"" shirt.","[{'token': ""Camp Auschwitz'"", 'type': 'FAC', 'description': 'Buildings, airports, highways, bridges, etc.'}, {'token': 'yesterday', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'English', 'type': 'LANGUAGE', 'description': 'Any named language '}, {'token': 'Arbeit Macht Frei', 'type': 'WORK_OF_ART', 'description': 'Titles of books, songs, etc. '}]","{
+""replaceable_entities"": [
+{
+""token"": ""Camp Auschwitz"",
+""replacements"": [""Buchenwald"", ""Dachau"", ""Treblinka""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Camp Auschwitz"",
+""replacements"": [""Dachau"", ""Buchenwald"", ""Treblinka""]
+},
+{
+""token"": ""yesterday"",
+""replacements"": [""last week"", ""last month"", ""last year""]
+},
+{
+""token"": ""English"",
+""replacements"": [""German"", ""French"", ""Spanish""]
+}
+]
+}"
+tweet-sno-1238,"Wait, so Elizabeth from Knoxville, who claims she was maced after storming the Capitol, was dabbing her eyes with an onion towel?",A video shows a crying woman holding an onion while telling a reporter that she had been Maced during a riot.,"[{'token': 'Elizabeth', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Knoxville', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Capitol', 'type': 'FAC', 'description': 'Buildings, airports, highways, bridges, etc.'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Elizabeth"",
+""replacements"": [""Jessica"", ""Sarah"", ""Abigail""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Elizabeth"",
+""replacements"": [""Emily"", ""Sarah"", ""Jessica""]
+},
+{
+""token"": ""Knoxville"",
+""replacements"": [""Nashville"", ""Chattanooga"", ""Memphis""]
+},
+{
+""token"": ""Capitol"",
+""replacements"": [""Assembly"", ""Parliament"", ""Legislature""]
+}
+]
+}"
+tweet-sno-1240,this is a photo of the National Guard stationed in response to a Black Lives Matter protest at the Lincoln Memorial in June,The National Guard was deployed to protect the Lincoln Memorial during the Black Lives Matter protests in the spring of 2020.,"[{'token': 'the National Guard', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Black Lives Matter', 'type': 'EVENT', 'description': 'Named hurricanes, battles, wars, sports events, etc.'}, {'token': 'the Lincoln Memorial', 'type': 'FAC', 'description': 'Buildings, airports, highways, bridges, etc.'}, {'token': 'June', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}]","{
+""replaceable_entities"": [
+{
+""token"": ""the National Guard"",
+""replacements"": [""the Police Department"", ""the Marines"", ""the Coast Guard""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""the National Guard"",
+""replacements"": [""the Coast Guard"", ""the Army Reserve"", ""the Air National Guard""]
+},
+{
+""token"": ""Black Lives Matter"",
+""replacements"": [""the Women's March"", ""Pride Month"", ""the March on Washington""]
+},
+{
+""token"": ""the Lincoln Memorial"",
+""replacements"": [""the World War II Memorial"", ""the Martin Luther King Jr. Memorial"", ""the Vietnam Veterans Memorial""]
+}
+]
+}"
+tweet-sno-1241,"Anarchists, Agitators or Protestors who vandalize or damage our Federal Courthouse in Portland, or any Federal Buildings in any of our Cities or States, will be prosecuted under our recently re-enacted Statues & Monuments Act. MINIMUM TEN YEARS IN PRISON. Don’t do it! ","U.S. President Donald Trump once threatened that ""anarchists, agitators, or protestors"" who ""vandalize or damage any federal buildings will be prosecuted.""","[{'token': 'Anarchists', 'type': 'NORP', 'description': 'Nationalities or religious or political groups'}, {'token': 'our Federal Courthouse', 'type': 'FAC', 'description': 'Buildings, airports, highways, bridges, etc.'}, {'token': 'Portland', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'States', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Statues & Monuments Act.', 'type': 'LAW', 'description': 'Named documents made into laws '}]","{
+""replaceable_entities"": [
+{
+""token"": ""Anarchists"",
+""replacements"": [""Radicals"", ""Activists"", ""Demonstrators""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Anarchists"",
+""replacements"": [""Radicals"", ""Activists"", ""Militants""]
+},
+{
+""token"": ""our Federal Courthouse"",
+""replacements"": [""the County Jail"", ""City Hall"", ""the State Capitol""]
+},
+{
+""token"": ""Portland"",
+""replacements"": [""Seattle"", ""Denver"", ""Nashville""]
+}
+]
+}"
+tweet-sno-1245,"A supporter of President Donald Trump carries a Confederate battle flag on the second floor of the U.S. Capitol near the entrance to the Senate after breaching security defenses, in Washington, January 6, 2021. Photo by Mike Theiler",A Confederate flag was spotted inside and outside the U.S. Capitol as a pro-Trump mob stormed the building.,"[{'token': 'Donald Trump', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Confederate', 'type': 'NORP', 'description': 'Nationalities or religious or political groups'}, {'token': 'second', 'type': 'ORDINAL', 'description': '“first”, “second”'}, {'token': 'the U.S. Capitol', 'type': 'FAC', 'description': 'Buildings, airports, highways, bridges, etc.'}, {'token': 'Senate', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Washington', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'January 6, 2021', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'Mike Theiler', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Donald Trump"",
+""replacements"": [""Joe Biden"", ""Barack Obama"", ""George W. Bush""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Donald Trump"",
+""replacements"": [""Mike Pence"", ""Joe Biden"", ""Nancy Pelosi""]
+},
+{
+""token"": ""Confederate"",
+""replacements"": [""American"", ""Republican"", ""Democratic""]
+},
+{
+""token"": ""second"",
+""replacements"": [""first"", ""third"", ""fourth""]
+}
+]
+}"
+tweet-sno-1248,A view of fresh snow this morning from Juniper Hills Ca at 4500 ft. Located south of Pearblossom in the San Gabriel foothills. Photo shared by Scott Lezak. #cawx #SoCal #LAweather,"In December 2020, snow fell in the Los Angeles County area.","[{'token': 'this morning', 'type': 'TIME', 'description': 'Times smaller than a day'}, {'token': 'Juniper Hills Ca', 'type': 'LOC', 'description': 'Non-GPE locations, mountain ranges, bodies of water'}, {'token': '4500 ft.', 'type': 'QUANTITY', 'description': 'Measurements, as of weight or distance '}, {'token': 'Pearblossom', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'San Gabriel foothills', 'type': 'LOC', 'description': 'Non-GPE locations, mountain ranges, bodies of water'}, {'token': 'Scott Lezak', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""this morning"",
+""replacements"": [""yesterday afternoon"", ""last night"", ""earlier today""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""this morning"",
+""replacements"": [""yesterday"", ""last week"", ""last evening""]
+},
+{
+""token"": ""Juniper Hills Ca"",
+""replacements"": [""Mount Wilson Ca"", ""Lucas Valley Ca"", ""Ojai Valley Ca""]
+},
+{
+""token"": ""4500 ft."",
+""replacements"": [""5000 ft."", ""3500 meters"", ""6000 meters""]
+},
+{
+""token"": ""Pearblossom"",
+""replacements"": [""Littlerock"", ""Devil's Canyon"", ""Pico Rivera""]
+},
+{
+""token"": ""San Gabriel foothills"",
+""replacements"": [""Santa Monica Mountains"", ""Puente Hills"", ""San Bernardino Mountains""]
+},
+{
+""token"": ""Scott Lezak"",
+""replacements"": [""Bob Johnson"", ""John Smith"", ""Alice Brown""]
+}
+]
+}"
+tweet-sno-1249,Around 1/2 inch of snow at the 3700 ft level in Pearblossom fell early this morning. Photo taken by Michaela Moffitt. Thanks Michaela and our NWS spotter Scott Lezak for forwarding the photo. #cawx #LAweather #LAsnow,"In December 2020, snow fell in the Los Angeles County area.","[{'token': 'Around 1/2 inch', 'type': 'QUANTITY', 'description': 'Measurements, as of weight or distance '}, {'token': '3700 ft', 'type': 'QUANTITY', 'description': 'Measurements, as of weight or distance '}, {'token': 'Pearblossom', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'early this morning', 'type': 'TIME', 'description': 'Times smaller than a day'}, {'token': 'Michaela Moffitt', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Michaela', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'NWS', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Scott Lezak', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Pearblossom"",
+""replacements"": [""Mount Wilson"", ""Big Bear"", ""Lake Arrowhead""]
+},
+{
+""token"": ""Michaela Moffitt"",
+""replacements"": [""Jessica Johnson"", ""Emily Chen"", ""Sarah Taylor""]
+},
+{
+""token"": ""Scott Lezak"",
+""replacements"": [""John Lee"", ""Mark Davis"", ""Ryan Thompson""]
+},
+{
+""token"": ""NWS"",
+""replacements"": [""NOAA"", ""USDA"", ""EPA""]
+},
+{
+""token"": ""LA"",
+""replacements"": [""San Diego"", ""San Jose"", ""Fresno""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Pearblossom"",
+""replacements"": [""Lake Arrowhead"", ""Big Bear"", ""Mount Laguna""]
+}
+]
+}"
+tweet-sno-1250,"“Breaking News: In Pennsylvania there were 205,000 more votes than there were voters. This alone flips the state to President Trump.”","The state of Pennsylvania recorded ""205,000 votes more than they had voters"" in the 2020 U.S. election.","[{'token': 'Breaking News', 'type': 'WORK_OF_ART', 'description': 'Titles of books, songs, etc. '}, {'token': 'Pennsylvania', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': '205,000', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': 'Trump', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Breaking News"",
+""replacements"": [""Latest Update"", ""News Flash"", ""Headline News""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Breaking News"",
+""replacements"": [""Late Update"", ""News Flash"", ""Urgent Report""]
+},
+{
+""token"": ""Pennsylvania"",
+""replacements"": [""California"", ""Florida"", ""Texas""]
+},
+{
+""token"": ""205,000"",
+""replacements"": [""200,000"", ""210,000"", ""190,000""]
+}
+]
+}"
+tweet-sno-1251,"When are we going to be allowed to do signature verification in Fulton County, Georgia? The process is going VERY slowly.Pennsylvania just found 205,000 votes more than they had voters. Therefore, we WIN Pennsylvania!!!","The state of Pennsylvania recorded ""205,000 votes more than they had voters"" in the 2020 U.S. election.","[{'token': 'Fulton County', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Georgia', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Pennsylvania', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': '205,000', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': 'Pennsylvania', 'type': 'GPE', 'description': 'Countries, cities, states'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Fulton County"",
+""replacements"": [""Cook County"", ""Maricopa County"", ""Harris County""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Fulton County"",
+""replacements"": [""Cobb County"", ""Gwinnett County"", ""DeKalb County""]
+},
+{
+""token"": ""Georgia"",
+""replacements"": [""Alabama"", ""Florida"", ""South Carolina""]
+},
+{
+""token"": ""Pennsylvania"",
+""replacements"": [""Ohio"", ""New York"", ""New Jersey""]
+}
+]
+}"
+tweet-sno-1252,"YOU CANNOT be “cleared” for a gathering by a negative COVID test 1) Might be too early in course to detect virus 2) ~20% of tests are false negatives 3) You could become infected literally 0.1 seconds after your swab Sincerely, An increasingly desperate ER doctor",A negative COVID-19 test will “clear” people to go to holiday gatherings with their family and friends across the United States.,"[{'token': '20%', 'type': 'PERCENT', 'description': 'Percentage (including “%”)'}, {'token': '3', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': '0.1 seconds', 'type': 'TIME', 'description': 'Times smaller than a day'}]","{
+""replaceable_entities"": [
+{
+""token"": ""20%"",
+""replacements"": [""15%"", ""30%"", ""25%""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""20%"",
+""replacements"": [""15%"", ""30%"", ""25%""]
+},
+{
+""token"": ""3"",
+""replacements"": [""2"", ""4"", ""5""]
+},
+{
+""token"": ""0.1 seconds"",
+""replacements"": [""1 second"", ""0.5 seconds"", ""2 minutes""]
+}
+]
+}"
+tweet-sno-1257,"Mayor Buttigieg says he’s a gay Christian. As a Christian I believe the Bible which defines homosexuality as sin, something to be repentant of, not something to be flaunted, praised or politicized. The Bible says marriage is between a man & a woman—not two men, not two women. 2/3","Evangelist Franklin Graham tweeted that Pete Buttigieg's homosexuality was ""something to be repentant of, not something to be flaunted.""","[{'token': 'Buttigieg', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Christian', 'type': 'NORP', 'description': 'Nationalities or religious or political groups'}, {'token': 'Christian', 'type': 'NORP', 'description': 'Nationalities or religious or political groups'}, {'token': 'Bible', 'type': 'WORK_OF_ART', 'description': 'Titles of books, songs, etc. '}, {'token': 'Bible', 'type': 'WORK_OF_ART', 'description': 'Titles of books, songs, etc. '}, {'token': 'two', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': 'two', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': '2/3', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Buttigieg"",
+""replacements"": [""O'Rourke"", ""Warren"", ""Harris""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Buttigieg"",
+""replacements"": [""O'Rourke"", ""Warren"", ""Harris""]
+},
+{
+""token"": ""Christian"",
+""replacements"": [""Catholic"", ""Protestant"", ""Evangelical""]
+},
+{
+""token"": ""Christian"",
+""replacements"": [""Baptist"", ""Methodist"", ""Lutheran""]
+}
+]
+}"
+tweet-sno-1258,Kanye West $2M PPP loan. Joel Osteen $4M. Tom Brady $960K. Most Americans $600. #IAmVeryUpset,Joel Osteen's Lakewood Church in Texas received $4.4 million in coronavirus-economic-relief loans.,"[{'token': '2M', 'type': 'MONEY', 'description': 'Monetary values, including unit'}, {'token': 'Joel Osteen', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Tom Brady', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': '960K', 'type': 'MONEY', 'description': 'Monetary values, including unit'}, {'token': 'Americans', 'type': 'NORP', 'description': 'Nationalities or religious or political groups'}, {'token': '600', 'type': 'MONEY', 'description': 'Monetary values, including unit'}]","{
+""replaceable_entities"": [
+{
+""token"": ""$2M"",
+""replacements"": [""$1M"", ""$3M"", ""$5M""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Joel Osteen"",
+""replacements"": [""Pope Francis"", ""Jimmy Swaggart"", ""Robert Schuller""]
+},
+{
+""token"": ""Tom Brady"",
+""replacements"": [""LeBron James"", ""Stephen Curry"", ""Drew Brees""]
+}
+]
+}"
+tweet-sno-1260,"SIE strives to ensure a high level of customer satisfaction, and we will begin to offer a full refund for all gamers who have purchased Cyberpunk 2077 via PlayStation Store and want a refund. Please visit the following link to initiate the refund:.",PlayStation and Xbox announced that refunds would be available for customers who digitally purchased Cyberpunk 2077.,"[{'token': 'SIE', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Cyberpunk 2077', 'type': 'PRODUCT', 'description': 'Vehicles, weapons, foods, etc. (Not services)'}, {'token': 'PlayStation Store', 'type': 'PRODUCT', 'description': 'Vehicles, weapons, foods, etc. (Not services)'}]","{
+""replaceable_entities"": [
+{
+""token"": ""SIE"",
+""replacements"": [""Sony"", ""Microsoft"", ""Rockstar""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""SIE"",
+""replacements"": [""Electronic Arts"", ""Ubisoft"", ""Rockstar Games""]
+},
+{
+""token"": ""Cyberpunk 2077"",
+""replacements"": [""Grand Theft Auto V"", ""The Last of Us Part II"", ""Red Dead Redemption 2""]
+},
+{
+""token"": ""PlayStation Store"",
+""replacements"": [""Microsoft Store"", ""Nintendo eShop"", ""Epic Games Store""]
+}
+]
+}"
+tweet-sno-1261,"Cyberpunk 2077: To ensure that every player can get the experience they expect on Xbox, we will be expanding our existing refund policy to offer full refunds to anyone who purchased Cyberpunk 2077 digitally from the Microsoft Store, until further notice.",PlayStation and Xbox announced that refunds would be available for customers who digitally purchased Cyberpunk 2077.,"[{'token': 'Cyberpunk 2077', 'type': 'WORK_OF_ART', 'description': 'Titles of books, songs, etc. '}, {'token': 'Xbox', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Cyberpunk 2077', 'type': 'PRODUCT', 'description': 'Vehicles, weapons, foods, etc. (Not services)'}, {'token': 'the Microsoft Store', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Cyberpunk 2077"",
+""replacements"": [""The Last of Us"", ""Ghost of Tsushima"", ""Death Stranding""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Cyberpunk 2077"",
+""replacements"": [""The Last of Us"", ""Grand Theft Auto V"", ""Red Dead Redemption""]
+},
+{
+""token"": ""Xbox"",
+""replacements"": [""PlayStation"", ""Nintendo Switch"", ""Steam""]
+},
+{
+""token"": ""Cyberpunk 2077"",
+""replacements"": [""Assassin's Creed"", ""Call of Duty"", ""Madden NFL""]
+}
+]
+}"
+tweet-sno-1262,"This video is an extract from yesterday’s press conference, with Hayabusa2 Project Manager Yuichi Tsuda confirming samples from Ryugu in the capsule!",Japanese scientists confirmed that the asteroid explorer Hyabusu2 successfully collected and returned soil and gas samples from the asteroid Ryugu 190 million miles from Earth.,"[{'token': 'Hayabusa2 Project', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Yuichi Tsuda', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Ryugu', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Hayabusa2 Project"",
+""replacements"": [""NASA Team"", ""SpaceX Crew"", ""European Space Agency Mission""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Hayabusa2 Project"",
+""replacements"": [""NASA Team"", ""SpaceX Crew"", ""European Space Agency""]
+},
+{
+""token"": ""Yuichi Tsuda"",
+""replacements"": [""Dr. John Smith"", ""Professor James Johnson"", ""Astronaut Mark Davis""]
+},
+{
+""token"": ""Ryugu"",
+""replacements"": [""Asteroid Xylophia-IV"", ""Comet 324B"", ""Planetoid Gamma-7""]
+}
+]
+}"
+tweet-sno-1263,"TEXAS ELECTORAL COLLEGE: ""The Justices went into a closed room…When Texas case was brought up he said he heard screaming through the walls as Justice Roberts and the other liberal Justices were insisting…afraid of what would happen if they did right thing…Moral cowardice""",Chief Justice John Roberts screamed at the other U.S. Supreme Court justices to dismiss a Texas voter fraud case in December 2020.,"[{'token': 'TEXAS', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Texas', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Roberts', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""TEXAS"",
+""replacements"": [""FLORIDA"", ""CALIFORNIA"", ""GEORGIA""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""TEXAS"",
+""replacements"": [""California"", ""Florida"", ""Georgia""]
+},
+{
+""token"": ""Texas"",
+""replacements"": [""California"", ""Florida"", ""Georgia""]
+},
+{
+""token"": ""Roberts"",
+""replacements"": [""Gorsuch"", ""Kavanaugh"", ""Alito""]
+}
+]
+}"
+tweet-sno-1265,"Well look at that, Day-vahd [said in our best Moira Rose voice]! A resident in Seattle's Queen Anne neighborhood, has created a mini Rosebud Motel using the retaining wall outside his home, for fans of the award-winning show ""Schitt's Creek"" to visit.","A man created a miniature Rosebud motel facade in a Seattle neighborhood, inspired by the setting of the popular comedy series “Schitt’s Creek.”","[{'token': 'Day-vahd', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Moira Rose', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': ""Seattle's Queen Anne"", 'type': 'FAC', 'description': 'Buildings, airports, highways, bridges, etc.'}, {'token': 'Rosebud Motel', 'type': 'FAC', 'description': 'Buildings, airports, highways, bridges, etc.'}, {'token': '""Schitt\'s Creek""', 'type': 'WORK_OF_ART', 'description': 'Titles of books, songs, etc. '}]","{
+""replaceable_entities"": [
+{
+""token"": ""Day-vahd"",
+""replacements"": [""Moira"", ""David"", ""Johnny""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Day-vahd"",
+""replacements"": [""Donny"", ""Regina"", ""Lola""]
+},
+{
+""token"": ""Moira Rose"",
+""replacements"": [""Blanche Devereaux"", ""Phoebe Buffay"", ""Carrie Bradshaw""]
+},
+{
+""token"": ""Seattle's Queen Anne"",
+""replacements"": [""Portland's Pearl District"", ""San Francisco's Haight-Ashbury"", ""Austin's South Congress""]
+}
+]
+}"
+tweet-sno-1266,"Perhaps the biggest difference between 2016 and 2020 is, despite the fact that I went from 63,000,000 Votes to 75,000,000 Votes, a record 12,000,000 Vote increase. Obama went down 3,000,000 Votes, and won. Rigged Election!!!","President Trump's losing the election despite receiving millions more votes in 2020 than in 2016 is indicative of a ""rigged election.""","[{'token': '2016', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': '2020', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': '63,000,000', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': '75,000,000', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': '12,000,000', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': 'Obama', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': '3,000,000', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}]","{
+""replaceable_entities"": [
+{
+""token"": ""2016"",
+""replacements"": [""2018"", ""2019"", ""2022""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""2016"",
+""replacements"": [""2012"", ""2008"", ""2010""]
+},
+{
+""token"": ""2020"",
+""replacements"": [""2024"", ""2018"", ""2022""]
+},
+{
+""token"": ""63,000,000"",
+""replacements"": [""50,000,000"", ""70,000,000"", ""60,000,000""]
+}
+]
+}"
+tweet-sno-1268,"Alex Jones at the pro-Trump march in Washington, DC: ""Joe Biden is a globalist, and Joe Biden will be removed, one way or another!""","Conspiracy theorist Alex Jones said President-elect Joe Biden will be ""removed"" from office ""one way or another.""","[{'token': 'Alex Jones', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'pro-Trump', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Washington, DC', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Joe Biden', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Joe Biden', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'one', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Alex Jones"",
+""replacements"": [""Roger Stone"", ""Rush Limbaugh"", ""Sean Hannity""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Alex Jones"",
+""replacements"": [""Rush Limbaugh"", ""Glenn Beck"", ""Sean Hannity""]
+},
+{
+""token"": ""pro-Trump"",
+""replacements"": [""pro-Republican"", ""conservative"", ""right-wing""]
+},
+{
+""token"": ""Washington, DC"",
+""replacements"": [""New York City"", ""Los Angeles"", ""Chicago""]
+}
+]
+}"
+tweet-sno-1270,The small island with 2 lighthouses & the guy driving a classic Land Rover in the Allstate commercial – is it real? Where is it? Maine? New Brunswick?,A real island was shown in an Allstate television advertisement in 2020.,"[{'token': '2', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': 'Land Rover', 'type': 'PRODUCT', 'description': 'Vehicles, weapons, foods, etc. (Not services)'}, {'token': 'Allstate', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Maine', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'New Brunswick', 'type': 'GPE', 'description': 'Countries, cities, states'}]","{
+""replaceable_entities"": [
+{
+""token"": ""2"",
+""replacements"": [""three"", ""four"", ""five""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""2"",
+""replacements"": [""three"", ""five"", ""four""]
+},
+{
+""token"": ""Land Rover"",
+""replacements"": [""Ford Bronco"", ""Jeep Wrangler"", ""Toyota 4Runner""]
+},
+{
+""token"": ""Allstate"",
+""replacements"": [""State Farm"", ""Geico"", ""Progressive""]
+}
+]
+}"
+tweet-sno-1271,"BREAKING: Christmas Eve is now a federal holiday in 2020, according to an executive order signed Friday by President Trump.","On Dec. 11, 2020, U.S. President Donald Trump issued an executive order designating Christmas Eve 2020 as a federal holiday.","[{'token': '2020', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'Friday', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'Trump', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""2020"",
+""replacements"": [""2019"", ""2021"", ""2022""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""2020"",
+""replacements"": [""2019"", ""2018"", ""2017""]
+},
+{
+""token"": ""Friday"",
+""replacements"": [""Thursday"", ""Monday"", ""Wednesday""]
+},
+{
+""token"": ""Trump"",
+""replacements"": [""Biden"", ""Obama"", ""Clinton""]
+}
+]
+}"
+tweet-sno-1273,"Coming exclusively tois Hocus Pocus 2, the spooky sequel to the 1993 Halloween classic!is set to direct.","Disney announced a sequel to ""Hocus Pocus.""","[{'token': 'Hocus Pocus 2', 'type': 'WORK_OF_ART', 'description': 'Titles of books, songs, etc. '}, {'token': '1993', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'Halloween', 'type': 'EVENT', 'description': 'Named hurricanes, battles, wars, sports events, etc.'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Hocus Pocus 2"",
+""replacements"": [""Ghostbusters 3"", ""The Addams Family 2"", ""Casper the Friendly Ghost""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Hocus Pocus 2"",
+""replacements"": [""The Nightmare Before Christmas"", ""It's the Great Pumpkin, Charlie Brown"", ""The Addams Family""]
+},
+{
+""token"": ""1993"",
+""replacements"": [""1980"", ""2005"", ""2010""]
+},
+{
+""token"": ""Halloween"",
+""replacements"": [""Christmas"", ""Easter"", ""Thanksgiving""]
+}
+]
+}"
+tweet-sno-1274,"A shopping center owner is suing a Chick-fil-A restaurant, claiming that the restaurant’s drive-thru has become so popular that cars backflow into the center’s aisles. Stay updated on Toledo-area news by downloading #BladeNewsSlide 📲",A man sued the Chick-fil-A chain because of its restaurants' long drive-thru lines.,"[{'token': 'Chick-fil-A', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Toledo', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'BladeNewsSlide', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Chick-fil-A"",
+""replacements"": [""McDonald's"", ""Burger King"", ""Wendy's""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Chick-fil-A"",
+""replacements"": [""PaneraBread"", ""Wendy's"", ""McDonald's""]
+},
+{
+""token"": ""Toledo"",
+""replacements"": [""Detroit"", ""Columbus"", ""Cleveland""]
+},
+{
+""token"": ""BladeNewsSlide"",
+""replacements"": [""NewsToday"", ""DailyDigest"", ""MorningBrief""]
+}
+]
+}"
+tweet-sno-1275,Costco loses an estimated $30 to $40 million a year by sticking to their $4.99 price for rotisserie chicken. They'd rather keep members happy and foot traffic high.,Costco loses an estimated $30 to $40 million a year by keeping rotisserie chickens at $4.99 each. But the company would rather keep members happy and foot traffic high.,"[{'token': 'Costco', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'an estimated $30 to $40 million', 'type': 'MONEY', 'description': 'Monetary values, including unit'}, {'token': '4.99', 'type': 'MONEY', 'description': 'Monetary values, including unit'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Costco"",
+""replacements"": [""Sams Club"", ""Walmart"", ""Target""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Costco"",
+""replacements"": [""Walmart"", ""Target"", ""Sams Club""]
+},
+{
+""token"": ""an estimated $30 to $40 million"",
+""replacements"": [""around $50 million"", ""nearly $25 million"", ""over $60 million""]
+},
+{
+""token"": ""4.99"",
+""replacements"": [""5.99"", ""6.49"", ""7.49""]
+}
+]
+}"
+tweet-sno-1276,"No Presidential candidate ever came even close to losing an Election who won Iowa, Florida and Ohio. I won all three, by a lot!","Donald Trump was the first candidate to lose a presidential election despite winning in Ohio, Florida, and Iowa.","[{'token': 'Iowa', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Florida', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Ohio', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'three', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Iowa"",
+""replacements"": [""Nevada"", ""New Hampshire"", ""Wisconsin""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Iowa"",
+""replacements"": [""Minnesota"", ""Wisconsin"", ""Nebraska""]
+},
+{
+""token"": ""Florida"",
+""replacements"": [""Texas"", ""Georgia"", ""North Carolina""]
+},
+{
+""token"": ""Ohio"",
+""replacements"": [""Michigan"", ""Indiana"", ""Kentucky""]
+}
+]
+}"
+tweet-sno-1277,NEW YORKERS: Today I learned the design for these radiators came about during the Spanish flu pandemic of 1918. Engineers wanted to keep an apartment warm while ventilating the space from airborne illnesses because THEY WERE MEANT TO BE KEPT ON WITH THE WINDOWS FULLY OPEN (!!!!),Some steam radiators built in older apartment buildings in cities like New York were designed to keep dwellings warm with windows open due to the 1918 pandemic.,"[{'token': 'Today', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'Spanish', 'type': 'NORP', 'description': 'Nationalities or religious or political groups'}, {'token': '1918', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}]","{
+""replaceable_entities"": [
+{
+""token"": ""New Yorkers"",
+""replacements"": [""San Franciscans"", ""Chicagoans"", ""Bostonians""]
+},
+{
+""token"": ""New York"",
+""replacements"": [""San Francisco"", ""Chicago"", ""Boston""]
+}
+]
+}","{
+  ""replaceable_entities"": [
+    {
+      ""token"": ""Today"",
+      ""replacements"": [""Yesterday"", ""Last Weekend"", ""This Morning""]
+    },
+    {
+      ""token"": ""Spanish"",
+      ""replacements"": [""French"", ""Italian"", ""Russian""]
+    },
+    {
+      ""token"": ""1918"",
+      ""replacements"": [""1945"", ""1950"", ""1962""]
+    }
+  ]
+}"
+tweet-sno-1280,"Joe Biden is asked about his disagreements with Kamala Harris on certain issues: ""Like I told Barack, if I reach something where there's a fundamental disagreement we have based on a moral principle, I'll develop some disease and say I have to resign.""","Regarding what he would do if he disagreed with Vice President-elect Kamala Harris, U.S. President-elect Joe Biden said: “Like I told Barack, if I reach something where there’s a fundamental disagreement we have based on a moral principle, I’ll develop some disease and say I have to resign.""","[{'token': 'Joe Biden', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Kamala Harris', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Barack', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Joe Biden"",
+""replacements"": [""Elizabeth Warren"", ""Pete Buttigieg"", ""Mike Bloomberg""]
+},
+{
+""token"": ""Kamala Harris"",
+""replacements"": [""Nancy Pelosi"", ""Hillary Clinton"", ""Amy Klobuchar""]
+},
+{
+""token"": ""Barack"",
+""replacements"": [""Michelle"", ""Jill"", ""Bill""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Joe Biden"",
+""replacements"": [""Mike Pence"", ""Nancy Pelosi"", ""Donald Trump""]
+},
+{
+""token"": ""Kamala Harris"",
+""replacements"": [""Mike Pompeo"", ""Elizabeth Warren"", ""Bernie Sanders""]
+},
+{
+""token"": ""Barack"",
+""replacements"": [""Michelle Obama"", ""Jill Biden"", ""Al Gore""]
+}
+]
+}"
+tweet-sno-1285,"1/ There will be no update today. At 8:30 am this morning, state police came into my house and took all my hardware and tech. They were serving a warrant on my computer after DOH filed a complaint. They pointed a gun in my face. They pointed guns at my kids..","In December 2020, Florida state police ""raided"" the home of Rebekah Jones, executing a search warrant and confiscating electronic devices.","[{'token': '1/', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': 'today', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': '8:30 am this morning', 'type': 'TIME', 'description': 'Times smaller than a day'}, {'token': 'DOH', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}]","{
+""replaceable_entities"": [
+{
+""token"": ""1/"",
+""replacements"": [""two times"", ""three hours ago"", ""yesterday""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""my house"",
+""replacements"": [""my apartment"", ""my residence"", ""my home""]
+},
+{
+""token"": ""DOH"",
+""replacements"": [""DOJ"", ""FBI"", ""CIA""]
+},
+{
+""token"": ""Florida state police"",
+""replacements"": [""New York state police"", ""California highway patrol"", ""Texas ranger division""]
+},
+{
+""token"": ""Rebekah Jones"",
+""replacements"": [""John Smith"", ""Jane Doe"", ""Michael Brown""]
+}
+]
+}"
+tweet-sno-1286,"Lmaoapparently asked Sally Ride, the first woman in space, if ONE HUNDRED tampons would be enough for a week in space and if she needed more 😭😭 they actually didn’t know how many tampons women used.","In advance of her 1984 mission aboard the space shuttle Challenger, NASA engineers asked Sally Ride if 100 tampons would be enough for two weeks in space.","[{'token': 'Lmaoapparently', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Sally Ride', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'first', 'type': 'ORDINAL', 'description': '“first”, “second”'}, {'token': 'a week', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Lmaoapparently"",
+""replacements"": [""JohnDoe"", ""JaneDoe"", ""AliceBob""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Lmaoapparently"",
+""replacements"": [""SarahJones"", ""JohnDoe"", ""JaneSmith""]
+},
+{
+""token"": ""Sally Ride"",
+""replacements"": [""Mae Jemison"", ""Valentina Tereshkova"", ""Eileen Collins""]
+},
+{
+""token"": ""first"",
+""replacements"": [""second"", ""third"", ""fourth""]
+}
+]
+}"
+tweet-sno-1291,"President-elect Joe Biden says he'd ""be happy"" to join former Presidents Obama, Bush and Clinton in getting a Covid vaccine in public to prove it's safe. ""When Dr. Fauci says we have a vaccine that is safe, that's the moment in which I will stand before the public and say that""",U.S. President-elect Joe Biden said he will get the COVID-19 vaccination in public on television.,"[{'token': 'Joe Biden', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Obama', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Bush', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Clinton', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Covid', 'type': 'EVENT', 'description': 'Named hurricanes, battles, wars, sports events, etc.'}, {'token': 'Fauci', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Joe Biden"",
+""replacements"": [""Kamala Harris"", ""Mike Pence"", ""Nancy Pelosi""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Joe Biden"",
+""replacements"": [""Kamala Harris"", ""Nancy Pelosi"", ""Mike Pence""]
+},
+{
+""token"": ""Obama"",
+""replacements"": [""Reagan"", ""Carter"", ""Ford""]
+},
+{
+""token"": ""Bush"",
+""replacements"": [""Cheney"", ""Rumsfeld"", ""Gore""]
+}
+]
+}"
+tweet-sno-1292,"It is also beyond the pale that Rep Matt Putz – I mean– would participate in this. What a fool. Matt – You are not welcome in New Jersey, and frankly I don’t ever want you back in this state.","New Jersey Gov. Phil Murphy called Florida Rep. Matt Gaetz the name ""Matt Putz"" and a ""fool.""","[{'token': 'Matt Putz', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Matt', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'New Jersey', 'type': 'GPE', 'description': 'Countries, cities, states'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Matt Putz"",
+""replacements"": [""John Doe"", ""Mike Pence"", ""Tom Brady""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Matt Putz"",
+""replacements"": [""John Doe"", ""Jim Brown"", ""Alex Smith""]
+},
+{
+""token"": ""Matt"",
+""replacements"": [""John"", ""Jim"", ""Alex""]
+},
+{
+""token"": ""New Jersey"",
+""replacements"": [""California"", ""Florida"", ""Texas""]
+}
+]
+}"
+tweet-sno-1297,Wait what???? Flash player will no longer be supported inchrome after December 2020? Does that mean I can’t watch YouTube and flash player oriented websites online after December 2020?,Adobe announced that Flash Player would no longer be supported.,"[{'token': 'December 2020', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'YouTube', 'type': 'PRODUCT', 'description': 'Vehicles, weapons, foods, etc. (Not services)'}, {'token': 'December 2020', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}]","{
+""replaceable_entities"": [
+{
+""token"": ""December 2020"",
+""replacements"": [""January 2021"", ""February 2022"", ""March 2023""]
+}
+]
+}","{
+  ""replaceable_entities"": [
+    {
+      ""token"": ""December 2020"",
+      ""replacements"": [""January 2025"", ""November 2022"", ""March 2024""]
+    },
+    {
+      ""token"": ""YouTube"",
+      ""replacements"": [""Vimeo"", ""TikTok"", ""Netflix""]
+    },
+    {
+      ""token"": ""December 2020"",
+      ""replacements"": [""January 2025"", ""November 2022"", ""March 2024""]
+    }
+  ]
+}"
+tweet-sno-1298,Important message for children of #Ireland – #Santa is coming & will be exempt from #Covid restrictions on International Travel. However children should be aware that social distancing guidelines should apply to Santa.,"Ireland Foreign Minister Simon Coveney declared in a Nov. 26, 2020, statement that Santa Claus is considered an essential worker, granting him exemption from self-quarantine to deliver Christmas presents.","[{'token': 'Ireland', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Santa', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'International Travel', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Santa', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Ireland"",
+""replacements"": [""Scotland"", ""New Zealand"", ""Switzerland""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Ireland"",
+""replacements"": [""New Zealand"", ""Sweden"", ""Finland""]
+},
+{
+""token"": ""Santa"",
+""replacements"": [""Father Frost"", ""Krampus"", ""Père Noël""]
+},
+{
+""token"": ""International Travel"",
+""replacements"": [""Global Journeys"", ""World Explorations"", ""Cross Border Ventures""]
+}
+]
+}"
+tweet-sno-1302,"The article “A closer look at U.S. deaths due to COVID-19,” published in the Science & Technology section on Nov. 22, has been deleted.","An article titled “COVID-19 Deaths: A Look at U.S. Data” was published in the Johns Hopkins student-run newspaper on Nov. 22, 2020, and subsequently retracted.","[{'token': 'U.S.', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'COVID-19', 'type': 'EVENT', 'description': 'Named hurricanes, battles, wars, sports events, etc.'}, {'token': 'Science & Technology', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Nov. 22', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}]","{
+""replaceable_entities"": [
+{
+""token"": ""U.S."",
+""replacements"": [""Canada"", ""Australia"", ""UK""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""U.S."",
+""replacements"": [""Canada"", ""Australia"", ""Germany""]
+},
+{
+""token"": ""COVID-19"",
+""replacements"": [""SARS"", ""Ebola"", ""Influenza""]
+},
+{
+""token"": ""Science & Technology"",
+""replacements"": [""Health News"", ""Medical Journal"", ""Research Daily""]
+}
+]
+}"
+tweet-sno-1305,"Teen Win, Lose or Draw – Soleil Moon Frye vs Leonardo DiCaprio (1990)a través de ",Actor Leonardo DiCaprio appeared on a Disney Channel game show.,"[{'token': 'Teen Win', 'type': 'WORK_OF_ART', 'description': 'Titles of books, songs, etc. '}, {'token': 'Soleil Moon Frye', 'type': 'WORK_OF_ART', 'description': 'Titles of books, songs, etc. '}, {'token': 'Leonardo DiCaprio', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': '1990', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Teen Win, Lose or Draw"",
+""replacements"": [""Wild & Crazy Kids"", ""Double Dare"", ""Finders Keepers""]
+},
+{
+""token"": ""Soleil Moon Frye"",
+""replacements"": [""Raven-Symoné"", ""Christy Carlson Romano"", ""Shia LaBeouf""]
+},
+{
+""token"": ""Leonardo DiCaprio"",
+""replacements"": [""Shane O'Brien"", ""Jaleel White"", ""Ryan Gosling""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Teen Win, Lose or Draw"",
+""replacements"": [""Double Dare"", ""What Would You Do?"", ""Figure It Out""]
+},
+{
+""token"": ""Soleil Moon Frye"",
+""replacements"": [""Raven-Symoné"", "" Shia LaBeouf"", ""Hilary Duff""]
+},
+{
+""token"": ""Leonardo DiCaprio"",
+""replacements"": [""Tom Hanks"", ""Dwayne Johnson"", ""Ryan Reynolds""]
+}
+]
+}"
+tweet-sno-1308,"FLASHBACK: In 2018, President Trump attacked Carrots the turkey for refusing to concede he had lost the vote on the White House turkey pardon contest. ""This was a fair election… unfortunately, Carrots refused to concede and demanded a recount.""","U.S. President Donald Trump pardoned a turkey whom he said had lost a ""fair and open election"" but ""refused to concede.""","[{'token': '2018', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'Trump', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Carrots', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'White House', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}]","{
+""replaceable_entities"": [
+{
+""token"": ""2018"",
+""replacements"": [""2022"", ""Last Year"", ""Recently""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""2018"",
+""replacements"": [""2020"", ""2019"", ""2017""]
+},
+{
+""token"": ""Trump"",
+""replacements"": [""Obama"", ""Biden"", ""Clinton""]
+},
+{
+""token"": ""Carrots"",
+""replacements"": [""Pumpkin"", ""Gobbler"", ""Pepper""]
+}
+]
+}"
+tweet-sno-1309,"At 1:30pm AKST this afternoon, the sun will set and Utqiaġvik will enter a 66 day period of polar night. The sun will rise again on January 23rd, 2021. #akwx","The sun does not rise in Utqiagvik, Alaska, for more than 60 days during the winter.","[{'token': '1:30pm AKST this afternoon', 'type': 'TIME', 'description': 'Times smaller than a day'}, {'token': 'Utqiaġvik', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': '66 day', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'January 23rd, 2021', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}]","{
+""replaceable_entities"": [
+{
+""token"": ""1:30pm AKST this afternoon"",
+""replacements"": [""2:00pm PST this morning"", ""noon EST yesterday"", ""3:15pm CST tomorrow""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""1:30pm AKST this afternoon"",
+""replacements"": [""3:00pm EST today"", ""noon PST tomorrow"", ""7:45am CST yesterday""]
+},
+{
+""token"": ""Utqiaġvik"",
+""replacements"": [""Fairbanks"", ""Anchorage"", ""Juneau""]
+},
+{
+""token"": ""66 day"",
+""replacements"": [""70 day"", ""two months"", ""90 days""]
+}
+]
+}"
+tweet-sno-1311,"“Evidence of voter fraud continues to grow, including 20,000 dead people on the Pennsylvania voters roll and many thousands all over the Country. Now, there has been an artificial number of votes in favor of Joe Biden.” ","Pennsylvania has 20,000 dead persons listed on its election rolls, which is evidence of massive voter fraud in 2020.","[{'token': '20,000', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': 'Pennsylvania', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'many thousands', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': 'Joe Biden', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""20,000"",
+""replacements"": [""15,000"", ""30,000"", ""25,000""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""20,000"",
+""replacements"": [""15,000"", ""30,000"", ""10,000""]
+},
+{
+""token"": ""Pennsylvania"",
+""replacements"": [""California"", ""Florida"", ""Texas""]
+},
+{
+""token"": ""many thousands"",
+""replacements"": [""hundreds"", ""tens of thousands"", ""dozens""]
+}
+]
+}"
+tweet-sno-1313,"Look at this in Wisconsin! A day AFTER the election, Biden receives a dump of 143,379 votes at 3:42AM, when they learned he was losing badly. This is unbelievable!",Joe Biden received a fraudulent 'dump' of 143K ballots in Wisconsin in the early morning hours after Election Day 2020.,"[{'token': 'Wisconsin', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Biden', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': '143,379', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': '3:42AM', 'type': 'TIME', 'description': 'Times smaller than a day'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Wisconsin"",
+""replacements"": [""Michigan"", ""Minnesota"", ""Iowa""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Wisconsin"",
+""replacements"": [""California"", ""Florida"", ""Texas""]
+},
+{
+""token"": ""Biden"",
+""replacements"": [""Trump"", ""Obama"", ""Clinton""]
+},
+{
+""token"": ""143,379"",
+""replacements"": [""100,000"", ""200,000"", ""50,000""]
+}
+]
+}"
+tweet-sno-1314,"The raw data in the server seized by the US military shows Trump won by a landslide 👇🏻👇🏻👇🏻 410!!!!_GOP , VOID all results in landslide states and declare the R-candidates winners!!",A voting systems server seized by the U.S. military in Germany proved Donald Trump won the 2020 election in an electoral landslide.,"[{'token': 'US', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Trump', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': '410', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}]","{
+""replaceable_entities"": [
+{
+""token"": ""US"",
+""replacements"": [""Russia"", ""China"", ""France""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""US"",
+""replacements"": [""UK"", ""Canada"", ""Australia""]
+},
+{
+""token"": ""Trump"",
+""replacements"": [""Biden"", ""Obama"", ""Clinton""]
+},
+{
+""token"": ""410"",
+""replacements"": [""420"", ""430"", ""450""]
+}
+]
+}"
+tweet-sno-1315,Supposedly the Germany server data shows Trump landslide: 410-128 👍,A voting systems server seized by the U.S. military in Germany proved Donald Trump won the 2020 election in an electoral landslide.,"[{'token': 'Germany', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Trump', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': '410-128', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Germany"",
+""replacements"": [""France"", ""Italy"", ""Sweden""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Germany"",
+""replacements"": [""France"", ""Italy"", ""Australia""]
+},
+{
+""token"": ""Trump"",
+""replacements"": [""Biden"", ""Obama"", ""Clinton""]
+},
+{
+""token"": ""410-128"",
+""replacements"": [""420-135"", ""405-125"", ""425-130""]
+}
+]
+}"
+tweet-sno-1318,"Georgia SoS office says Floyd County would have discovered the 2,600 extra votes without the audit because the number of voters who had checked in was greater than the tally, and they were already looking into it.","Some 2,600 uncounted votes, a majority of which were cast for U.S. President Donald Trump, were found in Floyd County, Georgia, moving the president about 800 votes closer to President-elect Joe Biden's tally in the 2020 general election.","[{'token': 'Georgia SoS', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Floyd County', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': '2,600', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Georgia SoS"",
+""replacements"": [""Texas Secretary of State"", ""Florida Department of State"", ""California SOS""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Georgia SoS"",
+""replacements"": [""New York DMV"", ""California Secretary of State"", ""Texas Attorney General""]
+},
+{
+""token"": ""Floyd County"",
+""replacements"": [""Harris County"", ""Maricopa County"", ""Suffolk County""]
+},
+{
+""token"": ""2,600"",
+""replacements"": [""1,200"", ""5,000"", ""3,100""]
+}
+]
+}"
+tweet-sno-1319,"BREAKING: A recount in Georgia’s presidential race found more than 2,600 ballots in Floyd County that hadn’t originally been tallied, likely helping President Donald Trump reduce his 14,000-vote deficit to Joe Biden.","Some 2,600 uncounted votes, a majority of which were cast for U.S. President Donald Trump, were found in Floyd County, Georgia, moving the president about 800 votes closer to President-elect Joe Biden's tally in the 2020 general election.","[{'token': 'Georgia’s', 'type': 'NORP', 'description': 'Nationalities or religious or political groups'}, {'token': 'more than 2,600', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': 'Floyd County', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Donald Trump', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': '14,000', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': 'Joe Biden', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Georgia’s"",
+""replacements"": [""California's"", ""Florida's"", ""Texas's""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Georgia’s"",
+""replacements"": [""Texas'"", ""California's"", ""Florida's""]
+},
+{
+""token"": ""more than 2,600"",
+""replacements"": [""over 3,000"", ""approximately 2,000"", ""around 1,800""]
+},
+{
+""token"": ""Floyd County"",
+""replacements"": [""Harris County"", ""DeKalb County"", ""Gwinnett County""]
+}
+]
+}"
+tweet-sno-1320,Look at the size of this crowd down Pennsylvania Ave. More than a MILLION people showed up to support this President. Meanwhile Biden can’t fill 36 circles. #MillionMAGAMarch,"More than one million people took part in a pro-Donald Trump march in Washington, D.C., on Nov. 14, 2020.","[{'token': 'Pennsylvania Ave', 'type': 'FAC', 'description': 'Buildings, airports, highways, bridges, etc.'}, {'token': 'More than a MILLION', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': 'Biden', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': '36', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Pennsylvania Ave"",
+""replacements"": [""Fifth Avenue"", ""Main Street"", ""Broadway""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Pennsylvania Ave"",
+""replacements"": [""Fifth Avenue"", ""Main Street"", ""Wall Street""]
+},
+{
+""token"": ""More than a MILLION"",
+""replacements"": [""over 1 million"", ""approximately 1 million"", ""around a million""]
+},
+{
+""token"": ""Biden"",
+""replacements"": [""Obama"", ""Clinton"", ""Trump""]
+}
+]
+}"
+tweet-sno-1321,"File under: Wait, WHAT? From: NewsMax (via The Righting) ""President Trump should retire immediately and let Mike Pence concede the election, occupy the White House, and handle the transition…This would give Pence a head start on securing the Republican nomination in 2024.","The conservative news website Newsmax published a column that suggested U.S. President Donald Trump should ""retire immediately,"" letting Vice President Mike Pence handle the transition to the incoming Biden-Harris administration.","[{'token': 'NewsMax', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'The Righting', 'type': 'WORK_OF_ART', 'description': 'Titles of books, songs, etc. '}, {'token': 'Trump', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Mike Pence', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'the White House', 'type': 'FAC', 'description': 'Buildings, airports, highways, bridges, etc.'}, {'token': 'Pence', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Republican', 'type': 'NORP', 'description': 'Nationalities or religious or political groups'}, {'token': '2024', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}]","{
+""replaceable_entities"": [
+{
+""token"": ""NewsMax"",
+""replacements"": [""Fox News"", ""Breitbart"", ""The Blaze""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""NewsMax"",
+""replacements"": [""Fox News"", ""Breitbart News"", ""The Blaze""]
+},
+{
+""token"": ""The Righting"",
+""replacements"": [""The New York Times"", ""The Wall Street Journal"", ""The Economist""]
+},
+{
+""token"": ""Trump"",
+""replacements"": [""Bush"", ""Obama"", ""Clinton""]
+},
+{
+""token"": ""Mike Pence"",
+""replacements"": [""Joe Biden"", ""Kamala Harris"", ""Nancy Pelosi""]
+}
+]
+}"
+tweet-sno-1322,"Right wing Newsmax, which is owned by Trump’s friend Chris Ruddy, suggesting he retire: “To avoid all this unpleasantness President Trump should retire immediately and let Mike Pence concede the election, occupy the White House and handle the transition”","The conservative news website Newsmax published a column that suggested U.S. President Donald Trump should ""retire immediately,"" letting Vice President Mike Pence handle the transition to the incoming Biden-Harris administration.","[{'token': 'Newsmax', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Trump’s', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Chris Ruddy', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Trump', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Mike Pence', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'the White House', 'type': 'FAC', 'description': 'Buildings, airports, highways, bridges, etc.'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Newsmax"",
+""replacements"": [""Fox News"", ""CNN"", ""MSNBC""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Newsmax"",
+""replacements"": [""Fox News"", ""CNN"", ""ABC News""]
+},
+{
+""token"": ""Trump’s"",
+""replacements"": [""Biden's"", ""Clinton's"", ""Obama's""]
+},
+{
+""token"": ""Chris Ruddy"",
+""replacements"": [""Rush Limbaugh"", ""Sean Hannity"", ""Bill O'Reilly""]
+}
+]
+}"
+tweet-sno-1323," you were my favorite media outlet until this! ""To avoid all this unpleasantness, President Trump should retire immediately and let Mike Pence concede the election, occupy the White House, and handle the transition.""","The conservative news website Newsmax published a column that suggested U.S. President Donald Trump should ""retire immediately,"" letting Vice President Mike Pence handle the transition to the incoming Biden-Harris administration.","[{'token': 'Trump', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Mike Pence', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'the White House', 'type': 'FAC', 'description': 'Buildings, airports, highways, bridges, etc.'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Trump"",
+""replacements"": [""Obama"", ""Biden"", ""Clinton""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Trump"",
+""replacements"": [""Bush"", ""Obama"", ""Reagan""]
+},
+{
+""token"": ""Mike Pence"",
+""replacements"": [""Al Gore"", ""Dick Cheney"", ""Joe Biden""]
+},
+{
+""token"": ""the White House"",
+""replacements"": [""the Capitol"", ""the State House"", ""the Governor's Mansion""]
+}
+]
+}"
+tweet-sno-1324,"She's deleted it, butposted a tweet suggesting that Joe Biden will be president next year. Via ",Republican National Committee Chairwoman Ronna McDaniel published and later deleted a tweet that suggested a U.S. future under a Joe Biden-Kamala Harris presidential administration.,"[{'token': ""She's"", 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Joe Biden', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'next year', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}]","{
+""replaceable_entities"": [
+{
+""token"": ""She's"",
+""replacements"": [""He's"", ""They're"", ""Her's""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""She's"",
+""replacements"": [""Her"", ""They"", ""He's""]
+},
+{
+""token"": ""Joe Biden"",
+""replacements"": [""Bernie Sanders"", ""Mike Pence"", ""Nancy Pelosi""]
+},
+{
+""token"": ""next year"",
+""replacements"": [""in 2025"", ""soon"", ""in the near future""]
+}
+]
+}"
+tweet-sno-1331,What happened to U.S. Immigration and Customs Enforcement (ICE) Twitter profile?,"On Nov. 12, 2020, U.S. Immigration and Customs Enforcement’s (ICE) Twitter account appeared to have been briefly removed from the social network.","[{'token': 'U.S. Immigration and Customs Enforcement', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'ICE', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Twitter', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}]","{
+""replaceable_entities"": [
+{
+""token"": ""U.S. Immigration and Customs Enforcement"",
+""replacements"": [""FBI"", ""Department of Homeland Security"", ""Customs and Border Protection""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""U.S. Immigration and Customs Enforcement"",
+""replacements"": [""Federal Bureau of Investigation"", ""Department of Homeland Security"", ""Customs and Border Protection""]
+},
+{
+""token"": ""ICE"",
+""replacements"": [""FBI"", ""DHS"", ""CBP""]
+},
+{
+""token"": ""Twitter"",
+""replacements"": [""Facebook"", ""Instagram"", ""YouTube""]
+}
+]
+}"
+tweet-sno-1332,"To commemorate #VeteransDay and honor those who have served in the military,announced that Gold Star Families and Veterans of the U.S. Armed Forces will have free entrance to national parks forever. Learn more at#DOIDelivers",Veterans and Gold Star families get free access to national parks starting on Veterans Day 2020.,"[{'token': '#VeteransDay', 'type': 'EVENT', 'description': 'Named hurricanes, battles, wars, sports events, etc.'}, {'token': 'Gold Star Families', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Veterans of the U.S. Armed Forces', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}]","{
+""replaceable_entities"": [
+{
+""token"": ""#VeteransDay"",
+""replacements"": [""#MemorialDay"", ""#IndependenceDay"", ""#LaborDay""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""#VeteransDay"",
+""replacements"": [""#MemorialDay"", ""#IndependenceDay"", ""#LaborDay""]
+},
+{
+""token"": ""Gold Star Families"",
+""replacements"": [""Purple Heart Recipients"", ""Wounded Warriors"", ""Disabled American Veterans""]
+},
+{
+""token"": ""Veterans of the U.S. Armed Forces"",
+""replacements"": [""Members of the American Legion"", ""Disabled American Veterans"", ""Veterans of Foreign Wars""]
+}
+]
+}"
+tweet-sno-1334,The news about thevaccine being 90% effective is great news for the American people! Many thanks toand Operation Warp Speed. This will be one of the most important action items done by the administration in response to this pandemic. ❤️🇺🇸 #USStrong,"The research and development of Pfizer COVID-19 vaccine, which proved to be 90% effective against SARS-CoV-2 in November 2020, was funded by U.S. President Donald Trump’s Operation Warp Speed.","[{'token': '90%', 'type': 'PERCENT', 'description': 'Percentage (including “%”)'}, {'token': 'American', 'type': 'NORP', 'description': 'Nationalities or religious or political groups'}, {'token': 'Operation Warp Speed', 'type': 'PRODUCT', 'description': 'Vehicles, weapons, foods, etc. (Not services)'}, {'token': 'one', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}]","{
+""replaceable_entities"": [
+{
+""token"": ""American people"",
+""replacements"": [""British citizens"", ""French nationals"", ""Australian residents""]
+},
+{
+""token"": ""Operation Warp Speed"",
+""replacements"": [""Operation Quick Response"", ""Project Rapid Vaccine"", ""Initiative Fast Track""]
+},
+{
+""token"": ""the administration"",
+""replacements"": [""the government"", ""the White House"", ""the current leadership""]
+},
+{
+""token"": ""USStrong"",
+""replacements"": [""USAProud"", ""AmericaFirst"", ""USAUnited""]
+},
+{
+""token"": ""and"",
+""replacements"": [""as well as"", ""in addition to"", ""along with""]
+},
+{
+""token"": ""thevaccine"",
+""replacements"": [""the shot"", ""the inoculation"", ""the jab""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""90%"",
+""replacements"": [""95%"", ""85%"", ""80%""]
+},
+{
+""token"": ""American"",
+""replacements"": [""Canadian"", ""British"", ""Australian""]
+},
+{
+""token"": ""Operation Warp Speed"",
+""replacements"": [""Project Atlas"", ""COVID Crusade"", ""HealthShield""]
+}
+]
+}"
+tweet-sno-1336,"Congratulations to President-elect Joe Biden! His German Shepherd, Major, is set to become the first shelter dog in the White House. The Bidens adopted the German shepherd from the Delaware Humane Association two years ago after initially fostering him.","President-elect Joe Biden’s German shepherd, Major, will be the first rescue dog to reside at the White House.","[{'token': 'Joe Biden', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'German', 'type': 'NORP', 'description': 'Nationalities or religious or political groups'}, {'token': 'first', 'type': 'ORDINAL', 'description': '“first”, “second”'}, {'token': 'the White House', 'type': 'FAC', 'description': 'Buildings, airports, highways, bridges, etc.'}, {'token': 'Bidens', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'German', 'type': 'NORP', 'description': 'Nationalities or religious or political groups'}, {'token': 'the Delaware Humane Association', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'two years ago', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Joe Biden"",
+""replacements"": [""Kamala Harris"", ""Nancy Pelosi"", ""Barack Obama""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Joe Biden"",
+""replacements"": [""Kamala Harris"", ""Nancy Pelosi"", ""Bernie Sanders""]
+},
+{
+""token"": ""German"",
+""replacements"": [""French"", ""Italian"", ""Spanish""]
+},
+{
+""token"": ""first"",
+""replacements"": [""second"", ""third"", ""fourth""]
+}
+]
+}"
+tweet-sno-1337,President Trump is playing golf club this morning as Biden appears to extend his lead in the election. The weekend getaway comes as U.S. coronavirus cases hit all-time highs and as Trump's own chief of staff Mark Meadows tests positive for Covid-19.,U.S. President Donald Trump was golfing when Joe Biden was projected as the winner of the 2020 presidential election.,"[{'token': 'Trump', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'this morning', 'type': 'TIME', 'description': 'Times smaller than a day'}, {'token': 'Biden', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'U.S.', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': ""Trump's"", 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Mark Meadows', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Covid-19', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Trump"",
+""replacements"": [""Clinton"", ""Obama"", ""Reagan""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Trump"",
+""replacements"": [""Clinton"", ""Obama"", ""Reagan""]
+},
+{
+""token"": ""Biden"",
+""replacements"": [""Harris"", ""Sanders"", ""Warren""]
+},
+{
+""token"": ""this morning"",
+""replacements"": [""yesterday"", ""last week"", ""last month""]
+}
+]
+}"
+tweet-sno-1338,"#US : Trump loyalist and criminal Steve Bannon declares Dr. Fauci and FBI Director Wray should be beheaded and have their heads mounted on pikes at the White House ""as a warning to federal bureaucrats"". (📹)","Former U.S. President Donald Trump campaign adviser Steve Bannon called for a ""second term"" to kick off with the firings of NIH Director Dr. Anthony Fauci and FBI Director Christopher Wray, adding that he would put their ""heads on pikes"" as a warning.","[{'token': 'US', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Trump', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Steve Bannon', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Fauci', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'FBI', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Wray', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'the White House', 'type': 'FAC', 'description': 'Buildings, airports, highways, bridges, etc.'}]","{
+""replaceable_entities"": [
+{
+""token"": ""US"",
+""replacements"": [""UK"", ""Canada"", ""Australia""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""US"",
+""replacements"": [""Canada"", ""Australia"", ""Germany""]
+},
+{
+""token"": ""Trump"",
+""replacements"": [""Obama"", ""Clinton"", ""Bush""]
+},
+{
+""token"": ""Steve Bannon"",
+""replacements"": [""Roger Stone"", ""Paul Manafort"", ""Michael Flynn""]
+}
+]
+}"
+tweet-sno-1345,Batches of ballots are being uploaded. 100% for Joe Biden. Massive #’s of ballots being invalidated in AZ as Trump supporters were told to use Sharpies. This isn’t democracy. We are being ruled over.,"Arizona polling places gave out Sharpie pens to Trump supporters, use of which invalidated their ballots.","[{'token': '100%', 'type': 'PERCENT', 'description': 'Percentage (including “%”)'}, {'token': 'Joe Biden', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'AZ', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Trump', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Sharpies', 'type': 'PRODUCT', 'description': 'Vehicles, weapons, foods, etc. (Not services)'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Joe Biden"",
+""replacements"": [""Donald Trump"", ""Barack Obama"", ""Mike Pence""]
+},
+{
+""token"": ""Trump"",
+""replacements"": [""Biden"", ""Obama"", ""Clinton""]
+},
+{
+""token"": ""AZ"",
+""replacements"": [""CA"", ""TX"", ""FL""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""100%"",
+""replacements"": [""50%"", ""75%"", ""90%""]
+},
+{
+""token"": ""Joe Biden"",
+""replacements"": [""Hillary Clinton"", ""Barack Obama"", ""Bernie Sanders""]
+},
+{
+""token"": ""AZ"",
+""replacements"": [""TX"", ""FL"", ""OH""]
+}
+]
+}"
+tweet-sno-1346,Lucky to be alive: an Avila Beach woman says she is okay after a whale capsized her kayak (shown here). Hear from her and tips for staying safe out on the water tonight at 10&11. (Video: Kellie Balentine) ,A video shows a large humpback whale swallowing a kayaker.,"[{'token': 'Avila Beach', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'tonight', 'type': 'TIME', 'description': 'Times smaller than a day'}, {'token': '10&11', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'Kellie Balentine', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Avila Beach"",
+""replacements"": [""Santa Barbara"", ""Pismo Beach"", ""Morro Bay""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Avila Beach"",
+""replacements"": [""Santa Barbara"", ""Pismo Beach"", ""Cambria""]
+},
+{
+""token"": ""tonight"",
+""replacements"": [""this evening"", ""later today"", ""this afternoon""]
+},
+{
+""token"": ""10&11"",
+""replacements"": [""yesterday morning"", ""last night"", ""at dawn""]
+}
+]
+}"
+tweet-sno-1352,"Real or fake? Hunter Biden Has Flipped, Biden Family $300 Million Stash In Switzerland… Rudy Guiliani Freestyles One Of Greatest Speeches Ever, A Summary Of Joe Biden's 30 Year Crime Spree, Saying Joe Biden Is ""The Prince Of Darkness""!! | Alternative","Joe Biden's son, Hunter, turned himself in to the FBI and ""flipped"" on his father.","[{'token': 'Hunter Biden', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Biden', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': '$300 Million', 'type': 'MONEY', 'description': 'Monetary values, including unit'}, {'token': 'Switzerland', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Rudy Guiliani', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': ""A Summary Of Joe Biden's 30 Year Crime Spree"", 'type': 'WORK_OF_ART', 'description': 'Titles of books, songs, etc. '}, {'token': 'Joe Biden', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Hunter Biden"",
+""replacements"": [""Eric Trump"", ""Don Jr."", ""Jeb Bush Jr.""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Hunter Biden"",
+""replacements"": [""Eric Trump"", ""Don Jr."", ""Jared Kushner""]
+},
+{
+""token"": ""Biden"",
+""replacements"": [""Trump"", ""Obama"", ""Clinton""]
+},
+{
+""token"": ""$300 Million"",
+""replacements"": [""$500 Thousand"", ""1 Billion Dollars"", ""750 Million Euros""]
+}
+]
+}"
+tweet-sno-1353,I heard Hunter Biden turned himself in to FBI on the 28th and flipped on pops. Spilled his guts for no charges and was put into a treatment center. Have you heard anything about that?,"Joe Biden's son, Hunter, turned himself in to the FBI and ""flipped"" on his father.","[{'token': 'Hunter Biden', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'FBI', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'the 28th', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Hunter Biden"",
+""replacements"": [""Donald Trump Jr"", ""Eric Trump"", ""Jared Kushner""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Hunter Biden"",
+""replacements"": [""Jared Kushner"", ""Donald Trump Jr."", ""Eric Trump""]
+},
+{
+""token"": ""FBI"",
+""replacements"": [""CIA"", ""NSA"", ""DEA""]
+},
+{
+""token"": ""the 28th"",
+""replacements"": [""last Thursday"", ""yesterday"", ""New Year's Eve""]
+}
+]
+}"
+tweet-sno-1357,"Biden campaign cancels Austin rally; Armed Trump supporters reportedly harass campaign bus, ramming volunteer vehicles & blocking traffic. ""At least the Trump hearse is appropriate given the 200K+ Americans who have died due to his incompetence.” #VoteBlueToEndTheNightmare","Armed supporters of U.S. President Donald Trump harassed a Biden-Harris campaign bus in Texas, leading to the cancellation of three campaign events and a news conference.","[{'token': 'Biden', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Austin', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Armed Trump', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Trump', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Americans', 'type': 'NORP', 'description': 'Nationalities or religious or political groups'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Biden"",
+""replacements"": [""Clinton"", ""Obama"", ""Kerry""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Biden"",
+""replacements"": [""Clinton"", ""Obama"", ""Kerry""]
+},
+{
+""token"": ""Austin"",
+""replacements"": [""Houston"", ""Dallas"", ""San Antonio""]
+},
+{
+""token"": ""Armed Trump"",
+""replacements"": [""Supporters of Johnson"", ""Backers of Bush"", ""Followers of Reagan""]
+}
+]
+}"
+tweet-sno-1358,"See all these pickup trucks with Trump flags? They were sitting along I-35, waiting to ambush the Biden/Harris campaign bus as it traveled from San Antonio to Austin. 2/","Armed supporters of U.S. President Donald Trump harassed a Biden-Harris campaign bus in Texas, leading to the cancellation of three campaign events and a news conference.","[{'token': 'Trump', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Biden', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Harris', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'San Antonio', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Austin', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': '2', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Trump"",
+""replacements"": [""Bush"", ""Clinton"", ""Reagan""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Trump"",
+""replacements"": [""Reagan"", ""Ford"", ""Nixon""]
+},
+{
+""token"": ""Biden"",
+""replacements"": [""Sanders"", ""Warren"", ""Buttigieg""]
+},
+{
+""token"": ""Harris"",
+""replacements"": [""Clinton"", ""Gabbard"", ""Klobuchar""]
+}
+]
+}"
+tweet-sno-1359,"These Trump supporters, many of whom were armed, surrounded the bus on the interstate and attempted to drive it off the road. They outnumbered police 50-1, and they ended up hitting a staffer’s car. 3/","Armed supporters of U.S. President Donald Trump harassed a Biden-Harris campaign bus in Texas, leading to the cancellation of three campaign events and a news conference.","[{'token': 'Trump', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': '50-1', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': '3', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Trump"",
+""replacements"": [""Bush"", ""Obama"", ""Clinton""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Trump"",
+""replacements"": [""Biden"", ""Obama"", ""Clinton""]
+},
+{
+""token"": ""50-1"",
+""replacements"": [""20-1"", ""30-1"", ""100-1""]
+},
+{
+""token"": ""3"",
+""replacements"": [""5"", ""7"", ""4""]
+}
+]
+}"
+tweet-sno-1360,"As the Biden bus rolled down 11th street toward I-35, Trump supporters scrambled to their trucks to follow it. ","Armed supporters of U.S. President Donald Trump harassed a Biden-Harris campaign bus in Texas, leading to the cancellation of three campaign events and a news conference.","[{'token': 'Biden', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': '11th', 'type': 'ORDINAL', 'description': '“first”, “second”'}, {'token': 'I-35', 'type': 'FAC', 'description': 'Buildings, airports, highways, bridges, etc.'}, {'token': 'Trump', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Biden"",
+""replacements"": [""Clinton"", ""Obama"", ""Warren""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Biden"",
+""replacements"": [""Obama"", ""Clinton"", ""Reagan""]
+},
+{
+""token"": ""11th"",
+""replacements"": [""Main"", ""Broadway"", ""Park""]
+},
+{
+""token"": ""I-35"",
+""replacements"": [""US-101"", ""Hwy-1"", ""Route-66""]
+}
+]
+}"
+tweet-sno-1362,"The legendary actor, 007 Sean Connery, has past on to even greener fairways. He was quite a guy, and a tough character. I was having a very hard time getting approvals for a big development in Scotland when Sean stepped in and shouted,“Let him build the damn thing”. That was….",Actor Sean Connery was instrumental in helping Donald Trump secure approval for a controversial golf course development in Scotland.,"[{'token': '007', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': 'Sean Connery', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Scotland', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Sean', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""007"",
+""replacements"": ["" Agent 00"", "" The Bond"", "" Double O""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""007"",
+""replacements"": [""MI6"", ""Double-O"", ""Agent""]
+},
+{
+""token"": ""Sean Connery"",
+""replacements"": [""James Cagney"", ""Harrison Ford"", ""Clint Eastwood""]
+},
+{
+""token"": ""Scotland"",
+""replacements"": [""Ireland"", ""Wales"", ""England""]
+}
+]
+}"
+tweet-sno-1370,Just read that the “Cheesecake Factory” is closing permanently. Every business that has had to close down can contribute it to Trump and the GOP. They have had basically no support or stimulus from these stingy bastards because they don’t care.,The Cheesecake Factory is closing all of its restaurants for good.,"[{'token': 'the “Cheesecake Factory', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Trump', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'GOP', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}]","{
+""replaceable_entities"": [
+{
+""token"": ""the “Cheesecake Factory"",
+""replacements"": [""Applebee's"", ""Outback Steakhouse"", ""Chili's""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""the “Cheesecake Factory"",
+""replacements"": [""Outback Steakhouse"", ""Olive Garden"", ""Red Lobster""]
+},
+{
+""token"": ""Trump"",
+""replacements"": [""Obama"", ""Bush"", ""Clinton""]
+},
+{
+""token"": ""GOP"",
+""replacements"": [""Democrats"", ""Libertarians"", ""Green Party""]
+}
+]
+}"
+tweet-sno-1381,"As recently as last month, Webster’s Dictionary included a definition of “preference” as “orientation” or “sexual preference.” TODAY they changed it and added the word “offensive."" Insane – I just checked through Wayback Machine and it’s real. (via&)","Merriam-Webster updated its definition and usage guidelines of the term ""sexual preference"" to say its use is ""offensive"" after the Oct. 13, 2020, confirmation hearing of Judge Amy Coney Barrett, U.S. President Donald Trump’s pick for the Supreme Court.","[{'token': 'last month', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'Webster’s Dictionary', 'type': 'WORK_OF_ART', 'description': 'Titles of books, songs, etc. '}, {'token': 'Wayback Machine', 'type': 'WORK_OF_ART', 'description': 'Titles of books, songs, etc. '}]","{
+""replaceable_entities"": [
+{
+""token"": ""last month"",
+""replacements"": [""yesterday"", ""three weeks ago"", ""earlier this year""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""last month"",
+""replacements"": [""yesterday"", ""last week"", ""a few days ago""]
+},
+{
+""token"": ""Webster’s Dictionary"",
+""replacements"": [""Oxford Dictionary"", ""Cambridge Dictionary"", ""Merriam-Webster Dictionary""]
+},
+{
+""token"": ""Wayback Machine"",
+""replacements"": [""Internet Archive"", ""Archive.org"", ""Web Archive""]
+}
+]
+}"
+tweet-sno-1382,"Well where was the dignity and respect of Black Americans or in your words""Niggers"" when you made this statement? Democrats this is YOUR nominee for President of the United States andendorsed this scoundrel! Explain this please!",Joe Biden used racial slurs in referring to Black people during a Senate committee hearing in 1985.,"[{'token': 'Black Americans', 'type': 'NORP', 'description': 'Nationalities or religious or political groups'}, {'token': 'Democrats', 'type': 'NORP', 'description': 'Nationalities or religious or political groups'}, {'token': 'the United States', 'type': 'GPE', 'description': 'Countries, cities, states'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Black Americans"",
+""replacements"": [""African Americans"", ""Afro Americans"", ""American Blacks""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Black Americans"",
+""replacements"": [""Asian Americans"", ""Latinos"", ""Indigenous Peoples""]
+},
+{
+""token"": ""Democrats"",
+""replacements"": [""Republicans"", ""Liberals"", ""Progressives""]
+},
+{
+""token"": ""the United States"",
+""replacements"": [""Canada"", ""Mexico"", ""Germany""]
+}
+]
+}"
+tweet-sno-1385,"Joe Biden surrogate Jane Fonda calls coronavirus ""God's gift to the Left.""","In October 2020, actress Jane Fonda said the COVID-19 coronavirus pandemic was ""God's gift to the Left.""","[{'token': 'Joe Biden', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Jane Fonda', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': ""God's gift to the Left"", 'type': 'WORK_OF_ART', 'description': 'Titles of books, songs, etc. '}]","{
+""replaceable_entities"": [
+{
+""token"": ""Joe Biden"",
+""replacements"": [""Barack Obama"", ""Nancy Pelosi"", ""Hillary Clinton""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Joe Biden"",
+""replacements"": [""Barack Obama"", ""Nancy Pelosi"", ""Bernie Sanders""]
+},
+{
+""token"": ""Jane Fonda"",
+""replacements"": [""Meryl Streep"", ""Robert De Niro"", ""Angelina Jolie""]
+},
+{
+""token"": ""God's gift to the Left"",
+""replacements"": [""Blessing in disguise for the Democrats"", ""Heaven-sent opportunity for the Liberals"", ""Divine intervention for the Progressives""]
+}
+]
+}"
+tweet-sno-1387,"10/13/60: ""Unlike the first two programs, however, the two candidates will not be sharing same platform. In New York…John F. Kennedy separated by 3,000 miles in a Los Angeles studio…Richard Nixon. Now joined for tonight's discussion by network of electronic facilities…""",U.S. presidential candidates John F. Kennedy and Richard Nixon participated in a virtual debate in 1960.,"[{'token': '10/13/60', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': 'first', 'type': 'ORDINAL', 'description': '“first”, “second”'}, {'token': 'two', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': 'two', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': 'New York', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'John F. Kennedy', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': '3,000 miles', 'type': 'QUANTITY', 'description': 'Measurements, as of weight or distance '}, {'token': 'Los Angeles', 'type': 'GPE', 'description': 'Countries, cities, states'}, {'token': 'Richard Nixon', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""John F. Kennedy"",
+""replacements"": [""Jimmy Carter"", ""Ronald Reagan"", ""Gerald Ford""]
+},
+{
+""token"": ""Richard Nixon"",
+""replacements"": [""Jimmy Carter"", ""Ronald Reagan"", ""Gerald Ford""]
+},
+{
+""token"": ""New York"",
+""replacements"": [""Chicago"", ""Los Angeles"", ""Washington D.C.""]
+},
+{
+""token"": ""Los Angeles"",
+""replacements"": [""Chicago"", ""New York"", ""Washington D.C.""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""John F. Kennedy"",
+""replacements"": [""Barack Obama"", ""Joe Biden"", ""George Washington""]
+},
+{
+""token"": ""Richard Nixon"",
+""replacements"": [""Donald Trump"", ""Ronald Reagan"", ""Theodore Roosevelt""]
+},
+{
+""token"": ""New York"",
+""replacements"": [""Chicago"", ""Los Angeles"", ""Washington D.C.""]
+},
+{
+""token"": ""Los Angeles"",
+""replacements"": [""San Francisco"", ""Seattle"", ""Miami""]
+}
+]
+}"
+tweet-sno-1389,A Trump sign was erected on the hillside along the 405 Freeway near the Sepulveda Pass. It’s unclear who put it there 📹: Sky5,"A large ""TRUMP"" sign, similar to the iconic Hollywood sign, was erected near Los Angeles in October 2020.","[{'token': 'Trump', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'the 405 Freeway', 'type': 'FAC', 'description': 'Buildings, airports, highways, bridges, etc.'}, {'token': 'the Sepulveda Pass', 'type': 'LOC', 'description': 'Non-GPE locations, mountain ranges, bodies of water'}, {'token': 'Sky5', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Trump"",
+""replacements"": [""Obama"", ""Clinton"", ""Johnson""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Trump"",
+""replacements"": [""Biden"", ""Bush"", ""Clinton""]
+},
+{
+""token"": ""the 405 Freeway"",
+""replacements"": [""I-10 Highway"", ""Pacific Coast Highway"", ""Ventura Freeway""]
+},
+{
+""token"": ""the Sepulveda Pass"",
+""replacements"": [""Cahuenga Pass"", ""San Gorgonio Pass"", ""Tejon Pass""]
+}
+]
+}"
+tweet-sno-1390,"This is the Democrat nominee for VP instigating violent riots that have left multiple Americans dead: ""Everyone beware. They're not gonna stop before election day in November, and they're not gonna stop after election day… They’re not gonna let up and they should not.""","In a June 2020 interview, U.S. Democratic vice presidential candidate Kamala Harris said of the nationwide anti-police brutality protests: “Everyone beware. They're not gonna stop before election day in November, and they're not gonna stop after election day ... They’re not gonna let up, and they should not.”","[{'token': 'Democrat', 'type': 'NORP', 'description': 'Nationalities or religious or political groups'}, {'token': 'VP', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'Americans', 'type': 'NORP', 'description': 'Nationalities or religious or political groups'}, {'token': 'election day', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'November', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}, {'token': 'election day', 'type': 'DATE', 'description': 'Absolute or relative dates or periods'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Democrat"",
+""replacements"": [""Republican"", ""Libertarian"", ""Green""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Democrat"",
+""replacements"": [""Republican"", ""Libertarian"", ""Independent""]
+},
+{
+""token"": ""VP"",
+""replacements"": [""Senator"", ""Congresswoman"", ""Governor""]
+},
+{
+""token"": ""Americans"",
+""replacements"": [""Canadians"", ""British"", ""Australians""]
+}
+]
+}"
+tweet-sno-1391,"Joe Biden called Trump supporters the ""dregs of society."" The idea that Biden is a unifier is a joke.","In a September 2018 speech, Joe Biden called Donald Trump's supporters ""the dregs of society.""","[{'token': 'Joe Biden', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Trump', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Biden', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Joe Biden"",
+""replacements"": [""Barack Obama"", ""Mike Pence"", ""Nancy Pelosi""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Joe Biden"",
+""replacements"": [""Barack Obama"", ""Hillary Clinton"", ""Elizabeth Warren""]
+},
+{
+""token"": ""Trump"",
+""replacements"": [""Bush"", ""Clinton"", ""Reagan""]
+},
+{
+""token"": ""Biden"",
+""replacements"": [""Obama"", ""Clinton"", ""Warren""]
+}
+]
+}"
+tweet-sno-1393,"Was Andy McCabe ever forced to pay back the $700,000 illegally given to him and his wife, for his wife’s political campaign, by Crooked Hillary Clinton while Hillary was under FBI investigation, and McCabe was the head of the FBI??? Just askin’?","Hillary Clinton illegally donated $700,000 to the political campaign of the wife of the FBI director who was supervising the investigation into her use of a private email server.","[{'token': 'Andy McCabe', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': '700,000', 'type': 'MONEY', 'description': 'Monetary values, including unit'}, {'token': 'Crooked Hillary Clinton', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Hillary', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'FBI', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'McCabe', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'FBI', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Andy McCabe"",
+""replacements"": [""James Comey"", ""Robert Mueller"", ""Loretta Lynch""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Andy McCabe"",
+""replacements"": [""Peter Strzok"", ""James Comey"", ""Rod Rosenstein""]
+},
+{
+""token"": ""700,000"",
+""replacements"": [""500,000"", ""1,000,000"", ""250,000""]
+},
+{
+""token"": ""Crooked Hillary Clinton"",
+""replacements"": [""Donald Trump"", ""Barack Obama"", ""Mike Pence""]
+}
+]
+}"
+tweet-sno-1394,"I wonder if the BTS and TikTok kids can help LGBTs with this. What if gay guys took pictures of themselves making out with each other or doing very gay things, then tagged themselves with #ProudBoys . I bet it would mess them up real bad. #ReclaimingMyShine",Gay men reclaimed the hashtag #ProudBoys from the white supremacist organization of the same name in order to celebrate LBGTQ love.,"[{'token': 'BTS', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'TikTok', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': 'ProudBoys', 'type': 'PERSON', 'description': 'People, including fictional'}]","{
+""replaceable_entities"": [
+{
+""token"": ""BTS"",
+""replacements"": [""EXO"", ""Blackpink"", ""SHINee""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""BTS"",
+""replacements"": [""Blackpink"", ""EXO"", ""RedVelvet""]
+},
+{
+""token"": ""TikTok"",
+""replacements"": [""Instagram"", ""YouTube"", ""Snapchat""]
+},
+{
+""token"": ""ProudBoys"",
+""replacements"": [""LGBTQ+"", ""RainbowWarriors"", ""LoveIsLove""]
+}
+]
+}"
+tweet-sno-1395,".and I are joining thousands of gay men on social media to reclaim #ProudBoys from white supremacists and bigoted neo-nazis. Let’s replace the hashtag with images of love, positivity, and true PRIDE! Your two favorite #ProudBoys are here standing by, ready to VOTE! 🏳️‍🌈🗳",Gay men reclaimed the hashtag #ProudBoys from the white supremacist organization of the same name in order to celebrate LBGTQ love.,"[{'token': 'thousands', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': 'ProudBoys', 'type': 'NORP', 'description': 'Nationalities or religious or political groups'}, {'token': 'two', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}]","{
+""replaceable_entities"": [
+{
+""token"": ""thousands"",
+""replacements"": [""hundreds"", ""dozens"", ""scores""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""thousands"",
+""replacements"": [""hundreds"", ""millions"", ""dozens""]
+},
+{
+""token"": ""ProudBoys"",
+""replacements"": [""RainbowWarriors"", ""LoveSquad"", ""EqualityAllies""]
+},
+{
+""token"": ""two"",
+""replacements"": [""three"", ""four"", ""five""]
+}
+]
+}"
+tweet-sno-1398,This reporter just exposed Kayleigh McEnany for lying about Amy Coney Barrett being a Rhodes Scholar. Barrett attended Rhodes College.,Judge Amy Coney Barrett is a Rhodes Scholar.,"[{'token': 'Kayleigh McEnany', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Amy Coney Barrett', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Rhodes Scholar', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Barrett', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': 'Rhodes College', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}]","{
+""replaceable_entities"": [
+{
+""token"": ""Kayleigh McEnany"",
+""replacements"": [""Sarah Huckabee Sanders"", ""Sean Spicer"", ""Anthony Scaramucci""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Kayleigh McEnany"",
+""replacements"": [""Jen Psaki"", ""Sarah Sanders"", ""Sean Spicer""]
+},
+{
+""token"": ""Amy Coney Barrett"",
+""replacements"": [""Brett Kavanaugh"", ""Neil Gorsuch"", ""Sonia Sotomayor""]
+},
+{
+""token"": ""Rhodes Scholar"",
+""replacements"": [""Fulbright Scholar"", ""Marshall Scholar"", ""Truman Scholar""]
+}
+]
+}"
+tweet-sno-1400,Only three things happened tonight: 1. #DonaldTrump refused to condemn white supremacy. 2. The #POTUS refused to condemn white supremacy. 3. The #CommanderInChief REFUSED to condemn white supremacy on the GLOBAL STAGE. NOW LOOK AT WHAT IS HAPPENING ONLINE. THIS IS NOT OKAY.,"During the Sept. 29, 2020, presidential debate, U.S. President Donald Trump ""refused"" to condemn white supremacists.","[{'token': 'three', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': 'tonight', 'type': 'TIME', 'description': 'Times smaller than a day'}, {'token': '1', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': 'DonaldTrump', 'type': 'PERSON', 'description': 'People, including fictional'}, {'token': '2', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}, {'token': '#POTUS', 'type': 'ORG', 'description': 'Companies, agencies, institutions, etc.'}, {'token': '3', 'type': 'CARDINAL', 'description': 'Numerals that do not fall under another type'}]","{
+""replaceable_entities"": [
+{
+""token"": ""three"",
+""replacements"": [""five"", ""two"", ""four""]
+}
+]
+}","{
+""replaceable_entities"": [
+{
+""token"": ""Donald Trump"",
+""replacements"": [""Joe Biden"", ""Barack Obama"", ""George Bush""]
+},
+{
+""token"": ""POTUS"",
+""replacements"": [""President"", ""Commander in Chief"", ""Head of State""]
+},
+{
+""token"": ""CommanderInChief"",
+""replacements"": [""President"", ""Head of State"", ""Leader of the Nation""]
+},
+{
+""token"": ""GLOBAL STAGE"",
+""replacements"": [""national platform"", ""international arena"", ""world stage""]
+}
+]
+}"
