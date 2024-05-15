@@ -7,11 +7,10 @@ Save output dataset
 """
 
 import argparse
-import utils
+from claimrobustness import utils
 import configparser
 import os
 from sentence_transformers import SentenceTransformer
-import torch
 import pandas as pd
 import numpy as np
 
@@ -78,10 +77,13 @@ def run():
     for ptn in partitions:
         if ptn == "train":
             run_tweets, claim_idx = get_idx(train_qrels, targets, train_queries)
+            print(f"Train: {run_tweets.shape}")
         elif ptn == "dev":
             run_tweets, claim_idx = get_idx(dev_qrels, targets, dev_queries)
+            print(f"dev: {run_tweets.shape}")
         elif ptn == "test":
             run_tweets, claim_idx = get_idx(test_qrels, targets, test_queries)
+            print(f"test: {run_tweets.shape}")
 
         print(run_tweets.shape)
         tweet_embeds = model.encode(

@@ -36,7 +36,6 @@ def tokenize(tokenizer, sentences, labels, max_length):
         #   (4) Map tokens to their IDs.
         #   (5) Pad or truncate the sentence to `max_length`
         #   (6) Create attention masks for [PAD] tokens.
-        sent = utils.clean_tweet(sent)
         encoded_dict = tokenizer.encode_plus(
             sent,  # Sentence to encode.
             add_special_tokens=True,  # Add '[CLS]' and '[SEP]'
@@ -127,10 +126,10 @@ def run():
         train_dataset, sampler=RandomSampler(train_dataset), batch_size=batch_size
     )
     dev_dataloader = DataLoader(
-        dev_dataset, sampler=SequentialSampler(dev_dataset), batch_size=batch_size
+        dev_dataset, sampler=RandomSampler(dev_dataset), batch_size=batch_size
     )
     test_dataloader = DataLoader(
-        test_dataset, sampler=SequentialSampler(test_dataset), batch_size=batch_size
+        test_dataset, sampler=RandomSampler(test_dataset), batch_size=batch_size
     )
 
     model = AutoModelForSequenceClassification.from_pretrained(
@@ -140,6 +139,9 @@ def run():
     model.to(device)
 
     epochs = config["training"].getint("epochs")
+    print(f"Learing Rate: {config['training'].getfloat('lr')}")
+    print(f"Learing Rate: {config['training'].getfloat('eps')}")
+
     optimizer = torch.optim.AdamW(
         model.parameters(),
         lr=config["training"].getfloat("lr"),
@@ -159,7 +161,6 @@ def run():
     total_t0 = time.time()
     # For each epoch...
     for epoch_i in range(0, epochs):
-
         # ========================================
         #               Training
         # ========================================
@@ -182,15 +183,12 @@ def run():
         update_interval = utils.good_update_interval(
             total_iters=len(train_dataloader), num_desired_updates=10
         )
-
         # For each batch of training data...
         for step, batch in enumerate(train_dataloader):
-
             # Progress update.
             if (step % update_interval) == 0 and not step == 0:
                 # Calculate elapsed time in minutes.
                 elapsed = utils.format_time(time.time() - t0)
-
                 # Report progress.
                 print(
                     "  Batch {:>5,}  of  {:>5,}.    Elapsed: {:}.".format(
@@ -343,8 +341,6 @@ def run():
             predictions.append(logits)
             true_labels.append(label_ids)
 
-        # Measure validation accuracy...
-
         # Combine the results across all batches.
         flat_predictions = np.concatenate(predictions, axis=0)
         flat_true_labels = np.concatenate(true_labels, axis=0)
@@ -415,13 +411,13 @@ def run():
                 return_dict=True,
             )
 
-    logits = result.logits
-    # Move logits and labels to CPU
-    logits = logits.detach().cpu().numpy()
-    label_ids = b_labels.to("cpu").numpy()
-    # Store predictions and true labels
-    predictions.append(logits)
-    true_labels.append(label_ids)
+        logits = result.logits
+        # Move logits and labels to CPU
+        logits = logits.detach().cpu().numpy()
+        label_ids = b_labels.to("cpu").numpy()
+        # Store predictions and true labels
+        predictions.append(logits)
+        true_labels.append(label_ids)
 
     # Combine the results across all batches.
     flat_predictions = np.concatenate(predictions, axis=0)

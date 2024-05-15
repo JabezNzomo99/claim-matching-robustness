@@ -111,6 +111,7 @@ def combine_features(df):
     for _, row in df.iterrows():
         # Piece it together...
         claim = row["query"]
+        claim = clean_tweet(claim)
         verified_claim = row["claim"]
         combined_text = claim + " [SEP] " + verified_claim
         sentences.append(combined_text)

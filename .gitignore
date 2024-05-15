@@ -6,6 +6,7 @@ CT22/
 *.code-workspace
 # *.csv
 # *.tsv
+*.safetensors
 *.jsonl
 *.pt
 *.npy
