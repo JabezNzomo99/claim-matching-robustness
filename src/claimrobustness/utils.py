@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 def get_queries(querypath):
     return pd.read_csv(
-        querypath, sep="\t", names=["query_id", "query"]
+        querypath, sep="\t", names=["query_id", "query"], skiprows=[0]
     ).drop_duplicates()
 
 

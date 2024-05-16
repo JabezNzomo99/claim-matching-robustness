@@ -1,13 +1,15 @@
 import os
 import argparse
 from groq import Groq
-import utils
+from claimrobustness import utils, defaults
 from tqdm import tqdm
 from ratelimit import limits, sleep_and_retry
 from datetime import timedelta
+from time import sleep
 import stanza
-import defaults
 import configparser
+import pandas as pd
+import json
 
 tqdm.pandas()
 
@@ -16,6 +18,12 @@ def run():
     # Parse the arguments
     parser = argparse.ArgumentParser()
     parser.add_argument("experiment_path", type=str, help="path where config lies")
+    parser.add_argument(
+        "--no-baseline", action="store_true", help="Skip generating baseline edits"
+    )
+    parser.add_argument(
+        "--no-worstcase", action="store_true", help="Skip generating worstcase edits"
+    )
 
     # Parse the arguments
     args = parser.parse_args()
@@ -28,8 +36,8 @@ def run():
     temparature = config["model"].getfloat("temperature")
     prompt_template = config["model"].get("prompt_template")
 
-    min_replacements = config["generation"].getint("min_replaceable_entities")
-    max_replacements = config["generation"].getint("max_replaceable_entities")
+    baseline = config["generation"].getint("baseline")
+    worstcase = config["generation"].getint("worstcase")
     samples = config["generation"].getint("number_of_samples")
 
     # Load the test data used for generating misinformation edits
@@ -63,13 +71,14 @@ def run():
             for ent in sent.ents
             if ent.type not in types_to_exclude
         ]
-        return entities
+        return json.dumps(entities)
 
     nlp = stanza.Pipeline(lang="en", processors="tokenize,ner")
     run_queries["tokens_to_replace"] = run_queries["query"].progress_apply(
         lambda query: parse_ner(query, nlp)
     )
 
+    # Currently supporting Llama3, need to add support for GPT models
     client = Groq(
         api_key=os.environ["GROQ_API_KEY"],
     )
@@ -84,86 +93,80 @@ def run():
         named_entities: list,
         budget: int,
     ):
-        prompt = prompt_template.format(
-            number_of_samples=samples,
-            claim=claim,
-            fact_check=fact_check,
-            named_entities=named_entities[:budget],
-        )
-        chat_completion = client.chat.completions.create(
-            messages=[
-                {
-                    "role": "system",
-                    "content": "You are an intelligent social media user.",
-                },
-                {
-                    "role": "user",
-                    "content": prompt,
-                },
-            ],
-            model=model_name,
-            temperature=temparature,
-            # Streaming is not supported in JSON mode
-            stream=False,
-            # Enable JSON mode by setting the response format
-            response_format={"type": "json_object"},
-        )
+        max_retries = 3
+        retries = 0
+        while retries < max_retries:
+            try:
+                prompt = prompt_template.format(
+                    number_of_samples=samples,
+                    claim=claim,
+                    fact_check=fact_check,
+                    named_entities=named_entities[:budget],
+                )
+                chat_completion = client.chat.completions.create(
+                    messages=[
+                        {
+                            "role": "system",
+                            "content": "You are an intelligent social media user.",
+                        },
+                        {
+                            "role": "user",
+                            "content": prompt,
+                        },
+                    ],
+                    model=model_name,
+                    temperature=temparature,
+                    # Streaming is not supported in JSON mode
+                    stream=False,
+                    # Enable JSON mode by setting the response format
+                    response_format={"type": "json_object"},
+                )
 
-        return chat_completion.choices[0].message.content
+                return chat_completion.choices[0].message.content
+            except Exception as e:
+                retries += 1
+                if retries < max_retries:
+                    print(
+                        f"Retrying ({retries}/{max_retries}) after BadRequestError: {e}"
+                    )
+                    sleep(2)  # Wait for 2 seconds before retrying
+                else:
+                    print(
+                        f"Failed after {max_retries} retries. Last BadRequestError: {e}"
+                    )
+                    raise  # Raise the exception after max retries
 
-    # Filter out queries with less min_replacement size
-    min_filtered_queries = run_queries[
-        run_queries["tokens_to_replace"].apply(len) >= min_replacements
-    ]
-    print("Shape of min filtered_queries: ", min_filtered_queries.shape)
+    def process_queries(queries: pd.DataFrame, budget: int, type: str):
+        df = queries[queries["tokens_to_replace"].apply(len) >= budget]
 
-    # Run min number of replacements
-    min_filtered_queries["min_replacement_response"] = (
-        min_filtered_queries.progress_apply(
+        df.loc[:, "replaced_token"] = df.progress_apply(
             lambda row: get_ner_replacements(
                 client=client,
                 prompt_template=prompt_template,
                 claim=row["query"],
                 fact_check=row["target"],
-                named_entities=row["tokens_to_replace"],
-                budget=min_replacements,
+                named_entities=json.loads(row["tokens_to_replace"]),
+                budget=budget,
             ),
             axis=1,
         )
-    )
 
-    # Save the file output
-    save_dir = f"{args.experiment_path}/{dataset}"
-    if not os.path.exists(save_dir):
-        os.makedirs(save_dir)
+        # Save the file output
+        save_dir = f"{args.experiment_path}/{dataset}"
+        if not os.path.exists(save_dir):
+            os.makedirs(save_dir)
 
-    min_filtered_queries.to_csv(
-        os.path.join(save_dir, "min_named_entity_replacements.csv"), index=False
-    )
-
-    # Filter out queries with less min_replacement size
-    max_filtered_queries = run_queries[
-        run_queries["tokens_to_replace"].apply(len) >= max_replacements
-    ]
-    print("Shape of max filtered_queries: ", max_filtered_queries.shape)
-    # Run min number of replacements
-    max_filtered_queries["max_replacement_response"] = (
-        max_filtered_queries.progress_apply(
-            lambda row: get_ner_replacements(
-                client=client,
-                prompt_template=prompt_template,
-                claim=row["query"],
-                fact_check=row["target"],
-                named_entities=row["tokens_to_replace"],
-                budget=max_replacements,
-            ),
-            axis=1,
+        df.to_csv(
+            os.path.join(save_dir, f"{type}_named_entity_replacements.csv"), index=False
         )
-    )
 
-    max_filtered_queries.to_csv(
-        os.path.join(save_dir, "max_named_entity_replacements.csv"), index=False
-    )
+        print(f"Saved {type} named entity replacements to {save_dir}")
+
+    if not args.no_baseline:
+        process_queries(run_queries, baseline, "baseline")
+
+    if not args.no_worstcase:
+        process_queries(run_queries, worstcase, "worstcase")
 
 
 if __name__ == "__main__":

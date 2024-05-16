@@ -48,3 +48,5 @@ NAMED_ENTITIES_TYPE_DEFINITIONS = {
     "ORDINAL": "“first”, “second”",
     "CARDINAL": "Numerals that do not fall under another type",
 }
+
+SEPARATOR_TOKEN = " [SEP] "

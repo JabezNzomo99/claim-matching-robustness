@@ -2,10 +2,27 @@
 import argparse
 import configparser
 import os
-from claimrobustness import utils
+from claimrobustness import utils, defaults
 import json
 from transformers import pipeline
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from torch.utils.data import Dataset
+import pandas as pd
+import string
+import re
+from itertools import product
+
+
+class VerifierDataset(Dataset):
+
+    def __init__(self, candidate_sentences):
+        self.candidate_sentences = candidate_sentences
+
+    def __len__(self):
+        return len(self.candidate_sentences)
+
+    def __getitem__(self, idx):
+        return self.candidate_sentences[idx]
 
 
 def run():
@@ -17,6 +34,12 @@ def run():
         help="Path where config lies",
         type=str,
     )
+    parser.add_argument(
+        "--no-baseline", action="store_true", help="Skip generating baseline edits"
+    )
+    parser.add_argument(
+        "--no-worstcase", action="store_true", help="Skip generating worstcase edits"
+    )
 
     # Parse the arguments
     args = parser.parse_args()
@@ -24,15 +47,12 @@ def run():
     config.read(os.path.join(args.experiment_path, "config.ini"))
     dataset = config["data"].get("dataset")
 
-    # Load the dataset
-    dataset_dir = f"{args.experiment_path}/{dataset}"
-    min_replacements_path = os.path.join(
-        dataset_dir, "min_named_entity_replacements.csv"
-    )
+    baseline = config["generation"].getint("baseline")
+    worstcase = config["generation"].getint("worstcase")
 
     tokenizer = AutoTokenizer.from_pretrained(config["verifier"].get("model_string"))
     model = AutoModelForSequenceClassification.from_pretrained(
-        "experiments/train_verifier/debertaV3/",
+        config["verifier"].get("model_path"),
         num_labels=config["verifier"].getint("num_labels"),
     )
     device = utils.get_device()
@@ -41,31 +61,84 @@ def run():
         task="text-classification", model=model, tokenizer=tokenizer, device=device
     )
 
-    min_replacements_df = utils.load_verifier_data(min_replacements_path)
-    for index, row in min_replacements_df.iterrows():
-        input_claim = row["query"]
-        replacable_entities = json.loads(row["min_replacement_response"])[
-            "replaceable_entities"
-        ]
-        new_sentences = []
-        for entity in replacable_entities:
-            token = entity["token"]
-            replacements = entity["replacements"]
+    def strip_punct(text):
+        return text.translate(str.maketrans("", "", string.punctuation))
 
-            for replacement in replacements:
-                new_sentence = input_claim.replace(token, replacement)
-                sentence_pred = {
-                    "sentence": new_sentence,
-                    "verifier_score": verifier(
-                        new_sentence + " [SEP] " + row["target"]
-                    ),
-                }
-                new_sentences.append(sentence_pred)
-        min_replacements_df.loc[index, "new_sentences"] = json.dumps(new_sentences)
+    def remove_leading_trailing_punctuation(text):
+        # Remove leading and trailing punctuation using regex
+        pattern = r"^[^\w\s]+|[^\w\s]+$"
+        text = re.sub(pattern, "", text)
+        return text
 
-    min_replacements_df.to_csv(
-        os.path.join(dataset_dir, "verified_min_named_entity_replacements.csv")
-    )
+    def verify_replacements(process: str, verifier_model: pipeline, budget: int):
+        # Load the dataset
+        dataset_dir = f"{args.experiment_path}/{dataset}"
+        dataset_path = os.path.join(
+            dataset_dir, f"{process}_named_entity_replacements.csv"
+        )
+        df = utils.load_verifier_data(dataset_path)
+
+        candidate_sentences = []
+        verified_list = []
+
+        for _, row in df.iterrows():
+            try:
+                input_claim = row["query"]
+                entities = json.loads(row["tokens_to_replace"])
+                replaceable_entities = json.loads(row["replaced_token"])[
+                    "replaceable_entities"
+                ]
+
+                replacements = {}
+                for entity in replaceable_entities:
+                    token = entity["token"]
+                    replacements[token] = entity["replacements"]
+
+                tokens = [entity["token"] for entity in entities[:budget]]
+                token_combinations = list(
+                    product(*[replacements[token] for token in tokens])
+                )
+
+                for combination in token_combinations:
+                    edited_claim = input_claim
+                    for token, replacement in zip(tokens, combination):
+                        edited_claim = edited_claim.replace(token, replacement)
+                    verifier_input = (
+                        edited_claim + defaults.SEPARATOR_TOKEN + row["target"]
+                    )
+                    candidate_sentences.append(verifier_input)
+                    verified_list.append(
+                        {
+                            "query_id": row["query_id"],
+                            "original_claim": row["query"],
+                            "edited_claim": edited_claim,
+                        }
+                    )
+            except Exception as e:
+                continue
+
+        verifier_dataset = VerifierDataset(candidate_sentences)
+        verifier_scores = list(verifier_model(verifier_dataset))
+        # Convert verifier scores to JSON strings
+        verifier_scores_json = [json.dumps(score) for score in verifier_scores]
+
+        verified_df = pd.DataFrame(verified_list)
+        verified_df["verifier_scores"] = verifier_scores_json
+
+        verified_dataset_path = os.path.join(
+            dataset_dir, f"verified_{process}_named_entity_replacements.csv"
+        )
+        verified_df.to_csv(verified_dataset_path, index=False, header=True)
+
+        print(
+            f"Saved the verified replacements for {process} to {verified_dataset_path}"
+        )
+
+    if not args.no_baseline:
+        verify_replacements("baseline", verifier, baseline)
+
+    if not args.no_worstcase:
+        verify_replacements("worstcase", verifier, worstcase)
 
 
 if __name__ == "__main__":
