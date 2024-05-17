@@ -1,0 +1,8 @@
+query_id,query,target,negated_claims
+tweet-sno-1303," Hahaha,you were on ""Teen Win Lose or Draw."" Cool.",Actor Leonardo DiCaprio appeared on a Disney Channel game show.,"{
+""negated_claims"": [
+""Hahaha, you were not on 'Teen Win Lose or Draw.' Not cool."",
+""Hahaha, you were on 'Teen Win Lose or Draw.' Not uncool."",
+""Hahaha, you were not off 'Teen Win Lose or Draw.' Cool.""
+]
+}"

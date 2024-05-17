@@ -1,0 +1,8 @@
+query_id,query,target,negated_claims
+tweet-sno-1237,"This woman was maced inside the Capitol. She told me, ""It's a revolution!""",A video shows a crying woman holding an onion while telling a reporter that she had been Maced during a riot.,"{
+""negated_claims"": [
+""This woman was not maced inside the Capitol. She told me, 'It's a revolution!'"",
+""This woman was maced outside the Capitol. She told me, 'It's a revolution!'"",
+""This woman told me, 'It's a revolution!' but she was not maced inside the Capitol.""
+]
+}"

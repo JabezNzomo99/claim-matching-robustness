@@ -7,6 +7,9 @@ import torch
 import datetime
 import seaborn as sns
 import matplotlib.pyplot as plt
+from torch.utils.data import Dataset
+from transformers import pipeline
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 
 def get_queries(querypath):
@@ -186,3 +189,35 @@ def plot_training_stats(df_stats: pd.DataFrame, output_dir: str):
 
     # Save the figure.
     plt.savefig(os.path.join(output_dir, "training_stats_plot.svg"), dpi=300)
+
+
+class VerifierDataset(Dataset):
+
+    def __init__(self, candidate_sentences):
+        self.candidate_sentences = candidate_sentences
+
+    def __len__(self):
+        return len(self.candidate_sentences)
+
+    def __getitem__(self, idx):
+        return self.candidate_sentences[idx]
+
+
+def init_pipeline(
+    model_name: str,
+    model_path: str,
+    num_labels: int,
+    task: str = "text-classification",
+):
+    """
+    Initialize the pipeline for the verifier model
+    """
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    model = AutoModelForSequenceClassification.from_pretrained(
+        model_path,
+        num_labels=num_labels,
+    )
+    device = get_device()
+    model.to(device)
+    verifier = pipeline(task=task, model=model, tokenizer=tokenizer, device=device)
+    return verifier

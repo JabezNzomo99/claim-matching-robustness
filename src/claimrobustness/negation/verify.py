@@ -40,12 +40,10 @@ def run():
         num_labels=config["verifier"].getint("num_labels"),
     )
 
-    def verify_replacements(process: str, verifier_model: pipeline, budget: int):
+    def verify_negation(process: str, verifier_model: pipeline, budget: int):
         # Load the dataset
         dataset_dir = f"{args.experiment_path}/{dataset}"
-        dataset_path = os.path.join(
-            dataset_dir, f"{process}_named_entity_replacements.csv"
-        )
+        dataset_path = os.path.join(dataset_dir, f"{process}_negation.csv")
         df = utils.load_verifier_data(dataset_path)
 
         candidate_sentences = []
@@ -53,35 +51,15 @@ def run():
 
         for _, row in df.iterrows():
             try:
-                input_claim = row["query"]
-                entities = json.loads(row["tokens_to_replace"])
-                replaceable_entities = json.loads(row["replaced_token"])[
-                    "replaceable_entities"
-                ]
-
-                replacements = {}
-                for entity in replaceable_entities:
-                    token = entity["token"]
-                    replacements[token] = entity["replacements"]
-
-                tokens = [entity["token"] for entity in entities[:budget]]
-                token_combinations = list(
-                    product(*[replacements[token] for token in tokens])
-                )
-
-                for combination in token_combinations:
-                    edited_claim = input_claim
-                    for token, replacement in zip(tokens, combination):
-                        edited_claim = edited_claim.replace(token, replacement)
-                    verifier_input = (
-                        edited_claim + defaults.SEPARATOR_TOKEN + row["target"]
-                    )
+                rewrites = json.loads(row["negated_claims"])
+                for rewrite in rewrites["negated_claims"]:
+                    verifier_input = rewrite + defaults.SEPARATOR_TOKEN + row["target"]
                     candidate_sentences.append(verifier_input)
                     verified_list.append(
                         {
                             "query_id": row["query_id"],
                             "original_claim": row["query"],
-                            "edited_claim": edited_claim,
+                            "edited_claim": rewrite,
                         }
                     )
             except Exception as e:
@@ -96,7 +74,7 @@ def run():
         verified_df["verifier_scores"] = verifier_scores_json
 
         verified_dataset_path = os.path.join(
-            dataset_dir, f"verified_{process}_named_entity_replacements.csv"
+            dataset_dir, f"verified_{process}_negation.csv"
         )
         verified_df.to_csv(verified_dataset_path, index=False, header=True)
 
@@ -105,10 +83,10 @@ def run():
         )
 
     if not args.no_baseline:
-        verify_replacements("baseline", verifier, baseline)
+        verify_negation("baseline", verifier, baseline)
 
     if not args.no_worstcase:
-        verify_replacements("worstcase", verifier, worstcase)
+        verify_negation("worstcase", verifier, worstcase)
 
 
 if __name__ == "__main__":

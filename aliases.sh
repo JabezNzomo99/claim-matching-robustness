@@ -7,3 +7,7 @@ alias verify-named-entity-replacement="python src/claimrobustness/name_entity_re
 alias select-named-entity-replacement="python src/claimrobustness/name_entity_replacement/selector.py"
 
 alias generate-casing="python src/claimrobustness/casing/generate.py"
+
+alias generate-negation="python src/claimrobustness/negation/generate.py"
+alias verify-negation="python src/claimrobustness/negation/verify.py"
+alias select-negation="python src/claimrobustness/negation/selector.py"

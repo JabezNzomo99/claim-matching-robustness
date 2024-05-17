@@ -50,9 +50,7 @@ def run():
 
     def select_queries(process: str):
         # Load the dataset
-        dataset_path = os.path.join(
-            dataset_dir, f"verified_{process}_named_entity_replacements.csv"
-        )
+        dataset_path = os.path.join(dataset_dir, f"verified_{process}_negation.csv")
         df = utils.load_verifier_data(dataset_path)
         result_df = (
             df.groupby("query_id")
@@ -60,13 +58,13 @@ def run():
             .reset_index(drop=True)
         )
         result_df[["query_id", "original_claim"]].to_csv(
-            os.path.join(dataset_dir, f"orig_{process}_ner_queries.tsv"),
+            os.path.join(dataset_dir, f"orig_{process}_nengation_queries.tsv"),
             index=False,
             header=True,
         )
 
         result_df[["query_id", "edited_claim"]].to_csv(
-            os.path.join(dataset_dir, f"edited_{process}_ner_queries.tsv"),
+            os.path.join(dataset_dir, f"edited_{process}_negation_queries.tsv"),
             index=False,
             header=["query_id", "query"],
         )
