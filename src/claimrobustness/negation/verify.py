@@ -6,7 +6,6 @@ from claimrobustness import utils, defaults
 import json
 import pandas as pd
 from transformers import pipeline
-from itertools import product
 
 
 def run():
