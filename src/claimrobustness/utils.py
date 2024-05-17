@@ -219,5 +219,5 @@ def init_pipeline(
     )
     device = get_device()
     model.to(device)
-    verifier = pipeline(task=task, model=model, tokenizer=tokenizer, device=device)
-    return verifier
+    pipe = pipeline(task=task, model=model, tokenizer=tokenizer, device=device)
+    return pipe
