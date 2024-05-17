@@ -17,12 +17,6 @@ def run():
     # Parse the arguments
     parser = argparse.ArgumentParser()
     parser.add_argument("experiment_path", type=str, help="path where config lies")
-    parser.add_argument(
-        "--no-baseline", action="store_true", help="Skip generating baseline edits"
-    )
-    parser.add_argument(
-        "--no-worstcase", action="store_true", help="Skip generating worstcase edits"
-    )
 
     # Parse the arguments
     args = parser.parse_args()
@@ -34,9 +28,8 @@ def run():
     model_name = config["model"].get("model_string")
     temparature = config["model"].getfloat("temperature")
 
-    baseline = config["generation"].get("baseline")
-    worstcase = config["generation"].get("worstcase")
     samples = config["generation"].getint("number_of_samples")
+    prompt_template = config["generation"].get("prompt_template")
 
     # Load the test data used for generating misinformation edits
     data = utils.load_data(dataset=dataset)
@@ -65,8 +58,8 @@ def run():
         )
 
     @sleep_and_retry
-    @limits(calls=30, period=timedelta(seconds=60).total_seconds())
-    def rewrite_negation(client, prompt_template: str, claim: str, fact_check: str):
+    @limits(calls=500, period=timedelta(seconds=60).total_seconds())
+    def paraphrase_claim(client, prompt_template: str, claim: str, fact_check: str):
         max_retries = 3
         retries = 0
         while retries < max_retries:
@@ -81,7 +74,7 @@ def run():
                     messages=[
                         {
                             "role": "system",
-                            "content": "You are an intelligent social media user.",
+                            "content": "You are a highly intelligent social media user.",
                         },
                         {
                             "role": "user",
@@ -108,43 +101,23 @@ def run():
                     )
                     raise  # Raise the exception after max retries
 
-    def process_queries(queries: pd.DataFrame, type: str, prompt_template: str):
-        queries.loc[:, "negated_claims"] = queries.progress_apply(
-            lambda row: rewrite_negation(
-                client=client,
-                prompt_template=prompt_template,
-                claim=row["query"],
-                fact_check=row["target"],
-            ),
-            axis=1,
-        )
+    run_queries.loc[:, "rewritten_claims"] = run_queries.progress_apply(
+        lambda row: paraphrase_claim(
+            client=client,
+            prompt_template=prompt_template,
+            claim=row["query"],
+            fact_check=row["target"],
+        ),
+        axis=1,
+    )
 
-        # Save the file output
-        save_dir = f"{args.experiment_path}/{dataset}"
-        if not os.path.exists(save_dir):
-            os.makedirs(save_dir)
+    # Save the file output
+    save_dir = f"{args.experiment_path}/{dataset}"
+    if not os.path.exists(save_dir):
+        os.makedirs(save_dir)
 
-        queries.to_csv(os.path.join(save_dir, f"{type}_negation.csv"), index=False)
-
-        print(f"Saved {type} negation claims to {save_dir}")
-
-    if not args.no_baseline:
-        baseline_prompt_template = config["model"].get("baseline_prompt_template")
-        baseline_prompt_template = baseline_prompt_template.strip('"')
-        process_queries(
-            queries=run_queries,
-            type="baseline",
-            prompt_template=baseline_prompt_template,
-        )
-
-    if not args.no_worstcase:
-        worstcase_prompt_template = config["model"].get("worstcase_prompt_template")
-        worstcase_prompt_template = worstcase_prompt_template.strip('"')
-        process_queries(
-            queries=run_queries,
-            type="worstcase",
-            prompt_template=worstcase_prompt_template,
-        )
+    run_queries.to_csv(os.path.join(save_dir, "llm_rewrites.csv"), index=False)
+    print(f"Saved llm rewrites claims to {save_dir}")
 
 
 if __name__ == "__main__":

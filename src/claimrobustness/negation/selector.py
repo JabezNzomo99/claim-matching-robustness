@@ -39,11 +39,7 @@ def run():
         ]
         if not matched_rows.empty:
             # Find the row with the least score among the filtered rows
-            min_score_row = matched_rows.loc[
-                matched_rows["verifier_scores"]
-                .apply(lambda x: json.loads(x)["score"])
-                .idxmin()
-            ]
+            min_score_row = matched_rows.loc[matched_rows["edit_distance"].idxmin()]
             return min_score_row
         else:
             return None
@@ -58,7 +54,7 @@ def run():
             .reset_index(drop=True)
         )
         result_df[["query_id", "original_claim"]].to_csv(
-            os.path.join(dataset_dir, f"orig_{process}_nengation_queries.tsv"),
+            os.path.join(dataset_dir, f"orig_{process}_negation_queries.tsv"),
             index=False,
             header=True,
         )

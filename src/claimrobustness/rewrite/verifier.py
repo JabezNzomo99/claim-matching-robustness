@@ -39,10 +39,10 @@ def run():
         num_labels=config["verifier"].getint("num_labels"),
     )
 
-    def verify_negation(process: str, verifier_model: pipeline, budget: int):
+    def verify_llm_rewrite(verifier_model: pipeline):
         # Load the dataset
         dataset_dir = f"{args.experiment_path}/{dataset}"
-        dataset_path = os.path.join(dataset_dir, f"{process}_negation.csv")
+        dataset_path = os.path.join(dataset_dir, "llm_rewrites.csv")
         df = utils.load_verifier_data(dataset_path)
 
         candidate_sentences = []
@@ -59,6 +59,12 @@ def run():
                             "query_id": row["query_id"],
                             "original_claim": row["query"],
                             "edited_claim": rewrite,
+                            "rouge_score": utils.calculate_rouge_scores(
+                                row["query"], rewrite
+                            ),
+                            "edit_distance": utils.calculate_normalised_levenshtein_dist(
+                                row["query"], rewrite
+                            ),
                         }
                     )
             except Exception as e:
@@ -72,20 +78,12 @@ def run():
         verified_df = pd.DataFrame(verified_list)
         verified_df["verifier_scores"] = verifier_scores_json
 
-        verified_dataset_path = os.path.join(
-            dataset_dir, f"verified_{process}_negation.csv"
-        )
+        verified_dataset_path = os.path.join(dataset_dir, f"verified_llm_rewrites.csv")
         verified_df.to_csv(verified_dataset_path, index=False, header=True)
 
-        print(
-            f"Saved the verified replacements for {process} to {verified_dataset_path}"
-        )
+        print(f"Saved the verified llm rewrites to {verified_dataset_path}")
 
-    if not args.no_baseline:
-        verify_negation("baseline", verifier, baseline)
-
-    if not args.no_worstcase:
-        verify_negation("worstcase", verifier, worstcase)
+    verify_llm_rewrite(verifier, baseline)
 
 
 if __name__ == "__main__":

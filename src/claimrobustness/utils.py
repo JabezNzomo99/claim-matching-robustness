@@ -10,6 +10,8 @@ import matplotlib.pyplot as plt
 from torch.utils.data import Dataset
 from transformers import pipeline
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from rouge import Rouge
+import Levenshtein
 
 
 def get_queries(querypath):
@@ -221,3 +223,36 @@ def init_pipeline(
     model.to(device)
     pipe = pipeline(task=task, model=model, tokenizer=tokenizer, device=device)
     return pipe
+
+
+def calculate_rouge_scores(sentence1, sentence2):
+    scorer = Rouge()
+    scores = scorer.get_scores(sentence1, sentence2)
+    return json.dumps(
+        {
+            "rouge-1": scores[0]["rouge-1"]["f"],
+            "rouge-2": scores[0]["rouge-2"]["f"],
+            "rouge-l": scores[0]["rouge-l"]["f"],
+        }
+    )
+
+
+def calculate_normalised_levenshtein_dist(
+    sentence1: str, sentence2: str, model_name: str = "bert-base-uncased"
+):
+    """
+    Calculate the normalized Levenshtein distance between two sentences.
+    """
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+    tokens1 = tokenizer.tokenize(sentence1)
+    tokens2 = tokenizer.tokenize(sentence2)
+
+    token_ids1 = tokenizer.convert_tokens_to_ids(tokens1)
+    token_ids2 = tokenizer.convert_tokens_to_ids(tokens2)
+
+    levenshtein_dist = Levenshtein.distance(token_ids1, token_ids2)
+    max_len = max(len(token_ids1), len(token_ids2))
+    normalized_lev_dist = levenshtein_dist / max_len
+
+    return normalized_lev_dist
