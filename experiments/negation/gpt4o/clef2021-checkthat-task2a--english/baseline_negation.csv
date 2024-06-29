@@ -1,8 +1,1412 @@
 query_id,query,target,negated_claims
+tweet-sno-1200,The news you’ve all been waiting for (and we couldn’t wait to reveal 😭)… OREO x LADY GAGA packs drop today! 🎤🎶,Oreos have a new Lady Gaga-themed cookie.,"{
+""negated_claims"": [
+""The news you’ve all been waiting for (and we couldn’t wait to reveal 😭)… OREO x LADY GAGA packs do not drop today! 🎤🎶"",
+""The news you’ve all been waiting for (and we couldn’t wait to reveal 😭)… OREO x LADY GAGA packs drop tomorrow! 🎤🎶"",
+""The news you’ve all been waiting for (and we couldn’t wait to reveal 😭)… OREO x LADY GAGA packs did not drop today! 🎤🎶""
+]
+}"
+tweet-sno-1201,"Sen. Mitch McConnell: ""As recently as October, now-President Biden said you can't legislate by executive action unless you are a dictator. Well, in one week, he signed more than 30 unilateral actions.""","When he was still a candidate for the presidency in October 2020, U.S. President Joe Biden said, “You can’t legislate by executive order unless you’re a dictator.”","{
+""negated_claims"": [
+""Sen. Mitch McConnell: 'As recently as October, now-President Biden did not say you can't legislate by executive action unless you are a dictator. Well, in one week, he signed more than 30 unilateral actions.'"",
+""Sen. Mitch McConnell: 'As recently as October, now-President Biden said you can legislate by executive action even if you are not a dictator. Well, in one week, he signed more than 30 unilateral actions.'"",
+""Sen. Mitch McConnell: 'As recently as October, now-President Biden said you can't legislate by executive action even if you are a dictator. Well, in one week, he signed more than 30 unilateral actions.'""
+]
+}"
+tweet-sno-1202,".in October: “I have this strange notion, we are a democracy … if you can’t get the votes … you can’t [legislate] by executive order unless you’re a dictator. We’re a democracy. We need consensus.""","When he was still a candidate for the presidency in October 2020, U.S. President Joe Biden said, “You can’t legislate by executive order unless you’re a dictator.”","{
+""negated_claims"": [
+""In October: 'I have this strange notion, we are a democracy... if you can get the votes... you can [legislate] by executive order even if you're not a dictator.'"",
+""In October: 'I have this strange notion, we are a dictatorship... if you can’t get the votes... you can [legislate] by executive order even if you're not a dictator.'"",
+""In October: 'I have this strange notion, we are a democracy... if you can’t get the votes... you can [legislate] by executive order even if you're not a dictator.'""
+]
+}"
+tweet-sno-1203,Disquieting assault on our most visible national symbol. That too on #RepublicDay . Our Tricolour replaced at iconic flagpole at #RedFort . Was this protest always about undermining our State? | #RDaySpiritShamed,"In January 2021, protesters against India’s controversial farm laws pulled down the country’s national tricolor flag at Delhi’s historic Red Fort.","{
+""negated_claims"": [
+""Peaceful act regarding our most visible national symbol. That too on #RepublicDay. Our Tricolour remained at the iconic flagpole at #RedFort. Was this protest never about undermining our State? | #RDaySpiritProud"",
+""Non-disquieting event on our most visible national symbol. That too on #RepublicDay. Our Tricolour was not replaced at the iconic flagpole at #RedFort. Was this protest never about undermining our State? | #RDaySpiritHonored"",
+""Untroubled respect for our most visible national symbol. That too on #RepublicDay. Our Tricolour not being replaced at the iconic flagpole at #RedFort. Was this protest always about supporting our State? | #RDaySpiritRespected""
+]
+}"
+tweet-sno-1204,Biden signed executive order today that contained a ban on the term 'China virus'.,U.S. President Joe Biden issued an executive order in January 2021 banning any use of the term “China virus.”,"{
+""negated_claims"": [
+""Biden did not sign an executive order today that contained a ban on the term 'China virus'."",
+""Biden signed an executive order today that did not contain a ban on the term 'China virus'."",
+""Biden signed an executive order yesterday that contained a ban on the term 'China virus'.""
+]
+}"
+tweet-sno-1205,INBOX: Former President Trump has set up an “Office of the Former President”,"Former U.S. President Donald Trump opened an “Office of the Former President” in Palm Beach, Florida, to issue statements from and to share his post-presidency plans.","{
+""negated_claims"": [
+""INBOX: Former President Trump has not set up an “Office of the Former President”"",
+""INBOX: Former President Trump has set up an office, but not an “Office of the Former President”"",
+""INBOX: No “Office of the Former President” has been set up by Former President Trump""
+]
+}"
+tweet-sno-1206,"Former President Donald Trump has officially opened the 'Office of the Former President,' which will manage his correspondence, public statements, and activities to ""carry on the agenda of the Trump Admin. through advocacy…""","Former U.S. President Donald Trump opened an “Office of the Former President” in Palm Beach, Florida, to issue statements from and to share his post-presidency plans.","{
+""negated_claims"": [
+""Former President Donald Trump has not officially opened the 'Office of the Former President,' which will manage his correspondence, public statements, and activities to 'carry on the agenda of the Trump Admin. through advocacy…'"",
+""Former President Donald Trump has officially opened the 'Office of the Former President,' which will not manage his correspondence, public statements, and activities to 'carry on the agenda of the Trump Admin. through advocacy…'"",
+""Former President Donald Trump has officially opened the 'Office of the Former President,' which will manage his correspondence, public statements, and activities to not 'carry on the agenda of the Trump Admin. through advocacy…'""
+]
+}"
+tweet-sno-1207,Concealing Cocaine in international shipments can be bananas: RCMP#Kelowna,Nearly two dozen bricks of cocaine were found in banana shipments destined for Canada in February 2019.,"{
+""negated_claims"": [
+""Concealing Cocaine in international shipments cannot be bananas: RCMP#Kelowna"",
+""Concealing Cocaine in international shipments can be anything but bananas: RCMP#Kelowna"",
+""Concealing Cocaine in international shipments should not be bananas: RCMP#Kelowna""
+]
+}"
+tweet-sno-1208,MILITARY SOURCE IN DC: “For the last week my battalion has been sleeping on the floor in the Senate cafeteria. Today the Senate kicked us out & moved us to a cold parking garage. 5000 soldiers. 1 power outlet. One bathroom. This is how Joe Biden’s America treats solders.” PHOTOS,"Hundreds of members of the National Guard were made to vacate the U.S. Capitol and sent to rest in a nearby parking garage, while providing security around U.S. President Joe Biden's inauguration.","{
+""negated_claims"": [
+""MILITARY SOURCE IN DC: 'For the last week my battalion has not been sleeping on the floor in the Senate cafeteria. Today the Senate did not kick us out & move us to a cold parking garage. 5000 soldiers. 1 power outlet. One bathroom. This is not how Joe Biden’s America treats soldiers.' PHOTOS"",
+""MILITARY SOURCE IN DC: 'For the last week my battalion has been sleeping elsewhere than on the floor in the Senate cafeteria. Today the Senate moved us to a comfortable place instead of a cold parking garage. 5000 soldiers. 1 power outlet. One bathroom. This is not how Joe Biden’s America treats soldiers.' PHOTOS"",
+""MILITARY SOURCE IN DC: 'For the last week my battalion has not been sleeping on the floor in the Senate cafeteria. Today the Senate provided us with proper accommodations rather than a cold parking garage. 5000 soldiers. 1 power outlet. One bathroom. This is not how Joe Biden’s America treats soldiers.' PHOTOS""
+]
+}"
+tweet-sno-1209,"WATCH: Chuck Schumer accuses Donald Trump of inciting an ""erection""","While speaking on the Senate floor on Jan. 22, 2021, Senate Majority Leader Chuck Schumer (D-NY) accidentally said “erection” instead of “insurrection.”","{
+""negated_claims"": [
+""WATCH: Chuck Schumer does not accuse Donald Trump of inciting an 'erection'."",
+""WATCH: Chuck Schumer accuses Donald Trump of inciting an 'insurrection' instead of an 'erection'."",
+""WATCH: Chuck Schumer accuses Donald Trump of something other than inciting an 'erection'.""
+]
+}"
+tweet-sno-1210,"Oh, dear. Schumer just said, ""Incited the erection."" And the look on his face indicates he knows he said it.","While speaking on the Senate floor on Jan. 22, 2021, Senate Majority Leader Chuck Schumer (D-NY) accidentally said “erection” instead of “insurrection.”","{
+""negated_claims"": [
+""Oh, dear. Schumer did not say, 'Incited the erection.' And the look on his face indicates he knows he didn't say it."",
+""Oh, dear. Schumer just said, 'Incited the erection.' And the look on his face indicates he doesn't know he said it."",
+""Oh, dear. Schumer just said, 'Insurrection.' And the look on his face indicates he knows he said it correctly.""
+]
+}"
+tweet-sno-1211,"So, on the Senate floor, Chuck Schumer just said that senators must decide if ""Donald John Trump incited the erection, uh, insurrection…"" Well, it WAS an uprising!","While speaking on the Senate floor on Jan. 22, 2021, Senate Majority Leader Chuck Schumer (D-NY) accidentally said “erection” instead of “insurrection.”","{
+""negated_claims"": [
+""So, on the Senate floor, Chuck Schumer just did not say that senators must decide if 'Donald John Trump incited the erection, uh, insurrection…' Well, it WAS an uprising!"",
+""So, on the Senate floor, Chuck Schumer just said that senators must decide if 'Donald John Trump did not incite the erection, uh, insurrection…' Well, it WAS an uprising!"",
+""So, on the Senate floor, Chuck Schumer just said that senators must decide if 'Donald John Trump incited the erection, uh, not the insurrection…' Well, it WAS an uprising!""
+]
+}"
+tweet-sno-1212,"Seems like Sen. Schumer's getting a rise out of a lot of people with that ""erection"" gaffe.","While speaking on the Senate floor on Jan. 22, 2021, Senate Majority Leader Chuck Schumer (D-NY) accidentally said “erection” instead of “insurrection.”","{
+""negated_claims"": [
+""Seems like Sen. Schumer's not getting a rise out of a lot of people with that 'erection' gaffe."",
+""Seems like Sen. Schumer's getting a rise out of nobody with that 'erection' gaffe."",
+""Seems like Sen. Schumer's getting a rise out of very few people with that 'erection' gaffe.""
+]
+}"
+tweet-sno-1213,"I am ready to declare “incited the erection” the funniest political gaffe in American history. We should build a statue to Chuck Schumer to commemorate his achievement. The statue will only be from the waist up, though, to be safe.","While speaking on the Senate floor on Jan. 22, 2021, Senate Majority Leader Chuck Schumer (D-NY) accidentally said “erection” instead of “insurrection.”","{
+  ""negated_claims"": [
+    ""I am not ready to declare “incited the erection” the funniest political gaffe in American history."",
+    ""We should not build a statue to Chuck Schumer to commemorate his achievement."",
+    ""The statue will be from below the waist up, though, to be unsafe.""
+  ]
+}"
+tweet-sno-1214,"The Bernie meme, Schumer saying “erection” instead of “insurrection”. Good to see we can have a laugh again here in Washington.","While speaking on the Senate floor on Jan. 22, 2021, Senate Majority Leader Chuck Schumer (D-NY) accidentally said “erection” instead of “insurrection.”","{
+""negated_claims"": [
+""The Bernie meme, Schumer saying 'erection' instead of 'insurrection'. Bad to see we can't have a laugh again here in Washington."",
+""The Bernie meme, Schumer saying 'erection' instead of 'insurrection'. Disappointing to see we can't have a laugh again here in Washington."",
+""The Bernie meme, Schumer saying 'erection' instead of 'insurrection'. Sad to see we can't have a laugh again here in Washington.""
+]
+}"
+tweet-sno-1215,"On MLK day, Instagram has labeled this post about MLK from MLK’s daughter as “misleading”… This is 🤬 outrageous!","Instagram flagged a reposted tweet from Bernice King about her father, the Rev. Martin Luther King Jr., on Jan. 18, 2021, which is MLK Day, for misinformation pertaining to the COVID-19 vaccine.","{
+""negated_claims"": [
+""On MLK day, Instagram has not labeled this post about MLK from MLK’s daughter as “misleading”… This is 🤬 outrageous!"",
+""On MLK day, no post about MLK from MLK’s daughter was labeled as “misleading” by Instagram… This is 🤬 outrageous!"",
+""On MLK day, Instagram has labeled this post about MLK from MLK’s daughter as accurate… This is 🤬 outrageous!""
+]
+}"
+tweet-sno-1216,"The MyPillow website has an active promo code “QAnon” which gets you a $45 discount. (h/tfor this discovery) MyPillow CEO Mike Lindell visited the White House yesterday to meet w/ Pres Trump (45), armed with notes referencing martial law and election conspiracy theories","MyPillow offered discounts on its products if buyers used codes like “QAnon,” “Q,” and “Storm” during checkout on their website.","{
+""negated_claims"": [
+""The MyPillow website does not have an active promo code “QAnon” which gets you a $45 discount."",
+""The MyPillow website has an active promo code “QAnon” which does not get you a $45 discount."",
+""The MyPillow website has an active promo code “QAnon” which gets you no discount.""
+]
+}"
+tweet-sno-1217,Tesla is hiring a full-time position to handle people talking shit aboutonline,"A job listing posted by Tesla in January 2021 described the specialist role as having to “address social media escalations … directed at the CEO,” who at the time of this writing was Elon Musk.","{
+""negated_claims"": [
+""Tesla is not hiring a full-time position to handle people talking shit about online."",
+""Tesla is hiring a full-time position to not handle people talking shit about online."",
+""Tesla is hiring a part-time position to handle people talking shit about online.""
+]
+}"
+tweet-sno-1218,SAFETY WARNING It might be popular but do not leave #GwynethPaltrow scented candle unattended (or any candles for that matter) & always on a flame retardant surface. Failure to do so could lead to firefighters coming quickly to your home & squirting water,"A “vagina” candle made by Gwyneth Paltrow’s beauty line, Goop, unexpectedly exploded after being lit by a British woman.","{
+""negated_claims"": [
+""SAFETY WARNING It might be popular but leave #GwynethPaltrow scented candle unattended (or any candles for that matter) & not always on a flame retardant surface."",
+""SAFETY WARNING It might be popular but do not leave #GwynethPaltrow scented candle attended (or any candles for that matter) & always on a flame retardant surface."",
+""SAFETY WARNING It might be unpopular but do not leave #GwynethPaltrow scented candle unattended (or any candles for that matter) & always on a non-flame retardant surface.""
+]
+}"
+tweet-sno-1219,"Marjorie Taylor Greene's Twitter account has been suspended for 12 hours. Her statement says the ""Silicon Valley Cartel launched a multi-front attack to chill free speech in America by deplatforming President Donald Trump and purging an unknown number of conservatives""","Twitter suspended the account of U.S. Rep. Marjorie Taylor Greene, a Republican from Georgia, after she made erroneous claims regarding election fraud in a video clip.","{
+""negated_claims"": [
+""Marjorie Taylor Greene's Twitter account has not been suspended for 12 hours."",
+""Marjorie Taylor Greene's Twitter account has been suspended for more than 12 hours."",
+""Marjorie Taylor Greene's Twitter account has been suspended for less than 12 hours.""
+]
+}"
+tweet-sno-1220,"Quick interview with the new Burger King logo designer: ""We explored a lot of different design territories, but kept coming back to the brand's original iconic logo when Burger King looked at its best"" –(via)",Burger King unveiled a new logo for its brand in 2021.,"{
+  ""negated_claims"": [
+    ""Quick interview with the new Burger King logo designer: 'We did not explore a lot of different design territories, but kept coming back to the brand's original iconic logo when Burger King looked at its best' –(via)"",
+    ""Quick interview with the new Burger King logo designer: 'We explored a lot of different design territories, but did not keep coming back to the brand's original iconic logo when Burger King looked at its best' –(via)"",
+    ""Quick interview with the new Burger King logo designer: 'We explored a lot of different design territories and did not keep coming back to the brand's original iconic logo when Burger King looked at its best' –(via)""
+  ]
+}"
+tweet-sno-1221,I cringe knowing they throw vaccine out in NY while the rest of us are waiting.,New York State threw away COVID-19 vaccine doses that could have been otherwise used.,"{
+""negated_claims"": [
+""I don't cringe knowing they throw vaccine out in NY while the rest of us are waiting."",
+""I cringe knowing they don't throw vaccine out in NY while the rest of us are waiting."",
+""I cringe knowing they throw vaccine out somewhere other than NY while the rest of us are waiting.""
+]
+}"
+tweet-sno-1222,"Dear Clintons, You know what's deplorable? Being Impeached!!! #BasketOfDeplorables","Donald Trump Jr. taunted the Clintons in 2016 by tweeting that being impeached was ""deplorable.""","{
+""negated_claims"": [
+""Dear Clintons, You know what's not deplorable? Being Impeached!!! #BasketOfDeplorables"",
+""Dear Clintons, You know what's deplorable? Not being Impeached!!! #BasketOfDeplorables"",
+""Dear Clintons, You know what's not deplorable? Not being Impeached!!! #BasketOfDeplorables""
+]
+}"
+tweet-sno-1223,jan 11 – tw cannibalism // armie hammer blood drinking cannibal sex kink dms,Screenshots of DMs and texts alleged to be from actor Armie Hammer suggesting he is into cannibalism and kinky sex are real and authentic.,"{
+""negated_claims"": [
+""jan 11 – tw cannibalism // armie hammer does not have blood drinking cannibal sex kink dms"",
+""jan 11 – tw cannibalism // armie hammer blood drinking cannibal sex kink dms are not real"",
+""jan 11 – tw cannibalism // armie hammer blood drinking cannibal sex dms are fake""
+]
+}"
+tweet-sno-1224,So the guy waving Indian Flag at Capitol hill is a VHS member 'Krishna Gudipati' (Res Jacket). Video was posted by Vencent Xavior who later deleted it. Thread. 👇,"An Indian flag was waved among the crowd of people that stormed the U.S. Capitol on Jan. 6, 2021.","{
+""negated_claims"": [
+""The guy waving the Indian Flag at Capitol hill is not a VHS member 'Krishna Gudipati' (Res Jacket). Video was posted by Vencent Xavior who later deleted it. Thread. 👇"",
+""So the guy waving Indian Flag at Capitol hill is a VHS member 'Krishna Gudipati' (Res Jacket). Video was posted by someone other than Vencent Xavior who later deleted it. Thread. 👇"",
+""So the guy waving Indian Flag at Capitol hill is a VHS member 'Krishna Gudipati' (Res Jacket). Video was not posted by Vencent Xavior who later deleted it. Thread. 👇""
+]
+}"
+tweet-sno-1225,Syringe-shaped cakes are displayed for sale at Dortmund's Schuerener Backparadies bakery as Germany continues the rollout of the coronavirus vaccine. More photos of the day:📷 Leon Kuegeler,A German bakery is making cakes in the shape of syringes in honor of COVID-19 vaccines.,"{
+""negated_claims"": [
+""Syringe-shaped cakes are not displayed for sale at Dortmund's Schuerener Backparadies bakery as Germany continues the rollout of the coronavirus vaccine."",
+""Syringe-shaped cakes are displayed for sale at Dortmund's Schuerener Backparadies bakery as Germany pauses the rollout of the coronavirus vaccine."",
+""Syringe-shaped cakes are displayed for sale at a different bakery in Dortmund as Germany continues the rollout of the coronavirus vaccine.""
+]
+}"
+tweet-sno-1226,"“The U.S. Fish & Wildlife Service is investigating the harassment of a manatee…reported to federal authorities over the weekend discovered w/ words ""Trump"" scraped in its back …discovered in Blue Hole on the Homosassa River” (via) – Insurrectioning wildlife?",An endangered Florida manatee was discovered with the word “Trump” carved into its back.,"{
+""negated_claims"": [
+""The U.S. Fish & Wildlife Service is not investigating the harassment of a manatee…reported to federal authorities over the weekend discovered w/ words 'Trump' scraped in its back …discovered in Blue Hole on the Homosassa River"",
+""The U.S. Fish & Wildlife Service is investigating the care of a manatee…reported to federal authorities over the weekend discovered w/ words 'Trump' scraped in its back …discovered in Blue Hole on the Homosassa River"",
+""The U.S. Fish & Wildlife Service is investigating the harassment of a manatee…reported to federal authorities over the weekend discovered w/ words 'Trump' not scraped in its back …discovered in Blue Hole on the Homosassa River""
+]
+}"
+tweet-sno-1227,also the newest congress member from Illinois brought up hitler in her speech and was like “hitler was right about one thing” 💀💀before the riots even started,"Rep. Mary Miller said ""Hitler was right on one thing"" before a mob of Trump supporters stormed the nation's Capitol on Jan. 6, 2020..","{
+""negated_claims"": [
+""also the newest congress member from Illinois did not bring up hitler in her speech and was not like “hitler was right about one thing” 💀💀before the riots even started"",
+""also the newest congress member from Illinois brought up hitler in her speech and was not like “hitler was right about one thing” 💀💀before the riots even started"",
+""also the newest congress member from Illinois did not bring up hitler in her speech and was like “hitler was not right about one thing” 💀💀before the riots even started""
+]
+}"
+tweet-sno-1228,"-Mary Miller (IL) spoke today shortly before the riots broke out, stating “Hitler was right on one thing. He said, ‘Whoever has the youth has the future.’”","Rep. Mary Miller said ""Hitler was right on one thing"" before a mob of Trump supporters stormed the nation's Capitol on Jan. 6, 2020..","{
+""negated_claims"": [
+""Mary Miller (IL) did not speak today shortly before the riots broke out, stating “Hitler was right on one thing. He said, ‘Whoever has the youth has the future.’”"",
+""Mary Miller (IL) spoke today shortly after the riots broke out, stating “Hitler was right on one thing. He said, ‘Whoever has the youth has the future.’”"",
+""Mary Miller (IL) spoke today shortly before the riots broke out, not stating “Hitler was right on one thing. He said, ‘Whoever has the youth has the future.’”""
+]
+}"
+tweet-sno-1229,People who broke into the Capitol Wednesday are now learning they are on No-Fly lists pending the full investigation. They are not happy about this.,A video shows a person who attended the Capitol riot finding out that they had been added to the no-fly list.,"{
+  ""negated_claims"": [
+    ""People who broke into the Capitol Wednesday are not learning they are on No-Fly lists pending the full investigation."",
+    ""People who broke into the Capitol Wednesday are now learning they are not on No-Fly lists pending the full investigation."",
+    ""People who did not break into the Capitol Wednesday are now learning they are on No-Fly lists pending the full investigation.""
+  ]
+}"
+tweet-sno-1230,apparently a guy accidentally tasered himself in the balls and then died of a heart attack while trying to steal a painting yesterday and if we can’t all come together over how hilarious that is we may be beyond hope,"An Alabama man who was in attendance during the Jan. 6, 2021, insurrection at the U.S. Capitol suffered a fatal heart attack after accidentally tasing himself in the testicles.","{
+""negated_claims"": [
+""apparently a guy did not accidentally taser himself in the balls and then die of a heart attack while trying to steal a painting yesterday and if we can’t all come together over how hilarious that is we may be beyond hope"",
+""apparently a guy accidentally tasered himself in the balls and then did not die of a heart attack while trying to steal a painting yesterday and if we can’t all come together over how hilarious that is we may be beyond hope"",
+""apparently a guy accidentally tasered himself in the balls and then died of a heart attack while not trying to steal a painting yesterday and if we can’t all come together over how hilarious that is we may be beyond hope""
+]
+}"
+tweet-sno-1231,"* fraud alert * This text message is circulating in NYC, seeking to fool people into taking a call from a ""contact tracer"" asking that you ""pre-register"" for a vaccine. NYC's actual contact tracers will call you from a # beginning with 212-540-XXXX or 212-242-XXXX. [cont…]",New Yorkers can sign up for early access to the COVID-19 vaccine.,"{
+""negated_claims"": [
+""This text message is not circulating in NYC, seeking to fool people into taking a call from a 'contact tracer' asking that you 'pre-register' for a vaccine."",
+""NYC's actual contact tracers will not call you from a # beginning with 212-540-XXXX or 212-242-XXXX."",
+""This text message is circulating in NYC, seeking to inform people about taking a call from a 'contact tracer' asking that you 'pre-register' for a vaccine.""
+]
+}"
+tweet-sno-1232,"Reading about how few of the rioters were arrested yesterday while storming the Capitol Building, I'm reminded that Georgia's next senator, Rev. Raphael Warnock, had been arrested so many times for peacefully protesting at the Capitol that it became a feature of his stump speech.",Rev. Raphael Warnock was arrested while praying during a demonstration at the U.S. Capitol in 2017.,"{
+    ""negated_claims"": [
+        ""Reading about how many of the rioters were arrested yesterday while storming the Capitol Building, I'm reminded that Georgia's next senator, Rev. Raphael Warnock, had not been arrested so many times for peacefully protesting at the Capitol that it became a feature of his stump speech."",
+        ""Reading about how few of the rioters were not arrested yesterday while storming the Capitol Building, I'm reminded that Georgia's next senator, Rev. Raphael Warnock, had been arrested so few times for peacefully protesting at the Capitol that it became a feature of his stump speech."",
+        ""Reading about how few of the rioters were arrested yesterday while storming the Capitol Building, I'm reminded that Georgia's next senator, Rev. Raphael Warnock, was not arrested so many times for peacefully protesting at the Capitol that it became a feature of his stump speech.""
+    ]
+}"
+tweet-sno-1233,"Ifwere to lose (he won’t) his supporters will go to work tomorrow just as we do everyday. When Biden loses, his “supporters” will likely loot and riot. Tells you everything you need to know! #Trump2020","Before the 2020 U.S. presidential election, conservative personality Tomi Lahren tweeted that then-Democratic candidate Joe Biden’s supporters would “loot and riot” if the former vice president lost.","{
+""negated_claims"": [
+""If Trump were to lose (he will), his supporters will go to work tomorrow just as we do everyday. When Biden wins, his “supporters” will likely loot and riot. Tells you nothing you need to know!"",
+""If Trump were to win (he won’t), his supporters will not go to work tomorrow just as we don’t everyday. When Biden loses, his “supporters” will likely not loot and riot. Tells you everything you need to know! #Biden2020"",
+""If Trump were to lose (he won’t), his supporters will go to work tomorrow just as we don’t everyday. When Biden wins, his “supporters” will likely loot and riot. Tells you everything you don’t need to know! #Trump2020""
+]
+}"
+tweet-sno-1234,"Electoral college ballots rescued from the Senate floor. If our capable floor staff hadn’t grabbed them, they would have been burned by the mob.","A photograph taken on Jan. 6, 2021, showed two female U.S. Senate aides safely transporting boxes of Electoral College votes during the Capitol insurrection.","{
+""negated_claims"": [
+""Electoral college ballots were not rescued from the Senate floor."",
+""Electoral college ballots were rescued from somewhere other than the Senate floor."",
+""Electoral college ballots would not have been burned by the mob if our capable floor staff hadn’t grabbed them.""
+]
+}"
+tweet-sno-1235,Here are the women – Senate aides – who had the presence of mind and courage to transport and keep safe the electoral votes before fleeing the Senate. There will always be villains. There will always be heroes.,"A photograph taken on Jan. 6, 2021, showed two female U.S. Senate aides safely transporting boxes of Electoral College votes during the Capitol insurrection.","{
+""negated_claims"": [
+""Here are not the women – Senate aides – who had the presence of mind and courage to transport and keep safe the electoral votes before fleeing the Senate. There will always be villains. There will always be heroes."",
+""Here are the women – Senate aides – who did not have the presence of mind and courage to transport and keep safe the electoral votes before fleeing the Senate. There will always be villains. There will always be heroes."",
+""Here are the women – Senate aides – who had the presence of mind and courage to not transport and keep safe the electoral votes before fleeing the Senate. There will always be villains. There will always be heroes.""
+]
+}"
+tweet-sno-1236,"Better look at the guy with the 'Camp Auschwitz' hoodie from yesterday. Not only does it feature the SS 'totenkopf', but an English translation of 'Arbeit Macht Frei'. No wiggle room, no joking here. This is who these people are. (via)","A pro-Trump rioter who broke into the U.S. Capitol was wearing a ""Camp Auschwitz"" shirt.","{
+""negated_claims"": [
+""Better not look at the guy with the 'Camp Auschwitz' hoodie from yesterday."",
+""Not only does it not feature the SS 'totenkopf', but an English translation of 'Arbeit Macht Frei'."",
+""No wiggle room, no joking here. This is not who these people are.""
+]
+}"
 tweet-sno-1237,"This woman was maced inside the Capitol. She told me, ""It's a revolution!""",A video shows a crying woman holding an onion while telling a reporter that she had been Maced during a riot.,"{
 ""negated_claims"": [
 ""This woman was not maced inside the Capitol. She told me, 'It's a revolution!'"",
-""This woman was maced outside the Capitol. She told me, 'It's a revolution!'"",
-""This woman told me, 'It's a revolution!' but she was not maced inside the Capitol.""
+""This woman was maced inside the Capitol. She did not tell me, 'It's a revolution!'"",
+""This woman was not maced inside the Capitol. She did not tell me, 'It's a revolution!'""
+]
+}"
+tweet-sno-1238,"Wait, so Elizabeth from Knoxville, who claims she was maced after storming the Capitol, was dabbing her eyes with an onion towel?",A video shows a crying woman holding an onion while telling a reporter that she had been Maced during a riot.,"{
+""negated_claims"": [
+""Elizabeth from Knoxville, who claims she was maced after storming the Capitol, was not dabbing her eyes with an onion towel."",
+""Elizabeth from Knoxville, who claims she was maced after storming the Capitol, was dabbing her eyes with something other than an onion towel."",
+""Elizabeth from Knoxville, who did not claim she was maced after storming the Capitol, was dabbing her eyes with an onion towel.""
+]
+}"
+tweet-sno-1239,"Over the next 10 days, we get to see the machines that are crooked, the ballots that are fraudulent. And if we're wrong, we will be made fools of. But if we're right, and lot of them will go to jail. So — let's have trial by combat — Giuliani","U.S. President Donald Trump's personal attorney, Rudy Giuliani, called for ""trial by combat"" before a violent mob of Trump supporters broke into the U.S. Capitol.","{
+""negated_claims"": [
+""Over the next 10 days, we do not get to see the machines that are crooked, the ballots that are fraudulent."",
+""And if we're not wrong, we will not be made fools of."",
+""But if we're not right, a lot of them will not go to jail.""
+]
+}"
+tweet-sno-1240,this is a photo of the National Guard stationed in response to a Black Lives Matter protest at the Lincoln Memorial in June,The National Guard was deployed to protect the Lincoln Memorial during the Black Lives Matter protests in the spring of 2020.,"{
+""negated_claims"": [
+""this is not a photo of the National Guard stationed in response to a Black Lives Matter protest at the Lincoln Memorial in June"",
+""this is a photo of the National Guard not stationed in response to a Black Lives Matter protest at the Lincoln Memorial in June"",
+""this is a photo of the National Guard stationed in response to a protest that is not Black Lives Matter at the Lincoln Memorial in June""
+]
+}"
+tweet-sno-1241,"Anarchists, Agitators or Protestors who vandalize or damage our Federal Courthouse in Portland, or any Federal Buildings in any of our Cities or States, will be prosecuted under our recently re-enacted Statues & Monuments Act. MINIMUM TEN YEARS IN PRISON. Don’t do it! ","U.S. President Donald Trump once threatened that ""anarchists, agitators, or protestors"" who ""vandalize or damage any federal buildings will be prosecuted.""","{
+""negated_claims"": [
+""Anarchists, Agitators or Protestors who do not vandalize or damage our Federal Courthouse in Portland, or any Federal Buildings in any of our Cities or States, will not be prosecuted under our recently re-enacted Statues & Monuments Act."",
+""Anarchists, Agitators or Protestors who vandalize or damage our Federal Courthouse in Portland, or any Federal Buildings in any of our Cities or States, will not be prosecuted under our recently re-enacted Statues & Monuments Act."",
+""Anarchists, Agitators or Protestors who vandalize or damage our Federal Courthouse in Portland, or any Federal Buildings in any of our Cities or States, will be prosecuted under our outdated Statues & Monuments Act.""
+]
+}"
+tweet-sno-1242,JUST IN – _Pence has just unfollowedon Twitter,"U.S. Vice President Mike Pence unfollowed President Donald Trump following Jan. 6, 2021, riots in Washington, D.C.","{
+""negated_claims"": [
+""JUST IN – _Pence has just followed on Twitter"",
+""JUST IN – _Pence has not unfollowed on Twitter"",
+""JUST IN – _Pence continues to follow on Twitter""
+]
+}"
+tweet-sno-1243,Scenes from DC right now. They’ve raised the confederate flag outside the Capitol.,A Confederate flag was spotted inside and outside the U.S. Capitol as a pro-Trump mob stormed the building.,"{
+""negated_claims"": [
+""Scenes from DC right now. They’ve not raised the confederate flag outside the Capitol."",
+""Scenes from DC right now. They’ve raised the confederate flag inside the Capitol."",
+""Scenes from DC right now. They’ve not raised the confederate flag inside or outside the Capitol.""
+]
+}"
+tweet-sno-1244,That’s the confederate flag flying outside the Senate chamber,A Confederate flag was spotted inside and outside the U.S. Capitol as a pro-Trump mob stormed the building.,"{
+""negated_claims"": [
+""That’s not the confederate flag flying outside the Senate chamber"",
+""That’s the confederate flag flying inside the Senate chamber"",
+""That’s the confederate flag flying outside the U.S. Capitol""
+]
+}"
+tweet-sno-1245,"A supporter of President Donald Trump carries a Confederate battle flag on the second floor of the U.S. Capitol near the entrance to the Senate after breaching security defenses, in Washington, January 6, 2021. Photo by Mike Theiler",A Confederate flag was spotted inside and outside the U.S. Capitol as a pro-Trump mob stormed the building.,"{
+""negated_claims"": [
+""A supporter of President Donald Trump did not carry a Confederate battle flag on the second floor of the U.S. Capitol near the entrance to the Senate after breaching security defenses, in Washington, January 6, 2021."",
+""A supporter of President Donald Trump carries a Confederate battle flag outside the U.S. Capitol near the entrance to the Senate after breaching security defenses, in Washington, January 6, 2021."",
+""A supporter of President Donald Trump carries an American flag on the second floor of the U.S. Capitol near the entrance to the Senate after breaching security defenses, in Washington, January 6, 2021.""
+]
+}"
+tweet-sno-1246,They just put up a cross in front of the capitol building,"A video shows a cross being erected in front of the U.S. Capitol on Jan. 6, 2021.","{
+""negated_claims"": [
+""They did not put up a cross in front of the capitol building."",
+""They just put up a cross elsewhere, not in front of the capitol building."",
+""They just put up something other than a cross in front of the capitol building.""
+]
+}"
+tweet-sno-1247,Here in Italy people started to share this figure claiming that this is the diagram of the 5G chip that has been inserted in the covid vaccine. In reality it is the electric circuit of a guitar pedal and I believe that putting it in the covid vaccine has been an excellent idea💡,An image represents a schematic for a 'COVID 5G Chip.',"{
+  ""negated_claims"": [
+    ""Here in Italy people started to share this figure claiming that this is not the diagram of the 5G chip that has been inserted in the covid vaccine. In reality it is the electric circuit of a guitar pedal and I believe that putting it in the covid vaccine has been an excellent idea💡"",
+    ""Here in Italy people started to share this figure claiming that this is the diagram of the 5G chip that has not been inserted in the covid vaccine. In reality it is the electric circuit of a guitar pedal and I believe that putting it in the covid vaccine has been an excellent idea💡"",
+    ""Here in Italy people started to share this figure claiming that this is the diagram of the 5G chip that has been inserted in the covid vaccine. In reality it is not the electric circuit of a guitar pedal and I believe that putting it in the covid vaccine has been an excellent idea💡""
+  ]
+}"
+tweet-sno-1248,A view of fresh snow this morning from Juniper Hills Ca at 4500 ft. Located south of Pearblossom in the San Gabriel foothills. Photo shared by Scott Lezak. #cawx #SoCal #LAweather,"In December 2020, snow fell in the Los Angeles County area.","{
+""negated_claims"": [
+""A view of no snow this morning from Juniper Hills Ca at 4500 ft. Located south of Pearblossom in the San Gabriel foothills. Photo shared by Scott Lezak. #cawx #SoCal #LAweather"",
+""A view of fresh snow this morning from Juniper Hills Ca at a different altitude. Located south of Pearblossom in the San Gabriel foothills. Photo shared by Scott Lezak. #cawx #SoCal #LAweather"",
+""A view of fresh snow this morning from Juniper Hills Ca at 4500 ft. Located not south of Pearblossom in the San Gabriel foothills. Photo shared by Scott Lezak. #cawx #SoCal #LAweather""
+]
+}"
+tweet-sno-1249,Around 1/2 inch of snow at the 3700 ft level in Pearblossom fell early this morning. Photo taken by Michaela Moffitt. Thanks Michaela and our NWS spotter Scott Lezak for forwarding the photo. #cawx #LAweather #LAsnow,"In December 2020, snow fell in the Los Angeles County area.","{
+""negated_claims"": [
+""Around 1/2 inch of snow did not fall at the 3700 ft level in Pearblossom early this morning."",
+""Around 1/2 inch of snow fell at a different level, not at the 3700 ft level in Pearblossom, early this morning."",
+""Around 1/2 inch of snow at the 3700 ft level in Pearblossom did not fall early this morning.""
+]
+}"
+tweet-sno-1250,"“Breaking News: In Pennsylvania there were 205,000 more votes than there were voters. This alone flips the state to President Trump.”","The state of Pennsylvania recorded ""205,000 votes more than they had voters"" in the 2020 U.S. election.","{
+""negated_claims"": [
+""Breaking News: In Pennsylvania there were not 205,000 more votes than there were voters. This alone flips the state to President Trump."",
+""Breaking News: In Pennsylvania there were 205,000 fewer votes than there were voters. This alone flips the state to President Trump."",
+""Breaking News: In Pennsylvania the number of votes matched the number of voters. This alone flips the state to President Trump.""
+]
+}"
+tweet-sno-1251,"When are we going to be allowed to do signature verification in Fulton County, Georgia? The process is going VERY slowly.Pennsylvania just found 205,000 votes more than they had voters. Therefore, we WIN Pennsylvania!!!","The state of Pennsylvania recorded ""205,000 votes more than they had voters"" in the 2020 U.S. election.","{
+""negated_claims"": [
+""When are we not going to be allowed to do signature verification in Fulton County, Georgia? The process is going VERY slowly.Pennsylvania just found 205,000 votes more than they had voters. Therefore, we WIN Pennsylvania!!!"",
+""When are we going to be allowed to do signature verification in Fulton County, Georgia? The process is going VERY quickly.Pennsylvania just found 205,000 votes more than they had voters. Therefore, we WIN Pennsylvania!!!"",
+""When are we going to be allowed to do signature verification in Fulton County, Georgia? The process is going VERY slowly.Pennsylvania just did not find 205,000 votes more than they had voters. Therefore, we WIN Pennsylvania!!!""
+]
+}"
+tweet-sno-1252,"YOU CANNOT be “cleared” for a gathering by a negative COVID test 1) Might be too early in course to detect virus 2) ~20% of tests are false negatives 3) You could become infected literally 0.1 seconds after your swab Sincerely, An increasingly desperate ER doctor",A negative COVID-19 test will “clear” people to go to holiday gatherings with their family and friends across the United States.,"{
+""negated_claims"": [
+""You can be 'cleared' for a gathering by a negative COVID test."",
+""A negative COVID-19 test will always 'clear' you for a gathering."",
+""A negative COVID test is sufficient to 'clear' you for a gathering.""
+]
+}"
+tweet-sno-1253,"My family & I went tolast night. Great food. I used an old photo since we didn't take one last night. I'm glad this tweet has generated so much attention. I hope people support Gino and his team at. Small business is hurting, & they need our support",Former Wisconsin Gov. Scott Walker cropped and tweeted an old picture of pizza at a restaurant that he first tweeted 14 months earlier.,"{
+""negated_claims"": [
+""My family & I did not go to last night. Great food. I used an old photo since we didn't take one last night. I'm glad this tweet has generated so much attention. I hope people support Gino and his team at. Small business is hurting, & they need our support"",
+""My family & I went to last night. Great food. I did not use an old photo since we didn't take one last night. I'm glad this tweet has generated so much attention. I hope people support Gino and his team at. Small business is hurting, & they need our support"",
+""My family & I went to last night. Great food. I used an old photo since we did take one last night. I'm glad this tweet has generated so much attention. I hope people support Gino and his team at. Small business is hurting, & they need our support""
+]
+}"
+tweet-sno-1254,Did anyone go to a high school with a pool under the basketball court? The Bedford Falls High School gym always fascinated me. #ItsAWonderfulLife,"The swimming pool and retractable basketball court from ""It's a Wonderful Life"" are still used in the present day.","{
+""negated_claims"": [
+""Did no one go to a high school with a pool under the basketball court?"",
+""The Bedford Falls High School gym never fascinated me."",
+""Did anyone go to a high school without a pool under the basketball court?""
+]
+}"
+tweet-sno-1255,It's a wonderful life (east coast feed) about to show the pool under the basketball court that still is there at my high school. #Beverly,"The swimming pool and retractable basketball court from ""It's a Wonderful Life"" are still used in the present day.","{
+""negated_claims"": [
+""It's a wonderful life (east coast feed) is not about to show the pool under the basketball court that still is there at my high school."",
+""It's a wonderful life (east coast feed) is about to show the pool that is not under the basketball court that still is there at my high school."",
+""It's a wonderful life (east coast feed) is about to show the retractable basketball court that still is there at my high school but not the pool.""
+]
+}"
+tweet-sno-1256,"Yes it's real. Yes, it's powered by Intel. And yes, it has a chicken warmer. 😅 #KFConsole #IntelGaming",Fast food chain KFC developed a video game console that also keeps chicken warm.,"{
+""negated_claims"": [
+""No, it's not real. No, it's not powered by Intel. And no, it doesn't have a chicken warmer. 😅 #KFConsole #IntelGaming"",
+""Yes, it's real, but no, it's not powered by Intel. And no, it doesn't have a chicken warmer. 😅 #KFConsole #IntelGaming"",
+""Yes, it's real. Yes, it's powered by Intel. But no, it doesn't have a chicken warmer. 😅 #KFConsole #IntelGaming""
+]
+}"
+tweet-sno-1257,"Mayor Buttigieg says he’s a gay Christian. As a Christian I believe the Bible which defines homosexuality as sin, something to be repentant of, not something to be flaunted, praised or politicized. The Bible says marriage is between a man & a woman—not two men, not two women. 2/3","Evangelist Franklin Graham tweeted that Pete Buttigieg's homosexuality was ""something to be repentant of, not something to be flaunted.""","{
+""negated_claims"": [
+""Mayor Buttigieg says he’s not a gay Christian."",
+""Mayor Buttigieg says he’s a straight Christian."",
+""Mayor Buttigieg says he’s neither gay nor Christian.""
+]
+}"
+tweet-sno-1258,Kanye West $2M PPP loan. Joel Osteen $4M. Tom Brady $960K. Most Americans $600. #IAmVeryUpset,Joel Osteen's Lakewood Church in Texas received $4.4 million in coronavirus-economic-relief loans.,"{
+""negated_claims"": [
+""Kanye West did not get a $2M PPP loan. Joel Osteen did not get $4M. Tom Brady did not get $960K. Most Americans did not get $600. #IAmVeryUpset"",
+""Kanye West $2M PPP loan. Joel Osteen $4M. Tom Brady $960K. Most Americans did not get $600. #IAmVeryUpset"",
+""Kanye West $2M PPP loan. Joel Osteen $4M. Tom Brady $960K. Not most Americans $600. #IAmVeryUpset""
+]
+}"
+tweet-sno-1259,Vatican 'Darth Vader' nativity scene gets earthly thumbs down,The Vatican's Nativity display includes a statue of Darth Vader.,"{
+""negated_claims"": [
+""Vatican 'Darth Vader' nativity scene does not get earthly thumbs down."",
+""Vatican 'Darth Vader' nativity scene gets earthly thumbs up."",
+""Vatican 'Darth Vader' nativity scene doesn't get criticized.""
+]
+}"
+tweet-sno-1260,"SIE strives to ensure a high level of customer satisfaction, and we will begin to offer a full refund for all gamers who have purchased Cyberpunk 2077 via PlayStation Store and want a refund. Please visit the following link to initiate the refund:.",PlayStation and Xbox announced that refunds would be available for customers who digitally purchased Cyberpunk 2077.,"{
+""negated_claims"": [
+""SIE strives to ensure a high level of customer satisfaction, but we will begin to offer a full refund for all gamers who have not purchased Cyberpunk 2077 via PlayStation Store and want a refund."",
+""SIE does not strive to ensure a high level of customer satisfaction, and we will begin to offer a full refund for all gamers who have purchased Cyberpunk 2077 via PlayStation Store and want a refund."",
+""SIE strives to ensure a low level of customer satisfaction, and we will begin to offer a full refund for all gamers who have purchased Cyberpunk 2077 via PlayStation Store and want a refund.""
+]
+}"
+tweet-sno-1261,"Cyberpunk 2077: To ensure that every player can get the experience they expect on Xbox, we will be expanding our existing refund policy to offer full refunds to anyone who purchased Cyberpunk 2077 digitally from the Microsoft Store, until further notice.",PlayStation and Xbox announced that refunds would be available for customers who digitally purchased Cyberpunk 2077.,"{
+""negated_claims"": [
+""Cyberpunk 2077: To ensure that every player can get the experience they expect on Xbox, we will not be expanding our existing refund policy to offer full refunds to anyone who purchased Cyberpunk 2077 digitally from the Microsoft Store, until further notice."",
+""Cyberpunk 2077: To ensure that every player can get the experience they expect on Xbox, we will be expanding our existing refund policy to offer no refunds to anyone who purchased Cyberpunk 2077 digitally from the Microsoft Store, until further notice."",
+""Cyberpunk 2077: To ensure that every player can get the experience they expect on Xbox, we will be restricting our existing refund policy to not offer full refunds to anyone who purchased Cyberpunk 2077 digitally from the Microsoft Store, until further notice.""
+]
+}"
+tweet-sno-1262,"This video is an extract from yesterday’s press conference, with Hayabusa2 Project Manager Yuichi Tsuda confirming samples from Ryugu in the capsule!",Japanese scientists confirmed that the asteroid explorer Hyabusu2 successfully collected and returned soil and gas samples from the asteroid Ryugu 190 million miles from Earth.,"{
+""negated_claims"": [
+""This video is an extract from yesterday’s press conference, with Hayabusa2 Project Manager Yuichi Tsuda denying samples from Ryugu in the capsule!"",
+""This video is an extract from yesterday’s press conference, without Hayabusa2 Project Manager Yuichi Tsuda confirming samples from Ryugu in the capsule!"",
+""This video is an extract from yesterday’s press conference, with Hayabusa2 Project Manager Yuichi Tsuda confirming no samples from Ryugu in the capsule!""
+]
+}"
+tweet-sno-1263,"TEXAS ELECTORAL COLLEGE: ""The Justices went into a closed room…When Texas case was brought up he said he heard screaming through the walls as Justice Roberts and the other liberal Justices were insisting…afraid of what would happen if they did right thing…Moral cowardice""",Chief Justice John Roberts screamed at the other U.S. Supreme Court justices to dismiss a Texas voter fraud case in December 2020.,"{
+""negated_claims"": [
+""The Justices did not go into a closed room…When Texas case was brought up he said he did not hear screaming through the walls as Justice Roberts and the other liberal Justices were insisting…afraid of what would happen if they did right thing…Moral cowardice"",
+""The Justices went into a closed room…When Texas case was not brought up he said he heard no screaming through the walls as Justice Roberts and the other liberal Justices were insisting…afraid of what would happen if they did right thing…Moral cowardice"",
+""The Justices went into a closed room…When Texas case was brought up he said he heard screaming through the walls as Justice Roberts and the other liberal Justices were not insisting…afraid of what would happen if they did right thing…Moral cowardice""
+]
+}"
+tweet-sno-1264,"Yo, this seems like an intersection of some of your interests: a guy in my neighborhood built a mini-version of the Rosebud Motel in front of his house!","A man created a miniature Rosebud motel facade in a Seattle neighborhood, inspired by the setting of the popular comedy series “Schitt’s Creek.”","{
+""negated_claims"": [
+""Yo, this does not seem like an intersection of some of your interests: a guy in my neighborhood built a mini-version of the Rosebud Motel in front of his house!"",
+""Yo, this seems like an intersection of none of your interests: a guy in my neighborhood built a mini-version of the Rosebud Motel in front of his house!"",
+""Yo, this seems like an intersection of some of your interests: a guy in my neighborhood did not build a mini-version of the Rosebud Motel in front of his house!""
+]
+}"
+tweet-sno-1265,"Well look at that, Day-vahd [said in our best Moira Rose voice]! A resident in Seattle's Queen Anne neighborhood, has created a mini Rosebud Motel using the retaining wall outside his home, for fans of the award-winning show ""Schitt's Creek"" to visit.","A man created a miniature Rosebud motel facade in a Seattle neighborhood, inspired by the setting of the popular comedy series “Schitt’s Creek.”","{
+""negated_claims"": [
+""Well look at that, Day-vahd [said in our best Moira Rose voice]! A resident in Seattle's Queen Anne neighborhood has not created a mini Rosebud Motel using the retaining wall outside his home, for fans of the award-winning show 'Schitt's Creek' to visit."",
+""Well look at that, Day-vahd [said in our best Moira Rose voice]! A resident in Seattle's Queen Anne neighborhood has created a mini Rosebud Motel, not using the retaining wall outside his home, for fans of the award-winning show 'Schitt's Creek' to visit."",
+""Well look at that, Day-vahd [said in our best Moira Rose voice]! No resident in Seattle's Queen Anne neighborhood has created a mini Rosebud Motel using the retaining wall outside his home, for fans of the award-winning show 'Schitt's Creek' to visit.""
+]
+}"
+tweet-sno-1266,"Perhaps the biggest difference between 2016 and 2020 is, despite the fact that I went from 63,000,000 Votes to 75,000,000 Votes, a record 12,000,000 Vote increase. Obama went down 3,000,000 Votes, and won. Rigged Election!!!","President Trump's losing the election despite receiving millions more votes in 2020 than in 2016 is indicative of a ""rigged election.""","{
+""negated_claims"": [
+""Perhaps the biggest difference between 2016 and 2020 is, despite the fact that I went from 63,000,000 Votes to 75,000,000 Votes, a record 12,000,000 Vote increase. Obama went down 3,000,000 Votes, and won. It wasn't a rigged election!!!"",
+""Perhaps the biggest difference between 2016 and 2020 is, despite the fact that I went from 63,000,000 Votes to 75,000,000 Votes, a record 12,000,000 Vote increase. Obama went down 3,000,000 Votes, and won. The election was fair!!!"",
+""Perhaps the biggest difference between 2016 and 2020 is, despite the fact that I went from 63,000,000 Votes to 75,000,000 Votes, a record 12,000,000 Vote increase. Obama went down 3,000,000 Votes, and won. The election wasn't rigged!!!""
+]
+}"
+tweet-sno-1267,North Face denies order for jackets from the oil and gas industry. Their jackets have oil and gas products in them.,"The North Face refused to fulfill a clothing order to Innovex Downhole Solutions, a Houston-based oil and gas company, over concerns about the company’s environmental practices.","{
+""negated_claims"": [
+""North Face does not deny order for jackets from the oil and gas industry."",
+""Their jackets do not have oil and gas products in them."",
+""Their jackets lack oil and gas products in them.""
+]
+}"
+tweet-sno-1268,"Alex Jones at the pro-Trump march in Washington, DC: ""Joe Biden is a globalist, and Joe Biden will be removed, one way or another!""","Conspiracy theorist Alex Jones said President-elect Joe Biden will be ""removed"" from office ""one way or another.""","{
+""negated_claims"": [
+""Joe Biden is not a globalist, and Joe Biden will not be removed, one way or another!"",
+""Joe Biden is a globalist, but Joe Biden will not be removed, one way or another!"",
+""Joe Biden is not a globalist, but Joe Biden will be removed, one way or another!""
+]
+}"
+tweet-sno-1269,Is the island in the Allstate commercial a real place? I want to live there,A real island was shown in an Allstate television advertisement in 2020.,"{
+""negated_claims"": [
+""The island in the Allstate commercial is not a real place."",
+""The island in the Allstate commercial is a fictional place."",
+""The island in the Allstate commercial does not exist in real life.""
+]
+}"
+tweet-sno-1270,The small island with 2 lighthouses & the guy driving a classic Land Rover in the Allstate commercial – is it real? Where is it? Maine? New Brunswick?,A real island was shown in an Allstate television advertisement in 2020.,"{
+""negated_claims"": [
+""The small island with 2 lighthouses & the guy driving a classic Land Rover in the Allstate commercial – is not real. Where is it? Maine? New Brunswick?"",
+""The small island with 2 lighthouses & the guy driving a classic Land Rover in the Allstate commercial – is imaginary. Where is it? Maine? New Brunswick?"",
+""The small island with 2 lighthouses & the guy driving a classic Land Rover in the Allstate commercial – does not exist. Where is it? Maine? New Brunswick?""
+]
+}"
+tweet-sno-1271,"BREAKING: Christmas Eve is now a federal holiday in 2020, according to an executive order signed Friday by President Trump.","On Dec. 11, 2020, U.S. President Donald Trump issued an executive order designating Christmas Eve 2020 as a federal holiday.","{
+""negated_claims"": [
+""BREAKING: Christmas Eve is not a federal holiday in 2020, according to an executive order signed Friday by President Trump."",
+""BREAKING: Christmas Eve is now not a federal holiday in 2020, according to an executive order signed Friday by President Trump."",
+""BREAKING: Christmas Eve is now a federal holiday in 2020, according to an executive order not signed Friday by President Trump.""
+]
+}"
+tweet-sno-1272,"Sister Act 3 is in development! 🎤returns to star and produce, withas producer as well. Sister Act 3 will premiere on.","In December 2020, Disney announced that “Sister Act 3” was in production, with Whoopi Goldberg reviving her role of Deloris Van Cartier nearly 30 years later.","{
+""negated_claims"": [
+""Sister Act 3 is not in development."",
+""Sister Act 3 is in development without Whoopi Goldberg as star and producer."",
+""Sister Act 3 will not premiere.""
+]
+}"
+tweet-sno-1273,"Coming exclusively tois Hocus Pocus 2, the spooky sequel to the 1993 Halloween classic!is set to direct.","Disney announced a sequel to ""Hocus Pocus.""","{
+""negated_claims"": [
+""Coming exclusively tois Hocus Pocus 2, the spooky sequel to the 1993 Halloween classic!is not set to direct."",
+""Coming exclusively tois Hocus Pocus 2, the spooky sequel to the 1993 Halloween classic!is not prepared to direct."",
+""Coming exclusively tois Hocus Pocus 2, the spooky sequel to the 1993 Halloween classic!is not announced to direct.""
+]
+}"
+tweet-sno-1274,"A shopping center owner is suing a Chick-fil-A restaurant, claiming that the restaurant’s drive-thru has become so popular that cars backflow into the center’s aisles. Stay updated on Toledo-area news by downloading #BladeNewsSlide 📲",A man sued the Chick-fil-A chain because of its restaurants' long drive-thru lines.,"{
+""negated_claims"": [
+""A shopping center owner is not suing a Chick-fil-A restaurant, claiming that the restaurant’s drive-thru has become so popular that cars backflow into the center’s aisles."",
+""A shopping center owner is suing a Chick-fil-A restaurant but not claiming that the restaurant’s drive-thru has become so popular that cars backflow into the center’s aisles."",
+""A shopping center owner is suing a Chick-fil-A restaurant, claiming that the restaurant’s drive-thru has not become so popular that cars backflow into the center’s aisles.""
+]
+}"
+tweet-sno-1275,Costco loses an estimated $30 to $40 million a year by sticking to their $4.99 price for rotisserie chicken. They'd rather keep members happy and foot traffic high.,Costco loses an estimated $30 to $40 million a year by keeping rotisserie chickens at $4.99 each. But the company would rather keep members happy and foot traffic high.,"{
+  ""negated_claims"": [
+    ""Costco does not lose an estimated $30 to $40 million a year by sticking to their $4.99 price for rotisserie chicken."",
+    ""Costco loses an estimated $30 to $40 million a year by not sticking to their $4.99 price for rotisserie chicken."",
+    ""Costco loses less than $30 to $40 million a year by sticking to their $4.99 price for rotisserie chicken.""
+  ]
+}"
+tweet-sno-1276,"No Presidential candidate ever came even close to losing an Election who won Iowa, Florida and Ohio. I won all three, by a lot!","Donald Trump was the first candidate to lose a presidential election despite winning in Ohio, Florida, and Iowa.","{
+""negated_claims"": [
+""Presidential candidates have come close to losing elections despite winning Iowa, Florida, and Ohio."",
+""Candidates who won Iowa, Florida, and Ohio have lost elections."",
+""No candidate who won Iowa, Florida, and Ohio has ever lost by a lot.""
+]
+}"
+tweet-sno-1277,NEW YORKERS: Today I learned the design for these radiators came about during the Spanish flu pandemic of 1918. Engineers wanted to keep an apartment warm while ventilating the space from airborne illnesses because THEY WERE MEANT TO BE KEPT ON WITH THE WINDOWS FULLY OPEN (!!!!),Some steam radiators built in older apartment buildings in cities like New York were designed to keep dwellings warm with windows open due to the 1918 pandemic.,"{
+""negated_claims"": [
+""NEW YORKERS: Today I learned the design for these radiators did not come about during the Spanish flu pandemic of 1918."",
+""NEW YORKERS: Today I learned the design for these radiators came about before the Spanish flu pandemic of 1918."",
+""NEW YORKERS: Today I learned the design for these radiators came about after the Spanish flu pandemic of 1918.""
+]
+}"
+tweet-sno-1278, very disappointed with today's bacon egg Mc Muffin!! No proper egg and it was still frozen cold!!,McDonald's breakfast menu items use frozen eggs.,"{
+""negated_claims"": [
+""very satisfied with today's bacon egg Mc Muffin!! Proper egg and it was perfectly warm!!"",
+""today's bacon egg Mc Muffin was okay!! Proper egg and it was perfectly warm!!"",
+""very disappointed with today's bacon egg Mc Muffin!! Improper egg and it was warm!!""
+]
+}"
+tweet-sno-1279,Rep. Louie Gohmert’s tooth just fell out at his press conference.,A video shows U.S. Rep. Louie Gohmert's tooth falling out during a live news conference.,"{
+""negated_claims"": [
+""Rep. Louie Gohmert's tooth did not fall out at his press conference."",
+""Rep. Louie Gohmert's tooth falling out did not happen during his press conference."",
+""Rep. Louie Gohmert’s tooth remained intact during his press conference.""
+]
+}"
+tweet-sno-1280,"Joe Biden is asked about his disagreements with Kamala Harris on certain issues: ""Like I told Barack, if I reach something where there's a fundamental disagreement we have based on a moral principle, I'll develop some disease and say I have to resign.""","Regarding what he would do if he disagreed with Vice President-elect Kamala Harris, U.S. President-elect Joe Biden said: “Like I told Barack, if I reach something where there’s a fundamental disagreement we have based on a moral principle, I’ll develop some disease and say I have to resign.""","{
+""negated_claims"": [
+""Joe Biden did not say he would develop some disease and say he has to resign if he reached a fundamental disagreement with Kamala Harris based on a moral principle."",
+""Joe Biden mentioned that he would not develop some disease and say he has to resign over a fundamental disagreement with Kamala Harris based on a moral principle."",
+""Joe Biden denies the idea of developing some disease and resigning if he had a fundamental disagreement with Kamala Harris based on a moral principle.""
+]
+}"
+tweet-sno-1281,The time Indiana Jones caused an avalanche with his saxophone.,"Indiana Jones, portrayed by Harrison Ford, once defeated a group of villains by playing a saxophone.","{
+""negated_claims"": [
+""Indiana Jones did not cause an avalanche with his saxophone."",
+""Indiana Jones caused no avalanche with his saxophone."",
+""Indiana Jones caused an avalanche without his saxophone.""
+]
+}"
+tweet-sno-1282,Just for you completist out there. I remembered today that Indiana Jones once beat some villains by jamming on a saxophone.,"Indiana Jones, portrayed by Harrison Ford, once defeated a group of villains by playing a saxophone.","{
+""negated_claims"": [
+""Indiana Jones, portrayed by Harrison Ford, did not defeat a group of villains by playing a saxophone."",
+""Indiana Jones never defeated a group of villains by playing a saxophone."",
+""It is false that Indiana Jones defeated a group of villains by playing a saxophone.""
+]
+}"
+tweet-sno-1283,We all remember that time Indiana Jones defeated 3 men with a saxophone.,"Indiana Jones, portrayed by Harrison Ford, once defeated a group of villains by playing a saxophone.","{
+""negated_claims"": [
+""We all remember that time Indiana Jones did not defeat 3 men with a saxophone."",
+""We all remember that time Indiana Jones defeated 3 men without a saxophone."",
+""We all remember that time Indiana Jones defeated 3 men, but not with a saxophone.""
+]
+}"
+tweet-sno-1284,"HOLY SHIT. I present to you Harrison Ford as a bearded Indiana Jones, learning the blues from, then looking straight into camera and using a saxophone TO CAUSE AN AVALANCHE, YOU ARE WELCOME TWITTER","Indiana Jones, portrayed by Harrison Ford, once defeated a group of villains by playing a saxophone.","{
+""negated_claims"": [
+""HOLY SHIT. I present to you Harrison Ford as a bearded Indiana Jones, learning the blues from, then looking straight into camera and using a saxophone TO NOT CAUSE AN AVALANCHE, YOU ARE WELCOME TWITTER"",
+""HOLY SHIT. I present to you Harrison Ford as a bearded Indiana Jones, not learning the blues from, then looking straight into camera and using a saxophone TO CAUSE AN AVALANCHE, YOU ARE WELCOME TWITTER"",
+""HOLY SHIT. I present to you Harrison Ford as a bearded Indiana Jones, learning the blues from, then looking straight into camera and not using a saxophone TO CAUSE AN AVALANCHE, YOU ARE WELCOME TWITTER""
+]
+}"
+tweet-sno-1285,"1/ There will be no update today. At 8:30 am this morning, state police came into my house and took all my hardware and tech. They were serving a warrant on my computer after DOH filed a complaint. They pointed a gun in my face. They pointed guns at my kids..","In December 2020, Florida state police ""raided"" the home of Rebekah Jones, executing a search warrant and confiscating electronic devices.","{
+""negated_claims"": [
+""There will be an update today. At 8:30 am this morning, state police did not come into my house and take all my hardware and tech. They were not serving a warrant on my computer after DOH filed a complaint. They did not point a gun in my face. They did not point guns at my kids."",
+""There will be no update today. At 8:30 am this morning, state police did not come into my house and take all my hardware and tech. They did not serve a warrant on my computer after DOH filed a complaint. They did not point a gun in my face. They did not point guns at my kids."",
+""There will be no update today. At 8:30 am this morning, state police came into my house and did not take all my hardware and tech. They were not serving a warrant on my computer after DOH filed a complaint. They pointed no gun in my face. They pointed no guns at my kids.""
+]
+}"
+tweet-sno-1286,"Lmaoapparently asked Sally Ride, the first woman in space, if ONE HUNDRED tampons would be enough for a week in space and if she needed more 😭😭 they actually didn’t know how many tampons women used.","In advance of her 1984 mission aboard the space shuttle Challenger, NASA engineers asked Sally Ride if 100 tampons would be enough for two weeks in space.","{
+""negated_claims"": [
+""Lmaoapparently asked Sally Ride, the first woman in space, if ONE HUNDRED tampons would be enough for two weeks in space and if she needed more 😭😭 they actually didn’t know how many tampons women used."",
+""Lmaoapparently asked Sally Ride, the first woman in space, if ONE HUNDRED tampons would be enough for a week in space and if she needed less 😭😭 they actually didn’t know how many tampons women used."",
+""Lmaoapparently asked Sally Ride, the first woman in space, if ONE HUNDRED tampons would be enough for a week in space and if she needed fewer 😭😭 they actually didn’t know how many tampons women used.""
+]
+}"
+tweet-sno-1287,i was atand the worker gave me my food but i said “my pleasure” before him. i asked him “don’t i get a free ice cream or something if i say it before you do” he said that’s fake :(,"If a customer says ""my pleasure"" to a Chick-fil-A employee, they are entitled to a discount, a free ice cream menu item, or free food altogether.","{
+""negated_claims"": [
+""I wasn't at Chick-fil-A and the worker didn't give me my food but I didn't say “my pleasure” before him."",
+""I was at Chick-fil-A and the worker gave me my food but I did not say “my pleasure” before him."",
+""I was at Chick-fil-A and the worker gave me my food but I said “my pleasure” after him.""
+]
+}"
+tweet-sno-1288,"If u go to chick fil a and say “my pleasure” before the employee that takes your order says it, u get a free ice cream cookie sandwich #thisbetterbetrue ","If a customer says ""my pleasure"" to a Chick-fil-A employee, they are entitled to a discount, a free ice cream menu item, or free food altogether.","{
+""negated_claims"": [
+""If u go to chick fil a and do not say “my pleasure” before the employee that takes your order says it, u get a free ice cream cookie sandwich."",
+""If u go to chick fil a and say “my pleasure” after the employee that takes your order says it, u get a free ice cream cookie sandwich."",
+""If u go to chick fil a and say something other than “my pleasure” before the employee that takes your order says it, u get a free ice cream cookie sandwich.""
+]
+}"
+tweet-sno-1289,Saying my pleasure before they do at Chick-fil-A does not get you a free ice cream trust me I got the weirdest look 😭😂,"If a customer says ""my pleasure"" to a Chick-fil-A employee, they are entitled to a discount, a free ice cream menu item, or free food altogether.","{
+  ""negated_claims"": [
+    ""Saying my pleasure before they do at Chick-fil-A gets you a free ice cream trust me I got the weirdest look 😭😂"",
+    ""Saying my pleasure before they do at Chick-fil-A does get you a free ice cream trust me I got the weirdest look 😭😂"",
+    ""Saying my pleasure before they do at Chick-fil-A entitles you to a free ice cream trust me I got the weirdest look 😭😂""
+  ]
+}"
+tweet-sno-1290,Just so everyone knows…saying “my pleasure” before a Chick-fil-A employee does not get you a free cookie ice cream sandwich or a discount or anything else tik tok has oh so willingly lied to you about!,"If a customer says ""my pleasure"" to a Chick-fil-A employee, they are entitled to a discount, a free ice cream menu item, or free food altogether.","{
+""negated_claims"": [
+""Just so everyone knows…saying “my pleasure” before a Chick-fil-A employee does get you a free cookie ice cream sandwich or a discount or something else tik tok has oh so willingly lied to you about!"",
+""Just so everyone knows…saying “my pleasure” before a Chick-fil-A employee does not get you a free cookie ice cream sandwich or a discount, and tik tok has not lied to you about it!"",
+""Just so everyone knows…saying “my pleasure” before a Chick-fil-A employee does get you a free ice cream menu item or a discount, contrary to what tik tok has claimed!""
+]
+}"
+tweet-sno-1291,"President-elect Joe Biden says he'd ""be happy"" to join former Presidents Obama, Bush and Clinton in getting a Covid vaccine in public to prove it's safe. ""When Dr. Fauci says we have a vaccine that is safe, that's the moment in which I will stand before the public and say that""",U.S. President-elect Joe Biden said he will get the COVID-19 vaccination in public on television.,"{
+""negated_claims"": [
+""President-elect Joe Biden says he'd be reluctant to join former Presidents Obama, Bush, and Clinton in getting a Covid vaccine in public to prove it's safe."",
+""President-elect Joe Biden says he wouldn't be happy to join former Presidents Obama, Bush, and Clinton in getting a Covid vaccine in public to prove it's safe."",
+""President-elect Joe Biden says he'd be happy not to join former Presidents Obama, Bush, and Clinton in getting a Covid vaccine in public to prove it's safe.""
+]
+}"
+tweet-sno-1292,"It is also beyond the pale that Rep Matt Putz – I mean– would participate in this. What a fool. Matt – You are not welcome in New Jersey, and frankly I don’t ever want you back in this state.","New Jersey Gov. Phil Murphy called Florida Rep. Matt Gaetz the name ""Matt Putz"" and a ""fool.""","{
+""negated_claims"": [
+""It is not beyond the pale that Rep Matt Putz – I mean – would participate in this. What a fool. Matt – You are welcome in New Jersey, and frankly I do want you back in this state."",
+""It is beyond the pale that Rep Matt Putz – I mean – would not participate in this. What a fool. Matt – You are welcome in New Jersey, and frankly I do want you back in this state."",
+""It is beyond the pale that Rep Matt Putz – I mean – would participate in this. Matt – You are welcome in New Jersey, and frankly I do want you back in this state.""
+]
+}"
+tweet-sno-1293,LIGHTS ON and delivering food and water to our passengers! Thank youwithfor opening on a SUNDAY! #ChristmasMiracle,"At least one Chick-fil-A restaurant ""broke from tradition"" and opened on a Sunday.","{
+""negated_claims"": [
+""LIGHTS OFF and delivering food and water to our passengers! Thank youwithfor opening on a SUNDAY! #ChristmasMiracle"",
+""LIGHTS ON and not delivering food and water to our passengers! Thank youwithfor opening on a SUNDAY! #ChristmasMiracle"",
+""LIGHTS ON and delivering food and water to our passengers! Thank youwithfor not opening on a SUNDAY! #ChristmasMiracle""
+]
+}"
+tweet-sno-1294,Is drake really making a candle that smells like him? I hope jay is ready to drop $80 on it. 😇,"Drake released a scented candle that ""actually smells like Drake.""","{
+""negated_claims"": [
+""Drake is not making a candle that smells like him."",
+""Drake is making a candle that does not smell like him."",
+""Drake is making a candle that smells like someone else.""
+]
+}"
+tweet-sno-1295,Has anyone happened to hear if Flash Player is going to be supported after December 2020 in?,Adobe announced that Flash Player would no longer be supported.,"{
+""negated_claims"": [
+""Has anyone happened to hear if Flash Player is not going to be supported after December 2020 in?"",
+""Has anyone happened to hear if Flash Player is going to be unsupported after December 2020 in?"",
+""Has anyone happened to hear if Flash Player is going to be discontinued after December 2020 in?""
+]
+}"
+tweet-sno-1296,So what exactly happens in December when Flash is no longer supported?,Adobe announced that Flash Player would no longer be supported.,"{
+""negated_claims"": [
+""So what exactly happens in December when Flash continues to be supported?"",
+""So what exactly happens in December when Flash is still supported?"",
+""So what exactly happens in December if Flash remains supported?""
+]
+}"
+tweet-sno-1297,Wait what???? Flash player will no longer be supported inchrome after December 2020? Does that mean I can’t watch YouTube and flash player oriented websites online after December 2020?,Adobe announced that Flash Player would no longer be supported.,"{
+""negated_claims"": [
+""Flash player will continue to be supported in Chrome after December 2020."",
+""Flash player will still be supported in Chrome after December 2020."",
+""Flash player will be supported in Chrome beyond December 2020.""
+]
+}"
+tweet-sno-1298,Important message for children of #Ireland – #Santa is coming & will be exempt from #Covid restrictions on International Travel. However children should be aware that social distancing guidelines should apply to Santa.,"Ireland Foreign Minister Simon Coveney declared in a Nov. 26, 2020, statement that Santa Claus is considered an essential worker, granting him exemption from self-quarantine to deliver Christmas presents.","{
+""negated_claims"": [
+""Important message for children of #Ireland – #Santa is not coming & will not be exempt from #Covid restrictions on International Travel."",
+""Important message for children of #Ireland – #Santa is coming & will not be exempt from #Covid restrictions on International Travel."",
+""Important message for children of #Ireland – #Santa is not coming & will be exempt from #Covid restrictions on International Travel.""
+]
+}"
+tweet-sno-1299,🚨 🚨 BREAKING NEWS 🚨 🚨 There is currently a monolith at the top of Pine Mountain in Atascadero!! (Photos by),"A new mysterious ""monolith"" was found in California.","{
+""negated_claims"": [
+""There is not currently a monolith at the top of Pine Mountain in Atascadero."",
+""There is currently no monolith at the top of Pine Mountain in Atascadero."",
+""There was never a monolith at the top of Pine Mountain in Atascadero.""
+]
+}"
+tweet-sno-1300,"There’s a viral thread saying LOUIS XIV WAS A PERVERT WHOSE FETISH WAS WATCHING CHILDBIRTH. This is why, it claims, women are made to lie on their backs in childbirth. IT’S BULLSHIT! It was the eminent obstetrician of the 1660s Francois Mauriceau who made this more popular 👇",King Louis XIV had a fetish for watching women give birth and required that they do so lying on their back so that he could have an unobstructed view.,"{
+""negated_claims"": [
+""There’s a viral thread saying LOUIS XIV was not a pervert whose fetish was watching childbirth."",
+""There’s a viral thread claiming women are not made to lie on their backs in childbirth due to Louis XIV’s fetish."",
+""There’s a viral thread saying LOUIS XIV had no fetish for watching childbirth.""
+]
+}"
+tweet-sno-1301,We know you’re finding it difficult to accept the election result so we projected it onto your golf course with some familiar music,"A photograph shows the word ""loser"" projected onto the lawn of U.S. President Donald Trump's golf course in Scotland.","{
+""negated_claims"": [
+""We know you’re finding it easy to accept the election result so we projected it onto your golf course with some familiar music."",
+""We know you’re finding it difficult to reject the election result so we projected it onto your golf course with some familiar music."",
+""We know you’re finding it difficult to accept the election result so we did not project it onto your golf course with some familiar music.""
+]
+}"
+tweet-sno-1302,"The article “A closer look at U.S. deaths due to COVID-19,” published in the Science & Technology section on Nov. 22, has been deleted.","An article titled “COVID-19 Deaths: A Look at U.S. Data” was published in the Johns Hopkins student-run newspaper on Nov. 22, 2020, and subsequently retracted.","{
+  ""negated_claims"": [
+    ""The article “A closer look at U.S. deaths due to COVID-19,” published in the Science & Technology section on Nov. 22, has not been deleted."",
+    ""The article “A closer look at U.S. deaths due to COVID-19,” published in the Science & Technology section on Nov. 22, has been undeleted."",
+    ""The article “A closer look at U.S. deaths due to COVID-19,” published in the Science & Technology section on Nov. 22, remains published.""
+  ]
+}"
+tweet-sno-1303," Hahaha,you were on ""Teen Win Lose or Draw."" Cool.",Actor Leonardo DiCaprio appeared on a Disney Channel game show.,"{
+""negated_claims"": [
+""Hahaha, you were not on 'Teen Win Lose or Draw.' Cool."",
+""Hahaha, you were on 'Teen Win Lose or Draw.' Not cool."",
+""Hahaha, you were on a different show, not 'Teen Win Lose or Draw.' Cool.""
+]
+}"
+tweet-sno-1304,Alittle #flashbackfriday withwhen she was on the 1990 show teen win lose or draw any of you remember that show believe it or not she played against Leonardo Dicaprio who knew…,Actor Leonardo DiCaprio appeared on a Disney Channel game show.,"{
+  ""negated_claims"": [
+    ""She did not play against Leonardo DiCaprio on the 1990 show Teen Win, Lose or Draw."",
+    ""Leonardo DiCaprio did not play against her on the 1990 show Teen Win, Lose or Draw."",
+    ""She played with, not against, Leonardo DiCaprio on the 1990 show Teen Win, Lose or Draw.""
+  ]
+}"
+tweet-sno-1305,"Teen Win, Lose or Draw – Soleil Moon Frye vs Leonardo DiCaprio (1990)a través de ",Actor Leonardo DiCaprio appeared on a Disney Channel game show.,"{
+""negated_claims"": [
+""Teen Win, Lose or Draw – Soleil Moon Frye did not appear with Leonardo DiCaprio (1990)a través de"",
+""Teen Win, Lose or Draw – Soleil Moon Frye vs someone not Leonardo DiCaprio (1990)a través de"",
+""Teen Win, Lose or Draw – Leonardo DiCaprio did not appear on the show in 1990 (a través de)""
+]
+}"
+tweet-sno-1306,"Why won’t Governor, the hapless Governor of Georgia, use his emergency powers, which can be easily done, to overrule his obstinate Secretary of State, and do a match of signatures on envelopes. It will be a “goldmine” of fraud, and we will easily WIN the state….",A signature audit of absentee ballots in Georgia must be conducted and could overturn the 2020 presidential vote results in that state.,"{
+""negated_claims"": [
+""Why won’t Governor, the hapless Governor of Georgia, use his emergency powers, which can be easily done, to overrule his obstinate Secretary of State, and do a match of signatures on envelopes? It will not be a “goldmine” of fraud, and we will not easily WIN the state…."",
+""Why won’t Governor, the capable Governor of Georgia, use his emergency powers, which can be easily done, to support his cooperative Secretary of State, and do a match of signatures on envelopes? It will be a “goldmine” of fraud, and we will not easily WIN the state…."",
+""Why won’t Governor, the hapless Governor of Georgia, use his emergency powers, which can be easily done, to overrule his obstinate Secretary of State, and do a match of signatures on envelopes? It will be a “goldmine” of accuracy, and we will easily WIN the state….""
+]
+}"
+tweet-sno-1307,"In Detroit, there are FAR MORE VOTES THAN PEOPLE. Nothing can be done to cure that giant scam. I win Michigan!",Detroit recorded more votes cast than eligible voters living in the city in the 2020 general election.,"{
+""negated_claims"": [
+""In Detroit, there are not FAR MORE VOTES THAN PEOPLE."",
+""Nothing can be done to cure that giant scam of far more votes than people in Detroit."",
+""There are not FAR MORE VOTES THAN PEOPLE in Detroit.""
+]
+}"
+tweet-sno-1308,"FLASHBACK: In 2018, President Trump attacked Carrots the turkey for refusing to concede he had lost the vote on the White House turkey pardon contest. ""This was a fair election… unfortunately, Carrots refused to concede and demanded a recount.""","U.S. President Donald Trump pardoned a turkey whom he said had lost a ""fair and open election"" but ""refused to concede.""","{
+""negated_claims"": [
+""In 2018, President Trump did not attack Carrots the turkey for refusing to concede he had lost the vote on the White House turkey pardon contest."",
+""In 2018, President Trump attacked Carrots the turkey for conceding he had lost the vote on the White House turkey pardon contest."",
+""In 2018, President Trump attacked Carrots the turkey for refusing to concede he had won the vote on the White House turkey pardon contest.""
+]
+}"
+tweet-sno-1309,"At 1:30pm AKST this afternoon, the sun will set and Utqiaġvik will enter a 66 day period of polar night. The sun will rise again on January 23rd, 2021. #akwx","The sun does not rise in Utqiagvik, Alaska, for more than 60 days during the winter.","{
+""negated_claims"": [
+""At 1:30pm AKST this afternoon, the sun will not set and Utqiaġvik will not enter a 66 day period of polar night."",
+""The sun will set at 1:30pm AKST this afternoon, but Utqiaġvik will not enter a 66 day period of polar night."",
+""At 1:30pm AKST this afternoon, the sun will set and Utqiaġvik will enter a period of polar night for less than 66 days.""
+]
+}"
+tweet-sno-1310,Tyndall is DOD’s First Base to Adopt Robot Dogs – Air Force Magazine. Go!,Tyndall Air Force Base in Florida will be the first to implement semi-autonomous robotic “canines” in their defense regiment.,"{
+""negated_claims"": [
+""Tyndall is not DOD’s first base to adopt robot dogs – Air Force Magazine. Go!"",
+""Tyndall is DOD’s first base to not adopt robot dogs – Air Force Magazine. Go!"",
+""Tyndall is DOD’s first base to adopt non-robotic dogs – Air Force Magazine. Go!""
+]
+}"
+tweet-sno-1311,"“Evidence of voter fraud continues to grow, including 20,000 dead people on the Pennsylvania voters roll and many thousands all over the Country. Now, there has been an artificial number of votes in favor of Joe Biden.” ","Pennsylvania has 20,000 dead persons listed on its election rolls, which is evidence of massive voter fraud in 2020.","{
+""negated_claims"": [
+""Evidence of voter fraud does not continue to grow, including 20,000 dead people on the Pennsylvania voters roll and many thousands all over the Country."",
+""Evidence of voter fraud continues to shrink, including 20,000 dead people on the Pennsylvania voters roll and many thousands all over the Country."",
+""Evidence of voter fraud continues to grow, excluding 20,000 dead people on the Pennsylvania voters roll and many thousands all over the Country.""
+]
+}"
+tweet-sno-1312,Little #sawwhet owl recovering at #ravensbeardwildlifecenter after being found stuck inside the #RockefellerCenterChristmastree Story onat pm.,A small owl was found in the branches of the Rockefeller Center Christmas tree in 2020.,"{
+""negated_claims"": [
+""Little #sawwhet owl not recovering at #ravensbeardwildlifecenter after being found stuck inside the #RockefellerCenterChristmastree Story onat pm."",
+""Little #sawwhet owl recovering at #ravensbeardwildlifecenter after not being found stuck inside the #RockefellerCenterChristmastree Story onat pm."",
+""Little #sawwhet owl not recovering at #ravensbeardwildlifecenter after not being found stuck inside the #RockefellerCenterChristmastree Story onat pm.""
+]
+}"
+tweet-sno-1313,"Look at this in Wisconsin! A day AFTER the election, Biden receives a dump of 143,379 votes at 3:42AM, when they learned he was losing badly. This is unbelievable!",Joe Biden received a fraudulent 'dump' of 143K ballots in Wisconsin in the early morning hours after Election Day 2020.,"{
+""negated_claims"": [
+""Look at this in Wisconsin! A day AFTER the election, Biden does not receive a dump of 143,379 votes at 3:42AM, when they learned he was losing badly. This is unbelievable!"",
+""Look at this in Wisconsin! A day AFTER the election, Biden receives a dump of less than 143,379 votes at 3:42AM, when they learned he was losing badly. This is unbelievable!"",
+""Look at this in Wisconsin! A day BEFORE the election, Biden receives a dump of 143,379 votes at 3:42AM, when they learned he was losing badly. This is unbelievable!""
+]
+}"
+tweet-sno-1314,"The raw data in the server seized by the US military shows Trump won by a landslide 👇🏻👇🏻👇🏻 410!!!!_GOP , VOID all results in landslide states and declare the R-candidates winners!!",A voting systems server seized by the U.S. military in Germany proved Donald Trump won the 2020 election in an electoral landslide.,"{
+""negated_claims"": [
+""The raw data in the server seized by the US military does not show Trump won by a landslide 👇🏻👇🏻👇🏻 410!!!!_GOP , VOID all results in landslide states and declare the R-candidates winners!!"",
+""The raw data in the server seized by the US military shows Trump did not win by a landslide 👇🏻👇🏻👇🏻 410!!!!_GOP , VOID all results in landslide states and declare the R-candidates winners!!"",
+""The raw data in the server seized by the US military shows Trump lost by a landslide 👇🏻👇🏻👇🏻 410!!!!_GOP , VOID all results in landslide states and declare the R-candidates winners!!""
+]
+}"
+tweet-sno-1315,Supposedly the Germany server data shows Trump landslide: 410-128 👍,A voting systems server seized by the U.S. military in Germany proved Donald Trump won the 2020 election in an electoral landslide.,"{
+""negated_claims"": [
+""Supposedly the Germany server data does not show Trump landslide: 410-128 👍"",
+""Supposedly the Germany server data shows Trump did not win a landslide: 410-128 👍"",
+""Supposedly the Germany server data shows a landslide for Trump is not 410-128 👍""
+]
+}"
+tweet-sno-1316,"!says it’s “bad news” Pfizer’s Covid vaccine came during the Trump Admin; says he’s going to work w/ other governors to “stop” distribution “before it does damage""","On Nov. 9, 2020, New York Gov. Andrew Cuomo said it was ""bad news"" that Pfizer had developed what appeared to be a successful COVID-19 vaccine, during U.S. President Donald Trump's tenure.","
+{
+""negated_claims"": [
+""!says it’s “good news” Pfizer’s Covid vaccine came during the Trump Admin; says he’s going to work w/ other governors to “support” distribution “before it does damage”"",
+""!says it’s “bad news” Pfizer’s Covid vaccine came after the Trump Admin; says he’s going to work w/ other governors to “stop” distribution “before it does damage”"",
+""!says it’s “bad news” Pfizer’s Covid vaccine never came during the Trump Admin; says he’s going to work w/ other governors to “stop” distribution “before it does damage”""
+]
+}"
+tweet-sno-1317,Another example of why it is prudent to let the process run its course: Thousands of Uncounted Votes Found a Week After Election in Puerto Rico,"U.S. Sen. John Cornyn of Texas tweeted about uncounted ballots in Puerto Rico as an example of example of ""why it is prudent to let the process run its course"" in the 2020 U.S. presidential election.","{
+""negated_claims"": [
+""Another example of why it is not prudent to let the process run its course: Thousands of Uncounted Votes Found a Week After Election in Puerto Rico"",
+""Another example of why it is prudent to not let the process run its course: Thousands of Uncounted Votes Found a Week After Election in Puerto Rico"",
+""Another example of why it is prudent to let the process run its course: Thousands of Counted Votes Found a Week After Election in Puerto Rico""
+]
+}"
+tweet-sno-1318,"Georgia SoS office says Floyd County would have discovered the 2,600 extra votes without the audit because the number of voters who had checked in was greater than the tally, and they were already looking into it.","Some 2,600 uncounted votes, a majority of which were cast for U.S. President Donald Trump, were found in Floyd County, Georgia, moving the president about 800 votes closer to President-elect Joe Biden's tally in the 2020 general election.","{
+""negated_claims"": [
+""Georgia SoS office says Floyd County would not have discovered the 2,600 extra votes without the audit because the number of voters who had checked in was greater than the tally, and they were already looking into it."",
+""Georgia SoS office says Floyd County would have discovered fewer than 2,600 extra votes without the audit because the number of voters who had checked in was greater than the tally, and they were already looking into it."",
+""Georgia SoS office says Floyd County would not have discovered the 2,600 extra votes had they not looked into the number of voters who had checked in compared to the tally, and they were not already looking into it.""
+]
+}"
+tweet-sno-1319,"BREAKING: A recount in Georgia’s presidential race found more than 2,600 ballots in Floyd County that hadn’t originally been tallied, likely helping President Donald Trump reduce his 14,000-vote deficit to Joe Biden.","Some 2,600 uncounted votes, a majority of which were cast for U.S. President Donald Trump, were found in Floyd County, Georgia, moving the president about 800 votes closer to President-elect Joe Biden's tally in the 2020 general election.","{
+""negated_claims"": [
+""BREAKING: A recount in Georgia’s presidential race did not find more than 2,600 ballots in Floyd County that hadn’t originally been tallied, likely helping President Donald Trump reduce his 14,000-vote deficit to Joe Biden."",
+""BREAKING: A recount in Georgia’s presidential race found fewer than 2,600 ballots in Floyd County that hadn’t originally been tallied, likely helping President Donald Trump reduce his 14,000-vote deficit to Joe Biden."",
+""BREAKING: A recount in Georgia’s presidential race found more than 2,600 ballots in Floyd County that had originally been tallied, likely helping President Donald Trump reduce his 14,000-vote deficit to Joe Biden.""
+]
+}"
+tweet-sno-1320,Look at the size of this crowd down Pennsylvania Ave. More than a MILLION people showed up to support this President. Meanwhile Biden can’t fill 36 circles. #MillionMAGAMarch,"More than one million people took part in a pro-Donald Trump march in Washington, D.C., on Nov. 14, 2020.","{
+""negated_claims"": [
+""Look at the size of this crowd down Pennsylvania Ave. Less than a million people showed up to support this President. Meanwhile Biden can’t fill 36 circles. #MillionMAGAMarch"",
+""Look at the size of this crowd down Pennsylvania Ave. More than a million people did not show up to support this President. Meanwhile Biden can’t fill 36 circles. #MillionMAGAMarch"",
+""Look at the size of this crowd down Pennsylvania Ave. Not a million people showed up to support this President. Meanwhile Biden can’t fill 36 circles. #MillionMAGAMarch""
+]
+}"
+tweet-sno-1321,"File under: Wait, WHAT? From: NewsMax (via The Righting) ""President Trump should retire immediately and let Mike Pence concede the election, occupy the White House, and handle the transition…This would give Pence a head start on securing the Republican nomination in 2024.","The conservative news website Newsmax published a column that suggested U.S. President Donald Trump should ""retire immediately,"" letting Vice President Mike Pence handle the transition to the incoming Biden-Harris administration.","{
+""negated_claims"": [
+""President Trump should not retire immediately and let Mike Pence concede the election, occupy the White House, and handle the transition."",
+""President Trump should retire immediately and not let Mike Pence concede the election, occupy the White House, and handle the transition."",
+""President Trump should retire immediately and let Mike Pence not concede the election, occupy the White House, and handle the transition.""
+]
+}"
+tweet-sno-1322,"Right wing Newsmax, which is owned by Trump’s friend Chris Ruddy, suggesting he retire: “To avoid all this unpleasantness President Trump should retire immediately and let Mike Pence concede the election, occupy the White House and handle the transition”","The conservative news website Newsmax published a column that suggested U.S. President Donald Trump should ""retire immediately,"" letting Vice President Mike Pence handle the transition to the incoming Biden-Harris administration.","{
+""negated_claims"": [
+""Right wing Newsmax, which is owned by Trump’s friend Chris Ruddy, did not suggest he retire: “To avoid all this unpleasantness President Trump should retire immediately and let Mike Pence concede the election, occupy the White House and handle the transition”."",
+""Right wing Newsmax, which is not owned by Trump’s friend Chris Ruddy, suggesting he retire: “To avoid all this unpleasantness President Trump should retire immediately and let Mike Pence concede the election, occupy the White House and handle the transition”."",
+""Right wing Newsmax, which is owned by Trump’s friend Chris Ruddy, suggesting he should not retire: “To avoid all this unpleasantness President Trump should retire immediately and let Mike Pence concede the election, occupy the White House and handle the transition”.""
+]
+}"
+tweet-sno-1323," you were my favorite media outlet until this! ""To avoid all this unpleasantness, President Trump should retire immediately and let Mike Pence concede the election, occupy the White House, and handle the transition.""","The conservative news website Newsmax published a column that suggested U.S. President Donald Trump should ""retire immediately,"" letting Vice President Mike Pence handle the transition to the incoming Biden-Harris administration.","{
+""negated_claims"": [
+""To accept all this unpleasantness, President Trump should not retire immediately and let Mike Pence concede the election, occupy the White House, and handle the transition."",
+""To avoid all this unpleasantness, President Trump should not retire immediately and let Mike Pence concede the election, occupy the White House, and handle the transition."",
+""To avoid all this unpleasantness, President Trump should retire immediately and not let Mike Pence concede the election, occupy the White House, and handle the transition.""
+]
+}"
+tweet-sno-1324,"She's deleted it, butposted a tweet suggesting that Joe Biden will be president next year. Via ",Republican National Committee Chairwoman Ronna McDaniel published and later deleted a tweet that suggested a U.S. future under a Joe Biden-Kamala Harris presidential administration.,"{
+""negated_claims"": [
+""She's deleted it, but posted a tweet suggesting that Joe Biden will not be president next year."",
+""She's deleted it, but posted a tweet suggesting that Joe Biden will be president this year."",
+""She's deleted it, but posted a tweet not suggesting that Joe Biden will be president next year.""
+]
+}"
+tweet-sno-1325,Raising canes filed for bankruptcy,Raising Cane's Chicken Fingers filed for bankruptcy.,"{
+""negated_claims"": [
+""Raising Cane's Chicken Fingers did not file for bankruptcy."",
+""Raising Cane's did not file for bankruptcy."",
+""Raising Cane's Chicken Fingers has not filed for bankruptcy.""
+]
+}"
+tweet-sno-1326,"To top off 2020, Raising Canes filed bankruptcy… That was the last straw Jesus come get me",Raising Cane's Chicken Fingers filed for bankruptcy.,"{
+""negated_claims"": [
+""Raising Canes did not file bankruptcy."",
+""To top off 2020, Raising Canes did not file for bankruptcy."",
+""Raising Canes is not filing for bankruptcy.""
+]
+}"
+tweet-sno-1327,i saw #RIPDrake trending and had a fucking heart attack,TMZ reported that Drake was involved in a drive-by shooting and died at the age of 34. Genius also reported that Drake's family confirmed his passing.,"{
+""negated_claims"": [
+""I did not see #RIPDrake trending and had a fucking heart attack."",
+""I saw #RIPDrake not trending and had a fucking heart attack."",
+""I saw #RIPDrake trending and did not have a fucking heart attack.""
+]
+}"
+tweet-sno-1328,"Generation after generation, it's a pleasure to game alongside you. Happy launch day ","Xbox and PlayStation congratulated each other on Twitter for the November 2020 launch of Xbox Series X, Xbox Series S, and PS5.","{
+""negated_claims"": [
+""Generation after generation, it's not a pleasure to game alongside you. Happy launch day."",
+""Generation after generation, it's a pleasure to not game alongside you. Happy launch day."",
+""Generation after generation, it's a pleasure to game alone. Happy launch day.""
+]
+}"
+tweet-sno-1329,"Congrats,! #NextGeneration #GreatnessAwaits","Xbox and PlayStation congratulated each other on Twitter for the November 2020 launch of Xbox Series X, Xbox Series S, and PS5.","{
+""negated_claims"": [
+""Congrats to Xbox and PlayStation! #NextGeneration #GreatnessAwaits"",
+""Congrats,! #NextGeneration #GreatnessAwaits, but not just to one company!"",
+""Congrats,! #NextGeneration #GreatnessAwaits for both Xbox Series and PS5""
+]
+}"
+tweet-sno-1330,What happened to the ICE Twitter page? H/T: ,"On Nov. 12, 2020, U.S. Immigration and Customs Enforcement’s (ICE) Twitter account appeared to have been briefly removed from the social network.","{
+""negated_claims"": [
+""Nothing happened to the ICE Twitter page."",
+""Something did not happen to the ICE Twitter page."",
+""The ICE Twitter page was not affected in any way.""
+]
+}"
+tweet-sno-1331,What happened to U.S. Immigration and Customs Enforcement (ICE) Twitter profile?,"On Nov. 12, 2020, U.S. Immigration and Customs Enforcement’s (ICE) Twitter account appeared to have been briefly removed from the social network.","{
+""negated_claims"": [
+""Nothing happened to U.S. Immigration and Customs Enforcement (ICE) Twitter profile."",
+""No changes occurred to U.S. Immigration and Customs Enforcement (ICE) Twitter profile."",
+""The U.S. Immigration and Customs Enforcement (ICE) Twitter profile remained the same.""
+]
+}"
+tweet-sno-1332,"To commemorate #VeteransDay and honor those who have served in the military,announced that Gold Star Families and Veterans of the U.S. Armed Forces will have free entrance to national parks forever. Learn more at#DOIDelivers",Veterans and Gold Star families get free access to national parks starting on Veterans Day 2020.,"{
+""negated_claims"": [
+""To commemorate #VeteransDay and honor those who have served in the military, Gold Star Families and Veterans of the U.S. Armed Forces will not have free entrance to national parks forever."",
+""To commemorate #VeteransDay and honor those who have served in the military, Gold Star Families and Veterans of the U.S. Armed Forces will have free entrance to national parks for a limited time."",
+""To commemorate #VeteransDay and honor those who have served in the military, announced that non-Gold Star Families and non-Veterans of the U.S. Armed Forces will have free entrance to national parks forever.""
+]
+}"
+tweet-sno-1333,"HUGE NEWS: Thanks to the public-private partnership forged by President,announced its Coronavirus Vaccine trial is EFFECTIVE, preventing infection in 90% of its volunteers.","The research and development of Pfizer COVID-19 vaccine, which proved to be 90% effective against SARS-CoV-2 in November 2020, was funded by U.S. President Donald Trump’s Operation Warp Speed.","{
+  ""negated_claims"": [
+    ""Thanks to the public-private partnership forged by President, the announced Coronavirus Vaccine trial is NOT effective, preventing infection in 90% of its volunteers."",
+    ""Thanks to the public-private partnership forged by President, the announced Coronavirus Vaccine trial is effective, NOT preventing infection in 90% of its volunteers."",
+    ""Thanks to the public-private partnership forged by President, the announced Coronavirus Vaccine trial is effective, NOT preventing infection in volunteers.""
+  ]
+}"
+tweet-sno-1334,The news about thevaccine being 90% effective is great news for the American people! Many thanks toand Operation Warp Speed. This will be one of the most important action items done by the administration in response to this pandemic. ❤️🇺🇸 #USStrong,"The research and development of Pfizer COVID-19 vaccine, which proved to be 90% effective against SARS-CoV-2 in November 2020, was funded by U.S. President Donald Trump’s Operation Warp Speed.","{
+  ""negated_claims"": [
+    ""The news about the vaccine being 90% effective is not great news for the American people!"",
+    ""The vaccine being 90% effective is great news for people outside America!"",
+    ""Thanks to Operation Warp Speed, this will not be one of the most important action items done by the administration in response to this pandemic. ❤️🇺🇸 #USStrong""
+  ]
+}"
+tweet-sno-1335,We just did. Joe Biden clapped back against the MAGA hat 😯 (📷:),"U.S. President-elect Joe Biden’s hat answers Donald Trump’s campaign slogan “Make America Great Again” with the phrase, “We Just Did.”","{
+""negated_claims"": [
+""We did not just do. Joe Biden clapped back against the MAGA hat 😯 (📷:)"",
+""We just did not. Joe Biden clapped back against the MAGA hat 😯 (📷:)"",
+""We just didn’t. Joe Biden clapped back against the MAGA hat 😯 (📷:)""
+]
+}"
+tweet-sno-1336,"Congratulations to President-elect Joe Biden! His German Shepherd, Major, is set to become the first shelter dog in the White House. The Bidens adopted the German shepherd from the Delaware Humane Association two years ago after initially fostering him.","President-elect Joe Biden’s German shepherd, Major, will be the first rescue dog to reside at the White House.","{
+""negated_claims"": [
+""President-elect Joe Biden's German Shepherd, Major, is not set to become the first shelter dog in the White House."",
+""The Bidens did not adopt the German shepherd from the Delaware Humane Association two years ago."",
+""President-elect Joe Biden's German Shepherd, Major, will not be the first shelter dog in the White House.""
+]
+}"
+tweet-sno-1337,President Trump is playing golf club this morning as Biden appears to extend his lead in the election. The weekend getaway comes as U.S. coronavirus cases hit all-time highs and as Trump's own chief of staff Mark Meadows tests positive for Covid-19.,U.S. President Donald Trump was golfing when Joe Biden was projected as the winner of the 2020 presidential election.,"{
+""negated_claims"": [
+""President Trump is not playing golf club this morning as Biden appears to extend his lead in the election."",
+""President Trump is playing golf this morning as Biden does not appear to extend his lead in the election."",
+""President Trump is playing golf club this morning as Biden appears to extend his lead in the election, but U.S. coronavirus cases did not hit all-time highs.""
+]
+}"
+tweet-sno-1338,"#US : Trump loyalist and criminal Steve Bannon declares Dr. Fauci and FBI Director Wray should be beheaded and have their heads mounted on pikes at the White House ""as a warning to federal bureaucrats"". (📹)","Former U.S. President Donald Trump campaign adviser Steve Bannon called for a ""second term"" to kick off with the firings of NIH Director Dr. Anthony Fauci and FBI Director Christopher Wray, adding that he would put their ""heads on pikes"" as a warning.","{
+""negated_claims"": [
+""US: Trump loyalist and non-criminal Steve Bannon declares Dr. Fauci and FBI Director Wray should be beheaded and have their heads mounted on pikes at the White House 'as a warning to federal bureaucrats'."",
+""#US: Trump loyalist and criminal Steve Bannon declares Dr. Fauci and FBI Director Wray should not be beheaded and have their heads mounted on pikes at the White House 'as a warning to federal bureaucrats'."",
+""#US: Trump loyalist and criminal Steve Bannon declares Dr. Fauci and FBI Director Wray should be beheaded and not have their heads mounted on pikes at the White House 'as a warning to federal bureaucrats'.""
+]
+}"
+tweet-sno-1339,"BREAKING: Trump’sfinalized a rule today stripping gray wolves of their federal #EndangeredSpecies protections in the Lower 48 states. This dangerous move threatens ecosystems, ignores Indigenous guidance & contributes to the biodiversity crisis.","In October 2020, the U.S. Department of the Interior removed gray wolves from the Endangered Species Act, returning management and protection of the species to states and tribes.","{
+""negated_claims"": [
+""Trump’s rule today does not strip gray wolves of their federal #EndangeredSpecies protections in the Lower 48 states."",
+""This move does not threaten ecosystems, ignore Indigenous guidance, or contribute to the biodiversity crisis."",
+""The finalized rule today maintains gray wolves' federal #EndangeredSpecies protections in the Lower 48 states.""
+]
+}"
+tweet-sno-1340,"Here's video pulled from the Delaware County, PA live stream of a ballot worker filling out ballots.",A video captures a Pennsylvania elections worker actually filling out ballots rather than counting them.,"{
+""negated_claims"": [
+""Here's video pulled from the Delaware County, PA live stream of a ballot worker not filling out ballots."",
+""Here’s video pulled from the Delaware County, PA live stream of a ballot worker counting ballots."",
+""Here’s video not pulled from the Delaware County, PA live stream of a ballot worker filling out ballots.""
+]
+}"
+tweet-sno-1341,"Trump supporters: ""Stop the vote!"" Also Trump supporters: ""Count that vote!"" #election2020","U.S. President Trump's supporters can be heard chanting ""stop the count"" in one video and ""count the vote"" in another.","{
+""negated_claims"": [
+""Trump supporters: 'Don't stop the vote!' Also Trump supporters: 'Don't count that vote!' #election2020"",
+""Trump supporters: 'Keep the vote!' Also Trump supporters: 'Disregard that vote!' #election2020"",
+""Trump supporters: 'Continue the vote!' Also Trump supporters: 'Ignore that vote!' #election2020""
+]
+}"
+tweet-sno-1342,We don’t want to have a recount in any of the battleground states. Obama will steal it. Make sure all your friends and family vote.,"In 2012 Donald Trump tweeted, ""We don’t want to have a recount in any of the battleground states. Obama will steal it.""","{
+""negated_claims"": [
+""We want to have a recount in any of the battleground states. Obama will steal it. Make sure all your friends and family vote."",
+""We don’t want to have a recount in any of the battleground states. Obama will not steal it. Make sure all your friends and family vote."",
+""We don’t want to have a recount in any of the battleground states. Obama will steal it. Do not make sure all your friends and family vote.""
+]
+}"
+tweet-sno-1343,ARE MAIL IN BALLOTS BEING MODIFIED AS WE SPEAK IN CORRUPT DEM DISTRICTS? have you heard about Dems distributing sharpie pens to Trump voters and then invalidating their ballots?,"Arizona polling places gave out Sharpie pens to Trump supporters, use of which invalidated their ballots.","{
+""negated_claims"": [
+""Mail-in ballots are not being modified as we speak in corrupt Dem districts."",
+""Mail-in ballots are being modified in non-corrupt Dem districts."",
+""Dems are not distributing sharpie pens to Trump voters and invalidating their ballots.""
+]
+}"
+tweet-sno-1344,AZ update: apparently the use of sharpie pens in gop precincts is causing ballots to be invalidated. Could be huge numbers of mostly Trump supporters. More to come,"Arizona polling places gave out Sharpie pens to Trump supporters, use of which invalidated their ballots.","{
+""negated_claims"": [
+""AZ update: apparently the use of sharpie pens in gop precincts is not causing ballots to be invalidated."",
+""AZ update: apparently the use of sharpie pens in gop precincts is causing ballots to be validated."",
+""AZ update: apparently the use of sharpie pens in precincts that are not gop is causing ballots to be invalidated.""
+]
+}"
+tweet-sno-1345,Batches of ballots are being uploaded. 100% for Joe Biden. Massive #’s of ballots being invalidated in AZ as Trump supporters were told to use Sharpies. This isn’t democracy. We are being ruled over.,"Arizona polling places gave out Sharpie pens to Trump supporters, use of which invalidated their ballots.","{
+""negated_claims"": [
+""Batches of ballots are not being uploaded 100% for Joe Biden."",
+""Not 100% of the uploaded batches of ballots are for Joe Biden."",
+""Batches of ballots are being uploaded 100% for Joe Biden, and massive numbers of ballots are not being invalidated in AZ as Trump supporters were told to use Sharpies.""
+]
+}"
+tweet-sno-1346,Lucky to be alive: an Avila Beach woman says she is okay after a whale capsized her kayak (shown here). Hear from her and tips for staying safe out on the water tonight at 10&11. (Video: Kellie Balentine) ,A video shows a large humpback whale swallowing a kayaker.,"{
+""negated_claims"": [
+""Unlucky to be alive: an Avila Beach woman says she is not okay after a whale capsized her kayak (shown here)."",
+""Lucky to be alive: an Avila Beach woman says she is okay after a whale did not capsize her kayak (shown here)."",
+""Lucky to be alive: an Avila Beach woman says she is okay after a whale capsized someone else's kayak (shown here).""
+]
+}"
+tweet-sno-1347,"Here is another angle of the whale breaching with the kayak seemingly in its mouth. The woman who took this video tells me she was filming the whale in the distance and next she knew, the whale emerged trying to get the fish around the kayak (Video: Mandy Boyle) ",A video shows a large humpback whale swallowing a kayaker.,"{
+""negated_claims"": [
+""Here is another angle of the whale breaching without the kayak seemingly in its mouth."",
+""The woman who took this video tells me she was not filming the whale in the distance and next she knew, the whale emerged trying to get the fish around the kayak (Video: Mandy Boyle)"",
+""Here is another angle of the whale breaching with the kayak clearly not in its mouth.""
+]
+}"
+tweet-sno-1348,"Biden: ""I had a job with a nice country club kind of pool as a lifeguard .. I played ball with a lot of great black athletes but I didn’t know them. I mean, we knew each other. They were friends. But I didn’t know them. And it was a great education. It was like the Green Mile.""","In a Nov. 3, 2020 interview with reporters in Wilmington, Delaware, U.S. Democratic presidential candidate Joe Biden likened his experiences playing ball with Black athletes to Stephen King’s Green Mile.","{
+  ""negated_claims"": [
+    ""Biden: \""I did not have a job with a nice country club kind of pool as a lifeguard .. I played ball with a lot of great black athletes but I didn’t know them. I mean, we knew each other. They were friends. But I didn’t know them. And it was a great education. It was like the Green Mile.\"""",
+    ""Biden: \""I had a job with a nice country club kind of pool as a lifeguard .. I did not play ball with a lot of great black athletes but I didn’t know them. I mean, we knew each other. They were friends. But I didn’t know them. And it was a great education. It was like the Green Mile.\"""",
+    ""Biden: \""I had a job with a nice country club kind of pool as a lifeguard .. I played ball with a lot of great black athletes but I didn’t know them. I mean, we didn’t know each other. They were not friends. And it was a great education. It was like the Green Mile.\""""
+  ]
+}"
+tweet-sno-1349,I’m so ready for today!!! Ladies don’t forget your pearls today In honor of RBG! 💙💙💙💙💙💙💙💙💙 #BidenHarris2020 #vote,"In the days leading up to the 2020 general election, social media users encouraged one another to wear pearls in honor of Democratic vice-presidential candidate Kamala Harris, not the late Justice Ruth Bader Ginsburg.","{
+""negated_claims"": [
+""Ladies, don't wear pearls today in honor of RBG!"",
+""Ladies, don't forget not to wear your pearls today in honor of RBG!"",
+""Ladies, don't forget your pearls today in honor of Kamala Harris, not RBG!""
+]
+}"
+tweet-sno-1350,You know it’s going to be a landslide when the Amish start to rally and create their own Trump Train 😎🇺🇸,Photos and videos show members of the Amish community displaying their support for U.S. President Donald Trump.,"{
+""negated_claims"": [
+""You know it’s not going to be a landslide when the Amish start to rally and create their own Trump Train 😎🇺🇸"",
+""You don’t know it’s going to be a landslide when the Amish start to rally and create their own Trump Train 😎🇺🇸"",
+""You know it’s going to be a landslide when the Amish don't start to rally and create their own Trump Train 😎🇺🇸""
+]
+}"
+tweet-sno-1351,You don’t 👏🏾 have to 👏🏾 be registered 👏🏾 to go vote👏🏾 in Minnesota 👏🏾 we have 👏🏾 same day 👏🏾 registration 👏🏾 so you 👏🏾 can register 👏🏾 at the polls 👏🏾👏🏾,U.S. Rep. Ilhan Omar said Minnesota residents can vote without registering.,"{
+""negated_claims"": [
+""You have to be registered to go vote in Minnesota; we do not have same-day registration, so you cannot register at the polls."",
+""You don't have to be registered to go vote in Minnesota; we do not have same-day registration, so you cannot register at the polls."",
+""You don’t have to be registered to go vote in Minnesota if you register in advance; you cannot register at the polls.""
+]
+}"
+tweet-sno-1352,"Real or fake? Hunter Biden Has Flipped, Biden Family $300 Million Stash In Switzerland… Rudy Guiliani Freestyles One Of Greatest Speeches Ever, A Summary Of Joe Biden's 30 Year Crime Spree, Saying Joe Biden Is ""The Prince Of Darkness""!! | Alternative","Joe Biden's son, Hunter, turned himself in to the FBI and ""flipped"" on his father.","{
+""negated_claims"": [
+""Hunter Biden has not flipped, and the Biden family does not have a $300 million stash in Switzerland."",
+""Rudy Giuliani did not freestyle one of the greatest speeches ever, nor did he summarize Joe Biden's 30-year crime spree."",
+""Joe Biden is not the 'Prince of Darkness,' contrary to the alternative narrative.""
+]
+}"
+tweet-sno-1353,I heard Hunter Biden turned himself in to FBI on the 28th and flipped on pops. Spilled his guts for no charges and was put into a treatment center. Have you heard anything about that?,"Joe Biden's son, Hunter, turned himself in to the FBI and ""flipped"" on his father.","{
+""negated_claims"": [
+""I heard Hunter Biden did not turn himself in to FBI on the 28th and flipped on pops."",
+""I heard Hunter Biden turned himself in to FBI on the 28th and did not flip on pops."",
+""I heard Hunter Biden turned himself in to FBI on the 28th but didn't spill his guts for no charges.""
+]
+}"
+tweet-sno-1354,Hunter Biden has flipped?,"Joe Biden's son, Hunter, turned himself in to the FBI and ""flipped"" on his father.","{
+""negated_claims"": [
+""Hunter Biden has not flipped?"",
+""Hunter Biden has flipped on someone else?"",
+""Hunter Biden has flipped back?""
+]
+}"
+tweet-sno-1355,14/n Reportedly #HunterBiden has flipped,"Joe Biden's son, Hunter, turned himself in to the FBI and ""flipped"" on his father.","{
+""negated_claims"": [
+""#HunterBiden has not flipped"",
+""#HunterBiden has reportedly not flipped"",
+""Reportedly, #HunterBiden hasn't flipped""
+]
+}"
+tweet-sno-1356,Biden turned himself in!,"Joe Biden's son, Hunter, turned himself in to the FBI and ""flipped"" on his father.","{
+""negated_claims"": [
+""Biden did not turn himself in!"",
+""Biden hasn't turned himself in!"",
+""Biden didn't turn himself in!""
+]
+}"
+tweet-sno-1357,"Biden campaign cancels Austin rally; Armed Trump supporters reportedly harass campaign bus, ramming volunteer vehicles & blocking traffic. ""At least the Trump hearse is appropriate given the 200K+ Americans who have died due to his incompetence.” #VoteBlueToEndTheNightmare","Armed supporters of U.S. President Donald Trump harassed a Biden-Harris campaign bus in Texas, leading to the cancellation of three campaign events and a news conference.","{
+""negated_claims"": [
+""Biden campaign does not cancel Austin rally; Armed Trump supporters reportedly harass campaign bus, ramming volunteer vehicles & blocking traffic."",
+""Biden campaign cancels Austin rally; Armed Trump supporters reportedly do not harass campaign bus, ramming volunteer vehicles & blocking traffic."",
+""Biden campaign cancels Austin rally; Armed Trump supporters reportedly harass campaign bus without ramming volunteer vehicles & blocking traffic.""
+]
+}"
+tweet-sno-1358,"See all these pickup trucks with Trump flags? They were sitting along I-35, waiting to ambush the Biden/Harris campaign bus as it traveled from San Antonio to Austin. 2/","Armed supporters of U.S. President Donald Trump harassed a Biden-Harris campaign bus in Texas, leading to the cancellation of three campaign events and a news conference.","{
+""negated_claims"": [
+""See all these pickup trucks with Trump flags? They were not sitting along I-35, waiting to ambush the Biden/Harris campaign bus as it traveled from San Antonio to Austin. 2/"",
+""See all these pickup trucks with Trump flags? They were sitting along I-35, not waiting to ambush the Biden/Harris campaign bus as it traveled from San Antonio to Austin. 2/"",
+""See all these pickup trucks with Trump flags? They were sitting along I-35, waiting to not ambush the Biden/Harris campaign bus as it traveled from San Antonio to Austin. 2/""
+]
+}"
+tweet-sno-1359,"These Trump supporters, many of whom were armed, surrounded the bus on the interstate and attempted to drive it off the road. They outnumbered police 50-1, and they ended up hitting a staffer’s car. 3/","Armed supporters of U.S. President Donald Trump harassed a Biden-Harris campaign bus in Texas, leading to the cancellation of three campaign events and a news conference.","{
+""negated_claims"": [
+""These Trump supporters, many of whom were not armed, did not surround the bus on the interstate and did not attempt to drive it off the road."",
+""They did not outnumber police 50-1, and they did not end up hitting a staffer’s car."",
+""These Trump supporters, who were unarmed, did not surround the bus on the interstate, nor did they try to drive it off the road.""
+]
+}"
+tweet-sno-1360,"As the Biden bus rolled down 11th street toward I-35, Trump supporters scrambled to their trucks to follow it. ","Armed supporters of U.S. President Donald Trump harassed a Biden-Harris campaign bus in Texas, leading to the cancellation of three campaign events and a news conference.","{
+""negated_claims"": [
+""As the Biden bus rolled down 11th street toward I-35, Trump supporters did not scramble to their trucks to follow it."",
+""As the Biden bus rolled down 11th street toward I-35, Trump supporters scrambled to their trucks to not follow it."",
+""As the Biden bus rolled down 11th street away from I-35, Trump supporters scrambled to their trucks to follow it.""
+]
+}"
+tweet-sno-1361,These people should be arrested for plotting to kill Biden by running him off the road. This is a violent right wing mob with weapons chasing Biden.,"Armed supporters of U.S. President Donald Trump harassed a Biden-Harris campaign bus in Texas, leading to the cancellation of three campaign events and a news conference.","{
+""negated_claims"": [
+""These people should not be arrested for plotting to kill Biden by running him off the road."",
+""This is not a violent right wing mob with weapons chasing Biden."",
+""This is a violent right wing mob with no weapons chasing Biden.""
+]
+}"
+tweet-sno-1362,"The legendary actor, 007 Sean Connery, has past on to even greener fairways. He was quite a guy, and a tough character. I was having a very hard time getting approvals for a big development in Scotland when Sean stepped in and shouted,“Let him build the damn thing”. That was….",Actor Sean Connery was instrumental in helping Donald Trump secure approval for a controversial golf course development in Scotland.,"{
+    ""negated_claims"": [
+        ""The legendary actor, 007 Sean Connery, did not pass on to even greener fairways. He was quite a guy, and a tough character. I was having a very hard time getting approvals for a big development in Scotland when Sean stepped in and shouted, 'Let him build the damn thing.' That was…"",
+        ""The legendary actor, 007 Sean Connery, has past on to even greener fairways. He was quite a guy, and a tough character. I was not having a very hard time getting approvals for a big development in Scotland when Sean stepped in and shouted, 'Let him build the damn thing.' That was…"",
+        ""The legendary actor, 007 Sean Connery, has past on to even greener fairways. He was not quite a guy, and not a tough character. I was having a very hard time getting approvals for a big development in Scotland when Sean stepped in and shouted, 'Let him build the damn thing.' That was…""
+    ]
+}"
+tweet-sno-1363, please tell me why you are sold out of the Mexican Pizza at All locations?,"Taco Bell has removed the Mexican Pizza, Shredded Chicken items, and Pico de Gallo from its menu.","{
+""negated_claims"": [
+""please tell me why you are not sold out of the Mexican Pizza at all locations?"",
+""please tell me why you are sold out of the Mexican Pizza at some locations?"",
+""please tell me why you are still selling the Mexican Pizza at all locations?""
+]
+}"
+tweet-sno-1364, why are you taking away the Mexican pizza??? 😭😭 #bringbackthemexicanpizza,"Taco Bell has removed the Mexican Pizza, Shredded Chicken items, and Pico de Gallo from its menu.","{
+  ""negated_claims"": [
+    ""why are you not taking away the Mexican pizza??? 😭😭 #bringbackthemexicanpizza"",
+    ""why are you keeping the Mexican pizza??? 😭😭 #bringbackthemexicanpizza"",
+    ""why aren't you taking away the Mexican pizza??? 😭😭 #bringbackthemexicanpizza""
+  ]
+}"
+tweet-sno-1365, Is the Mexican Pizza gone? Please say it ain’t so 😩 #savethemexicanpizza,"Taco Bell has removed the Mexican Pizza, Shredded Chicken items, and Pico de Gallo from its menu.","{
+""negated_claims"": [
+""The Mexican Pizza is not gone."",
+""The Mexican Pizza is here to stay."",
+""The Mexican Pizza hasn't been removed from the Taco Bell menu.""
+]
+}"
+tweet-sno-1366,Is taco bell still selling the mexican pizza?,"Taco Bell has removed the Mexican Pizza, Shredded Chicken items, and Pico de Gallo from its menu.","{
+""negated_claims"": [
+""Taco Bell is not still selling the Mexican Pizza."",
+""Taco Bell is no longer selling the Mexican Pizza."",
+""Taco Bell has stopped selling the Mexican Pizza.""
+]
+}"
+tweet-sno-1367,TheMexican Pizza is already gone?!?,"Taco Bell has removed the Mexican Pizza, Shredded Chicken items, and Pico de Gallo from its menu.","{
+""negated_claims"": [
+""The Mexican Pizza is not already gone?!?"",
+""The Mexican Pizza isn't already gone?!?"",
+""The Mexican Pizza is still available?!?""
+]
+}"
+tweet-sno-1368,idk how much more i can take… cheesecake factory closing its doors and tb ousting the mexican pizza.,The Cheesecake Factory is closing all of its restaurants for good.,"{
+""negated_claims"": [
+""idk how much more I can take… The Cheesecake Factory isn't closing its doors and TB isn't ousting the Mexican Pizza."",
+""idk how much more I can take… The Cheesecake Factory closing its doors is not happening and TB ousting the Mexican Pizza isn't happening."",
+""idk how much more I can take… The Cheesecake Factory is not closing its doors, and TB is not ousting the Mexican Pizza.""
+]
+}"
+tweet-sno-1369,I thought 2020 was bad but now they’re closing all of the cheesecake factory’s and that really put the icing on the cake. I’m done. I’m sad.,The Cheesecake Factory is closing all of its restaurants for good.,"{
+""negated_claims"": [
+""I thought 2020 was bad but now they’re not closing all of the Cheesecake Factory’s and that really put the icing on the cake. I’m done. I’m sad."",
+""I thought 2020 was bad but now they’re closing none of the Cheesecake Factory’s and that really put the icing on the cake. I’m done. I’m sad."",
+""I thought 2020 was bad but now they’re closing only some of the Cheesecake Factory’s and that really put the icing on the cake. I’m done. I’m sad.""
+]
+}"
+tweet-sno-1370,Just read that the “Cheesecake Factory” is closing permanently. Every business that has had to close down can contribute it to Trump and the GOP. They have had basically no support or stimulus from these stingy bastards because they don’t care.,The Cheesecake Factory is closing all of its restaurants for good.,"{
+""negated_claims"": [
+""The Cheesecake Factory is not closing permanently."",
+""Not every business that has had to close down can contribute it to Trump and the GOP."",
+""They have had some support or stimulus from these stingy bastards because they don’t care.""
+]
+}"
+tweet-sno-1371,Cheesecake factory is closing for good.,The Cheesecake Factory is closing all of its restaurants for good.,"{
+""negated_claims"": [
+""Cheesecake Factory is not closing for good."",
+""Cheesecake Factory is closing, but not for good."",
+""Cheesecake Factory is not closing all its restaurants for good.""
+]
+}"
+tweet-sno-1372,wow they are closing the cheesecake factory down for good.,The Cheesecake Factory is closing all of its restaurants for good.,"{
+""negated_claims"": [
+""It is not true that they are closing the Cheesecake Factory down for good."",
+""They are not closing the Cheesecake Factory down for good."",
+""Wow, they are not closing the Cheesecake Factory down for good.""
+]
+}"
+tweet-sno-1373,can’t believe the cheesecake factory closing 😢,The Cheesecake Factory is closing all of its restaurants for good.,"{
+""negated_claims"": [
+""can’t believe the cheesecake factory is not closing 😢"",
+""can’t believe the cheesecake factory isn’t closing 😢"",
+""can’t believe the cheesecake factory is staying open 😢""
+]
+}"
+tweet-sno-1374,The Cheesecake Factory is closing all of their restaurants for good. _LQ I thought you should know this lol,The Cheesecake Factory is closing all of its restaurants for good.,"{
+""negated_claims"": [
+""The Cheesecake Factory is not closing all of their restaurants for good."",
+""The Cheesecake Factory is closing none of their restaurants for good."",
+""The Cheesecake Factory is closing some of their restaurants, but not all, for good.""
+]
+}"
+tweet-sno-1375,Not Cheesecake Factory closing for good ☹️,The Cheesecake Factory is closing all of its restaurants for good.,"{
+""negated_claims"": [
+""Cheesecake Factory not closing for good ☹️"",
+""Not Cheesecake Factory staying open ☹️"",
+""Cheesecake Factory not closing for good news ☹️""
+]
+}"
+tweet-sno-1376,"Per your tweet, you deleted the congratulatory Amy Coney Barrett tweet because it was ""viewed as a political and partisan"" and theis ""nonpolitical"" but this tweet tohasn't been deleted. 🤔 #progressiveprivilege","A now-deleted tweet was shared by the Girl Scouts of the United States of America on Oct. 28, 2020, congratulating Barrett on “becoming the fifth woman appointed to the Supreme Court since its inception in 1789.”","{
+""negated_claims"": [
+""Per your tweet, you did not delete the congratulatory Amy Coney Barrett tweet because it was 'viewed as a political and partisan' and this 'nonpolitical' tweet hasn't been deleted. 🤔 #progressiveprivilege"",
+""Per your tweet, you deleted the congratulatory Amy Coney Barrett tweet because it was not 'viewed as a political and partisan' and this 'nonpolitical' tweet hasn't been deleted. 🤔 #progressiveprivilege"",
+""Per your tweet, you deleted the congratulatory Amy Coney Barrett tweet because it was 'viewed as nonpolitical' and this 'political and partisan' tweet hasn't been deleted. 🤔 #progressiveprivilege""
+]
+}"
+tweet-sno-1377,"The whole “she wore clothes in a magazine, let’s pretend they’re hers” gimmick is the classic Republican strategy of “let’s willfully act stupid, and if the public doesn’t take our performative stupidity seriously then we’ll claim bias.” GOP, get yourselves together. It’s sad.","U.S. Rep. Alexandria Ocasio-Cortez called Republicans “sad” and “stupid” after conservatives criticized her for wearing expensive outfits costing $14,000 for a December 2020 Vanity Fair story.","{
+""negated_claims"": [
+""The whole “she wore clothes in a magazine, let’s pretend they’re hers” gimmick is not the classic Republican strategy of “let’s willfully act stupid, and if the public doesn’t take our performative stupidity seriously then we’ll claim bias.”"",
+""GOP, don't get yourselves together. It’s not sad."",
+""The whole “she wore clothes in a magazine, let’s pretend they’re hers” gimmick is the classic Republican strategy of “let’s act smart, and if the public doesn’t take our performative intelligence seriously then we’ll claim bias.”""
+]
+}"
+tweet-sno-1378,Trump is calling for the assassination of his political opponent.,"In a speech on Oct. 27, 2020, U.S. President Donald Trump called for the assassination of Joe Biden.","{
+""negated_claims"": [
+""Trump is not calling for the assassination of his political opponent."",
+""Trump is calling for the protection of his political opponent."",
+""Trump is calling for the assassination of someone other than his political opponent.""
+]
+}"
+tweet-sno-1379,Joe Biden brags about having “the most extensive and inclusive voter fraud organization in the history of American politics”,"In October 2020, Joe Biden admitted to perpetrating voter fraud.","{
+""negated_claims"": [
+""Joe Biden does not brag about having “the most extensive and inclusive voter fraud organization in the history of American politics.”"",
+""Joe Biden brags about not having “the most extensive and inclusive voter fraud organization in the history of American politics.”"",
+""Joe Biden brags about having “the least extensive and exclusive voter fraud organization in the history of American politics.”""
+]
+}"
+tweet-sno-1380,"We are not prepared for a pandemic. Trump has rolled back progress President Obama and I made to strengthen global health security. We need leadership that builds public trust, focuses on real threats, and mobilizes the world to stop outbreaks before they reach our shores.","Joe Biden tweeted several weeks before the COVID-19 outbreak began that ""We are not prepared for a pandemic.""","{
+""negated_claims"": [
+""We are"
+tweet-sno-1381,"As recently as last month, Webster’s Dictionary included a definition of “preference” as “orientation” or “sexual preference.” TODAY they changed it and added the word “offensive."" Insane – I just checked through Wayback Machine and it’s real. (via&)","Merriam-Webster updated its definition and usage guidelines of the term ""sexual preference"" to say its use is ""offensive"" after the Oct. 13, 2020, confirmation hearing of Judge Amy Coney Barrett, U.S. President Donald Trump’s pick for the Supreme Court.","{
+""negated_claims"": [
+""As recently as last month, Webster’s Dictionary did not include a definition of 'preference' as 'orientation' or 'sexual preference.' TODAY they did not change it and did not add the word 'offensive.' Insane – I just checked through Wayback Machine and it’s not real."",
+""As recently as last month, Webster’s Dictionary included a definition of 'preference' as 'orientation' or 'sexual preference.' TODAY they did not change it and did not add the word 'offensive.' Insane – I just checked through Wayback Machine and it’s not real."",
+""As recently as last month, Webster’s Dictionary did not include a definition of 'preference' as 'orientation' or 'sexual preference.' TODAY they changed it and added the word 'offensive.' Insane – I just checked through Wayback Machine and it’s real.""
+]
+}"
+tweet-sno-1382,"Well where was the dignity and respect of Black Americans or in your words""Niggers"" when you made this statement? Democrats this is YOUR nominee for President of the United States andendorsed this scoundrel! Explain this please!",Joe Biden used racial slurs in referring to Black people during a Senate committee hearing in 1985.,"{
+""negated_claims"": [
+""Well where was the dignity and respect of Black Americans when Joe Biden did not make this statement? Democrats this is YOUR nominee for President of the United States and you did not endorse this scoundrel! Explain this please!"",
+""Well where was the dignity and respect of Black Americans when Joe Biden made a respectful statement? Democrats this is YOUR nominee for President of the United States and you endorsed this respectful individual! Explain this please!"",
+""Well where was the dignity and respect of Black Americans or in your words 'Niggers' when Joe Biden did not make any statement? Democrats this is YOUR nominee for President of the United States and you did not endorse this scoundrel! Explain this please!""
+]
+}"
+tweet-sno-1383,Uhhhhh look at this picture of Mitch McConnell's hands thatfound on AP,An AP-distributed photograph shows Senate Majority Leader Mitch McConnell's hands looking bruised and discolored.,"{
+""negated_claims"": [
+""Uhhhhh don't look at this picture of Mitch McConnell's hands that I found on AP."",
+""Uhhhhh look at this picture of Mitch McConnell's hands that I didn't find on AP."",
+""Uhhhhh look at this picture that's not of Mitch McConnell's hands that I found on AP.""
+]
+}"
+tweet-sno-1384,A nurse who has gained national attention for her service was arrested for shooting someone. The latest on this wild story:,"Amy Thorn, a West Virginia nurse who spoke at the Republican National Convention in August 2020, was charged with shooting a woman in the stomach in October 2020.","{
+""negated_claims"": [
+""A nurse who has gained national attention for her service was not arrested for shooting someone."",
+""A nurse who has gained national attention for her service was arrested for not shooting someone."",
+""A nurse who has not gained national attention for her service was arrested for shooting someone.""
+]
+}"
+tweet-sno-1385,"Joe Biden surrogate Jane Fonda calls coronavirus ""God's gift to the Left.""","In October 2020, actress Jane Fonda said the COVID-19 coronavirus pandemic was ""God's gift to the Left.""","{
+""negated_claims"": [
+""Joe Biden surrogate Jane Fonda does not call coronavirus 'God's gift to the Left.'"",
+""Joe Biden surrogate Jane Fonda never calls coronavirus 'God's gift to the Left.'"",
+""Joe Biden surrogate Jane Fonda did not call coronavirus 'God's gift to the Left.'""
+]
+}"
+tweet-sno-1386,Joe Biden and Kamala Harris BOTH want to BAN FRACKING.,"In the 2020 presidential election, Democratic candidate Joe Biden's policy on fracking was to ban it outright.","{
+""negated_claims"": [
+""Joe Biden and Kamala Harris BOTH do not want to BAN FRACKING."",
+""Joe Biden and Kamala Harris do not BOTH want to BAN FRACKING."",
+""Joe Biden and Kamala Harris BOTH want to ALLOW FRACKING.""
+]
+}"
+tweet-sno-1387,"10/13/60: ""Unlike the first two programs, however, the two candidates will not be sharing same platform. In New York…John F. Kennedy separated by 3,000 miles in a Los Angeles studio…Richard Nixon. Now joined for tonight's discussion by network of electronic facilities…""",U.S. presidential candidates John F. Kennedy and Richard Nixon participated in a virtual debate in 1960.,"{
+""negated_claims"": [
+""Unlike the first two programs, however, the two candidates will be sharing the same platform."",
+""John F. Kennedy and Richard Nixon are not separated by 3,000 miles for tonight's discussion."",
+""John F. Kennedy and Richard Nixon will not be joined for tonight's discussion by a network of electronic facilities.""
+]
+}"
+tweet-sno-1388,"The Rules: ""You will keep your mask on."" Meanwhile, Karen Pence:",U.S. second lady Karen Pence did not wear a mask during the vice presidential debate in October 2020.,"{
+""negated_claims"": [
+""The Rules: \""You will not keep your mask on.\"" Meanwhile, Karen Pence:"",
+""The Rules: \""You will keep your mask off.\"" Meanwhile, Karen Pence:"",
+""The Rules: \""You will not keep your mask off.\"" Meanwhile, Karen Pence:""
+]
+}"
+tweet-sno-1389,A Trump sign was erected on the hillside along the 405 Freeway near the Sepulveda Pass. It’s unclear who put it there 📹: Sky5,"A large ""TRUMP"" sign, similar to the iconic Hollywood sign, was erected near Los Angeles in October 2020.","{
+""negated_claims"": [
+""A Trump sign was not erected on the hillside along the 405 Freeway near the Sepulveda Pass."",
+""A Trump sign was erected on the hillside not along the 405 Freeway near the Sepulveda Pass."",
+""A Trump sign was erected on the hillside along the 405 Freeway not near the Sepulveda Pass.""
+]
+}"
+tweet-sno-1390,"This is the Democrat nominee for VP instigating violent riots that have left multiple Americans dead: ""Everyone beware. They're not gonna stop before election day in November, and they're not gonna stop after election day… They’re not gonna let up and they should not.""","In a June 2020 interview, U.S. Democratic vice presidential candidate Kamala Harris said of the nationwide anti-police brutality protests: “Everyone beware. They're not gonna stop before election day in November, and they're not gonna stop after election day ... They’re not gonna let up, and they should not.”","{
+""negated_claims"": [
+""This is not the Democrat nominee for VP instigating violent riots that have left multiple Americans dead: 'Everyone beware. They're not gonna stop before election day in November, and they're not gonna stop after election day… They’re not gonna let up and they should not.'"",
+""This is the Democrat nominee for VP not instigating violent riots that have left multiple Americans dead: 'Everyone beware. They're not gonna stop before election day in November, and they're not gonna stop after election day… They’re not gonna let up and they should not.'"",
+""This is the Democrat nominee for VP instigating peaceful protests that have left no Americans dead: 'Everyone beware. They're not gonna stop before election day in November, and they're not gonna stop after election day… They’re not gonna let up and they should not.'""
+]
+}"
+tweet-sno-1391,"Joe Biden called Trump supporters the ""dregs of society."" The idea that Biden is a unifier is a joke.","In a September 2018 speech, Joe Biden called Donald Trump's supporters ""the dregs of society.""","{
+""negated_claims"": [
+""Joe Biden did not call Trump supporters the 'dregs of society.'"",
+""The idea that Biden is not a unifier is a joke."",
+""The idea that Biden is a unifier is not a joke.""
+]
+}"
+tweet-sno-1392,Biden: ‘I Was Able to Stay Sequestered’ Thanks to ‘Some Black Woman’ Who Stocked Grocery Shelves,"U.S. Democratic presidential candidate Joe Biden said that Americans were able to stay home during the COVID-19 pandemic because ""some Black woman was able to stack the grocery shelf.""","{
+  ""negated_claims"": [
+    ""Biden: ‘I Was Not Able to Stay Sequestered’ Thanks to ‘Some Black Woman’ Who Stocked Grocery Shelves"",
+    ""Biden: ‘I Was Able to Not Stay Sequestered’ Thanks to ‘Some Black Woman’ Who Stocked Grocery Shelves"",
+    ""Biden: ‘I Was Able to Stay Sequestered’ Not Thanks to ‘Some Black Woman’ Who Stocked Grocery Shelves""
+  ]
+}"
+tweet-sno-1393,"Was Andy McCabe ever forced to pay back the $700,000 illegally given to him and his wife, for his wife’s political campaign, by Crooked Hillary Clinton while Hillary was under FBI investigation, and McCabe was the head of the FBI??? Just askin’?","Hillary Clinton illegally donated $700,000 to the political campaign of the wife of the FBI director who was supervising the investigation into her use of a private email server.","{
+""negated_claims"": [
+""Andy McCabe was never forced to pay back the $700,000, illegally given to him and his wife, for his wife’s political campaign, by Crooked Hillary Clinton while Hillary was under FBI investigation, and McCabe was the head of the FBI??? Just askin’?"",
+""Andy McCabe was forced to not pay back the $700,000, illegally given to him and his wife, for his wife’s political campaign, by Crooked Hillary Clinton while Hillary was under FBI investigation, and McCabe was the head of the FBI??? Just askin’?"",
+""Was Andy McCabe never forced to pay back the $700,000, illegally given to him and his wife, for his wife’s political campaign, by Crooked Hillary Clinton while Hillary was under FBI investigation, and McCabe was the head of the FBI??? Just askin’?""
+]
+}"
+tweet-sno-1394,"I wonder if the BTS and TikTok kids can help LGBTs with this. What if gay guys took pictures of themselves making out with each other or doing very gay things, then tagged themselves with #ProudBoys . I bet it would mess them up real bad. #ReclaimingMyShine",Gay men reclaimed the hashtag #ProudBoys from the white supremacist organization of the same name in order to celebrate LBGTQ love.,"{
+""negated_claims"": [
+""I doubt the BTS and TikTok kids can help LGBTs with this."",
+""What if gay guys did not take pictures of themselves making out with each other or doing very gay things, then did not tag themselves with #ProudBoys."",
+""I bet it would not mess them up real bad if gay guys took pictures of themselves making out with each other or doing very gay things, then tagged themselves with #ProudBoys.""
+]
+}"
+tweet-sno-1395,".and I are joining thousands of gay men on social media to reclaim #ProudBoys from white supremacists and bigoted neo-nazis. Let’s replace the hashtag with images of love, positivity, and true PRIDE! Your two favorite #ProudBoys are here standing by, ready to VOTE! 🏳️‍🌈🗳",Gay men reclaimed the hashtag #ProudBoys from the white supremacist organization of the same name in order to celebrate LBGTQ love.,"{
+""negated_claims"": [
+""My friends and I are not joining thousands of gay men on social media to reclaim #ProudBoys from white supremacists and bigoted neo-nazis."",
+""Let’s not replace the hashtag with images of love, positivity, and true PRIDE!"",
+""Your two favorite #ProudBoys are not here standing by, ready to VOTE! 🏳️‍🌈🗳""
+]
+}"
+tweet-sno-1396,"Wow! Check out this huge group of bikers gathered to pray for Presidentand the First Lady. The country is behind you, Mr. President! 🇺🇸",A video shows a group of bikers praying for U.S. President Donald Trump at Walter Reed National Military Medical Center.,"{
+  ""negated_claims"": [
+    ""Wow! Check out this huge group of bikers not gathered to pray for President and the First Lady. The country is behind you, Mr. President! 🇺🇸"",
+    ""Wow! Check out this huge group of bikers gathered to not pray for President and the First Lady. The country is behind you, Mr. President! 🇺🇸"",
+    ""Wow! Check out this huge group of bikers gathered to pray for someone other than the President and the First Lady. The country is behind you, Mr. President! 🇺🇸""
+  ]
+}"
+tweet-sno-1397,That “donate to help him recover” email that’s been going around looks fake to me.,The Trump campaign sent out a fundraiser email asking supporters to raise $421 million to help the president recover from COVID-19.,"{
+""negated_claims"": [
+""That 'donate to help him recover' email that’s been going around does not look fake to me."",
+""That 'donate to help him recover' email that’s been going around looks genuine to me."",
+""That 'donate to help him recover' email that’s been going around looks real to me.""
+]
+}"
+tweet-sno-1398,This reporter just exposed Kayleigh McEnany for lying about Amy Coney Barrett being a Rhodes Scholar. Barrett attended Rhodes College.,Judge Amy Coney Barrett is a Rhodes Scholar.,"{
+""negated_claims"": [
+""This reporter did not expose Kayleigh McEnany for lying about Amy Coney Barrett being a Rhodes Scholar. Barrett attended Rhodes College."",
+""This reporter exposed Kayleigh McEnany for not lying about Amy Coney Barrett being a Rhodes Scholar. Barrett attended Rhodes College."",
+""This reporter exposed Kayleigh McEnany for lying about Amy Coney Barrett not being a Rhodes Scholar. Barrett attended Rhodes College.""
+]
+}"
+tweet-sno-1399,"New ininterview Q: Do you condemn Antifa? BIDEN: Yes, I do — violence, no matter who it is.","As of Sept. 29, 2020, Joe Biden had not condemned antifa.","{
+""negated_claims"": [
+""New interview Q: Do you condemn Antifa? BIDEN: No, I don't — violence, no matter who it is."",
+""New interview Q: Do you condemn Antifa? BIDEN: No, I do not condemn Antifa — violence, no matter who it is."",
+""New interview Q: Do you condemn Antifa? BIDEN: Yes, I do — not violence, no matter who it is.""
+]
+}"
+tweet-sno-1400,Only three things happened tonight: 1. #DonaldTrump refused to condemn white supremacy. 2. The #POTUS refused to condemn white supremacy. 3. The #CommanderInChief REFUSED to condemn white supremacy on the GLOBAL STAGE. NOW LOOK AT WHAT IS HAPPENING ONLINE. THIS IS NOT OKAY.,"During the Sept. 29, 2020, presidential debate, U.S. President Donald Trump ""refused"" to condemn white supremacists.","{
+""negated_claims"": [
+""Only three things didn't happen tonight: 1. #DonaldTrump refused to condemn white supremacy. 2. The #POTUS refused to condemn white supremacy. 3. The #CommanderInChief REFUSED to condemn white supremacy on the GLOBAL STAGE."",
+""Only three things happened tonight: 1. #DonaldTrump refused to condemn white supremacy. 2. The #POTUS did not refuse to condemn white supremacy. 3. The #CommanderInChief REFUSED to condemn white supremacy on the GLOBAL STAGE."",
+""Only three things happened tonight: 1. #DonaldTrump refused to condemn white supremacy. 2. The #POTUS refused to condemn white supremacy. 3. The #CommanderInChief did not REFUSE to condemn white supremacy on the GLOBAL STAGE.""
+]
+}"
+tweet-sno-1401,"Wow, nobody realized how far Mini Mike Bloomberg went in bribing ex-prisoners to go out and vote for Sleepy Joe. He is desperate to get back into the good graces of the people who not only badly beat him, but made him look like a total fool. Now he’s committed a serious crime!",Billionaire and former presidential candidate Michael Bloomberg raised more than $16 million to pay the fines and restitution of convicted felons in Florida so that they are able to register to vote ahead of the 2020 general election.,"{
+""negated_claims"": [
+""Wow, everybody knew how far Mini Mike Bloomberg went in bribing ex-prisoners to go out and vote for Sleepy Joe."",
+""He is not desperate to get back into the good graces of the people who not only badly beat him, but made him look like a total fool."",
+""Now he’s not committed a serious crime!""
 ]
 }"

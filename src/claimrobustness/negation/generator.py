@@ -76,7 +76,6 @@ def run():
                     claim=claim,
                     fact_check=fact_check,
                 )
-                print(prompt)
                 chat_completion = client.chat.completions.create(
                     messages=[
                         {

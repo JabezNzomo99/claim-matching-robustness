@@ -1,6 +1,8 @@
 import os
 import argparse
 from groq import Groq
+from openai import OpenAI
+from openai import AsyncOpenAI
 from claimrobustness import utils, defaults
 from tqdm import tqdm
 from ratelimit import limits, sleep_and_retry
@@ -14,7 +16,7 @@ import json
 tqdm.pandas()
 
 
-def run():
+async def run():
     # Parse the arguments
     parser = argparse.ArgumentParser()
     parser.add_argument("experiment_path", type=str, help="path where config lies")
@@ -73,20 +75,22 @@ def run():
         ]
         return json.dumps(entities)
 
-    nlp = stanza.Pipeline(lang="en", processors="tokenize,ner")
+    nlp = stanza.Pipeline(lang="en", processors="tokenize")
     run_queries["tokens_to_replace"] = run_queries["query"].progress_apply(
         lambda query: parse_ner(query, nlp)
     )
 
-    # Currently supporting Llama3, need to add support for GPT models
-    client = Groq(
-        api_key=os.environ["GROQ_API_KEY"],
-    )
+    if "gpt" in model_name:
+        client = AsyncOpenAI(api_key=os.environ["OPENAI_API_KEY"])
+    elif "llama" in model_name:
+        client = Groq(
+            api_key=os.environ["GROQ_API_KEY"],
+        )
 
     @sleep_and_retry
-    @limits(calls=30, period=timedelta(seconds=60).total_seconds())
-    def get_ner_replacements(
-        client: Groq,
+    @limits(calls=500, period=timedelta(seconds=60).total_seconds())
+    async def get_ner_replacements(
+        client,
         prompt_template: str,
         claim: str,
         fact_check: str,
@@ -103,7 +107,7 @@ def run():
                     fact_check=fact_check,
                     named_entities=named_entities[:budget],
                 )
-                chat_completion = client.chat.completions.create(
+                chat_completion = await client.chat.completions.create(
                     messages=[
                         {
                             "role": "system",

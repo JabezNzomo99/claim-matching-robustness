@@ -27,9 +27,9 @@ def run():
 
     model_name = config["model"].get("model_string")
     temparature = config["model"].getfloat("temperature")
-    prompt_template = config["model"].get("prompt_template")
 
     samples = config["generation"].getint("number_of_samples")
+    prompt_template = config["generation"].get("prompt_template")
 
     # Load the test data used for generating misinformation edits
     data = utils.load_data(dataset=dataset)
@@ -49,6 +49,7 @@ def run():
     print("Cleaning the tweet query")
     run_queries["query"] = run_queries["query"].progress_apply(utils.clean_tweet)
 
+    # Currently supporting Llama3, need to add support for GPT models
     if "gpt" in model_name:
         client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
     elif "llama" in model_name:
@@ -58,7 +59,9 @@ def run():
 
     @sleep_and_retry
     @limits(calls=500, period=timedelta(seconds=60).total_seconds())
-    def paraphrase_claim(client, prompt_template: str, claim: str, fact_check: str):
+    def dialect_rewrite_claim(
+        client, prompt_template: str, claim: str, fact_check: str
+    ):
         max_retries = 3
         retries = 0
         while retries < max_retries:
@@ -68,6 +71,7 @@ def run():
                     claim=claim,
                     fact_check=fact_check,
                 )
+                print(prompt)
                 chat_completion = client.chat.completions.create(
                     messages=[
                         {
@@ -84,7 +88,6 @@ def run():
                     # Enable JSON mode by setting the response format
                     response_format={"type": "json_object"},
                 )
-
                 return chat_completion.choices[0].message.content
             except Exception as e:
                 retries += 1
@@ -100,7 +103,7 @@ def run():
                     raise  # Raise the exception after max retries
 
     run_queries.loc[:, "rewritten_claims"] = run_queries.progress_apply(
-        lambda row: paraphrase_claim(
+        lambda row: dialect_rewrite_claim(
             client=client,
             prompt_template=prompt_template,
             claim=row["query"],
@@ -114,8 +117,8 @@ def run():
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
 
-    run_queries.to_csv(os.path.join(save_dir, "llm_rewrites.csv"), index=False)
-    print(f"Saved llm rewrites claims to {save_dir}")
+    run_queries.to_csv(os.path.join(save_dir, "dialect_rewrites.csv"), index=False)
+    print(f"Saved llm dialect rewritten claims to {save_dir}")
 
 
 if __name__ == "__main__":

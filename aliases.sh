@@ -15,3 +15,11 @@ alias select-negation="python src/claimrobustness/negation/selector.py"
 alias generate-rewrite="python src/claimrobustness/rewrite/generator.py"
 alias verify-rewrite="python src/claimrobustness/rewrite/verifier.py"
 alias select-rewrite="python src/claimrobustness/rewrite/selector.py"
+
+alias generate-typos="python src/claimrobustness/typos/generator.py"
+alias verify-typos="python src/claimrobustness/typos/verifier.py"
+alias select-typos="python src/claimrobustness/typos/selector.py"
+
+alias generate-dialect="python src/claimrobustness/dialect/generator.py"
+alias verify-dialect="python src/claimrobustness/dialect/verifier.py"
+alias select-dialect="python src/claimrobustness/dialect/selector.py"

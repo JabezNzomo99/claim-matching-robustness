@@ -1,14 +1,17 @@
 import os
 import argparse
 from groq import Groq
-from openai import OpenAI
-from claimrobustness import utils
+from claimrobustness import utils, defaults
 from tqdm import tqdm
 from ratelimit import limits, sleep_and_retry
 from datetime import timedelta
 from time import sleep
+import stanza
 import configparser
 import pandas as pd
+from openai import OpenAI
+import json
+import random
 
 tqdm.pandas()
 
@@ -17,6 +20,12 @@ def run():
     # Parse the arguments
     parser = argparse.ArgumentParser()
     parser.add_argument("experiment_path", type=str, help="path where config lies")
+    parser.add_argument(
+        "--no-baseline", action="store_true", help="Skip generating baseline edits"
+    )
+    parser.add_argument(
+        "--no-worstcase", action="store_true", help="Skip generating worstcase edits"
+    )
 
     # Parse the arguments
     args = parser.parse_args()
@@ -29,7 +38,10 @@ def run():
     temparature = config["model"].getfloat("temperature")
     prompt_template = config["model"].get("prompt_template")
 
-    samples = config["generation"].getint("number_of_samples")
+    baseline = config["generation"].getfloat("baseline")
+    worstcase = config["generation"].getfloat("worstcase")
+    min_length = config["generation"].getint("min_length")
+    samples = config["generation"].getint("samples")
 
     # Load the test data used for generating misinformation edits
     data = utils.load_data(dataset=dataset)
@@ -49,6 +61,41 @@ def run():
     print("Cleaning the tweet query")
     run_queries["query"] = run_queries["query"].progress_apply(utils.clean_tweet)
 
+    # For each input claim, identify tokens to be misspelt depending on the min length
+    def select_typo_tokens(
+        input_text: str, nlp: stanza.models, proportion: int, min_length: int
+    ):
+        # Process both baseline and worstcase queries
+        doc = nlp(input_text)
+        tokens_to_misspell = [
+            token.text
+            for sent in doc.sentences
+            for token in sent.tokens
+            if len(token.text) >= min_length
+        ]
+        num_tokens_to_misspell = int(proportion * len(tokens_to_misspell))
+        tokens_selected = random.sample(tokens_to_misspell, num_tokens_to_misspell)
+        return json.dumps(tokens_selected)
+
+    nlp = stanza.Pipeline(lang="en", processors="tokenize")
+    if not args.no_baseline:
+        run_queries[f"baseline_tokens_to_misspell"] = run_queries[
+            "query"
+        ].progress_apply(
+            lambda query: select_typo_tokens(
+                input_text=query, nlp=nlp, proportion=baseline, min_length=min_length
+            )
+        )
+
+    if not args.no_worstcase:
+        run_queries[f"worstcase_tokens_to_misspell"] = run_queries[
+            "query"
+        ].progress_apply(
+            lambda query: select_typo_tokens(
+                input_text=query, nlp=nlp, proportion=worstcase, min_length=min_length
+            )
+        )
+
     if "gpt" in model_name:
         client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
     elif "llama" in model_name:
@@ -58,7 +105,13 @@ def run():
 
     @sleep_and_retry
     @limits(calls=500, period=timedelta(seconds=60).total_seconds())
-    def paraphrase_claim(client, prompt_template: str, claim: str, fact_check: str):
+    def get_typo_replacements(
+        client: Groq,
+        prompt_template: str,
+        claim: str,
+        fact_check: str,
+        tokens_to_misspell: list,
+    ):
         max_retries = 3
         retries = 0
         while retries < max_retries:
@@ -67,12 +120,13 @@ def run():
                     number_of_samples=samples,
                     claim=claim,
                     fact_check=fact_check,
+                    tokens_to_misspell=tokens_to_misspell,
                 )
                 chat_completion = client.chat.completions.create(
                     messages=[
                         {
                             "role": "system",
-                            "content": "You are a highly intelligent social media user.",
+                            "content": "You are an intelligent social media user.",
                         },
                         {
                             "role": "user",
@@ -81,6 +135,8 @@ def run():
                     ],
                     model=model_name,
                     temperature=temparature,
+                    # Streaming is not supported in JSON mode
+                    stream=False,
                     # Enable JSON mode by setting the response format
                     response_format={"type": "json_object"},
                 )
@@ -99,23 +155,32 @@ def run():
                     )
                     raise  # Raise the exception after max retries
 
-    run_queries.loc[:, "rewritten_claims"] = run_queries.progress_apply(
-        lambda row: paraphrase_claim(
-            client=client,
-            prompt_template=prompt_template,
-            claim=row["query"],
-            fact_check=row["target"],
-        ),
-        axis=1,
-    )
+    def process_queries(df: pd.DataFrame, type: str):
+        df.loc[:, "replaced_token"] = df.progress_apply(
+            lambda row: get_typo_replacements(
+                client=client,
+                prompt_template=prompt_template,
+                claim=row["query"],
+                fact_check=row["target"],
+                tokens_to_misspell=json.loads(row[f"{type}_tokens_to_misspell"]),
+            ),
+            axis=1,
+        )
 
-    # Save the file output
-    save_dir = f"{args.experiment_path}/{dataset}"
-    if not os.path.exists(save_dir):
-        os.makedirs(save_dir)
+        # Save the file output
+        save_dir = f"{args.experiment_path}/{dataset}"
+        if not os.path.exists(save_dir):
+            os.makedirs(save_dir)
 
-    run_queries.to_csv(os.path.join(save_dir, "llm_rewrites.csv"), index=False)
-    print(f"Saved llm rewrites claims to {save_dir}")
+        df.to_csv(os.path.join(save_dir, f"{type}_typos.csv"), index=False)
+
+        print(f"Saved {type} token typos to {save_dir}")
+
+    if not args.no_baseline:
+        process_queries(run_queries, "baseline")
+
+    if not args.no_worstcase:
+        process_queries(run_queries, "worstcase")
 
 
 if __name__ == "__main__":

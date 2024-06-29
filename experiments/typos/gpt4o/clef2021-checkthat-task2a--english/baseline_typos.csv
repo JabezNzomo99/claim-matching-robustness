@@ -1,0 +1,3308 @@
+query_id,query,target,baseline_tokens_to_misspell,worstcase_tokens_to_misspell,replaced_token
+tweet-sno-1200,The news you’ve all been waiting for (and we couldn’t wait to reveal 😭)… OREO x LADY GAGA packs drop today! 🎤🎶,Oreos have a new Lady Gaga-themed cookie.,"[""reveal"", ""drop""]","[""packs"", ""you\u2019ve"", ""waiting"", ""OREO"", ""today"", ""wait""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""reveal"",
+      ""typos"": [""reveel"", ""reviel"", ""revea1"", ""rveal"", ""reveaI"", ""reve@l"", ""rveaal"", ""rev3al"", ""reveak"", ""reveal""]
+    },
+    {
+      ""token"": ""drop"",
+      ""typos"": [""dorp"", ""droop"", ""dr0p"", ""dop"", ""drrp"", ""drep"", ""drp"", ""dropp"", ""drof"", ""dr0p""]
+    }
+  ]
+}"
+tweet-sno-1201,"Sen. Mitch McConnell: ""As recently as October, now-President Biden said you can't legislate by executive action unless you are a dictator. Well, in one week, he signed more than 30 unilateral actions.""","When he was still a candidate for the presidency in October 2020, U.S. President Joe Biden said, “You can’t legislate by executive order unless you’re a dictator.”","[""actions"", ""Biden"", ""signed"", ""dictator""]","[""week"", ""McConnell"", ""unilateral"", ""can't"", ""than"", ""October"", ""recently"", ""said"", ""signed"", ""actions""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""actions"",
+      ""typos"": [""actons"", ""actionz"", ""akshuns"", ""actns"", ""actn""]
+    },
+    {
+      ""token"": ""Biden"",
+      ""typos"": [""Biden"", ""Bidan"", ""Bden"", ""Bidn"", ""Byden""]
+    },
+    {
+      ""token"": ""signed"",
+      ""typos"": [""signd"", ""sined"", ""sign'd"", ""siɢned"", ""snged""]
+    },
+    {
+      ""token"": ""dictator"",
+      ""typos"": [""dictatr"", ""dict8r"", ""diktator"", ""dictor"", ""dict8tor""]
+    }
+  ]
+}"
+tweet-sno-1202,".in October: “I have this strange notion, we are a democracy … if you can’t get the votes … you can’t [legislate] by executive order unless you’re a dictator. We’re a democracy. We need consensus.""","When he was still a candidate for the presidency in October 2020, U.S. President Joe Biden said, “You can’t legislate by executive order unless you’re a dictator.”","[""strange"", ""you\u2019re"", ""can\u2019t""]","[""this"", ""unless"", ""can\u2019t"", ""can\u2019t"", ""notion"", ""executive"", ""need"", ""have"", ""consensus""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""strange"",
+      ""typos"": [""strangee"", ""strang"", ""strnge"", ""strang3"", ""strangr"", ""strnage"", ""strange."", ""stranges"", ""strange_"", ""strangge""]
+    },
+    {
+      ""token"": ""you’re"",
+      ""typos"": [""you're"", ""ur"", ""youre"", ""u're"", ""u r"", ""you r"", ""you'are"", ""y're"", ""you’r"", ""yo're""]
+    },
+    {
+      ""token"": ""can’t"",
+      ""typos"": [""cant"", ""cn’t"", ""can't"", ""cannt"", ""cnt"", ""can’t"", ""cn't"", ""cann't"", ""can’nt"", ""cn't""]
+    }
+  ]
+}"
+tweet-sno-1203,Disquieting assault on our most visible national symbol. That too on #RepublicDay . Our Tricolour replaced at iconic flagpole at #RedFort . Was this protest always about undermining our State? | #RDaySpiritShamed,"In January 2021, protesters against India’s controversial farm laws pulled down the country’s national tricolor flag at Delhi’s historic Red Fort.","[""most"", ""Tricolour"", ""RedFort"", ""protest""]","[""That"", ""RDaySpiritShamed"", ""symbol"", ""flagpole"", ""most"", ""assault"", ""national"", ""visible"", ""RepublicDay"", ""always""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""most"",
+      ""typos"": [""mst"", ""mozt"", ""moost""]
+    },
+    {
+      ""token"": ""Tricolour"",
+      ""typos"": [""Tricolr"", ""Tricolor"", ""Trioclour""]
+    },
+    {
+      ""token"": ""RedFort"",
+      ""typos"": [""RedF0rt"", ""Red Frt"", ""RdFort""]
+    },
+    {
+      ""token"": ""protest"",
+      ""typos"": [""protst"", ""prtst"", ""protestt""]
+    }
+  ]
+}"
+tweet-sno-1204,Biden signed executive order today that contained a ban on the term 'China virus'.,U.S. President Joe Biden issued an executive order in January 2021 banning any use of the term “China virus.”,"[""Biden"", ""virus""]","[""signed"", ""order"", ""Biden"", ""China"", ""virus""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Biden"",
+      ""typos"": [""Biden"", ""Bidan"", ""Biden"", ""Biden"", ""Bidon"", ""Bieden"", ""Biden"", ""Bidem"", ""Biden""]
+    },
+    {
+      ""token"": ""virus"",
+      ""typos"": [""viruz"", ""virus"", ""viruz"", ""virus"", ""virus"", ""virus"", ""virus"", ""virus"", ""virus""]
+    }
+  ]
+}"
+tweet-sno-1205,INBOX: Former President Trump has set up an “Office of the Former President”,"Former U.S. President Donald Trump opened an “Office of the Former President” in Palm Beach, Florida, to issue statements from and to share his post-presidency plans.","[""Office""]","[""Former"", ""President"", ""President""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Office"",
+      ""typos"": [""Ofice"", ""Ofis"", ""Offce"", ""Offise"", ""Ofc"", ""Offics"", ""Officee"", ""Oficee"", ""Ofis"", ""Offc""]
+    }
+  ]
+}"
+tweet-sno-1206,"Former President Donald Trump has officially opened the 'Office of the Former President,' which will manage his correspondence, public statements, and activities to ""carry on the agenda of the Trump Admin. through advocacy…""","Former U.S. President Donald Trump opened an “Office of the Former President” in Palm Beach, Florida, to issue statements from and to share his post-presidency plans.","[""Office"", ""which"", ""advocacy"", ""through""]","[""officially"", ""which"", ""correspondence"", ""President"", ""President"", ""manage"", ""advocacy"", ""public"", ""Trump"", ""statements"", ""carry""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Office"",
+      ""typos"": [""Ofice"", ""Offce"", ""Ofc"", ""Ofis"", ""Ofc.""]
+    },
+    {
+      ""token"": ""which"",
+      ""typos"": [""wich"", ""whch"", ""whch"", ""whic"", ""wich.""]
+    },
+    {
+      ""token"": ""advocacy"",
+      ""typos"": [""advocasy"", ""advocy"", ""advocaci"", ""advkacy"", ""advocy.""]
+    },
+    {
+      ""token"": ""through"",
+      ""typos"": [""thru"", ""throgh"", ""throuh"", ""trough"", ""thro.""]
+    }
+  ]
+}"
+tweet-sno-1207,Concealing Cocaine in international shipments can be bananas: RCMP#Kelowna,Nearly two dozen bricks of cocaine were found in banana shipments destined for Canada in February 2019.,"[""Cocaine""]","[""Cocaine"", ""Concealing"", ""shipments""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Cocaine"",
+      ""typos"": [""Cocain"", ""Coacaine"", ""Cokain"", ""Cocainee"", ""Coccaine"", ""Cocaiine"", ""Cocoaine"", ""Cocanne"", ""Cocain3""]
+    }
+  ]
+}"
+tweet-sno-1208,MILITARY SOURCE IN DC: “For the last week my battalion has been sleeping on the floor in the Senate cafeteria. Today the Senate kicked us out & moved us to a cold parking garage. 5000 soldiers. 1 power outlet. One bathroom. This is how Joe Biden’s America treats solders.” PHOTOS,"Hundreds of members of the National Guard were made to vacate the U.S. Capitol and sent to rest in a nearby parking garage, while providing security around U.S. President Joe Biden's inauguration.","[""power"", ""bathroom"", ""MILITARY"", ""solders"", ""been""]","[""5000"", ""Biden\u2019s"", ""been"", ""soldiers"", ""kicked"", ""Senate"", ""bathroom"", ""power"", ""battalion"", ""Today"", ""cafeteria"", ""parking"", ""treats"", ""MILITARY""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""power"",
+      ""typos"": [""pwer"", ""powr"", ""p0wer"", ""pwower"", ""powe"", ""pwr"", ""p0wr"", ""poweer"", ""poer""]
+    },
+    {
+      ""token"": ""bathroom"",
+      ""typos"": [""batroom"", ""bathrom"", ""bthrrom"", ""batrom"", ""bthroom"", ""bathrm"", ""batrrom"", ""bthrom"", ""bathroo""]
+    },
+    {
+      ""token"": ""MILITARY"",
+      ""typos"": [""MILITIRY"", ""MILITARI"", ""MILITERY"", ""MILITARYY"", ""MILTRY"", ""MILITAR"", ""MILTARY"", ""MILITERY"", ""MILTRY""]
+    },
+    {
+      ""token"": ""solders"",
+      ""typos"": [""soldrers"", ""solderss"", ""soldres"", ""solder"", ""soldrs"", ""soilders"", ""soldirs"", ""soldrers"", ""slder""]
+    },
+    {
+      ""token"": ""been"",
+      ""typos"": [""ben"", ""beeen"", ""beem"", ""bee"", ""benn"", ""bien"", ""ben"", ""been"", ""benn""]
+    }
+  ]
+}"
+tweet-sno-1209,"WATCH: Chuck Schumer accuses Donald Trump of inciting an ""erection""","While speaking on the Senate floor on Jan. 22, 2021, Senate Majority Leader Chuck Schumer (D-NY) accidentally said “erection” instead of “insurrection.”","[""Trump""]","[""Trump"", ""WATCH"", ""erection"", ""inciting""]","{
+    ""typo_tokens"": [
+        {
+            ""token"": ""Trump"",
+            ""typos"": [""Trmp"", ""Truump"", ""Tru"", ""Tump"", ""Truumpf"", ""Trupp"", ""Trmpf"", ""Truump"", ""Trumpf""]
+        }
+    ]
+}"
+tweet-sno-1210,"Oh, dear. Schumer just said, ""Incited the erection."" And the look on his face indicates he knows he said it.","While speaking on the Senate floor on Jan. 22, 2021, Senate Majority Leader Chuck Schumer (D-NY) accidentally said “erection” instead of “insurrection.”","[""face"", ""Incited""]","[""face"", ""dear"", ""look"", ""said"", ""knows""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""face"",
+      ""typos"": [""fce"", ""faec"", ""fece"", ""fase"", ""fac"", ""fface"", ""faze"", ""faes"", ""facce""]
+    },
+    {
+      ""token"": ""Incited"",
+      ""typos"": [""Insited"", ""Incted"", ""Incitd"", ""Inctied"", ""Incitte"", ""Incitd"", ""Insite"", ""Incide"", ""Ncted""]
+    }
+  ]
+}"
+tweet-sno-1211,"So, on the Senate floor, Chuck Schumer just said that senators must decide if ""Donald John Trump incited the erection, uh, insurrection…"" Well, it WAS an uprising!","While speaking on the Senate floor on Jan. 22, 2021, Senate Majority Leader Chuck Schumer (D-NY) accidentally said “erection” instead of “insurrection.”","[""floor"", ""said"", ""Senate""]","[""John"", ""Well"", ""erection"", ""senators"", ""Senate"", ""that"", ""Trump"", ""insurrection"", ""Donald""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""floor"",
+      ""typos"": [""flor"", ""florr"", ""fl00r"", ""flor"", ""flr""]
+    },
+    {
+      ""token"": ""said"",
+      ""typos"": [""sed"", ""saud"", ""sid"", ""sa1d"", ""sedd""]
+    },
+    {
+      ""token"": ""Senate"",
+      ""typos"": [""Sen8"", ""Sennate"", ""Senat"", ""Sen8e"", ""Sen@te""]
+    }
+  ]
+}"
+tweet-sno-1212,"Seems like Sen. Schumer's getting a rise out of a lot of people with that ""erection"" gaffe.","While speaking on the Senate floor on Jan. 22, 2021, Senate Majority Leader Chuck Schumer (D-NY) accidentally said “erection” instead of “insurrection.”","[""people"", ""Schumer's""]","[""Schumer's"", ""getting"", ""Seems"", ""rise"", ""erection""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""people"",
+      ""typos"": [""ppl"", ""peeps"", ""peepz"", ""piple"", ""poeple"", ""peoople"", ""peoplee"", ""pple"", ""peoplle"", ""peolpe""]
+    },
+    {
+      ""token"": ""Schumer's"",
+      ""typos"": [""Schumers"", ""Schumerz"", ""Schmuer's"", ""Schumeres"", ""Schumeer's"", ""Schumr's"", ""Schummer's"", ""Schumerz's"", ""Scumer's"", ""Schuemr's""]
+    }
+  ]
+}"
+tweet-sno-1213,"I am ready to declare “incited the erection” the funniest political gaffe in American history. We should build a statue to Chuck Schumer to commemorate his achievement. The statue will only be from the waist up, though, to be safe.","While speaking on the Senate floor on Jan. 22, 2021, Senate Majority Leader Chuck Schumer (D-NY) accidentally said “erection” instead of “insurrection.”","[""build"", ""funniest"", ""only"", ""from""]","[""only"", ""Schumer"", ""political"", ""American"", ""statue"", ""history"", ""build"", ""achievement"", ""erection"", ""from"", ""commemorate""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""build"",
+      ""typos"": [""bild"", ""buld"", ""biuld"", ""buid"", ""biuld""]
+    },
+    {
+      ""token"": ""funniest"",
+      ""typos"": [""funniest"", ""funest"", ""funiest"", ""funniest"", ""funyest""]
+    },
+    {
+      ""token"": ""only"",
+      ""typos"": [""onli"", ""onely"", ""onnly"", ""onley"", ""onli""]
+    },
+    {
+      ""token"": ""from"",
+      ""typos"": [""frm"", ""froem"", ""fromm"", ""form"", ""fro""]
+    }
+  ]
+}"
+tweet-sno-1214,"The Bernie meme, Schumer saying “erection” instead of “insurrection”. Good to see we can have a laugh again here in Washington.","While speaking on the Senate floor on Jan. 22, 2021, Senate Majority Leader Chuck Schumer (D-NY) accidentally said “erection” instead of “insurrection.”","[""laugh"", ""saying""]","[""have"", ""again"", ""erection"", ""Schumer"", ""meme"", ""saying""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""laugh"",
+      ""typos"": [""laf"", ""lugh"", ""lagh"", ""luf"", ""lauf"", ""lafh"", ""laph"", ""laughh"", ""lauh"", ""lahf""]
+    },
+    {
+      ""token"": ""saying"",
+      ""typos"": [""sayng"", ""sain"", ""saing"", ""sayin"", ""sayingg"", ""sayin'"", ""sayng"", ""sayying"", ""saiyng"", ""sayig""]
+    }
+  ]
+}"
+tweet-sno-1215,"On MLK day, Instagram has labeled this post about MLK from MLK’s daughter as “misleading”… This is 🤬 outrageous!","Instagram flagged a reposted tweet from Bernice King about her father, the Rev. Martin Luther King Jr., on Jan. 18, 2021, which is MLK Day, for misinformation pertaining to the COVID-19 vaccine.","[""This"", ""about""]","[""misleading"", ""Instagram"", ""this"", ""from"", ""outrageous""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""This"",
+      ""typos"": [""Ths"", ""Dis"", ""Tis"", ""Thiz"", ""Diz""]
+    },
+    {
+      ""token"": ""about"",
+      ""typos"": [""abt"", ""bowt"", ""abou"", ""aboot"", ""abwt""]
+    }
+  ]
+}"
+tweet-sno-1216,"The MyPillow website has an active promo code “QAnon” which gets you a $45 discount. (h/tfor this discovery) MyPillow CEO Mike Lindell visited the White House yesterday to meet w/ Pres Trump (45), armed with notes referencing martial law and election conspiracy theories","MyPillow offered discounts on its products if buyers used codes like “QAnon,” “Q,” and “Storm” during checkout on their website.","[""yesterday"", ""Pres"", ""this"", ""discovery"", ""theories"", ""QAnon""]","[""MyPillow"", ""notes"", ""Lindell"", ""theories"", ""martial"", ""Pres"", ""website"", ""this"", ""House"", ""armed"", ""yesterday"", ""discovery"", ""Trump"", ""meet"", ""active""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""yesterday"",
+      ""typos"": [""yesterdy"", ""yestrday"", ""ystrday"", ""yesterady"", ""yesterdaay"", ""ystrd"", ""yestrd"", ""ystrdy"", ""ystrdaye"", ""yersterday""]
+    },
+    {
+      ""token"": ""Pres"",
+      ""typos"": [""Prs"", ""Press"", ""Prez"", ""Prz"", ""Prees"", ""Prezs"", ""Presid"", ""Pris"", ""Presz"", ""Preez""]
+    },
+    {
+      ""token"": ""this"",
+      ""typos"": [""thiz"", ""ths"", ""tis"", ""dis"", ""thsi"", ""tihs"", ""ths"", ""thiz"", ""ths"", ""thys""]
+    },
+    {
+      ""token"": ""discovery"",
+      ""typos"": [""discvery"", ""discovry"", ""dicovery"", ""disocvery"", ""dicovery"", ""discoveri"", ""descovry"", ""discobery"", ""disvcovery"", ""discvoery""]
+    },
+    {
+      ""token"": ""theories"",
+      ""typos"": [""thories"", ""theries"", ""theoris"", ""theores"", ""theroies"", ""theoreis"", ""thories"", ""theorys"", ""theoreys"", ""therois""]
+    },
+    {
+      ""token"": ""QAnon"",
+      ""typos"": [""Qnon"", ""QAnnon"", ""QAnn"", ""Q-A"", ""Qanon"", ""Q-Anon"", ""QAnn0n"", ""QAnun"", ""QAn0n"", ""QAn0on""]
+    }
+  ]
+}"
+tweet-sno-1217,Tesla is hiring a full-time position to handle people talking shit aboutonline,"A job listing posted by Tesla in January 2021 described the specialist role as having to “address social media escalations … directed at the CEO,” who at the time of this writing was Elon Musk.","[""hiring"", ""full""]","[""shit"", ""people"", ""aboutonline"", ""hiring"", ""full""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""hiring"",
+      ""typos"": [""hiringg"", ""hiriing"", ""hirring"", ""hireing"", ""hiringg""]
+    },
+    {
+      ""token"": ""full"",
+      ""typos"": [""ful"", ""fulll"", ""fullll"", ""fll"", ""fulll""]
+    }
+  ]
+}"
+tweet-sno-1218,SAFETY WARNING It might be popular but do not leave #GwynethPaltrow scented candle unattended (or any candles for that matter) & always on a flame retardant surface. Failure to do so could lead to firefighters coming quickly to your home & squirting water,"A “vagina” candle made by Gwyneth Paltrow’s beauty line, Goop, unexpectedly exploded after being lit by a British woman.","[""SAFETY"", ""leave"", ""surface"", ""candle"", ""home""]","[""GwynethPaltrow"", ""WARNING"", ""always"", ""that"", ""matter"", ""squirting"", ""scented"", ""surface"", ""quickly"", ""candles"", ""leave"", ""might"", ""unattended""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""SAFETY"",
+      ""typos"": [""SAFTY"", ""SAFTEY"", ""SAFEY"", ""SFTY"", ""SAFETY""]
+    },
+    {
+      ""token"": ""leave"",
+      ""typos"": [""leav"", ""lev"", ""leev"", ""leave"", ""lve""]
+    },
+    {
+      ""token"": ""surface"",
+      ""typos"": [""surfac"", ""surfaec"", ""surfc"", ""surface"", ""serface""]
+    },
+    {
+      ""token"": ""candle"",
+      ""typos"": [""cndl"", ""caandle"", ""candle"", ""cndl"", ""cndle""]
+    },
+    {
+      ""token"": ""home"",
+      ""typos"": [""hom"", ""hme"", ""hoem"", ""home"", ""homm""]
+    }
+  ]
+}"
+tweet-sno-1219,"Marjorie Taylor Greene's Twitter account has been suspended for 12 hours. Her statement says the ""Silicon Valley Cartel launched a multi-front attack to chill free speech in America by deplatforming President Donald Trump and purging an unknown number of conservatives""","Twitter suspended the account of U.S. Rep. Marjorie Taylor Greene, a Republican from Georgia, after she made erroneous claims regarding election fraud in a video clip.","[""President"", ""Valley"", ""hours"", ""Trump"", ""conservatives""]","[""conservatives"", ""chill"", ""been"", ""Marjorie"", ""Trump"", ""Greene's"", ""number"", ""suspended"", ""purging"", ""Twitter"", ""Taylor"", ""Silicon"", ""America"", ""attack""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""President"",
+      ""typos"": [""Prezdent"", ""Prezident"", ""Presdent"", ""Prezzident"", ""Prezdent""]
+    },
+    {
+      ""token"": ""Valley"",
+      ""typos"": [""Vally"", ""Valey"", ""Valleyy"", ""Valleyy"", ""Valee""]
+    },
+    {
+      ""token"": ""hours"",
+      ""typos"": [""hrs"", ""hourz"", ""hurs"", ""hrs"", ""ours""]
+    },
+    {
+      ""token"": ""Trump"",
+      ""typos"": [""Tramp"", ""Trmp"", ""Truump"", ""Truump"", ""Tru""]
+    },
+    {
+      ""token"": ""conservatives"",
+      ""typos"": [""conservativs"", ""conservtives"", ""conservtivs"", ""conservativess"", ""conservatves""]
+    }
+  ]
+}"
+tweet-sno-1220,"Quick interview with the new Burger King logo designer: ""We explored a lot of different design territories, but kept coming back to the brand's original iconic logo when Burger King looked at its best"" –(via)",Burger King unveiled a new logo for its brand in 2021.,"[""King"", ""Burger"", ""back"", ""brand's""]","[""logo"", ""best"", ""King"", ""Burger"", ""back"", ""kept"", ""interview"", ""logo"", ""designer"", ""brand's"", ""when""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""King"",
+      ""typos"": [""Kng"", ""Kng"", ""K1ng""]
+    },
+    {
+      ""token"": ""Burger"",
+      ""typos"": [""Burg3r"", ""Brgr"", ""Brg""]
+    },
+    {
+      ""token"": ""back"",
+      ""typos"": [""bak"", ""bck"", ""bk""]
+    },
+    {
+      ""token"": ""brand's"",
+      ""typos"": [""brands"", ""brnd's"", ""brnds""]
+    }
+  ]
+}"
+tweet-sno-1221,I cringe knowing they throw vaccine out in NY while the rest of us are waiting.,New York State threw away COVID-19 vaccine doses that could have been otherwise used.,"[""waiting""]","[""while"", ""vaccine"", ""cringe"", ""waiting""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""waiting"",
+      ""typos"": [""wating"", ""waitng"", ""waiitng"", ""w8ing"", ""waitn"", ""waitin'"", ""wtng"", ""waaiting"", ""w8n"", ""waigting""]
+    }
+  ]
+}"
+tweet-sno-1222,"Dear Clintons, You know what's deplorable? Being Impeached!!! #BasketOfDeplorables","Donald Trump Jr. taunted the Clintons in 2016 by tweeting that being impeached was ""deplorable.""","[""know""]","[""Clintons"", ""Dear"", ""what's"", ""Impeached""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""know"",
+      ""typos"": [""knw"", ""no"", ""kno"", ""kn0"", ""knoe"", ""kn0w"", ""knooo"", ""knoww"", ""knou"", ""knouu""]
+    }
+  ]
+}"
+tweet-sno-1223,jan 11 – tw cannibalism // armie hammer blood drinking cannibal sex kink dms,Screenshots of DMs and texts alleged to be from actor Armie Hammer suggesting he is into cannibalism and kinky sex are real and authentic.,"[""kink""]","[""cannibal"", ""armie"", ""kink""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""kink"",
+      ""typos"": [""knik"", ""knk"", ""k1nk"", ""kinq"", ""kinkk"", ""k!nk"", ""kiink"", ""kingk"", ""kinkc"", ""kkink""]
+    }
+  ]
+}"
+tweet-sno-1224,So the guy waving Indian Flag at Capitol hill is a VHS member 'Krishna Gudipati' (Res Jacket). Video was posted by Vencent Xavior who later deleted it. Thread. 👇,"An Indian flag was waved among the crowd of people that stormed the U.S. Capitol on Jan. 6, 2021.","[""deleted"", ""Gudipati"", ""member""]","[""Krishna"", ""Indian"", ""Vencent"", ""waving"", ""later"", ""hill"", ""member"", ""deleted""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""deleted"",
+      ""typos"": [""deleeted"", ""dleted"", ""dlted"", ""deleated"", ""deletd"", ""deletted"", ""dellted"", ""delited"", ""deleed""]
+    },
+    {
+      ""token"": ""Gudipati"",
+      ""typos"": [""Gudipaty"", ""Gudipaty"", ""Guddipati"", ""Gudiipati"", ""Guddipaty"", ""Gudipady"", ""Gudipati"", ""Gudippati"", ""Gudipatt""]
+    },
+    {
+      ""token"": ""member"",
+      ""typos"": [""memeber"", ""membr"", ""memer"", ""meber"", ""membar"", ""membe"", ""meamber"", ""mamber"", ""membber""]
+    }
+  ]
+}"
+tweet-sno-1225,Syringe-shaped cakes are displayed for sale at Dortmund's Schuerener Backparadies bakery as Germany continues the rollout of the coronavirus vaccine. More photos of the day:📷 Leon Kuegeler,A German bakery is making cakes in the shape of syringes in honor of COVID-19 vaccines.,"[""More"", ""Schuerener"", ""Germany""]","[""shaped"", ""continues"", ""vaccine"", ""Syringe"", ""Kuegeler"", ""coronavirus"", ""displayed"", ""More"", ""cakes""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""More"",
+      ""typos"": [""Mor"", ""Moar"", ""Mre"", ""Moe"", ""M0re"", ""mre"", ""M0ar"", ""mor"", ""mr"", ""Mor3""]
+    },
+    {
+      ""token"": ""Schuerener"",
+      ""typos"": [""Shuerner"", ""Schuerenr"", ""Schuerner"", ""Schuerrener"", ""Schuereneer"", ""Schurener"", ""Shurenr"", ""Schuerrer"", ""Shuerener"", ""Schuerene""]
+    },
+    {
+      ""token"": ""Germany"",
+      ""typos"": [""Germny"", ""Grmany"", ""Germanee"", ""Grmny"", ""Gerany"", ""Germn"", ""Germani"", ""Germanii"", ""Germnyy"", ""Germaniy""]
+    }
+  ]
+}"
+tweet-sno-1226,"“The U.S. Fish & Wildlife Service is investigating the harassment of a manatee…reported to federal authorities over the weekend discovered w/ words ""Trump"" scraped in its back …discovered in Blue Hole on the Homosassa River” (via) – Insurrectioning wildlife?",An endangered Florida manatee was discovered with the word “Trump” carved into its back.,"[""Wildlife"", ""Blue"", ""reported"", ""Fish""]","[""scraped"", ""Insurrectioning"", ""Hole"", ""Wildlife"", ""investigating"", ""harassment"", ""Service"", ""back"", ""wildlife"", ""Homosassa"", ""U.S."", ""discovered""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Wildlife"",
+      ""typos"": [""Wildlfe"", ""Wldlife"", ""Wildliff"", ""Wildflife"", ""Wildl1fe"", ""Wildlifee"", ""Widlilfe"", ""Widlflife"", ""Wildlfie""]
+    },
+    {
+      ""token"": ""Blue"",
+      ""typos"": [""Blu"", ""Bloue"", ""Bleu"", ""Bloue"", ""Bl3"", ""Bllue"", ""Bue"", ""Blus"", ""Bllue""]
+    },
+    {
+      ""token"": ""reported"",
+      ""typos"": [""reproted"", ""repoerted"", ""repoted"", ""reproted"", ""rep0rted"", ""rpeorted"", ""repoerted"", ""reportd"", ""repoerted""]
+    },
+    {
+      ""token"": ""Fish"",
+      ""typos"": [""Fsh"", ""Fih"", ""Fis"", ""Fissh"", ""Fi5h"", ""Fizh"", ""Fisj"", ""Fihs"", ""Fiss""]
+    }
+  ]
+}"
+tweet-sno-1227,also the newest congress member from Illinois brought up hitler in her speech and was like “hitler was right about one thing” 💀💀before the riots even started,"Rep. Mary Miller said ""Hitler was right on one thing"" before a mob of Trump supporters stormed the nation's Capitol on Jan. 6, 2020..","[""\ud83d\udc80\ud83d\udc80before"", ""from"", ""riots""]","[""even"", ""thing"", ""also"", ""\ud83d\udc80\ud83d\udc80before"", ""about"", ""hitler"", ""congress"", ""brought"", ""newest""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""💀💀before"",
+      ""typos"": [""💀b4"", ""💀bfore"", ""💀b4re""]
+    },
+    {
+      ""token"": ""from"",
+      ""typos"": [""frm"", ""frum"", ""4rm""]
+    },
+    {
+      ""token"": ""riots"",
+      ""typos"": [""riots"", ""ri0ts"", ""ryots""]
+    }
+  ]
+}"
+tweet-sno-1228,"-Mary Miller (IL) spoke today shortly before the riots broke out, stating “Hitler was right on one thing. He said, ‘Whoever has the youth has the future.’”","Rep. Mary Miller said ""Hitler was right on one thing"" before a mob of Trump supporters stormed the nation's Capitol on Jan. 6, 2020..","[""stating"", ""spoke"", ""today""]","[""said"", ""spoke"", ""future"", ""riots"", ""broke"", ""Hitler"", ""before"", ""stating""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""stating"",
+      ""typos"": [""staating"", ""statng"", ""st8ing""]
+    },
+    {
+      ""token"": ""spoke"",
+      ""typos"": [""sproke"", ""spok"", ""spk""]
+    },
+    {
+      ""token"": ""today"",
+      ""typos"": [""2day"", ""todai"", ""toddy""]
+    }
+  ]
+}"
+tweet-sno-1229,People who broke into the Capitol Wednesday are now learning they are on No-Fly lists pending the full investigation. They are not happy about this.,A video shows a person who attended the Capitol riot finding out that they had been added to the no-fly list.,"[""lists"", ""they"", ""happy""]","[""They"", ""No-Fly"", ""lists"", ""they"", ""about"", ""into"", ""broke"", ""learning""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""lists"",
+      ""typos"": [""listz"", ""listz"", ""lysts""]
+    },
+    {
+      ""token"": ""they"",
+      ""typos"": [""thay"", ""dey"", ""thei""]
+    },
+    {
+      ""token"": ""happy"",
+      ""typos"": [""hapy"", ""happi"", ""hapyy""]
+    }
+  ]
+}"
+tweet-sno-1230,apparently a guy accidentally tasered himself in the balls and then died of a heart attack while trying to steal a painting yesterday and if we can’t all come together over how hilarious that is we may be beyond hope,"An Alabama man who was in attendance during the Jan. 6, 2021, insurrection at the U.S. Capitol suffered a fatal heart attack after accidentally tasing himself in the testicles.","[""himself"", ""over"", ""come"", ""together""]","[""beyond"", ""steal"", ""died"", ""hilarious"", ""trying"", ""can\u2019t"", ""painting"", ""that"", ""apparently"", ""hope"", ""tasered""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""himself"",
+      ""typos"": [""himself"", ""himself"", ""himself""]
+    },
+    {
+      ""token"": ""over"",
+      ""typos"": [""ovr"", ""ova"", ""o'er""]
+    },
+    {
+      ""token"": ""come"",
+      ""typos"": [""cum"", ""cme"", ""cm""]
+    },
+    {
+      ""token"": ""together"",
+      ""typos"": [""2gether"", ""togethr"", ""togthr""]
+    }
+  ]
+}"
+tweet-sno-1231,"* fraud alert * This text message is circulating in NYC, seeking to fool people into taking a call from a ""contact tracer"" asking that you ""pre-register"" for a vaccine. NYC's actual contact tracers will call you from a # beginning with 212-540-XXXX or 212-242-XXXX. [cont…]",New Yorkers can sign up for early access to the COVID-19 vaccine.,"[""contact"", ""from"", ""text"", ""message"", ""call"", ""asking""]","[""people"", ""212-242-XXXX"", ""fraud"", ""contact"", ""from"", ""This"", ""circulating"", ""taking"", ""XXXX"", ""tracer"", ""into"", ""that"", ""vaccine"", ""cont"", ""fool"", ""asking""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""contact"",
+      ""typos"": [""cntct"", ""contct"", ""conctact""]
+    },
+    {
+      ""token"": ""from"",
+      ""typos"": [""frm"", ""frum"", ""fro""]
+    },
+    {
+      ""token"": ""text"",
+      ""typos"": [""txt"", ""tezt"", ""tetx""]
+    },
+    {
+      ""token"": ""message"",
+      ""typos"": [""msg"", ""mssg"", ""mesage""]
+    },
+    {
+      ""token"": ""call"",
+      ""typos"": [""cal"", ""cll"", ""kall""]
+    },
+    {
+      ""token"": ""asking"",
+      ""typos"": [""askin"", ""askng"", ""askng""]
+    }
+  ]
+}"
+tweet-sno-1232,"Reading about how few of the rioters were arrested yesterday while storming the Capitol Building, I'm reminded that Georgia's next senator, Rev. Raphael Warnock, had been arrested so many times for peacefully protesting at the Capitol that it became a feature of his stump speech.",Rev. Raphael Warnock was arrested while praying during a demonstration at the U.S. Capitol in 2017.,"[""Reading"", ""Building"", ""storming"", ""reminded"", ""times"", ""protesting""]","[""feature"", ""Capitol"", ""rioters"", ""Building"", ""many"", ""that"", ""been"", ""speech"", ""while"", ""Raphael"", ""yesterday"", ""Reading"", ""times"", ""Rev."", ""peacefully""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Reading"",
+      ""typos"": [""Reeding"", ""Reding"", ""Readng"", ""Reedin"", ""Reeding""]
+    },
+    {
+      ""token"": ""Building"",
+      ""typos"": [""Bilding"", ""Buildng"", ""Blding"", ""Builing"", ""Buiding""]
+    },
+    {
+      ""token"": ""storming"",
+      ""typos"": [""stoming"", ""stroming"", ""stormin"", ""sturming"", ""strming""]
+    },
+    {
+      ""token"": ""reminded"",
+      ""typos"": [""remnded"", ""remined"", ""reminded"", ""remined"", ""rememded""]
+    },
+    {
+      ""token"": ""times"",
+      ""typos"": [""tmes"", ""timse"", ""tiems"", ""tims"", ""time""]
+    },
+    {
+      ""token"": ""protesting"",
+      ""typos"": [""protestng"", ""protsting"", ""protesing"", ""protestin"", ""protestng""]
+    }
+  ]
+}"
+tweet-sno-1233,"Ifwere to lose (he won’t) his supporters will go to work tomorrow just as we do everyday. When Biden loses, his “supporters” will likely loot and riot. Tells you everything you need to know! #Trump2020","Before the 2020 U.S. presidential election, conservative personality Tomi Lahren tweeted that then-Democratic candidate Joe Biden’s supporters would “loot and riot” if the former vice president lost.","[""will"", ""loses"", ""supporters"", ""riot""]","[""Tells"", ""will"", ""everyday"", ""loot"", ""just"", ""supporters"", ""know"", ""Biden"", ""Ifwere"", ""When"", ""loses""]","{
+    ""typo_tokens"": [
+        {
+            ""token"": ""will"",
+            ""typos"": [""wil"", ""wll"", ""wl"", ""w1ll"", ""wiill"", ""w!ll"", ""wi1l"", ""willl"", ""wil1"", ""wil2""]
+        },
+        {
+            ""token"": ""loses"",
+            ""typos"": [""looses"", ""loses"", ""lossss"", ""losez"", ""losses"", ""lozez"", ""los3s"", ""l0ses"", ""los3z"", ""loszzz""]
+        },
+        {
+            ""token"": ""supporters"",
+            ""typos"": [""suporters"", ""supprters"", ""supportrs"", ""supp0rters"", ""supprtrs"", ""supporterz"", ""supp0rtrs"", ""suprters"", ""supprt3rs"", ""suportrs""]
+        },
+        {
+            ""token"": ""riot"",
+            ""typos"": [""r1ot"", ""ri0t"", ""r!ot"", ""r0it"", ""riiot"", ""r!0t"", ""ri0t"", ""r1iot"", ""r!ot"", ""riotz""]
+        }
+    ]
+}"
+tweet-sno-1234,"Electoral college ballots rescued from the Senate floor. If our capable floor staff hadn’t grabbed them, they would have been burned by the mob.","A photograph taken on Jan. 6, 2021, showed two female U.S. Senate aides safely transporting boxes of Electoral College votes during the Capitol insurrection.","[""have"", ""staff"", ""ballots""]","[""floor"", ""have"", ""capable"", ""grabbed"", ""Electoral"", ""burned"", ""floor"", ""rescued"", ""been""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""have"",
+      ""typos"": [""hav"", ""hv"", ""hve"", ""haave"", ""h@ve""]
+    },
+    {
+      ""token"": ""staff"",
+      ""typos"": [""staf"", ""stff"", ""stafff"", ""s@ff"", ""staf""]
+    },
+    {
+      ""token"": ""ballots"",
+      ""typos"": [""balots"", ""balots"", ""balltz"", ""ball0ts"", ""b@llots""]
+    }
+  ]
+}"
+tweet-sno-1235,Here are the women – Senate aides – who had the presence of mind and courage to transport and keep safe the electoral votes before fleeing the Senate. There will always be villains. There will always be heroes.,"A photograph taken on Jan. 6, 2021, showed two female U.S. Senate aides safely transporting boxes of Electoral College votes during the Capitol insurrection.","[""Senate"", ""electoral"", ""keep"", ""before""]","[""transport"", ""keep"", ""There"", ""before"", ""always"", ""heroes"", ""Senate"", ""aides"", ""electoral"", ""Senate"", ""fleeing""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Senate"",
+      ""typos"": [""Senat"", ""Sen8"", ""Senatee""]
+    },
+    {
+      ""token"": ""electoral"",
+      ""typos"": [""elctoral"", ""electrl"", ""elektoral""]
+    },
+    {
+      ""token"": ""keep"",
+      ""typos"": [""kepp"", ""kep"", ""keeep""]
+    },
+    {
+      ""token"": ""before"",
+      ""typos"": [""b4"", ""befor"", ""befre""]
+    }
+  ]
+}"
+tweet-sno-1236,"Better look at the guy with the 'Camp Auschwitz' hoodie from yesterday. Not only does it feature the SS 'totenkopf', but an English translation of 'Arbeit Macht Frei'. No wiggle room, no joking here. This is who these people are. (via)","A pro-Trump rioter who broke into the U.S. Capitol was wearing a ""Camp Auschwitz"" shirt.","[""Arbeit"", ""people"", ""totenkopf"", ""room""]","[""English"", ""Macht"", ""Better"", ""joking"", ""room"", ""yesterday"", ""feature"", ""Frei"", ""with"", ""wiggle"", ""translation"", ""only""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Arbeit"",
+      ""typos"": [""Arb3it"", ""Arbiet"", ""Arbeittt"", ""Arbeat"", ""Arbeet"", ""Arbitt"", ""Arbet"", ""Abeeirt"", ""Arbeiyt""]
+    },
+    {
+      ""token"": ""people"",
+      ""typos"": [""ppl"", ""peple"", ""peopel"", ""peopple"", ""peaple"", ""peepol"", ""peopl"", ""pipul"", ""pe0ple""]
+    },
+    {
+      ""token"": ""totenkopf"",
+      ""typos"": [""tot3nkopf"", ""totenkoph"", ""totenkopff"", ""totenkop"", ""totenk0pf"", ""toetenkopf"", ""totnkopf"", ""totenkopf1"", ""ttotenkopf""]
+    },
+    {
+      ""token"": ""room"",
+      ""typos"": [""r00m"", ""rom"", ""rooom"", ""roo4m"", ""rooom"", ""r0om"", ""r0mm"", ""romm"", ""rooomm""]
+    }
+  ]
+}"
+tweet-sno-1237,"This woman was maced inside the Capitol. She told me, ""It's a revolution!""",A video shows a crying woman holding an onion while telling a reporter that she had been Maced during a riot.,"[""This""]","[""maced"", ""woman"", ""told"", ""This""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""This"",
+      ""typos"": [""Dis"", ""Ths"", ""Thiz"", ""Tis"", ""Thes"", ""Diz"", ""Thi$"", ""Thiz"", ""Thiss""]
+    }
+  ]
+}"
+tweet-sno-1238,"Wait, so Elizabeth from Knoxville, who claims she was maced after storming the Capitol, was dabbing her eyes with an onion towel?",A video shows a crying woman holding an onion while telling a reporter that she had been Maced during a riot.,"[""Knoxville"", ""Elizabeth""]","[""eyes"", ""onion"", ""Elizabeth"", ""towel"", ""claims"", ""maced"", ""from""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Knoxville"",
+      ""typos"": [""Knoxvile"", ""Noxville"", ""Knoxvlle"", ""Knoville"", ""Knoxvile"", ""Knoxvile"", ""Knozville"", ""Knoxvill"", ""Knoxvill"", ""Knoxvville""]
+    },
+    {
+      ""token"": ""Elizabeth"",
+      ""typos"": [""Elisabeth"", ""Elzabeth"", ""Elizabth"", ""Elizbeth"", ""Elizabteh"", ""Elizabath"", ""Elizabet"", ""Elizabetj"", ""Elizabeath"", ""Elizbaeth""]
+    }
+  ]
+}"
+tweet-sno-1239,"Over the next 10 days, we get to see the machines that are crooked, the ballots that are fraudulent. And if we're wrong, we will be made fools of. But if we're right, and lot of them will go to jail. So — let's have trial by combat — Giuliani","U.S. President Donald Trump's personal attorney, Rudy Giuliani, called for ""trial by combat"" before a violent mob of Trump supporters broke into the U.S. Capitol.","[""we're"", ""right"", ""trial"", ""them""]","[""crooked"", ""have"", ""made"", ""right"", ""that"", ""we're"", ""will"", ""fraudulent"", ""let's"", ""Giuliani"", ""fools"", ""Over""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""we're"",
+      ""typos"": [""we r"", ""were"", ""wer"", ""we'ree"", ""weer""]
+    },
+    {
+      ""token"": ""right"",
+      ""typos"": [""rite"", ""ri8"", ""rigt"", ""righ"", ""rit""]
+    },
+    {
+      ""token"": ""trial"",
+      ""typos"": [""triel"", ""trila"", ""triall"", ""tryal"", ""tri@l""]
+    },
+    {
+      ""token"": ""them"",
+      ""typos"": [""thm"", ""t3m"", ""themm"", ""tem"", ""th3m""]
+    }
+  ]
+}"
+tweet-sno-1240,this is a photo of the National Guard stationed in response to a Black Lives Matter protest at the Lincoln Memorial in June,The National Guard was deployed to protect the Lincoln Memorial during the Black Lives Matter protests in the spring of 2020.,"[""Lives"", ""photo""]","[""June"", ""Matter"", ""this"", ""National"", ""photo"", ""Lives""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Lives"",
+      ""typos"": [""Lifes"", ""Lyves"", ""Livs""]
+    },
+    {
+      ""token"": ""photo"",
+      ""typos"": [""foto"", ""pic"", ""phohto""]
+    }
+  ]
+}"
+tweet-sno-1241,"Anarchists, Agitators or Protestors who vandalize or damage our Federal Courthouse in Portland, or any Federal Buildings in any of our Cities or States, will be prosecuted under our recently re-enacted Statues & Monuments Act. MINIMUM TEN YEARS IN PRISON. Don’t do it! ","U.S. President Donald Trump once threatened that ""anarchists, agitators, or protestors"" who ""vandalize or damage any federal buildings will be prosecuted.""","[""Agitators"", ""prosecuted"", ""Cities"", ""States""]","[""Federal"", ""Don\u2019t"", ""Anarchists"", ""Federal"", ""Cities"", ""vandalize"", ""PRISON"", ""will"", ""Courthouse"", ""Protestors"", ""Monuments"", ""States""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Agitators"",
+      ""typos"": [""Agit8ors"", ""Agittrs"", ""Agitatorz"", ""Agi8rs"", ""Agttrs"", ""Agit8rs"", ""Agt8rs"", ""Aggitators"", ""Agit8erz""]
+    },
+    {
+      ""token"": ""prosecuted"",
+      ""typos"": [""prossecuted"", ""prosecutted"", ""prosecudted"", ""prosicuted"", ""prossecuttd"", ""prosecueted"", ""prossecutedd"", ""prosecuttedd"", ""prossecutd""]
+    },
+    {
+      ""token"": ""Cities"",
+      ""typos"": [""Citiees"", ""Citiez"", ""Cit2es"", ""Cityes"", ""Citiezs"", ""Citis"", ""Citeezz"", ""Ci2es"", ""Citiezs""]
+    },
+    {
+      ""token"": ""States"",
+      ""typos"": [""St8s"", ""Sttates"", ""Statess"", ""Statez"", ""Stt8s"", ""S8ates"", ""Stat3s"", ""Statzz"", ""Stattez""]
+    }
+  ]
+}"
+tweet-sno-1242,JUST IN – _Pence has just unfollowedon Twitter,"U.S. Vice President Mike Pence unfollowed President Donald Trump following Jan. 6, 2021, riots in Washington, D.C.","[""Pence""]","[""just"", ""Twitter""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Pence"",
+      ""typos"": [""Penc"", ""Penc3"", ""Penxe"", ""Pençe"", ""Penze"", ""P3nce"", ""Pene"", ""Pencce"", ""Pensee""]
+    }
+  ]
+}"
+tweet-sno-1243,Scenes from DC right now. They’ve raised the confederate flag outside the Capitol.,A Confederate flag was spotted inside and outside the U.S. Capitol as a pro-Trump mob stormed the building.,"[""Capitol""]","[""confederate"", ""Scenes"", ""flag"", ""They\u2019ve""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Capitol"",
+      ""typos"": [""Capital"", ""Capitel"", ""Capitol"", ""Capit0l"", ""Cappitol"", ""Capitoll"", ""Capitool"", ""Capitol"", ""Kapitl""]
+    }
+  ]
+}"
+tweet-sno-1244,That’s the confederate flag flying outside the Senate chamber,A Confederate flag was spotted inside and outside the U.S. Capitol as a pro-Trump mob stormed the building.,"[""outside""]","[""That\u2019s"", ""outside"", ""Senate""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""outside"",
+      ""typos"": [""outsyd"", ""outsiede"", ""outcide"", ""outsde"", ""otside"", ""outsid"", ""outsid3"", ""outsyde"", ""outsd"", ""outsde""]
+    }
+  ]
+}"
+tweet-sno-1245,"A supporter of President Donald Trump carries a Confederate battle flag on the second floor of the U.S. Capitol near the entrance to the Senate after breaching security defenses, in Washington, January 6, 2021. Photo by Mike Theiler",A Confederate flag was spotted inside and outside the U.S. Capitol as a pro-Trump mob stormed the building.,"[""2021"", ""second"", ""Capitol"", ""Mike"", ""Confederate""]","[""supporter"", ""battle"", ""President"", ""near"", ""breaching"", ""carries"", ""Confederate"", ""after"", ""entrance"", ""second"", ""Trump"", ""Photo""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""2021"",
+      ""typos"": [""2021t"", ""2021z"", ""2021y"", ""202l"", ""2021_"", ""2o21"", ""202i"", ""202!"", ""2o2i""]
+    },
+    {
+      ""token"": ""second"",
+      ""typos"": [""2nd"", ""secnd"", ""scnd"", ""sekond"", ""secnod"", ""sedond"", ""senond"", ""2ond"", ""scond""]
+    },
+    {
+      ""token"": ""Capitol"",
+      ""typos"": [""Capitl"", ""Capitol_"", ""Captol"", ""Captiol"", ""Capiol"", ""Capit0l"", ""Capittol"", ""Cap8tol"", ""Capito1""]
+    },
+    {
+      ""token"": ""Mike"",
+      ""typos"": [""Mke"", ""Mik"", ""M1ke"", ""Mkie"", ""Mke_"", ""Mk"", ""M!ke"", ""Miike"", ""Mikee""]
+    },
+    {
+      ""token"": ""Confederate"",
+      ""typos"": [""Confedrate"", ""Confdreate"", ""Confederaet"", ""C0nfederate"", ""Confeerate"", ""Conferate"", ""Conederate"", ""Conferate"", ""Conferat""]
+    }
+  ]
+}"
+tweet-sno-1246,They just put up a cross in front of the capitol building,"A video shows a cross being erected in front of the U.S. Capitol on Jan. 6, 2021.","[""front""]","[""cross"", ""front"", ""capitol""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""front"",
+      ""typos"": [
+        ""frnt"",
+        ""fron"",
+        ""fr0nt"",
+        ""frnt."",
+        ""frunt"",
+        ""frnnt"",
+        ""frontt"",
+        ""fr0n"",
+        ""frn"",
+        ""fnt""
+      ]
+    }
+  ]
+}"
+tweet-sno-1247,Here in Italy people started to share this figure claiming that this is the diagram of the 5G chip that has been inserted in the covid vaccine. In reality it is the electric circuit of a guitar pedal and I believe that putting it in the covid vaccine has been an excellent idea💡,An image represents a schematic for a 'COVID 5G Chip.',"[""guitar"", ""inserted"", ""circuit"", ""people"", ""this"", ""pedal""]","[""covid"", ""that"", ""putting"", ""Here"", ""Italy"", ""this"", ""claiming"", ""guitar"", ""pedal"", ""inserted"", ""been"", ""idea"", ""been"", ""reality"", ""circuit""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""guitar"",
+      ""typos"": [""guitr"", ""gu1tar"", ""gtr""]
+    },
+    {
+      ""token"": ""inserted"",
+      ""typos"": [""insrted"", ""insertrd"", ""insertd""]
+    },
+    {
+      ""token"": ""circuit"",
+      ""typos"": [""circut"", ""c1rcu1t"", ""circuite""]
+    },
+    {
+      ""token"": ""people"",
+      ""typos"": [""ppl"", ""peple"", ""peopel""]
+    },
+    {
+      ""token"": ""this"",
+      ""typos"": [""dis"", ""tis"", ""ths""]
+    },
+    {
+      ""token"": ""pedal"",
+      ""typos"": [""pdal"", ""pedl"", ""pedal""]
+    }
+  ]
+}"
+tweet-sno-1248,A view of fresh snow this morning from Juniper Hills Ca at 4500 ft. Located south of Pearblossom in the San Gabriel foothills. Photo shared by Scott Lezak. #cawx #SoCal #LAweather,"In December 2020, snow fell in the Los Angeles County area.","[""from"", ""Gabriel"", ""Pearblossom"", ""foothills""]","[""Located"", ""morning"", ""from"", ""foothills"", ""snow"", ""view"", ""cawx"", ""shared"", ""SoCal"", ""Juniper""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""from"",
+      ""typos"": [""frm"", ""frum"", ""fro"", ""frmo"", ""froom"", ""form"", ""frum"", ""frrom"", ""fron"", ""froam""]
+    },
+    {
+      ""token"": ""Gabriel"",
+      ""typos"": [""Gabrial"", ""Gabril"", ""Gabriell"", ""Gaberiel"", ""Gabriell"", ""Gabrie"", ""Gabriel"", ""Gabriwl"", ""Gabri3l"", ""Gabrzl""]
+    },
+    {
+      ""token"": ""Pearblossom"",
+      ""typos"": [""Pearblosom"", ""Parblossom"", ""Perblossom"", ""Pearblosom"", ""Pearbloosom"", ""Perblosm"", ""Perbloosom"", ""Pearblosoom"", ""Perrblossom"", ""Pearblosm""]
+    },
+    {
+      ""token"": ""foothills"",
+      ""typos"": [""footills"", ""fotthills"", ""foothils"", ""foothillz"", ""foothill"", ""foothilss"", ""footilss"", ""fotthils"", ""fotthill"", ""foothillss""]
+    }
+  ]
+}"
+tweet-sno-1249,Around 1/2 inch of snow at the 3700 ft level in Pearblossom fell early this morning. Photo taken by Michaela Moffitt. Thanks Michaela and our NWS spotter Scott Lezak for forwarding the photo. #cawx #LAweather #LAsnow,"In December 2020, snow fell in the Los Angeles County area.","[""morning"", ""Around"", ""Pearblossom"", ""snow""]","[""fell"", ""Moffitt"", ""Pearblossom"", ""Thanks"", ""Photo"", ""taken"", ""spotter"", ""Scott"", ""Around"", ""this"", ""cawx"", ""snow""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""morning"",
+      ""typos"": [""mornin"", ""mornng"", ""mrning"", ""mornin'"", ""morningg"", ""morng""]
+    },
+    {
+      ""token"": ""Around"",
+      ""typos"": [""Arond"", ""Aroun"", ""arnd"", ""Aroud"", ""Arund"", ""Arund""]
+    },
+    {
+      ""token"": ""Pearblossom"",
+      ""typos"": [""Pearblosm"", ""Perblossom"", ""P'blossom"", ""Pearblosom"", ""Pearblossm"", ""P'blosm""]
+    },
+    {
+      ""token"": ""snow"",
+      ""typos"": [""snw"", ""sno"", ""snoww"", ""sn0w"", ""snoow"", ""snw""]
+    }
+  ]
+}"
+tweet-sno-1250,"“Breaking News: In Pennsylvania there were 205,000 more votes than there were voters. This alone flips the state to President Trump.”","The state of Pennsylvania recorded ""205,000 votes more than they had voters"" in the 2020 U.S. election.","[""News"", ""more"", ""flips""]","[""205,000"", ""voters"", ""than"", ""more"", ""News"", ""flips"", ""Trump"", ""This"", ""state""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""News"",
+      ""typos"": [""Newz"", ""Nwz"", ""Neuz"", ""Nuuz"", ""Nws"", ""Nuuz"", ""Neez"", ""Nuez"", ""Nuwz"", ""N3ws""]
+    },
+    {
+      ""token"": ""more"",
+      ""typos"": [""moar"", ""mor"", ""mre"", ""morr"", ""m0re"", ""mure"", ""moree"", ""mo're"", ""mre"", ""mo're""]
+    },
+    {
+      ""token"": ""flips"",
+      ""typos"": [""flp"", ""flipz"", ""fliips"", ""fllips"", ""flipsz"", ""flippz"", ""flips"", ""fl1ps"", ""fli'ps"", ""flips""]
+    }
+  ]
+}"
+tweet-sno-1251,"When are we going to be allowed to do signature verification in Fulton County, Georgia? The process is going VERY slowly.Pennsylvania just found 205,000 votes more than they had voters. Therefore, we WIN Pennsylvania!!!","The state of Pennsylvania recorded ""205,000 votes more than they had voters"" in the 2020 U.S. election.","[""votes"", ""VERY"", ""Fulton"", ""they""]","[""Fulton"", ""votes"", ""just"", ""voters"", ""found"", ""VERY"", ""process"", ""going"", ""Georgia"", ""allowed"", ""County""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""votes"",
+      ""typos"": [""vots"", ""voats"", ""votz"", ""v0tes"", ""votez"", ""vot3s"", ""vootes"", ""votis"", ""votep""]
+    },
+    {
+      ""token"": ""VERY"",
+      ""typos"": [""VRY"", ""VERRRRY"", ""VRRY"", ""VERYY"", ""VERRYYY"", ""VVVERY"", ""VRYY"", ""VREY"", ""VERI""]
+    },
+    {
+      ""token"": ""Fulton"",
+      ""typos"": [""Fulon"", ""Fultn"", ""Fullton"", ""Fulton"", ""Fulton"", ""Fltun"", ""Fulton"", ""Fulton"", ""Fulton""]
+    },
+    {
+      ""token"": ""they"",
+      ""typos"": [""th3y"", ""thy"", ""tehy"", ""they"", ""thei"", ""theyy"", ""thay"", ""thay"", ""they""]
+    }
+  ]
+}"
+tweet-sno-1252,"YOU CANNOT be “cleared” for a gathering by a negative COVID test 1) Might be too early in course to detect virus 2) ~20% of tests are false negatives 3) You could become infected literally 0.1 seconds after your swab Sincerely, An increasingly desperate ER doctor",A negative COVID-19 test will “clear” people to go to holiday gatherings with their family and friends across the United States.,"[""increasingly"", ""cleared"", ""course"", ""CANNOT"", ""false""]","[""after"", ""your"", ""negative"", ""Sincerely"", ""literally"", ""increasingly"", ""tests"", ""seconds"", ""desperate"", ""COVID"", ""could"", ""false"", ""cleared""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""increasingly"",
+      ""typos"": [""increasinly"", ""increaingly"", ""increasinly"", ""increasingly""]
+    },
+    {
+      ""token"": ""cleared"",
+      ""typos"": [""clered"", ""cleard"", ""cleered"", ""cleered"", ""cleered""]
+    },
+    {
+      ""token"": ""course"",
+      ""typos"": [""cours"", ""korse"", ""coure"", ""korse"", ""couse""]
+    },
+    {
+      ""token"": ""CANNOT"",
+      ""typos"": [""CANNT"", ""CANT"", ""CANOT"", ""CANOT"", ""CANNT""]
+    },
+    {
+      ""token"": ""false"",
+      ""typos"": [""fals"", ""falze"", ""faulse"", ""fals"", ""faulse""]
+    }
+  ]
+}"
+tweet-sno-1253,"My family & I went tolast night. Great food. I used an old photo since we didn't take one last night. I'm glad this tweet has generated so much attention. I hope people support Gino and his team at. Small business is hurting, & they need our support",Former Wisconsin Gov. Scott Walker cropped and tweeted an old picture of pizza at a restaurant that he first tweeted 14 months earlier.,"[""take"", ""Great"", ""Gino"", ""family"", ""much"", ""hope""]","[""tolast"", ""since"", ""glad"", ""they"", ""business"", ""tweet"", ""team"", ""family"", ""generated"", ""didn't"", ""last"", ""support"", ""Gino"", ""people"", ""hope""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""take"",
+      ""typos"": [""tk"", ""tek"", ""taek"", ""tak"", ""tke"", ""takee"", ""tae"", ""taek"", ""taak"", ""tkae""]
+    },
+    {
+      ""token"": ""Great"",
+      ""typos"": [""Gr8"", ""G8"", ""Gre8"", ""Gret"", ""Grat"", ""Gret"", ""Grt"", ""Greaat"", ""Gre8t"", ""Gret""]
+    },
+    {
+      ""token"": ""Gino"",
+      ""typos"": [""Ginoo"", ""Gno"", ""Geno"", ""Ginoh"", ""Ginno"", ""Giino"", ""Gieno"", ""Ginoe"", ""Giono"", ""Ginni""]
+    },
+    {
+      ""token"": ""family"",
+      ""typos"": [""famly"", ""famil"", ""familee"", ""famlyy"", ""famlly"", ""familye"", ""famili"", ""familiy"", ""famaly"", ""fammily""]
+    },
+    {
+      ""token"": ""much"",
+      ""typos"": [""mch"", ""muhc"", ""muc"", ""muh"", ""mucc"", ""muuch"", ""mch"", ""mucch"", ""muhcc"", ""muucch""]
+    },
+    {
+      ""token"": ""hope"",
+      ""typos"": [""hop"", ""hoop"", ""hoppe"", ""hopo"", ""hopw"", ""hhope"", ""hoppe"", ""hopoe"", ""hopee"", ""hopae""]
+    }
+  ]
+}"
+tweet-sno-1254,Did anyone go to a high school with a pool under the basketball court? The Bedford Falls High School gym always fascinated me. #ItsAWonderfulLife,"The swimming pool and retractable basketball court from ""It's a Wonderful Life"" are still used in the present day.","[""School"", ""high"", ""fascinated""]","[""court"", ""school"", ""with"", ""Bedford"", ""anyone"", ""always"", ""ItsAWonderfulLife""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""School"",
+      ""typos"": [""Skool"", ""Scholl"", ""Schul""]
+    },
+    {
+      ""token"": ""high"",
+      ""typos"": [""hi"", ""hgh"", ""hIgh""]
+    },
+    {
+      ""token"": ""fascinated"",
+      ""typos"": [""facinated"", ""fascnated"", ""fascinated""]
+    }
+  ]
+}"
+tweet-sno-1255,It's a wonderful life (east coast feed) about to show the pool under the basketball court that still is there at my high school. #Beverly,"The swimming pool and retractable basketball court from ""It's a Wonderful Life"" are still used in the present day.","[""Beverly"", ""show"", ""It's""]","[""under"", ""coast"", ""It's"", ""basketball"", ""life"", ""still"", ""pool"", ""east"", ""court""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Beverly"",
+      ""typos"": [""Beverlee"", ""Bevrly"", ""Beverli"", ""Bverl"", ""Bevrl""]
+    },
+    {
+      ""token"": ""show"",
+      ""typos"": [""sho"", ""shw"", ""showw"", ""sow"", ""shoow""]
+    },
+    {
+      ""token"": ""It's"",
+      ""typos"": [""Its"", ""Itz"", ""Itts"", ""Its'"", ""I'ts""]
+    }
+  ]
+}"
+tweet-sno-1256,"Yes it's real. Yes, it's powered by Intel. And yes, it has a chicken warmer. 😅 #KFConsole #IntelGaming",Fast food chain KFC developed a video game console that also keeps chicken warm.,"[""chicken""]","[""KFConsole"", ""powered"", ""it's"", ""it's""]","{
+	""typo_tokens"": [
+		{
+			""token"": ""chicken"",
+			""typos"": [""chikn"", ""chk'n"", ""chkn"", ""chik'n"", ""chikin"", ""chikhen"", ""chicn"", ""chikken"", ""chkn""]
+		}
+	]
+}"
+tweet-sno-1257,"Mayor Buttigieg says he’s a gay Christian. As a Christian I believe the Bible which defines homosexuality as sin, something to be repentant of, not something to be flaunted, praised or politicized. The Bible says marriage is between a man & a woman—not two men, not two women. 2/3","Evangelist Franklin Graham tweeted that Pete Buttigieg's homosexuality was ""something to be repentant of, not something to be flaunted.""","[""Christian"", ""says"", ""Bible"", ""Mayor""]","[""between"", ""says"", ""politicized"", ""something"", ""which"", ""Bible"", ""woman"", ""believe"", ""marriage"", ""says"", ""flaunted""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Christian"",
+      ""typos"": [""Cristian"", ""Chrstian"", ""Christan"", ""Chirstian"", ""Chrisian"", ""Cristan"", ""Cristin"", ""Crisian"", ""Chrtian""]
+    },
+    {
+      ""token"": ""says"",
+      ""typos"": [""sez"", ""saiz"", ""sayz"", ""sais"", ""saze"", ""saes"", ""sayes"", ""sayis"", ""saayz""]
+    },
+    {
+      ""token"": ""Bible"",
+      ""typos"": [""Bibel"", ""Bibl"", ""Bble"", ""Biblle"", ""Bibble"", ""Bibele"", ""Bibla"", ""Bibloe"", ""Biblle""]
+    },
+    {
+      ""token"": ""Mayor"",
+      ""typos"": [""Mayer"", ""Mayr"", ""Mayo"", ""Mayre"", ""Meyor"", ""Meyor"", ""Majer"", ""Maor"", ""Meyur""]
+    }
+  ]
+}"
+tweet-sno-1258,Kanye West $2M PPP loan. Joel Osteen $4M. Tom Brady $960K. Most Americans $600. #IAmVeryUpset,Joel Osteen's Lakewood Church in Texas received $4.4 million in coronavirus-economic-relief loans.,"[""Kanye"", ""West""]","[""Most"", ""loan"", ""960K"", ""Brady"", ""Kanye""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Kanye"",
+      ""typos"": [""Kanye"", ""Kany"", ""Kaney"", ""Kany3"", ""Kayne"", ""Kanye_"", ""K4nye"", ""KanyeW"", ""KanyeWest"", ""K@nye""]
+    },
+    {
+      ""token"": ""West"",
+      ""typos"": [""West"", ""Wst"", ""Wet"", ""Wezt"", ""W3st"", ""Wes"", ""West_"", ""West1"", ""Wesst"", ""Westt""]
+    }
+  ]
+}"
+tweet-sno-1259,Vatican 'Darth Vader' nativity scene gets earthly thumbs down,The Vatican's Nativity display includes a statue of Darth Vader.,"[""scene""]","[""gets"", ""nativity"", ""thumbs"", ""earthly""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""scene"",
+      ""typos"": [
+        ""sceen"", 
+        ""scean"", 
+        ""scne"", 
+        ""sceene"", 
+        ""seen"", 
+        ""sceene"", 
+        ""scenne"", 
+        ""sceeene"", 
+        ""sceeeen""
+      ]
+    }
+  ]
+}"
+tweet-sno-1260,"SIE strives to ensure a high level of customer satisfaction, and we will begin to offer a full refund for all gamers who have purchased Cyberpunk 2077 via PlayStation Store and want a refund. Please visit the following link to initiate the refund:.",PlayStation and Xbox announced that refunds would be available for customers who digitally purchased Cyberpunk 2077.,"[""purchased"", ""satisfaction"", ""refund"", ""ensure"", ""full""]","[""offer"", ""refund"", ""have"", ""Cyberpunk"", ""Store"", ""refund"", ""following"", ""Please"", ""purchased"", ""high"", ""link"", ""begin"", ""PlayStation""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""purchased"",
+      ""typos"": [""purchsed"", ""purchasd"", ""purchesed"", ""purchsed"", ""purchaséd"", ""purchsd"", ""purchasd"", ""purchsed"", ""purchsed"", ""purchasd""]
+    },
+    {
+      ""token"": ""satisfaction"",
+      ""typos"": [""satisfaxtion"", ""satisfacton"", ""satisfaxion"", ""satisfactin"", ""satisfacton"", ""satisfctn"", ""satisfaxtion"", ""satisfacton"", ""satisfactin"", ""satisfaxon""]
+    },
+    {
+      ""token"": ""refund"",
+      ""typos"": [""refnd"", ""reffund"", ""refun"", ""refundd"", ""rephund"", ""refand"", ""reffund"", ""refun"", ""refnd"", ""reffund""]
+    },
+    {
+      ""token"": ""ensure"",
+      ""typos"": [""ensre"", ""ensur"", ""ensuer"", ""ensurre"", ""enshure"", ""ensuer"", ""ensrue"", ""ensur"", ""ensuer"", ""enshre""]
+    },
+    {
+      ""token"": ""full"",
+      ""typos"": [""ful"", ""fll"", ""fulll"", ""ful"", ""fule"", ""ful"", ""fll"", ""ful"", ""fule"", ""fulll""]
+    }
+  ]
+}"
+tweet-sno-1261,"Cyberpunk 2077: To ensure that every player can get the experience they expect on Xbox, we will be expanding our existing refund policy to offer full refunds to anyone who purchased Cyberpunk 2077 digitally from the Microsoft Store, until further notice.",PlayStation and Xbox announced that refunds would be available for customers who digitally purchased Cyberpunk 2077.,"[""2077"", ""Xbox"", ""Store"", ""until"", ""from""]","[""every"", ""from"", ""2077"", ""ensure"", ""until"", ""will"", ""that"", ""refunds"", ""anyone"", ""further"", ""expect"", ""Microsoft"", ""player"", ""Store""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""2077"",
+      ""typos"": [""207"", ""2027"", ""2007"", ""2078"", ""2076""]
+    },
+    {
+      ""token"": ""Xbox"",
+      ""typos"": [""XBox"", ""Xb0x"", ""Xbx"", ""X-b0x"", ""Xbocs""]
+    },
+    {
+      ""token"": ""Store"",
+      ""typos"": [""St0re"", ""Stre"", ""Stoor"", ""Sotre"", ""Sstore""]
+    },
+    {
+      ""token"": ""until"",
+      ""typos"": [""untill"", ""unil"", ""untl"", ""untill"", ""untile""]
+    },
+    {
+      ""token"": ""from"",
+      ""typos"": [""4rm"", ""frm"", ""fom"", ""frum"", ""fro""]
+    }
+  ]
+}"
+tweet-sno-1262,"This video is an extract from yesterday’s press conference, with Hayabusa2 Project Manager Yuichi Tsuda confirming samples from Ryugu in the capsule!",Japanese scientists confirmed that the asteroid explorer Hyabusu2 successfully collected and returned soil and gas samples from the asteroid Ryugu 190 million miles from Earth.,"[""yesterday\u2019s"", ""Project"", ""from""]","[""Tsuda"", ""This"", ""Ryugu"", ""with"", ""conference"", ""Yuichi"", ""Hayabusa2"", ""samples"", ""extract""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""yesterday’s"",
+      ""typos"": [""yesterdy’s"", ""ystrday’s"", ""ystrdy’s"", ""yesterdayz"", ""ystrdez""]
+    },
+    {
+      ""token"": ""Project"",
+      ""typos"": [""Proect"", ""Projet"", ""Proiect"", ""Prject"", ""Projct""]
+    },
+    {
+      ""token"": ""from"",
+      ""typos"": [""frm"", ""4m"", ""frum"", ""frmo"", ""fro""]
+    }
+  ]
+}"
+tweet-sno-1263,"TEXAS ELECTORAL COLLEGE: ""The Justices went into a closed room…When Texas case was brought up he said he heard screaming through the walls as Justice Roberts and the other liberal Justices were insisting…afraid of what would happen if they did right thing…Moral cowardice""",Chief Justice John Roberts screamed at the other U.S. Supreme Court justices to dismiss a Texas voter fraud case in December 2020.,"[""into"", ""went"", ""thing"", ""right"", ""ELECTORAL"", ""When""]","[""Moral"", ""case"", ""right"", ""Justice"", ""they"", ""were"", ""thing"", ""heard"", ""said"", ""liberal"", ""brought"", ""through"", ""TEXAS"", ""Texas"", ""screaming"", ""what""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""into"",
+      ""typos"": [""in2"", ""into0"", ""in to"", ""iinto"", ""inito""]
+    },
+    {
+      ""token"": ""went"",
+      ""typos"": [""wnt"", ""weennt"", ""wntt"", ""whent"", ""wentt""]
+    },
+    {
+      ""token"": ""thing"",
+      ""typos"": [""thng"", ""thin"", ""thngg"", ""tihng"", ""thingg""]
+    },
+    {
+      ""token"": ""right"",
+      ""typos"": [""rght"", ""rite"", ""rigtt"", ""righht"", ""riht""]
+    },
+    {
+      ""token"": ""ELECTORAL"",
+      ""typos"": [""ELEKTORAL"", ""ELECTORL"", ""ELEKTORL"", ""ELECTRAL"", ""ELEKTORAL""]
+    },
+    {
+      ""token"": ""When"",
+      ""typos"": [""Wen"", ""Wen"", ""Whenn"", ""Wheen"", ""Whenn""]
+    }
+  ]
+}"
+tweet-sno-1264,"Yo, this seems like an intersection of some of your interests: a guy in my neighborhood built a mini-version of the Rosebud Motel in front of his house!","A man created a miniature Rosebud motel facade in a Seattle neighborhood, inspired by the setting of the popular comedy series “Schitt’s Creek.”","[""neighborhood"", ""this""]","[""some"", ""this"", ""Rosebud"", ""your"", ""Motel"", ""intersection"", ""neighborhood""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""neighborhood"",
+      ""typos"": [
+        ""neighbourhood"",
+        ""neighbrhood"",
+        ""nbhd"",
+        ""neighbrhd"",
+        ""naborhood"",
+        ""neighboorhood"",
+        ""neihborhood"",
+        ""neighbrhood"",
+        ""neighbrd"",
+        ""nhd""
+      ]
+    },
+    {
+      ""token"": ""this"",
+      ""typos"": [
+        ""dis"",
+        ""ths"",
+        ""tis"",
+        ""diz"",
+        ""thiz"",
+        ""ths"",
+        ""dis"",
+        ""diz"",
+        ""tiz"",
+        ""thiz""
+      ]
+    }
+  ]
+}"
+tweet-sno-1265,"Well look at that, Day-vahd [said in our best Moira Rose voice]! A resident in Seattle's Queen Anne neighborhood, has created a mini Rosebud Motel using the retaining wall outside his home, for fans of the award-winning show ""Schitt's Creek"" to visit.","A man created a miniature Rosebud motel facade in a Seattle neighborhood, inspired by the setting of the popular comedy series “Schitt’s Creek.”","[""Moira"", ""that"", ""vahd"", ""Seattle's"", ""Motel"", ""resident""]","[""Rosebud"", ""created"", ""said"", ""Anne"", ""neighborhood"", ""fans"", ""Seattle's"", ""Moira"", ""Rose"", ""Motel"", ""best"", ""outside"", ""award"", ""home"", ""Queen""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Moira"",
+      ""typos"": [""Moyra"", ""Mo1ra"", ""Moyrah"", ""Moiira"", ""Moiraaa""]
+    },
+    {
+      ""token"": ""that"",
+      ""typos"": [""tht"", ""tat"", ""thaat"", ""th@t"", ""dat""]
+    },
+    {
+      ""token"": ""vahd"",
+      ""typos"": [""vad"", ""vhd"", ""v@hd"", ""vaaahd"", ""vadd""]
+    },
+    {
+      ""token"": ""Seattle's"",
+      ""typos"": [""Seattles"", ""Se@ttle's"", ""Settle's"", ""Seatle's"", ""Seattl3's""]
+    },
+    {
+      ""token"": ""Motel"",
+      ""typos"": [""M0tel"", ""Motel"", ""Motl"", ""Mohtel"", ""M0t3l""]
+    },
+    {
+      ""token"": ""resident"",
+      ""typos"": [""residnt"", ""r3sident"", ""res1dent"", ""rzident"", ""residentt""]
+    }
+  ]
+}"
+tweet-sno-1266,"Perhaps the biggest difference between 2016 and 2020 is, despite the fact that I went from 63,000,000 Votes to 75,000,000 Votes, a record 12,000,000 Vote increase. Obama went down 3,000,000 Votes, and won. Rigged Election!!!","President Trump's losing the election despite receiving millions more votes in 2020 than in 2016 is indicative of a ""rigged election.""","[""down"", ""Votes"", ""12,000,000"", ""Obama"", ""Votes""]","[""increase"", ""went"", ""Perhaps"", ""2016"", ""63,000,000"", ""3,000,000"", ""that"", ""down"", ""between"", ""difference"", ""2020"", ""from"", ""Votes""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""down"",
+      ""typos"": [""dwn"", ""dwnn"", ""doun"", ""dwon""]
+    },
+    {
+      ""token"": ""Votes"",
+      ""typos"": [""Vots"", ""Votess"", ""Votesz"", ""Votz""]
+    },
+    {
+      ""token"": ""12,000,000"",
+      ""typos"": [""12mil"", ""12M"", ""12mill"", ""12,000k""]
+    },
+    {
+      ""token"": ""Obama"",
+      ""typos"": [""Obma"", ""Obam"", ""O'Bama"", ""Obm""]
+    },
+    {
+      ""token"": ""Votes"",
+      ""typos"": [""Vots"", ""Votess"", ""Votesz"", ""Votz""]
+    }
+  ]
+}"
+tweet-sno-1267,North Face denies order for jackets from the oil and gas industry. Their jackets have oil and gas products in them.,"The North Face refused to fulfill a clothing order to Innovex Downhole Solutions, a Houston-based oil and gas company, over concerns about the company’s environmental practices.","[""have"", ""order""]","[""Their"", ""them"", ""industry"", ""denies"", ""jackets"", ""order""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""have"",
+      ""typos"": [""hav"", ""hve"", ""hv"", ""haev"", ""h@ve"", ""hav3"", ""h4ve"", ""haave"", ""havv"", ""hve""]
+    },
+    {
+      ""token"": ""order"",
+      ""typos"": [""ordr"", ""oder"", ""odr"", ""ordr"", ""ord3r"", ""ordrr"", ""ordr"", ""ord3r"", ""odrr"", ""0rder""]
+    }
+  ]
+}"
+tweet-sno-1268,"Alex Jones at the pro-Trump march in Washington, DC: ""Joe Biden is a globalist, and Joe Biden will be removed, one way or another!""","Conspiracy theorist Alex Jones said President-elect Joe Biden will be ""removed"" from office ""one way or another.""","[""will"", ""Washington""]","[""pro-Trump"", ""Biden"", ""Biden"", ""will"", ""removed""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""will"",
+      ""typos"": [""wil"", ""wi11"", ""wll"", ""wlil"", ""w1ll"", ""wil1"", ""wll"", ""wll"", ""wil"", ""w1l""]
+    },
+    {
+      ""token"": ""Washington"",
+      ""typos"": [""Washingt0n"", ""Wshington"", ""Washngton"", ""Washingtn"", ""Washgton"", ""Washingon"", ""Washinton"", ""Washint0n"", ""Washnigton"", ""Washingtno""]
+    }
+  ]
+}"
+tweet-sno-1269,Is the island in the Allstate commercial a real place? I want to live there,A real island was shown in an Allstate television advertisement in 2020.,"[""there""]","[""island"", ""want"", ""place"", ""there""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""there"",
+      ""typos"": [""their"", ""thier"", ""ther"", ""thr"", ""thre"", ""theres""]
+    }
+  ]
+}"
+tweet-sno-1270,The small island with 2 lighthouses & the guy driving a classic Land Rover in the Allstate commercial – is it real? Where is it? Maine? New Brunswick?,A real island was shown in an Allstate television advertisement in 2020.,"[""Maine"", ""small""]","[""commercial"", ""Allstate"", ""with"", ""Land"", ""lighthouses"", ""Brunswick"", ""island""]","{
+    ""typo_tokens"": [
+        {
+            ""token"": ""Maine"",
+            ""typos"": [""Main"", ""Mane"", ""Main3"", ""M@ine""]
+        },
+        {
+            ""token"": ""small"",
+            ""typos"": [""smol"", ""sml"", ""sm@ll"", ""smalk""]
+        }
+    ]
+}"
+tweet-sno-1271,"BREAKING: Christmas Eve is now a federal holiday in 2020, according to an executive order signed Friday by President Trump.","On Dec. 11, 2020, U.S. President Donald Trump issued an executive order designating Christmas Eve 2020 as a federal holiday.","[""signed"", ""BREAKING""]","[""holiday"", ""Christmas"", ""Friday"", ""order"", ""Trump"", ""President""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""signed"",
+      ""typos"": [""signd"", ""sined"", ""sgned""]
+    },
+    {
+      ""token"": ""BREAKING"",
+      ""typos"": [""BREAKN"", ""BRKING"", ""BREKING""]
+    }
+  ]
+}"
+tweet-sno-1272,"Sister Act 3 is in development! 🎤returns to star and produce, withas producer as well. Sister Act 3 will premiere on.","In December 2020, Disney announced that “Sister Act 3” was in production, with Whoopi Goldberg reviving her role of Deloris Van Cartier nearly 30 years later.","[""will"", ""premiere""]","[""producer"", ""star"", ""Sister"", ""withas"", ""Sister""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""will"",
+      ""typos"": [""wil"", ""wiil"", ""wll"", ""wil"", ""w1ll"", ""wl""]
+    },
+    {
+      ""token"": ""premiere"",
+      ""typos"": [""premeire"", ""premier"", ""premire"", ""premeer"", ""premieree"", ""prmiere""]
+    }
+  ]
+}"
+tweet-sno-1273,"Coming exclusively tois Hocus Pocus 2, the spooky sequel to the 1993 Halloween classic!is set to direct.","Disney announced a sequel to ""Hocus Pocus.""","[""direct"", ""Halloween""]","[""Coming"", ""classic"", ""sequel"", ""exclusively"", ""tois""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""direct"",
+      ""typos"": [""dirct"", ""drect"", ""direkt"", ""dierct"", ""diect"", ""dircet"", ""direc"", ""ddirect"", ""driect""]
+    },
+    {
+      ""token"": ""Halloween"",
+      ""typos"": [""Haloween"", ""Hallowen"", ""Hallooween"", ""Halloweeen"", ""Halloewn"", ""Halloweenn"", ""Halowen"", ""Hallowveen"", ""Halloowen""]
+    }
+  ]
+}"
+tweet-sno-1274,"A shopping center owner is suing a Chick-fil-A restaurant, claiming that the restaurant’s drive-thru has become so popular that cars backflow into the center’s aisles. Stay updated on Toledo-area news by downloading #BladeNewsSlide 📲",A man sued the Chick-fil-A chain because of its restaurants' long drive-thru lines.,"[""center\u2019s"", ""that"", ""shopping"", ""Toledo"", ""that""]","[""restaurant\u2019s"", ""BladeNewsSlide"", ""Chick"", ""area"", ""into"", ""thru"", ""drive"", ""claiming"", ""restaurant"", ""downloading"", ""shopping"", ""cars"", ""that""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""center’s"",
+      ""typos"": [""centers"", ""centre’s"", ""centrez""]
+    },
+    {
+      ""token"": ""that"",
+      ""typos"": [""dat"", ""tht"", ""thet""]
+    },
+    {
+      ""token"": ""shopping"",
+      ""typos"": [""shoping"", ""shoppin"", ""shoppeing""]
+    },
+    {
+      ""token"": ""Toledo"",
+      ""typos"": [""Toled0"", ""Toledo"", ""Toledoe""]
+    },
+    {
+      ""token"": ""that"",
+      ""typos"": [""dat"", ""tht"", ""thet""]
+    }
+  ]
+}"
+tweet-sno-1275,Costco loses an estimated $30 to $40 million a year by sticking to their $4.99 price for rotisserie chicken. They'd rather keep members happy and foot traffic high.,Costco loses an estimated $30 to $40 million a year by keeping rotisserie chickens at $4.99 each. But the company would rather keep members happy and foot traffic high.,"[""chicken"", ""foot"", ""million""]","[""million"", ""loses"", ""year"", ""sticking"", ""rotisserie"", ""foot"", ""members"", ""chicken"", ""their""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""chicken"",
+      ""typos"": [""chiken"", ""chickn"", ""chkkn"", ""chkcn"", ""chkn"", ""chikn"", ""chikn""]
+    },
+    {
+      ""token"": ""foot"",
+      ""typos"": [""fot"", ""fut"", ""fooot"", ""foott"", ""ft"", ""f00t"", ""fut""]
+    },
+    {
+      ""token"": ""million"",
+      ""typos"": [""milion"", ""millon"", ""milion"", ""milli0n"", ""millin"", ""milin"", ""millyon""]
+    }
+  ]
+}"
+tweet-sno-1276,"No Presidential candidate ever came even close to losing an Election who won Iowa, Florida and Ohio. I won all three, by a lot!","Donald Trump was the first candidate to lose a presidential election despite winning in Ohio, Florida, and Iowa.","[""even"", ""ever""]","[""Iowa"", ""Presidential"", ""Election"", ""even"", ""Florida"", ""losing""]","{
+    ""typo_tokens"": [
+        {
+            ""token"": ""even"",
+            ""typos"": [""evn"", ""eavn"", ""een"", ""evn"", ""evan""]
+        },
+        {
+            ""token"": ""ever"",
+            ""typos"": [""evr"", ""evar"", ""eveer"", ""evrr"", ""eaver""]
+        }
+    ]
+}"
+tweet-sno-1277,NEW YORKERS: Today I learned the design for these radiators came about during the Spanish flu pandemic of 1918. Engineers wanted to keep an apartment warm while ventilating the space from airborne illnesses because THEY WERE MEANT TO BE KEPT ON WITH THE WINDOWS FULLY OPEN (!!!!),Some steam radiators built in older apartment buildings in cities like New York were designed to keep dwellings warm with windows open due to the 1918 pandemic.,"[""airborne"", ""WINDOWS"", ""Today"", ""FULLY"", ""while"", ""because""]","[""FULLY"", ""Spanish"", ""during"", ""OPEN"", ""Today"", ""space"", ""apartment"", ""(!!!!"", ""radiators"", ""Engineers"", ""KEPT"", ""airborne"", ""illnesses"", ""wanted"", ""about"", ""came""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""airborne"",
+      ""typos"": [""airborne"", ""airborn"", ""airb0rne"", ""airbne"", ""ariborne"", ""airbourn"", ""airbrone"", ""aerborne"", ""arborne"", ""ariborn""]
+    },
+    {
+      ""token"": ""WINDOWS"",
+      ""typos"": [""WINDOWS"", ""WIND0WS"", ""WIND0S"", ""WINDOWS"", ""WINDWS"", ""WNDOWS"", ""WINOWS"", ""WIDIWS"", ""WIINDOWS"", ""WIDOW""]
+    },
+    {
+      ""token"": ""Today"",
+      ""typos"": [""Today"", ""T0day"", ""Tday"", ""T0d@y"", ""T0da"", ""Tod@y"", ""Tda"", ""T0ady"", ""Toady"", ""Tdy""]
+    },
+    {
+      ""token"": ""FULLY"",
+      ""typos"": [""FULLY"", ""FULY"", ""FULLI"", ""FULLLY"", ""FUL@LY"", ""FULLEY"", ""FULLIE"", ""FLLY"", ""FULY"", ""FLLLY""]
+    },
+    {
+      ""token"": ""while"",
+      ""typos"": [""while"", ""wile"", ""wh1le"", ""whle"", ""whill"", ""whille"", ""wihle"", ""whil"", ""whil3"", ""whlle""]
+    },
+    {
+      ""token"": ""because"",
+      ""typos"": [""because"", ""becuz"", ""becus"", ""bcoz"", ""bcause"", ""bcs"", ""beccause"", ""bcaus"", ""becuz"", ""becase""]
+    }
+  ]
+}"
+tweet-sno-1278, very disappointed with today's bacon egg Mc Muffin!! No proper egg and it was still frozen cold!!,McDonald's breakfast menu items use frozen eggs.,"[""disappointed"", ""proper""]","[""disappointed"", ""cold"", ""proper"", ""very"", ""frozen""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""disappointed"",
+      ""typos"": [""dissapointed"", ""disapointed"", ""disapionted"", ""dissapionted"", ""disapointd"", ""disapointd"", ""dissapointd"", ""dissapointd"", ""dissapoined""]
+    },
+    {
+      ""token"": ""proper"",
+      ""typos"": [""propa"", ""propper"", ""propper"", ""propoer"", ""propar"", ""prooper"", ""propper"", ""propperr"", ""prope""]
+    }
+  ]
+}"
+tweet-sno-1279,Rep. Louie Gohmert’s tooth just fell out at his press conference.,A video shows U.S. Rep. Louie Gohmert's tooth falling out during a live news conference.,"[""Gohmert\u2019s""]","[""Gohmert\u2019s"", ""fell"", ""just"", ""conference""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Gohmert’s"",
+      ""typos"": [""Gohmert's"", ""Gohmerts"", ""Gohmrt's"", ""Gohmrtz"", ""Gohmrtzs"", ""Gohmrts"", ""Gohmert"", ""Gohmrt"", ""Gohmertz""]
+    }
+  ]
+}"
+tweet-sno-1280,"Joe Biden is asked about his disagreements with Kamala Harris on certain issues: ""Like I told Barack, if I reach something where there's a fundamental disagreement we have based on a moral principle, I'll develop some disease and say I have to resign.""","Regarding what he would do if he disagreed with Vice President-elect Kamala Harris, U.S. President-elect Joe Biden said: “Like I told Barack, if I reach something where there’s a fundamental disagreement we have based on a moral principle, I’ll develop some disease and say I have to resign.""","[""some"", ""Harris"", ""disagreement"", ""principle"", ""where""]","[""asked"", ""with"", ""told"", ""develop"", ""I'll"", ""principle"", ""have"", ""about"", ""Harris"", ""reach"", ""some"", ""disagreements"", ""fundamental"", ""moral""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""some"",
+      ""typos"": [""sm"", ""som"", ""sum"", ""soem"", ""sme"", ""smoe"", ""smeo"", ""somme"", ""somme"", ""somne""]
+    },
+    {
+      ""token"": ""Harris"",
+      ""typos"": [""Haris"", ""Harriss"", ""Harris'"", ""Hars"", ""Harrs"", ""Haarris"", ""Harris_"", ""Hrris"", ""Harris1"", ""Haris_""]
+    },
+    {
+      ""token"": ""disagreement"",
+      ""typos"": [""disagrement"", ""dissagreement"", ""disagreemnt"", ""disagreemant"", ""disagreemnt"", ""disageement"", ""disagrement"", ""disagreament"", ""disgreement"", ""dissagrement""]
+    },
+    {
+      ""token"": ""principle"",
+      ""typos"": [""princiiple"", ""prinicple"", ""princple"", ""principel"", ""pricipal"", ""princiiple"", ""pinciple"", ""priniple"", ""princple"", ""principle_""]
+    },
+    {
+      ""token"": ""where"",
+      ""typos"": [""wher"", ""whr"", ""were"", ""whee"", ""whr"", ""wer"", ""wheere"", ""whre"", ""whrere"", ""wher_""]
+    }
+  ]
+}"
+tweet-sno-1281,The time Indiana Jones caused an avalanche with his saxophone.,"Indiana Jones, portrayed by Harrison Ford, once defeated a group of villains by playing a saxophone.","[""Indiana""]","[""Jones"", ""Indiana"", ""avalanche""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Indiana"",
+      ""typos"": [""Indana"", ""Indianna"", ""Idiana"", ""Indinia"", ""Indinaa"", ""Indanae"", ""Indiannna"", ""Indanina"", ""Indiann"", ""Indinaa""]
+    }
+  ]
+}"
+tweet-sno-1282,Just for you completist out there. I remembered today that Indiana Jones once beat some villains by jamming on a saxophone.,"Indiana Jones, portrayed by Harrison Ford, once defeated a group of villains by playing a saxophone.","[""Indiana"", ""villains""]","[""villains"", ""once"", ""completist"", ""Just"", ""today"", ""there"", ""saxophone""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Indiana"",
+      ""typos"": [""Indana"", ""Indianna"", ""Inidana"", ""Indi"", ""Indy"", ""Indana"", ""Indyana"", ""Indaana"", ""Indianna"", ""Indinah""]
+    },
+    {
+      ""token"": ""villains"",
+      ""typos"": [""villans"", ""vilans"", ""villins"", ""vilians"", ""villans"", ""vllains"", ""villians"", ""villan"", ""villainz"", ""villian""]
+    }
+  ]
+}"
+tweet-sno-1283,We all remember that time Indiana Jones defeated 3 men with a saxophone.,"Indiana Jones, portrayed by Harrison Ford, once defeated a group of villains by playing a saxophone.","[""defeated""]","[""Indiana"", ""time"", ""remember"", ""defeated""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""defeated"",
+      ""typos"": [""defeeted"", ""deefeated"", ""dfated""]
+    }
+  ]
+}"
+tweet-sno-1284,"HOLY SHIT. I present to you Harrison Ford as a bearded Indiana Jones, learning the blues from, then looking straight into camera and using a saxophone TO CAUSE AN AVALANCHE, YOU ARE WELCOME TWITTER","Indiana Jones, portrayed by Harrison Ford, once defeated a group of villains by playing a saxophone.","[""TWITTER"", ""WELCOME"", ""Jones"", ""AVALANCHE""]","[""bearded"", ""Harrison"", ""saxophone"", ""WELCOME"", ""CAUSE"", ""Jones"", ""AVALANCHE"", ""into"", ""camera"", ""straight"", ""using""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""TWITTER"",
+      ""typos"": [""TWITR"", ""TWITTR"", ""TWITTA"", ""TWTR"", ""TWTTER"", ""TWITTR"", ""TWITR"", ""TWITTA"", ""TWTR""]
+    },
+    {
+      ""token"": ""WELCOME"",
+      ""typos"": [""WELCM"", ""WLCOME"", ""WELKOM"", ""WELCM"", ""WELCOM"", ""WLCME"", ""WLCME"", ""WELKE"", ""WELKUM""]
+    },
+    {
+      ""token"": ""Jones"",
+      ""typos"": [""Jonz"", ""Jons"", ""Jonez"", ""Joness"", ""Joen"", ""Jnones"", ""Jonse"", ""J0nes"", ""Jon3s""]
+    },
+    {
+      ""token"": ""AVALANCHE"",
+      ""typos"": [""AVALNCH"", ""AVLNCH"", ""AVALNCE"", ""AVALANCHE"", ""AVALNCH"", ""AVLANCE"", ""VALANCHE"", ""AVALNCHE"", ""AVALANCH""]
+    }
+  ]
+}"
+tweet-sno-1285,"1/ There will be no update today. At 8:30 am this morning, state police came into my house and took all my hardware and tech. They were serving a warrant on my computer after DOH filed a complaint. They pointed a gun in my face. They pointed guns at my kids..","In December 2020, Florida state police ""raided"" the home of Rebekah Jones, executing a search warrant and confiscating electronic devices.","[""into"", ""were"", ""house"", ""pointed"", ""There"", ""8:30""]","[""guns"", ""were"", ""morning"", ""this"", ""computer"", ""police"", ""state"", ""will"", ""face"", ""complaint"", ""filed"", ""pointed"", ""today"", ""kids"", ""There""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""into"",
+      ""typos"": [""n2"", ""nto"", ""in2""]
+    },
+    {
+      ""token"": ""were"",
+      ""typos"": [""wer"", ""wre"", ""we're""]
+    },
+    {
+      ""token"": ""house"",
+      ""typos"": [""hous"", ""houz"", ""hse""]
+    },
+    {
+      ""token"": ""pointed"",
+      ""typos"": [""ponited"", ""ponited"", ""pointd""]
+    },
+    {
+      ""token"": ""There"",
+      ""typos"": [""Thre"", ""Ther"", ""Thr""]
+    },
+    {
+      ""token"": ""8:30"",
+      ""typos"": [""830"", ""8-30"", ""8:3""]
+    }
+  ]
+}"
+tweet-sno-1286,"Lmaoapparently asked Sally Ride, the first woman in space, if ONE HUNDRED tampons would be enough for a week in space and if she needed more 😭😭 they actually didn’t know how many tampons women used.","In advance of her 1984 mission aboard the space shuttle Challenger, NASA engineers asked Sally Ride if 100 tampons would be enough for two weeks in space.","[""woman"", ""tampons"", ""they"", ""used""]","[""more"", ""space"", ""didn\u2019t"", ""needed"", ""women"", ""asked"", ""many"", ""woman"", ""tampons"", ""Lmaoapparently"", ""actually""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""woman"",
+      ""typos"": [""womyn"", ""wmn"", ""wimin"", ""woam"", ""wuaman"", ""womyns"", ""womn"", ""wman"", ""womenn"", ""womn""]
+    },
+    {
+      ""token"": ""tampons"",
+      ""typos"": [""tampns"", ""tamps"", ""tamponz"", ""tampoonz"", ""tampones"", ""tamp0ns"", ""tompans"", ""tamoonz"", ""tomp0ns"", ""tapmns""]
+    },
+    {
+      ""token"": ""they"",
+      ""typos"": [""dey"", ""thei"", ""thay"", ""tehy"", ""thaey"", ""thay"", ""thee"", ""thye"", ""tehy"", ""thy""]
+    },
+    {
+      ""token"": ""used"",
+      ""typos"": [""uzed"", ""yoozd"", ""usad"", ""uzd"", ""useed"", ""usad"", ""uz3d"", ""yused"", ""uze3d"", ""usde""]
+    }
+  ]
+}"
+tweet-sno-1287,i was atand the worker gave me my food but i said “my pleasure” before him. i asked him “don’t i get a free ice cream or something if i say it before you do” he said that’s fake :(,"If a customer says ""my pleasure"" to a Chick-fil-A employee, they are entitled to a discount, a free ice cream menu item, or free food altogether.","[""fake"", ""before"", ""asked""]","[""before"", ""don\u2019t"", ""that\u2019s"", ""pleasure"", ""something"", ""before"", ""atand"", ""asked""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""fake"",
+      ""typos"": [""fak"", ""feik"", ""faek"", ""fak3"", ""f@ke"", ""fakie"", ""faeke"", ""faeck"", ""f4ke"", ""fak3""]
+    },
+    {
+      ""token"": ""before"",
+      ""typos"": [""b4fore"", ""bfore"", ""b4"", ""befor"", ""b4e"", ""bfor"", ""b4e4"", ""befroe"", ""b4for"", ""b4ee""]
+    },
+    {
+      ""token"": ""asked"",
+      ""typos"": [""askd"", ""askd4"", ""a$ked"", ""asd"", ""askt"", ""axked"", ""aske"", ""askee"", ""asked4"", ""aske2""]
+    }
+  ]
+}"
+tweet-sno-1288,"If u go to chick fil a and say “my pleasure” before the employee that takes your order says it, u get a free ice cream cookie sandwich #thisbetterbetrue ","If a customer says ""my pleasure"" to a Chick-fil-A employee, they are entitled to a discount, a free ice cream menu item, or free food altogether.","[""says"", ""pleasure""]","[""employee"", ""says"", ""free"", ""thisbetterbetrue"", ""takes"", ""chick"", ""your""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""says"",
+      ""typos"": [""saiz"", ""sayz"", ""sez"", ""sais"", ""saz"", ""sayzz"", ""sayes"", ""saays"", ""sayss""]
+    },
+    {
+      ""token"": ""pleasure"",
+      ""typos"": [""pleasur"", ""plezure"", ""plezzure"", ""pleasurr"", ""pleasuree"", ""pleashure"", ""pleeasure"", ""pleasuer"", ""pleasurre""]
+    }
+  ]
+}"
+tweet-sno-1289,Saying my pleasure before they do at Chick-fil-A does not get you a free ice cream trust me I got the weirdest look 😭😂,"If a customer says ""my pleasure"" to a Chick-fil-A employee, they are entitled to a discount, a free ice cream menu item, or free food altogether.","[""weirdest"", ""trust""]","[""cream"", ""before"", ""Chick"", ""Saying"", ""free""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""weirdest"",
+      ""typos"": [""wierdest"", ""weerdest"", ""weirdst"", ""wierdast"", ""weirdesst"", ""weirdestt"", ""weirdist"", ""weirddest"", ""weridest""]
+    },
+    {
+      ""token"": ""trust"",
+      ""typos"": [""trus"", ""trst"", ""truzt"", ""trusst"", ""trsut"", ""trost"", ""truust"", ""truzt"", ""trustt""]
+    }
+  ]
+}"
+tweet-sno-1290,Just so everyone knows…saying “my pleasure” before a Chick-fil-A employee does not get you a free cookie ice cream sandwich or a discount or anything else tik tok has oh so willingly lied to you about!,"If a customer says ""my pleasure"" to a Chick-fil-A employee, they are entitled to a discount, a free ice cream menu item, or free food altogether.","[""anything"", ""everyone"", ""cream""]","[""discount"", ""lied"", ""Chick"", ""cookie"", ""does"", ""sandwich"", ""employee"", ""about"", ""saying""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""anything"",
+      ""typos"": [
+        ""anythin"",
+        ""ne thing"",
+        ""anythingg"",
+        ""anythng"",
+        ""anyth1ng"",
+        ""anythng"",
+        ""anythng"",
+        ""anething"",
+        ""n e thing"",
+        ""anythinng""
+      ]
+    },
+    {
+      ""token"": ""everyone"",
+      ""typos"": [
+        ""every1"",
+        ""evryone"",
+        ""everyon"",
+        ""evry1"",
+        ""every1ne"",
+        ""every1"",
+        ""evryon"",
+        ""everyon1"",
+        ""every1ne"",
+        ""everyon""
+      ]
+    },
+    {
+      ""token"": ""cream"",
+      ""typos"": [
+        ""crem"",
+        ""kream"",
+        ""cremm"",
+        ""creme"",
+        ""kreem"",
+        ""creeam"",
+        ""creem"",
+        ""creem"",
+        ""creme"",
+        ""creem""
+      ]
+    }
+  ]
+}"
+tweet-sno-1291,"President-elect Joe Biden says he'd ""be happy"" to join former Presidents Obama, Bush and Clinton in getting a Covid vaccine in public to prove it's safe. ""When Dr. Fauci says we have a vaccine that is safe, that's the moment in which I will stand before the public and say that""",U.S. President-elect Joe Biden said he will get the COVID-19 vaccination in public on television.,"[""vaccine"", ""public"", ""happy"", ""it's"", ""join"", ""Clinton""]","[""Biden"", ""getting"", ""will"", ""President"", ""When"", ""he'd"", ""says"", ""vaccine"", ""former"", ""happy"", ""that"", ""before"", ""that's"", ""says"", ""have"", ""join"", ""Fauci""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""vaccine"",
+      ""typos"": [""vacine"", ""vaxcine"", ""vaxine"", ""vaxxine"", ""vaccin"", ""vacsin"", ""vacceen"", ""vacin"", ""vaccinee""]
+    },
+    {
+      ""token"": ""public"",
+      ""typos"": [""puplic"", ""publik"", ""publick"", ""pubic"", ""publc"", ""pblic"", ""publikc"", ""publek"", ""publekc""]
+    },
+    {
+      ""token"": ""happy"",
+      ""typos"": [""hapy"", ""happpy"", ""happi"", ""hapyy"", ""hapie"", ""happe"", ""happpy"", ""happpy"", ""haapy""]
+    },
+    {
+      ""token"": ""it's"",
+      ""typos"": [""its"", ""it is"", ""it'z"", ""itz"", ""itts"", ""i'ts"", ""itss"", ""it'z"", ""itt's""]
+    },
+    {
+      ""token"": ""join"",
+      ""typos"": [""joi"", ""jion"", ""jine"", ""joen"", ""joinn"", ""joine"", ""jooin"", ""jion"", ""jing""]
+    },
+    {
+      ""token"": ""Clinton"",
+      ""typos"": [""Clintin"", ""Clinto"", ""Clintoon"", ""Clintun"", ""Clintonn"", ""Clintan"", ""Clintan"", ""Clintun"", ""Clintonn""]
+    }
+  ]
+}"
+tweet-sno-1292,"It is also beyond the pale that Rep Matt Putz – I mean– would participate in this. What a fool. Matt – You are not welcome in New Jersey, and frankly I don’t ever want you back in this state.","New Jersey Gov. Phil Murphy called Florida Rep. Matt Gaetz the name ""Matt Putz"" and a ""fool.""","[""Jersey"", ""Putz"", ""ever"", ""back""]","[""pale"", ""also"", ""Putz"", ""Matt"", ""frankly"", ""this"", ""ever"", ""state"", ""that"", ""want"", ""Matt""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Jersey"",
+      ""typos"": [""Jerseyz"", ""Jerzey"", ""Jursei"", ""Jrsey"", ""Jerzy""]
+    },
+    {
+      ""token"": ""Putz"",
+      ""typos"": [""Putz"", ""Putz"", ""Putz"", ""Putz"", ""Putz""]
+    },
+    {
+      ""token"": ""ever"",
+      ""typos"": [""evr"", ""evr"", ""evr"", ""evr"", ""evr""]
+    },
+    {
+      ""token"": ""back"",
+      ""typos"": [""bak"", ""bck"", ""bakc"", ""bac"", ""bcak""]
+    }
+  ]
+}"
+tweet-sno-1293,LIGHTS ON and delivering food and water to our passengers! Thank youwithfor opening on a SUNDAY! #ChristmasMiracle,"At least one Chick-fil-A restaurant ""broke from tradition"" and opened on a Sunday.","[""food"", ""passengers""]","[""delivering"", ""ChristmasMiracle"", ""LIGHTS"", ""SUNDAY"", ""opening""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""food"",
+      ""typos"": [""fud"", ""fo0d"", ""fod"", ""f00d"", ""fuud"", ""fo0d"", ""fod"", ""fuud"", ""fo0d""]
+    },
+    {
+      ""token"": ""passengers"",
+      ""typos"": [""pasengers"", ""pasngers"", ""pazsengers"", ""pasengers"", ""passngrs"", ""pasngrs"", ""pzngrs"", ""passengers"", ""pssengers""]
+    }
+  ]
+}"
+tweet-sno-1294,Is drake really making a candle that smells like him? I hope jay is ready to drop $80 on it. 😇,"Drake released a scented candle that ""actually smells like Drake.""","[""that"", ""hope""]","[""really"", ""like"", ""hope"", ""ready"", ""drake""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""that"",
+      ""typos"": [
+        ""tha"",
+        ""tht"",
+        ""dat"",
+        ""tat"",
+        ""th@""
+      ]
+    },
+    {
+      ""token"": ""hope"",
+      ""typos"": [
+        ""hop"",
+        ""hpe"",
+        ""h0pe"",
+        ""h0p"",
+        ""h@pe""
+      ]
+    }
+  ]
+}"
+tweet-sno-1295,Has anyone happened to hear if Flash Player is going to be supported after December 2020 in?,Adobe announced that Flash Player would no longer be supported.,"[""Player"", ""December""]","[""December"", ""supported"", ""Player"", ""Flash"", ""happened""]","{
+""typo_tokens"": [
+	{
+		""token"": ""Player"",
+		""typos"": [""Playa"", ""Playr"", ""Plaer"", ""Plyr"", ""Plaeyr"", ""Playe"", ""Playrr"", ""Palyer"", ""Plaeyr"", ""Plyer""]
+	},
+	{
+		""token"": ""December"",
+		""typos"": [""Decmber"", ""Decemb"", ""Decmbr"", ""Decembr"", ""Decembe"", ""Dcember"", ""Deember"", ""Decemebr"", ""Decemer"", ""Decembr""]
+	}
+]
+}"
+tweet-sno-1296,So what exactly happens in December when Flash is no longer supported?,Adobe announced that Flash Player would no longer be supported.,"[""December""]","[""when"", ""what"", ""longer"", ""Flash""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""December"",
+      ""typos"": [""Decembr"", ""Decmber"", ""Deember"", ""Decembr"", ""Decembrer"", ""Decemebr"", ""Dcmber"", ""Decembr"", ""Decemb"", ""December""]
+    }
+  ]
+}"
+tweet-sno-1297,Wait what???? Flash player will no longer be supported inchrome after December 2020? Does that mean I can’t watch YouTube and flash player oriented websites online after December 2020?,Adobe announced that Flash Player would no longer be supported.,"[""Does"", ""YouTube"", ""longer"", ""mean"", ""December""]","[""Does"", ""December"", ""Flash"", ""2020"", ""after"", ""websites"", ""YouTube"", ""inchrome"", ""will"", ""what"", ""watch"", ""longer"", ""flash""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Does"",
+      ""typos"": [""Duz"", ""Dzs"", ""D0es""]
+    },
+    {
+      ""token"": ""YouTube"",
+      ""typos"": [""U2b"", ""Y0uTube"", ""YT""]
+    },
+    {
+      ""token"": ""longer"",
+      ""typos"": [""longr"", ""lnger"", ""longer""]
+    },
+    {
+      ""token"": ""mean"",
+      ""typos"": [""meen"", ""men"", ""m3an""]
+    },
+    {
+      ""token"": ""December"",
+      ""typos"": [""Decembur"", ""Deceber"", ""Decembr""]
+    }
+  ]
+}"
+tweet-sno-1298,Important message for children of #Ireland – #Santa is coming & will be exempt from #Covid restrictions on International Travel. However children should be aware that social distancing guidelines should apply to Santa.,"Ireland Foreign Minister Simon Coveney declared in a Nov. 26, 2020, statement that Santa Claus is considered an essential worker, granting him exemption from self-quarantine to deliver Christmas presents.","[""social"", ""Covid"", ""Travel"", ""guidelines""]","[""children"", ""children"", ""Santa"", ""Travel"", ""message"", ""guidelines"", ""Santa"", ""Important"", ""aware"", ""will"", ""from"", ""should""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""social"",
+      ""typos"": [""socal"", ""socl"", ""socail"", ""sochl"", ""socil"", ""socail"", ""socil"", ""soccial"", ""sochial"", ""soshial""]
+    },
+    {
+      ""token"": ""Covid"",
+      ""typos"": [""Covd"", ""Cvid"", ""Covidd"", ""C0vid"", ""Cov1d"", ""Cvid"", ""Covld"", ""Covod"", ""Covd"", ""Cov1d""]
+    },
+    {
+      ""token"": ""Travel"",
+      ""typos"": [""Trave1"", ""Trvel"", ""Travle"", ""Travl"", ""Trvl"", ""Tavel"", ""Traveel"", ""Trveal"", ""Tryvel"", ""Trav3l""]
+    },
+    {
+      ""token"": ""guidelines"",
+      ""typos"": [""guidlines"", ""guidelnes"", ""guiedlines"", ""guidelins"", ""guidelinse"", ""guildelines"", ""guidelies"", ""gudelines"", ""gudelins"", ""guidelins""]
+    }
+  ]
+}"
+tweet-sno-1299,🚨 🚨 BREAKING NEWS 🚨 🚨 There is currently a monolith at the top of Pine Mountain in Atascadero!! (Photos by),"A new mysterious ""monolith"" was found in California.","[""monolith""]","[""Photos"", ""currently"", ""BREAKING"", ""Mountain""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""monolith"",
+      ""typos"": [
+        ""monilith"",
+        ""monalith"",
+        ""monolih"",
+        ""monolyth"",
+        ""m0nolith"",
+        ""mon0lith"",
+        ""monlolith"",
+        ""moonolith"",
+        ""monolithh""
+      ]
+    }
+  ]
+}"
+tweet-sno-1300,"There’s a viral thread saying LOUIS XIV WAS A PERVERT WHOSE FETISH WAS WATCHING CHILDBIRTH. This is why, it claims, women are made to lie on their backs in childbirth. IT’S BULLSHIT! It was the eminent obstetrician of the 1660s Francois Mauriceau who made this more popular 👇",King Louis XIV had a fetish for watching women give birth and required that they do so lying on their back so that he could have an unobstructed view.,"[""1660s"", ""viral"", ""this"", ""PERVERT"", ""obstetrician""]","[""CHILDBIRTH"", ""FETISH"", ""There\u2019s"", ""obstetrician"", ""LOUIS"", ""their"", ""IT\u2019S"", ""saying"", ""claims"", ""viral"", ""PERVERT"", ""thread"", ""more"", ""BULLSHIT""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""1660s"",
+      ""typos"": [""16-60s"", ""1660's"", ""16sixties"", ""16six0s"", ""16sixT's""]
+    },
+    {
+      ""token"": ""viral"",
+      ""typos"": [""virul"", ""v1ral"", ""vyral"", ""viral_"", ""via1""]
+    },
+    {
+      ""token"": ""this"",
+      ""typos"": [""tis"", ""thiz"", ""dis"", ""th1s"", ""ths""]
+    },
+    {
+      ""token"": ""PERVERT"",
+      ""typos"": [""P3RVERT"", ""P3RV3RT"", ""PERV3RT"", ""PERVRT"", ""PRVRT""]
+    },
+    {
+      ""token"": ""obstetrician"",
+      ""typos"": [""obsttetrician"", ""obstetrican"", ""obstetrician_"", ""obsteetrician"", ""obstetric1an""]
+    }
+  ]
+}"
+tweet-sno-1301,We know you’re finding it difficult to accept the election result so we projected it onto your golf course with some familiar music,"A photograph shows the word ""loser"" projected onto the lawn of U.S. President Donald Trump's golf course in Scotland.","[""familiar"", ""you\u2019re"", ""know""]","[""your"", ""accept"", ""difficult"", ""familiar"", ""with"", ""golf"", ""music"", ""know""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""familiar"",
+      ""typos"": [""familar"", ""familliar"", ""famliar"", ""familer"", ""familliar"", ""famili"", ""familliyya""]
+    },
+    {
+      ""token"": ""you’re"",
+      ""typos"": [""ur"", ""youre"", ""u're"", ""you’r"", ""yer"", ""u r"", ""y're""]
+    },
+    {
+      ""token"": ""know"",
+      ""typos"": [""kno"", ""no"", ""knw"", ""knoww"", ""knwo"", ""knew"", ""nwo""]
+    }
+  ]
+}"
+tweet-sno-1302,"The article “A closer look at U.S. deaths due to COVID-19,” published in the Science & Technology section on Nov. 22, has been deleted.","An article titled “COVID-19 Deaths: A Look at U.S. Data” was published in the Johns Hopkins student-run newspaper on Nov. 22, 2020, and subsequently retracted.","[""section"", ""article""]","[""look"", ""Nov."", ""been"", ""section"", ""Technology"", ""deaths""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""section"",
+      ""typos"": [""secshun"", ""sektion"", ""secton"", ""secshon"", ""secktion"", ""seckshun"", ""seczhun"", ""sextion"", ""sectiun""]
+    },
+    {
+      ""token"": ""article"",
+      ""typos"": [""artical"", ""artikul"", ""articel"", ""artikle"", ""artiql"", ""artcle"", ""articlu"", ""artickel"", ""artikul""]
+    }
+  ]
+}"
+tweet-sno-1303," Hahaha,you were on ""Teen Win Lose or Draw."" Cool.",Actor Leonardo DiCaprio appeared on a Disney Channel game show.,"[""Hahaha""]","[""were"", ""Teen"", ""Hahaha""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Hahaha"",
+      ""typos"": [""Haha"", ""Hahah"", ""Ha ha"", ""Hahaa"", ""Haha!"", ""Lol"", ""Lmao"", ""ROFL"", ""XD"", ""Ha""]
+    }
+  ]
+}"
+tweet-sno-1304,Alittle #flashbackfriday withwhen she was on the 1990 show teen win lose or draw any of you remember that show believe it or not she played against Leonardo Dicaprio who knew…,Actor Leonardo DiCaprio appeared on a Disney Channel game show.,"[""remember"", ""Leonardo"", ""show""]","[""teen"", ""played"", ""Leonardo"", ""lose"", ""Alittle"", ""against"", ""show"", ""withwhen""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""remember"",
+      ""typos"": [""remembr"", ""remmber"", ""rememberr"", ""rember"", ""remeber"", ""remembrr"", ""remebr"", ""rrmember"", ""remembr""]
+    },
+    {
+      ""token"": ""Leonardo"",
+      ""typos"": [""Leonard"", ""Leonardoo"", ""Leonado"", ""Leonarod"", ""Leonrado"", ""Leonardp"", ""Leonrd"", ""Leoardo"", ""Lonardo""]
+    },
+    {
+      ""token"": ""show"",
+      ""typos"": [""shw"", ""sho"", ""sow"", ""sh0w"", ""shwo"", ""shw0"", ""shwo"", ""showw"", ""shwo""]
+    }
+  ]
+}"
+tweet-sno-1305,"Teen Win, Lose or Draw – Soleil Moon Frye vs Leonardo DiCaprio (1990)a través de ",Actor Leonardo DiCaprio appeared on a Disney Channel game show.,"[""Moon"", ""Draw""]","[""Lose"", ""Leonardo"", ""DiCaprio"", ""Teen"", ""Moon""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Moon"",
+      ""typos"": [""Mun"", ""Mon"", ""Mooon"", ""M00n"", ""Mooñ"", ""Mo0n"", ""Moun"", ""Monn"", ""Mounn"", ""Moooon""]
+    },
+    {
+      ""token"": ""Draw"",
+      ""typos"": [""Drw"", ""Dra"", ""Draww"", ""Dr4w"", ""Draww"", ""Drawww"", ""Drww"", ""Drow"", ""Dr4ww"", ""Drawww""]
+    }
+  ]
+}"
+tweet-sno-1306,"Why won’t Governor, the hapless Governor of Georgia, use his emergency powers, which can be easily done, to overrule his obstinate Secretary of State, and do a match of signatures on envelopes. It will be a “goldmine” of fraud, and we will easily WIN the state….",A signature audit of absentee ballots in Georgia must be conducted and could overturn the 2020 presidential vote results in that state.,"[""Georgia"", ""envelopes"", ""obstinate"", ""state""]","[""overrule"", ""easily"", ""Georgia"", ""envelopes"", ""which"", ""done"", ""won\u2019t"", ""easily"", ""hapless"", ""fraud"", ""Governor""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Georgia"",
+      ""typos"": [""Gorgia"", ""Georgya"", ""Georga"", ""Gergia"", ""Georigia"", ""Georgi"", ""Gorgea"", ""Goergia"", ""Gorgia"", ""Georiga""]
+    },
+    {
+      ""token"": ""envelopes"",
+      ""typos"": [""envolopes"", ""envalopes"", ""envlopes"", ""envelpes"", ""envelups"", ""envlops"", ""envelopes"", ""enveloppes"", ""envopes"", ""enveloes""]
+    },
+    {
+      ""token"": ""obstinate"",
+      ""typos"": [""obstinant"", ""obstinte"", ""obstinaet"", ""obstinte"", ""obstinante"", ""obstinnate"", ""obstinent"", ""obstinent"", ""obstinante"", ""obstinnat""]
+    },
+    {
+      ""token"": ""state"",
+      ""typos"": [""staet"", ""stte"", ""stait"", ""stste"", ""stat"", ""st8"", ""stae"", ""sttae"", ""stta"", ""sttate""]
+    }
+  ]
+}"
+tweet-sno-1307,"In Detroit, there are FAR MORE VOTES THAN PEOPLE. Nothing can be done to cure that giant scam. I win Michigan!",Detroit recorded more votes cast than eligible voters living in the city in the 2020 general election.,"[""THAN"", ""Michigan""]","[""VOTES"", ""Nothing"", ""giant"", ""MORE"", ""there"", ""that""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""THAN"",
+      ""typos"": [""THEN"", ""THAN-"", ""TH@N"", ""THN"", ""THANNN"", ""TH@N"", ""TH#N"", ""THN_"", ""TH4N""]
+    },
+    {
+      ""token"": ""Michigan"",
+      ""typos"": [""MichiGAN"", ""M!chigan"", ""Mich!gan"", ""Mich1gan"", ""Michlg@n"", ""Michic@N"", ""Michig@n"", ""Michgn"", ""Michig@n1""]
+    }
+  ]
+}"
+tweet-sno-1308,"FLASHBACK: In 2018, President Trump attacked Carrots the turkey for refusing to concede he had lost the vote on the White House turkey pardon contest. ""This was a fair election… unfortunately, Carrots refused to concede and demanded a recount.""","U.S. President Donald Trump pardoned a turkey whom he said had lost a ""fair and open election"" but ""refused to concede.""","[""contest"", ""attacked"", ""pardon"", ""concede"", ""FLASHBACK""]","[""Trump"", ""recount"", ""refusing"", ""turkey"", ""attacked"", ""refused"", ""2018"", ""vote"", ""White"", ""Carrots"", ""President"", ""concede""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""contest"",
+      ""typos"": [""constest"", ""contst"", ""contestt"", ""contest_"", ""cont3st"", ""cntest"", ""comtest"", ""contest1""]
+    },
+    {
+      ""token"": ""attacked"",
+      ""typos"": [""attaked"", ""atacked"", ""attcked"", ""attacked_"", ""attckd"", ""attkd"", ""attackd"", ""attakd""]
+    },
+    {
+      ""token"": ""pardon"",
+      ""typos"": [""pardn"", ""paron"", ""pard0n"", ""pardon_"", ""pardno"", ""pard0"", ""pardoon"", ""pardun""]
+    },
+    {
+      ""token"": ""concede"",
+      ""typos"": [""concde"", ""conede"", ""conced"", ""concede_"", ""conc3de"", ""c0ncede"", ""conede"", ""coned""]
+    },
+    {
+      ""token"": ""FLASHBACK"",
+      ""typos"": [""FLASHBAK"", ""FLASBACK"", ""FLASHBCK"", ""FLASHBAC"", ""FLASBAK"", ""FLASHBACK_"", ""FLAHSBACK"", ""FLASHBACK1""]
+    }
+  ]
+}"
+tweet-sno-1309,"At 1:30pm AKST this afternoon, the sun will set and Utqiaġvik will enter a 66 day period of polar night. The sun will rise again on January 23rd, 2021. #akwx","The sun does not rise in Utqiagvik, Alaska, for more than 60 days during the winter.","[""2021"", ""will"", ""1:30""]","[""period"", ""this"", ""will"", ""2021"", ""rise"", ""January"", ""will"", ""night"", ""Utqia\u0121vik""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""2021"",
+      ""typos"": [""20twentyone"", ""2k21"", ""21""]
+    },
+    {
+      ""token"": ""will"",
+      ""typos"": [""wl"", ""wll"", ""wil""]
+    },
+    {
+      ""token"": ""1:30"",
+      ""typos"": [""1.30"", ""one:30"", ""130""]
+    }
+  ]
+}"
+tweet-sno-1310,Tyndall is DOD’s First Base to Adopt Robot Dogs – Air Force Magazine. Go!,Tyndall Air Force Base in Florida will be the first to implement semi-autonomous robotic “canines” in their defense regiment.,"[""Dogs""]","[""Dogs"", ""Tyndall"", ""DOD\u2019s"", ""Force""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Dogs"",
+      ""typos"": [""Dawgs"", ""D0gs"", ""Dgs"", ""Dogz"", ""Doggs"", ""Doogs"", ""D0g5"", ""Doqz"", ""Doges"", ""Dugs""]
+    }
+  ]
+}"
+tweet-sno-1311,"“Evidence of voter fraud continues to grow, including 20,000 dead people on the Pennsylvania voters roll and many thousands all over the Country. Now, there has been an artificial number of votes in favor of Joe Biden.” ","Pennsylvania has 20,000 dead persons listed on its election rolls, which is evidence of massive voter fraud in 2020.","[""dead"", ""many"", ""roll"", ""20,000""]","[""number"", ""20,000"", ""dead"", ""continues"", ""voters"", ""Pennsylvania"", ""voter"", ""people"", ""over"", ""fraud"", ""been""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""dead"",
+      ""typos"": [""ded"", ""deed"", ""daed"", ""ddad"", ""deaad"", ""dedd"", ""deadd"", ""deded"", ""deaed"", ""dedd""]
+    },
+    {
+      ""token"": ""many"",
+      ""typos"": [""mny"", ""mnay"", ""manny"", ""maney"", ""myany"", ""manay"", ""mamy"", ""manni"", ""manye"", ""manny""]
+    },
+    {
+      ""token"": ""roll"",
+      ""typos"": [""rol"", ""rolL"", ""rrroll"", ""rool"", ""rooll"", ""rolll"", ""roell"", ""rroll"", ""rrolll"", ""rol1""]
+    },
+    {
+      ""token"": ""20,000"",
+      ""typos"": [""20.000"", ""20000"", ""20k"", ""20K"", ""20/000"", ""20-000"", ""20_000"", ""20 000"", ""20,000."", ""20,,000""]
+    }
+  ]
+}"
+tweet-sno-1312,Little #sawwhet owl recovering at #ravensbeardwildlifecenter after being found stuck inside the #RockefellerCenterChristmastree Story onat pm.,A small owl was found in the branches of the Rockefeller Center Christmas tree in 2020.,"[""sawwhet"", ""Story""]","[""Story"", ""onat"", ""recovering"", ""sawwhet"", ""#ravensbeardwildlifecenter"", ""inside""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""sawwhet"",
+      ""typos"": [""saw-whet"", ""sawhet"", ""saw whet"", ""sawhet"", ""sawet""]
+    },
+    {
+      ""token"": ""Story"",
+      ""typos"": [""Stori"", ""Stor"", ""story"", ""Strory"", ""Storie""]
+    }
+  ]
+}"
+tweet-sno-1313,"Look at this in Wisconsin! A day AFTER the election, Biden receives a dump of 143,379 votes at 3:42AM, when they learned he was losing badly. This is unbelievable!",Joe Biden received a fraudulent 'dump' of 143K ballots in Wisconsin in the early morning hours after Election Day 2020.,"[""learned"", ""badly"", ""This""]","[""143,379"", ""AFTER"", ""Wisconsin"", ""unbelievable"", ""they"", ""Biden"", ""This"", ""3:42"", ""when""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""learned"",
+      ""typos"": [""learnt"", ""lern'd"", ""lern'd""]
+    },
+    {
+      ""token"": ""badly"",
+      ""typos"": [""badlee"", ""badli"", ""badlly""]
+    },
+    {
+      ""token"": ""This"",
+      ""typos"": [""Dis"", ""Tis"", ""Thiz""]
+    }
+  ]
+}"
+tweet-sno-1314,"The raw data in the server seized by the US military shows Trump won by a landslide 👇🏻👇🏻👇🏻 410!!!!_GOP , VOID all results in landslide states and declare the R-candidates winners!!",A voting systems server seized by the U.S. military in Germany proved Donald Trump won the 2020 election in an electoral landslide.,"[""VOID"", ""military"", ""shows""]","[""Trump"", ""seized"", ""winners"", ""!!!!_GOP"", ""shows"", ""declare"", ""\ud83d\udc47\ud83c\udffb\ud83d\udc47\ud83c\udffb\ud83d\udc47"", ""candidates""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""VOID"",
+      ""typos"": [""VOID"", ""VO1D"", ""V0ID"", ""V01D"", ""V0YD"", ""VOI()"", ""V0!D"", ""V01!"", ""V0|D"", ""V()ID""]
+    },
+    {
+      ""token"": ""military"",
+      ""typos"": [""military"", ""milit@ry"", ""mil1tary"", ""milit@ri"", ""milit4ry"", ""milit@ar"", ""mil1t@ri"", ""m1litary"", ""m1lit@ry"", ""milit@ryy""]
+    },
+    {
+      ""token"": ""shows"",
+      ""typos"": [""shows"", ""sh0ws"", ""sh0wz"", ""showz"", ""sh0ws"", ""sh0wiz"", ""sh0wsz"", ""sh0"", ""sh0w$"", ""sh0w$z""]
+    }
+  ]
+}"
+tweet-sno-1315,Supposedly the Germany server data shows Trump landslide: 410-128 👍,A voting systems server seized by the U.S. military in Germany proved Donald Trump won the 2020 election in an electoral landslide.,"[""data""]","[""shows"", ""410-"", ""server"", ""Supposedly""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""data"",
+      ""typos"": [""datu"", ""date"", ""d@ta"", ""dta"", ""dat@"", ""d@t@"", ""d*a"", ""daata"", ""datt@""]
+    }
+  ]
+}"
+tweet-sno-1316,"!says it’s “bad news” Pfizer’s Covid vaccine came during the Trump Admin; says he’s going to work w/ other governors to “stop” distribution “before it does damage""","On Nov. 9, 2020, New York Gov. Andrew Cuomo said it was ""bad news"" that Pfizer had developed what appeared to be a successful COVID-19 vaccine, during U.S. President Donald Trump's tenure.","[""news"", ""stop"", ""vaccine"", ""says""]","[""before"", ""he\u2019s"", ""other"", ""Covid"", ""work"", ""stop"", ""Trump"", ""vaccine"", ""came"", ""Pfizer\u2019s""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""news"",
+      ""typos"": [""nwes"", ""newz"", ""neews"", ""nuws"", ""nus""]
+    },
+    {
+      ""token"": ""stop"",
+      ""typos"": [""st0p"", ""stp"", ""sto"", ""stpp"", ""sotp""]
+    },
+    {
+      ""token"": ""vaccine"",
+      ""typos"": [""v@ccine"", ""vacc1ne"", ""vaxcine"", ""vacine"", ""vaccinee""]
+    },
+    {
+      ""token"": ""says"",
+      ""typos"": [""sayz"", ""saiz"", ""sez"", ""saays"", ""syz""]
+    }
+  ]
+}"
+tweet-sno-1317,Another example of why it is prudent to let the process run its course: Thousands of Uncounted Votes Found a Week After Election in Puerto Rico,"U.S. Sen. John Cornyn of Texas tweeted about uncounted ballots in Puerto Rico as an example of example of ""why it is prudent to let the process run its course"" in the 2020 U.S. presidential election.","[""Found"", ""process""]","[""Another"", ""Thousands"", ""Election"", ""Uncounted"", ""Found"", ""process"", ""Week""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Found"",
+      ""typos"": [""foud"", ""fnd"", ""foundd"", ""fouund"", ""fond""]
+    },
+    {
+      ""token"": ""process"",
+      ""typos"": [""processs"", ""proces"", ""prociss"", ""proses"", ""proc3ss""]
+    }
+  ]
+}
+
+"
+tweet-sno-1318,"Georgia SoS office says Floyd County would have discovered the 2,600 extra votes without the audit because the number of voters who had checked in was greater than the tally, and they were already looking into it.","Some 2,600 uncounted votes, a majority of which were cast for U.S. President Donald Trump, were found in Floyd County, Georgia, moving the president about 800 votes closer to President-elect Joe Biden's tally in the 2020 general election.","[""into"", ""votes"", ""would"", ""than"", ""says""]","[""already"", ""discovered"", ""number"", ""have"", ""than"", ""checked"", ""because"", ""Floyd"", ""they"", ""votes"", ""2,600"", ""voters""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""into"",
+      ""typos"": [""in2"", ""nto"", ""in2o"", ""ino"", ""int0"", ""inn2"", ""in-to"", ""inttoo"", ""in2""]
+    },
+    {
+      ""token"": ""votes"",
+      ""typos"": [""v0tes"", ""voates"", ""vts"", ""vtes"", ""votz"", ""vts"", ""vtez"", ""voets"", ""vtes""]
+    },
+    {
+      ""token"": ""would"",
+      ""typos"": [""wuld"", ""wud"", ""wuold"", ""wou1d"", ""woudl"", ""w0uld"", ""woudd"", ""wou1d"", ""wuold""]
+    },
+    {
+      ""token"": ""than"",
+      ""typos"": [""thn"", ""thann"", ""tha"", ""thn"", ""thaan"", ""then"", ""tahn"", ""thenn"", ""thn""]
+    },
+    {
+      ""token"": ""says"",
+      ""typos"": [""sez"", ""saiz"", ""sais"", ""sayz"", ""sazh"", ""sayzz"", ""saiys"", ""seys"", ""sayz""]
+    }
+  ]
+}"
+tweet-sno-1319,"BREAKING: A recount in Georgia’s presidential race found more than 2,600 ballots in Floyd County that hadn’t originally been tallied, likely helping President Donald Trump reduce his 14,000-vote deficit to Joe Biden.","Some 2,600 uncounted votes, a majority of which were cast for U.S. President Donald Trump, were found in Floyd County, Georgia, moving the president about 800 votes closer to President-elect Joe Biden's tally in the 2020 general election.","[""found"", ""likely"", ""reduce"", ""recount"", ""deficit""]","[""race"", ""likely"", ""2,600"", ""Donald"", ""recount"", ""than"", ""County"", ""Floyd"", ""reduce"", ""vote"", ""ballots"", ""more"", ""tallied""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""found"",
+      ""typos"": [""fount"", ""fownd"", ""foun"", ""fund"", ""foond"", ""ffound"", ""fonud"", ""founed"", ""foond"", ""fond""]
+    },
+    {
+      ""token"": ""likely"",
+      ""typos"": [""likly"", ""likeli"", ""likley"", ""likly"", ""likelye"", ""lykly"", ""likly"", ""likelley"", ""liikely"", ""likkely""]
+    },
+    {
+      ""token"": ""reduce"",
+      ""typos"": [""redcuce"", ""reduc"", ""reeduct"", ""redcue"", ""raduce"", ""redue"", ""reduse"", ""reducce"", ""reeduce"", ""redc""]
+    },
+    {
+      ""token"": ""recount"",
+      ""typos"": [""recont"", ""reconut"", ""recunt"", ""recountt"", ""recouunt"", ""recont"", ""rekount"", ""recunt"", ""recountd"", ""recoun""]
+    },
+    {
+      ""token"": ""deficit"",
+      ""typos"": [""defficit"", ""defict"", ""defecit"", ""deficet"", ""deficitt"", ""defecit"", ""deficitt"", ""defisit"", ""deficitdd"", ""defciet""]
+    }
+  ]
+}"
+tweet-sno-1320,Look at the size of this crowd down Pennsylvania Ave. More than a MILLION people showed up to support this President. Meanwhile Biden can’t fill 36 circles. #MillionMAGAMarch,"More than one million people took part in a pro-Donald Trump march in Washington, D.C., on Nov. 14, 2020.","[""support"", ""people"", ""Meanwhile"", ""size""]","[""showed"", ""this"", ""Biden"", ""MillionMAGAMarch"", ""crowd"", ""size"", ""circles"", ""support"", ""President"", ""than""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""support"",
+      ""typos"": [""supp0rt"", ""suppart"", ""supprt"", ""supp0art"", ""suport"", ""supprt"", ""sup0art"", ""supprt"", ""spp0rt"", ""supprt""]
+    },
+    {
+      ""token"": ""people"",
+      ""typos"": [""pe0ple"", ""ppl"", ""peple"", ""poeple"", ""pe0pl"", ""peeple"", ""pepool"", ""peaple"", ""popple"", ""peopel""]
+    },
+    {
+      ""token"": ""Meanwhile"",
+      ""typos"": [""Meenwhile"", ""Meanwhl"", ""Menwhile"", ""M3anwhile"", ""Meanwihle"", ""Maanwhile"", ""Meaanwhile"", ""Manwhile"", ""Mnwhile"", ""Meawnwhile""]
+    },
+    {
+      ""token"": ""size"",
+      ""typos"": [""s1ze"", ""szie"", ""s1z3"", ""siz3"", ""sz1e"", ""siize"", ""szze"", ""sieze"", ""szize"", ""sizze""]
+    }
+  ]
+}"
+tweet-sno-1321,"File under: Wait, WHAT? From: NewsMax (via The Righting) ""President Trump should retire immediately and let Mike Pence concede the election, occupy the White House, and handle the transition…This would give Pence a head start on securing the Republican nomination in 2024.","The conservative news website Newsmax published a column that suggested U.S. President Donald Trump should ""retire immediately,"" letting Vice President Mike Pence handle the transition to the incoming Biden-Harris administration.","[""Wait"", ""concede"", ""retire"", ""Pence"", ""2024"", ""President""]","[""2024"", ""nomination"", ""head"", ""From"", ""concede"", ""Pence"", ""House"", ""retire"", ""Righting"", ""under"", ""This"", ""White"", ""immediately"", ""File"", ""occupy""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Wait"",
+      ""typos"": [""W8"", ""Weit"", ""Waite""]
+    },
+    {
+      ""token"": ""concede"",
+      ""typos"": [""conced"", ""consede"", ""koncede""]
+    },
+    {
+      ""token"": ""retire"",
+      ""typos"": [""retir"", ""retiree"", ""retyre""]
+    },
+    {
+      ""token"": ""Pence"",
+      ""typos"": [""Penc"", ""Pense"", ""P3nce""]
+    },
+    {
+      ""token"": ""2024"",
+      ""typos"": [""2O24"", ""2024"", ""202four""]
+    },
+    {
+      ""token"": ""President"",
+      ""typos"": [""Prezident"", ""Presidnt"", ""Prez""]
+    }
+  ]
+}"
+tweet-sno-1322,"Right wing Newsmax, which is owned by Trump’s friend Chris Ruddy, suggesting he retire: “To avoid all this unpleasantness President Trump should retire immediately and let Mike Pence concede the election, occupy the White House and handle the transition”","The conservative news website Newsmax published a column that suggested U.S. President Donald Trump should ""retire immediately,"" letting Vice President Mike Pence handle the transition to the incoming Biden-Harris administration.","[""Pence"", ""Chris"", ""Right"", ""this"", ""President""]","[""House"", ""friend"", ""retire"", ""retire"", ""transition"", ""Trump"", ""wing"", ""immediately"", ""Right"", ""should"", ""which"", ""this"", ""Newsmax"", ""Chris""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Pence"",
+      ""typos"": [""Pencee"", ""Penze"", ""Pennce"", ""Penc"", ""Pencey"", ""Penece"", ""Penxce"", ""Pencre"", ""Pencc""]
+    },
+    {
+      ""token"": ""Chris"",
+      ""typos"": [""Chriis"", ""Chriz"", ""Cris"", ""Chriss"", ""Chrisss"", ""Chrissz"", ""Chryss"", ""Crhis"", ""Chirss""]
+    },
+    {
+      ""token"": ""Right"",
+      ""typos"": [""Rite"", ""Rite"", ""Rigt"", ""Righht"", ""Rgiht"", ""Riight"", ""Rihgt"", ""Rigth"", ""Rigt""]
+    },
+    {
+      ""token"": ""this"",
+      ""typos"": [""dis"", ""tis"", ""thiz"", ""thas"", ""thes"", ""ths"", ""thiz"", ""thiis"", ""thsi""]
+    },
+    {
+      ""token"": ""President"",
+      ""typos"": [""Presdient"", ""Presient"", ""Presedent"", ""Presiden"", ""Presidnet"", ""Presidant"", ""Predient"", ""Presidennt"", ""Presidet""]
+    }
+  ]
+}"
+tweet-sno-1323," you were my favorite media outlet until this! ""To avoid all this unpleasantness, President Trump should retire immediately and let Mike Pence concede the election, occupy the White House, and handle the transition.""","The conservative news website Newsmax published a column that suggested U.S. President Donald Trump should ""retire immediately,"" letting Vice President Mike Pence handle the transition to the incoming Biden-Harris administration.","[""Pence"", ""this"", ""transition"", ""handle""]","[""media"", ""unpleasantness"", ""Pence"", ""should"", ""President"", ""Mike"", ""avoid"", ""concede"", ""immediately"", ""transition"", ""occupy""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Pence"",
+      ""typos"": [""Penze"", ""Penc"", ""Pense"", ""Penec"", ""Penxe"", ""Penze"", ""Pencz"", ""Penz"", ""Pen'c"", ""Pen-ce""]
+    },
+    {
+      ""token"": ""this"",
+      ""typos"": [""ths"", ""tis"", ""dis"", ""thiz"", ""ths"", ""tis"", ""thys"", ""thyis"", ""thizs"", ""dis""]
+    },
+    {
+      ""token"": ""transition"",
+      ""typos"": [""transiton"", ""transishun"", ""tranzition"", ""tranition"", ""transitn"", ""transizion"", ""tranzitin"", ""transitionn"", ""transistion"", ""transitoin""]
+    },
+    {
+      ""token"": ""handle"",
+      ""typos"": [""hndle"", ""hadle"", ""haddle"", ""handel"", ""handl"", ""hangle"", ""handlle"", ""handel"", ""hndle"", ""hanlde""]
+    }
+  ]
+}"
+tweet-sno-1324,"She's deleted it, butposted a tweet suggesting that Joe Biden will be president next year. Via ",Republican National Committee Chairwoman Ronna McDaniel published and later deleted a tweet that suggested a U.S. future under a Joe Biden-Kamala Harris presidential administration.,"[""year"", ""will""]","[""that"", ""next"", ""tweet"", ""butposted"", ""suggesting""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""year"",
+      ""typos"": [""yeer"", ""yr"", ""yer""]
+    },
+    {
+      ""token"": ""will"",
+      ""typos"": [""wil"", ""wll"", ""wl""]
+    }
+  ]
+}"
+tweet-sno-1325,Raising canes filed for bankruptcy,Raising Cane's Chicken Fingers filed for bankruptcy.,[],"[""bankruptcy"", ""Raising""]","{
+  ""typo_tokens"": []
+}"
+tweet-sno-1326,"To top off 2020, Raising Canes filed bankruptcy… That was the last straw Jesus come get me",Raising Cane's Chicken Fingers filed for bankruptcy.,"[""That"", ""straw""]","[""filed"", ""That"", ""Jesus"", ""bankruptcy"", ""last""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""That"",
+      ""typos"": [""Th@t"", ""Thatt"", ""Dat"", ""Tht"", ""Thaat"", ""Taht"", ""Tha1"", ""Th8t"", ""Th4t"", ""Tht""]
+    },
+    {
+      ""token"": ""straw"",
+      ""typos"": [""straww"", ""straww"", ""strawr"", ""str@w"", ""straww"", ""st4w"", ""st8aw"", ""staw"", ""strw"", ""strawf""]
+    }
+  ]
+}"
+tweet-sno-1327,i saw #RIPDrake trending and had a fucking heart attack,TMZ reported that Drake was involved in a drive-by shooting and died at the age of 34. Genius also reported that Drake's family confirmed his passing.,"[""#RIPDrake""]","[""attack"", ""trending""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""#RIPDrake"",
+      ""typos"": [""#RIPDrak"", ""#RIPDraak"", ""#RIPDrakee"", ""#RIPDracke"", ""#RIPDraake"", ""#RIPDrek"", ""#RIPDraek"", ""#RIPDrakk"", ""#RIPDrekke""]
+    }
+  ]
+}"
+tweet-sno-1328,"Generation after generation, it's a pleasure to game alongside you. Happy launch day ","Xbox and PlayStation congratulated each other on Twitter for the November 2020 launch of Xbox Series X, Xbox Series S, and PS5.","[""game""]","[""launch"", ""generation"", ""game"", ""pleasure""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""game"",
+      ""typos"": [""gme"", ""g@m3"", ""g@me"", ""gm3"", ""gmae"", ""g@m"", ""gam3"", ""g@me""]
+    }
+  ]
+}"
+tweet-sno-1329,"Congrats,! #NextGeneration #GreatnessAwaits","Xbox and PlayStation congratulated each other on Twitter for the November 2020 launch of Xbox Series X, Xbox Series S, and PS5.",[],"[""NextGeneration""]","{
+  ""typo_tokens"": []
+}"
+tweet-sno-1330,What happened to the ICE Twitter page? H/T: ,"On Nov. 12, 2020, U.S. Immigration and Customs Enforcement’s (ICE) Twitter account appeared to have been briefly removed from the social network.",[],"[""What"", ""happened""]","{
+  ""typo_tokens"": []
+}"
+tweet-sno-1331,What happened to U.S. Immigration and Customs Enforcement (ICE) Twitter profile?,"On Nov. 12, 2020, U.S. Immigration and Customs Enforcement’s (ICE) Twitter account appeared to have been briefly removed from the social network.","[""Twitter""]","[""What"", ""U.S."", ""Immigration"", ""Enforcement""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Twitter"",
+      ""typos"": [""Twiter"", ""Twitr"", ""Twtter"", ""Twttr"", ""Twiter"", ""Twittr"", ""Twittr"", ""Twiter"", ""Twttr""]
+    }
+  ]
+}"
+tweet-sno-1332,"To commemorate #VeteransDay and honor those who have served in the military,announced that Gold Star Families and Veterans of the U.S. Armed Forces will have free entrance to national parks forever. Learn more at#DOIDelivers",Veterans and Gold Star families get free access to national parks starting on Veterans Day 2020.,"[""have"", ""Armed"", ""honor"", ""Families"", ""forever""]","[""military"", ""Families"", ""announced"", ""commemorate"", ""Forces"", ""U.S."", ""Veterans"", ""Armed"", ""those"", ""served"", ""free"", ""that"", ""national""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""have"",
+      ""typos"": [""hav"", ""hve"", ""hv"", ""haave"", ""hve""]
+    },
+    {
+      ""token"": ""Armed"",
+      ""typos"": [""Armd"", ""Armedd"", ""Amred"", ""Arnmed"", ""Armeed""]
+    },
+    {
+      ""token"": ""honor"",
+      ""typos"": [""honr"", ""honor"", ""onr"", ""honour"", ""honnor""]
+    },
+    {
+      ""token"": ""Families"",
+      ""typos"": [""Familis"", ""Famlies"", ""Familes"", ""Fammilies"", ""Familiees""]
+    },
+    {
+      ""token"": ""forever"",
+      ""typos"": [""forevr"", ""forver"", ""forevver"", ""foreveer"", ""foreve""]
+    }
+  ]
+}"
+tweet-sno-1333,"HUGE NEWS: Thanks to the public-private partnership forged by President,announced its Coronavirus Vaccine trial is EFFECTIVE, preventing infection in 90% of its volunteers.","The research and development of Pfizer COVID-19 vaccine, which proved to be 90% effective against SARS-CoV-2 in November 2020, was funded by U.S. President Donald Trump’s Operation Warp Speed.","[""preventing"", ""partnership"", ""NEWS""]","[""public"", ""Vaccine"", ""private"", ""trial"", ""NEWS"", ""Coronavirus"", ""President"", ""volunteers""]","{
+	""typo_tokens"": [
+		{
+			""token"": ""preventing"",
+			""typos"": [""prevening"", ""prevnting"", ""preventng"", ""preventin"", ""perventing"", ""prevntng"", ""preventingg"", ""preventinng"", ""prventing""]
+		},
+		{
+			""token"": ""partnership"",
+			""typos"": [""partnrship"", ""partership"", ""partneship"", ""partnership"", ""partership"", ""parnership"", ""partnrship"", ""partnrshp"", ""partnershipp""]
+		},
+		{
+			""token"": ""NEWS"",
+			""typos"": [""NOOZ"", ""NEWZ"", ""NWS"", ""NUES"", ""NES"", ""NEEWS"", ""NNWS"", ""NEZ"", ""NUEWS""]
+		}
+	]
+}"
+tweet-sno-1334,The news about thevaccine being 90% effective is great news for the American people! Many thanks toand Operation Warp Speed. This will be one of the most important action items done by the administration in response to this pandemic. ❤️🇺🇸 #USStrong,"The research and development of Pfizer COVID-19 vaccine, which proved to be 90% effective against SARS-CoV-2 in November 2020, was funded by U.S. President Donald Trump’s Operation Warp Speed.","[""great"", ""Warp"", ""response"", ""USStrong"", ""Speed""]","[""Warp"", ""most"", ""American"", ""Many"", ""toand"", ""thanks"", ""will"", ""action"", ""Speed"", ""great"", ""USStrong"", ""thevaccine"", ""about"", ""news""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""great"",
+      ""typos"": [""gr8"", ""grait"", ""greaat"", ""gret"", ""grat"", ""gret"", ""grt"", ""greate"", ""grat""]
+    },
+    {
+      ""token"": ""Warp"",
+      ""typos"": [""Wharp"", ""Wrpa"", ""Warpp"", ""Warpo"", ""Wap"", ""Worp"", ""Warrp"", ""Warp"", ""Waap""]
+    },
+    {
+      ""token"": ""response"",
+      ""typos"": [""responce"", ""respnse"", ""reposne"", ""reponse"", ""responze"", ""respose"", ""responc"", ""responece"", ""restponse""]
+    },
+    {
+      ""token"": ""USStrong"",
+      ""typos"": [""USStr0ng"", ""USStong"", ""USSstrong"", ""USStron"", ""USStrng"", ""USStrpng"", ""USStrongg"", ""USStr0ngg"", ""USstr0ng""]
+    },
+    {
+      ""token"": ""Speed"",
+      ""typos"": [""Sped"", ""Spee"", ""Speeed"", ""Spead"", ""Spede"", ""Spead"", ""Spped"", ""Sppedd"", ""Sped""]
+    }
+  ]
+}"
+tweet-sno-1335,We just did. Joe Biden clapped back against the MAGA hat 😯 (📷:),"U.S. President-elect Joe Biden’s hat answers Donald Trump’s campaign slogan “Make America Great Again” with the phrase, “We Just Did.”","[""just""]","[""Biden"", ""clapped"", ""against""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""just"",
+      ""typos"": [""jst"", ""jus"", ""juzt"", ""justt"", ""jusst"", ""juust"", ""jusstt"", ""juzzt"", ""juzzt""]
+    }
+  ]
+}"
+tweet-sno-1336,"Congratulations to President-elect Joe Biden! His German Shepherd, Major, is set to become the first shelter dog in the White House. The Bidens adopted the German shepherd from the Delaware Humane Association two years ago after initially fostering him.","President-elect Joe Biden’s German shepherd, Major, will be the first rescue dog to reside at the White House.","[""after"", ""Biden"", ""Shepherd"", ""adopted""]","[""shelter"", ""Humane"", ""from"", ""first"", ""initially"", ""Delaware"", ""House"", ""President"", ""become"", ""Biden"", ""adopted"", ""Association""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""after"",
+      ""typos"": [""aftr"", ""aft3r"", ""4fter""]
+    },
+    {
+      ""token"": ""Biden"",
+      ""typos"": [""Biden"", ""B1den"", ""Bdn""]
+    },
+    {
+      ""token"": ""Shepherd"",
+      ""typos"": [""Shpherd"", ""Sheprd"", ""Sh3pherd""]
+    },
+    {
+      ""token"": ""adopted"",
+      ""typos"": [""adopt3d"", ""adpted"", ""adopt3d""]
+    }
+  ]
+}"
+tweet-sno-1337,President Trump is playing golf club this morning as Biden appears to extend his lead in the election. The weekend getaway comes as U.S. coronavirus cases hit all-time highs and as Trump's own chief of staff Mark Meadows tests positive for Covid-19.,U.S. President Donald Trump was golfing when Joe Biden was projected as the winner of the 2020 presidential election.,"[""extend"", ""Mark"", ""Trump's"", ""lead"", ""appears""]","[""highs"", ""Mark"", ""Trump's"", ""appears"", ""time"", ""Trump"", ""Meadows"", ""U.S."", ""morning"", ""extend"", ""golf"", ""this"", ""President"", ""lead""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""extend"",
+      ""typos"": [""xtend"", ""exxtend"", ""extnd""]
+    },
+    {
+      ""token"": ""Mark"",
+      ""typos"": [""Mrk"", ""M@rk"", ""M4rk""]
+    },
+    {
+      ""token"": ""Trump's"",
+      ""typos"": [""Trumps"", ""Trumpz"", ""Trump's""]
+    },
+    {
+      ""token"": ""lead"",
+      ""typos"": [""leed"", ""led"", ""lede""]
+    },
+    {
+      ""token"": ""appears"",
+      ""typos"": [""apears"", ""apper"", ""apearz""]
+    }
+  ]
+}"
+tweet-sno-1338,"#US : Trump loyalist and criminal Steve Bannon declares Dr. Fauci and FBI Director Wray should be beheaded and have their heads mounted on pikes at the White House ""as a warning to federal bureaucrats"". (📹)","Former U.S. President Donald Trump campaign adviser Steve Bannon called for a ""second term"" to kick off with the firings of NIH Director Dr. Anthony Fauci and FBI Director Christopher Wray, adding that he would put their ""heads on pikes"" as a warning.","[""federal"", ""Bannon"", ""bureaucrats"", ""House""]","[""bureaucrats"", ""mounted"", ""loyalist"", ""Fauci"", ""warning"", ""their"", ""should"", ""criminal"", ""Director"", ""heads""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""federal"",
+      ""typos"": [""federal"", ""fedral"", ""fderal"", ""fedeal"", ""fedral"", ""fedaral"", ""feeral"", ""federl"", ""fedral"", ""federal""]
+    },
+    {
+      ""token"": ""Bannon"",
+      ""typos"": [""Bannon"", ""Bann0n"", ""Ban0n"", ""Banonn"", ""Bannn"", ""Banon"", ""Banon"", ""Banon"", ""Bannon"", ""Bannon""]
+    },
+    {
+      ""token"": ""bureaucrats"",
+      ""typos"": [""bureaucrats"", ""beurocrats"", ""bureaucrat"", ""bureacratz"", ""bueraucrats"", ""buraeucrats"", ""bureacrats"", ""buraucrats"", ""bureaucrats"", ""bureaucrat""]
+    },
+    {
+      ""token"": ""House"",
+      ""typos"": [""House"", ""Huse"", ""Hous"", ""Houze"", ""Houes"", ""Hous3"", ""Huse"", ""Hose"", ""House"", ""Hous""]
+    }
+  ]
+}"
+tweet-sno-1339,"BREAKING: Trump’sfinalized a rule today stripping gray wolves of their federal #EndangeredSpecies protections in the Lower 48 states. This dangerous move threatens ecosystems, ignores Indigenous guidance & contributes to the biodiversity crisis.","In October 2020, the U.S. Department of the Interior removed gray wolves from the Endangered Species Act, returning management and protection of the species to states and tribes.","[""today"", ""Lower"", ""EndangeredSpecies"", ""rule""]","[""states"", ""ecosystems"", ""EndangeredSpecies"", ""federal"", ""Indigenous"", ""stripping"", ""rule"", ""today"", ""biodiversity"", ""crisis"", ""This"", ""move""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""today"",
+      ""typos"": [""2day"", ""todai"", ""toddy""]
+    },
+    {
+      ""token"": ""Lower"",
+      ""typos"": [""L0wer"", ""Lwr"", ""Loer""]
+    },
+    {
+      ""token"": ""EndangeredSpecies"",
+      ""typos"": [""EndgrdSpecies"", ""EndangrdSpcs"", ""EndangeredSpcs""]
+    },
+    {
+      ""token"": ""rule"",
+      ""typos"": [""rul"", ""rool"", ""rle""]
+    }
+  ]
+}"
+tweet-sno-1340,"Here's video pulled from the Delaware County, PA live stream of a ballot worker filling out ballots.",A video captures a Pennsylvania elections worker actually filling out ballots rather than counting them.,"[""worker"", ""ballot""]","[""from"", ""Delaware"", ""stream"", ""County"", ""filling"", ""live""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""worker"",
+      ""typos"": [""wrk"", ""wkr"", ""workr"", ""wrkkr"", ""wokker"", ""werkr"", ""wrk-er"", ""worrrker"", ""wok-er"", ""wrk-r""]
+    },
+    {
+      ""token"": ""ballot"",
+      ""typos"": [""balot"", ""ballt"", ""blot"", ""bal-lot"", ""ballot"", ""ba-lot"", ""bal-lot"", ""balott"", ""balote"", ""b@llot""]
+    }
+  ]
+}"
+tweet-sno-1341,"Trump supporters: ""Stop the vote!"" Also Trump supporters: ""Count that vote!"" #election2020","U.S. President Trump's supporters can be heard chanting ""stop the count"" in one video and ""count the vote"" in another.","[""that"", ""supporters""]","[""that"", ""#election2020"", ""Stop"", ""vote"", ""Count""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""that"",
+      ""typos"": [""tht"", ""dat"", ""tat"", ""tha"", ""th@t"", ""taht"", ""th4t"", ""thxt"", ""thqt"", ""thit""]
+    },
+    {
+      ""token"": ""supporters"",
+      ""typos"": [""supprters"", ""suporters"", ""supportas"", ""supporrters"", ""supoorters"", ""suportrs"", ""supprtas"", ""supprtrs"", ""suportas"", ""supotters""]
+    }
+  ]
+}"
+tweet-sno-1342,We don’t want to have a recount in any of the battleground states. Obama will steal it. Make sure all your friends and family vote.,"In 2012 Donald Trump tweeted, ""We don’t want to have a recount in any of the battleground states. Obama will steal it.""","[""don\u2019t"", ""family"", ""Obama""]","[""states"", ""vote"", ""don\u2019t"", ""steal"", ""will"", ""battleground"", ""want""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""don’t"",
+      ""typos"": [""dont"", ""don,t"", ""dn't""]
+    },
+    {
+      ""token"": ""family"",
+      ""typos"": [""fam"", ""famliy"", ""faimly""]
+    },
+    {
+      ""token"": ""Obama"",
+      ""typos"": [""Obma"", ""Obmaa"", ""Obm""]
+    }
+  ]
+}"
+tweet-sno-1343,ARE MAIL IN BALLOTS BEING MODIFIED AS WE SPEAK IN CORRUPT DEM DISTRICTS? have you heard about Dems distributing sharpie pens to Trump voters and then invalidating their ballots?,"Arizona polling places gave out Sharpie pens to Trump supporters, use of which invalidated their ballots.","[""about"", ""BALLOTS"", ""then"", ""CORRUPT""]","[""have"", ""then"", ""BALLOTS"", ""MODIFIED"", ""Trump"", ""CORRUPT"", ""invalidating"", ""their"", ""heard"", ""ballots""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""about"",
+      ""typos"": [""abt"", ""abou"", ""abot"", ""abotu"", ""abput"", ""aboyt"", ""abou5"", ""abou8"", ""abkut""]
+    },
+    {
+      ""token"": ""BALLOTS"",
+      ""typos"": [""B4LLOTS"", ""BALL0TS"", ""BALLO5"", ""BALL0TS"", ""BALLOTS"", ""B4LL0TS"", ""B4LLOT5"", ""B4LL0T5"", ""B4LL0TS""]
+    },
+    {
+      ""token"": ""then"",
+      ""typos"": [""thn"", ""th3n"", ""tehn"", ""thenn"", ""tgen"", ""thenn"", ""th3n"", ""theb"", ""than""]
+    },
+    {
+      ""token"": ""CORRUPT"",
+      ""typos"": [""C0RRUPT"", ""CORRUP7"", ""CORRUPT"", ""C0RRUPT"", ""CORRUPT"", ""C0RRUP7"", ""C0RRU7T"", ""CORRUPT"", ""C0RRUP7""]
+    }
+  ]
+}"
+tweet-sno-1344,AZ update: apparently the use of sharpie pens in gop precincts is causing ballots to be invalidated. Could be huge numbers of mostly Trump supporters. More to come,"Arizona polling places gave out Sharpie pens to Trump supporters, use of which invalidated their ballots.","[""pens"", ""Could"", ""Trump""]","[""update"", ""huge"", ""invalidated"", ""Could"", ""apparently"", ""More"", ""supporters"", ""ballots""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""pens"",
+      ""typos"": [""penz"", ""puns"", ""pins""]
+    },
+    {
+      ""token"": ""Could"",
+      ""typos"": [""Cud"", ""Cull"", ""Cld""]
+    },
+    {
+      ""token"": ""Trump"",
+      ""typos"": [""Tramp"", ""Trum"", ""Trmp""]
+    }
+  ]
+}"
+tweet-sno-1345,Batches of ballots are being uploaded. 100% for Joe Biden. Massive #’s of ballots being invalidated in AZ as Trump supporters were told to use Sharpies. This isn’t democracy. We are being ruled over.,"Arizona polling places gave out Sharpie pens to Trump supporters, use of which invalidated their ballots.","[""democracy"", ""Batches"", ""supporters"", ""uploaded""]","[""being"", ""uploaded"", ""over"", ""supporters"", ""invalidated"", ""This"", ""Sharpies"", ""Massive"", ""Batches"", ""being""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""democracy"",
+      ""typos"": [""democrasy"", ""demacracy"", ""democrazy"", ""democrac"", ""democrasy"", ""demcocracy"", ""demorcacy"", ""demoracy"", ""democracey""]
+    },
+    {
+      ""token"": ""Batches"",
+      ""typos"": [""Btches"", ""Baches"", ""Batchs"", ""Batchez"", ""Bachtes"", ""Bachess"", ""Batchees"", ""Batcches"", ""Batchess""]
+    },
+    {
+      ""token"": ""supporters"",
+      ""typos"": [""suporters"", ""supporters"", ""supprters"", ""supportas"", ""supportrs"", ""supporterz"", ""supprtors"", ""supproters"", ""supprtirs""]
+    },
+    {
+      ""token"": ""uploaded"",
+      ""typos"": [""uploadded"", ""uploded"", ""upoloaded"", ""uploadd"", ""uploded"", ""upoloaded"", ""upoladed"", ""uploded"", ""upoaded""]
+    }
+  ]
+}"
+tweet-sno-1346,Lucky to be alive: an Avila Beach woman says she is okay after a whale capsized her kayak (shown here). Hear from her and tips for staying safe out on the water tonight at 10&11. (Video: Kellie Balentine) ,A video shows a large humpback whale swallowing a kayaker.,"[""Kellie"", ""capsized"", ""Beach"", ""shown""]","[""here"", ""after"", ""capsized"", ""Balentine"", ""woman"", ""says"", ""tips"", ""from"", ""Video"", ""10&11"", ""Kellie"", ""whale""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Kellie"",
+      ""typos"": [""Kelly"", ""Kelli"", ""Kell""]
+    },
+    {
+      ""token"": ""capsized"",
+      ""typos"": [""capzied"", ""capsised"", ""capzised""]
+    },
+    {
+      ""token"": ""Beach"",
+      ""typos"": [""Bech"", ""Bch"", ""Beeach""]
+    },
+    {
+      ""token"": ""shown"",
+      ""typos"": [""shwn"", ""shon"", ""shwn""]
+    }
+  ]
+}"
+tweet-sno-1347,"Here is another angle of the whale breaching with the kayak seemingly in its mouth. The woman who took this video tells me she was filming the whale in the distance and next she knew, the whale emerged trying to get the fish around the kayak (Video: Mandy Boyle) ",A video shows a large humpback whale swallowing a kayaker.,"[""tells"", ""filming"", ""breaching"", ""took"", ""Boyle""]","[""Boyle"", ""breaching"", ""fish"", ""video"", ""mouth"", ""distance"", ""angle"", ""tells"", ""took"", ""kayak"", ""woman"", ""whale"", ""with"", ""whale""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""tells"",
+      ""typos"": [""telz"", ""tels"", ""tellz"", ""tlz"", ""telss"", ""tlss"", ""telz"", ""telsel"", ""tlz""]
+    },
+    {
+      ""token"": ""filming"",
+      ""typos"": [""filmin"", ""filmng"", ""filmming"", ""filmin'"", ""filmng"", ""filmngg"", ""filimng"", ""filmmnin"", ""flming""]
+    },
+    {
+      ""token"": ""breaching"",
+      ""typos"": [""breachin"", ""breachng"", ""breachin'"", ""brechin"", ""breachingg"", ""breching"", ""breacching"", ""breachingn"", ""brching""]
+    },
+    {
+      ""token"": ""took"",
+      ""typos"": [""tok"", ""t0ok"", ""tuk"", ""tookk"", ""t0k"", ""t0ok"", ""to0k"", ""tokk"", ""took""]
+    },
+    {
+      ""token"": ""Boyle"",
+      ""typos"": [""Boyl"", ""Boile"", ""Boylle"", ""Boylee"", ""Boyele"", ""B0yle"", ""Boyele"", ""Boyl"", ""B0yl""]
+    }
+  ]
+}"
+tweet-sno-1348,"Biden: ""I had a job with a nice country club kind of pool as a lifeguard .. I played ball with a lot of great black athletes but I didn’t know them. I mean, we knew each other. They were friends. But I didn’t know them. And it was a great education. It was like the Green Mile.""","In a Nov. 3, 2020 interview with reporters in Wilmington, Delaware, U.S. Democratic presidential candidate Joe Biden likened his experiences playing ball with Black athletes to Stephen King’s Green Mile.","[""country"", ""athletes"", ""them"", ""education"", ""mean"", ""friends""]","[""with"", ""didn\u2019t"", ""great"", ""education"", ""mean"", ""didn\u2019t"", ""friends"", ""each"", ""knew"", ""nice"", ""They"", ""kind"", ""club"", ""athletes"", ""country"", ""them""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""country"",
+      ""typos"": [""cuntry"", ""countr"", ""counrty"", ""contrry"", ""countrie"", ""kuntry"", ""cuntrie"", ""countri"", ""cuntri"", ""cuntryy""]
+    },
+    {
+      ""token"": ""athletes"",
+      ""typos"": [""atletes"", ""athlets"", ""athltes"", ""athletez"", ""athletess"", ""athleets"", ""athletes"", ""athltees"", ""atheltes"", ""atleetes""]
+    },
+    {
+      ""token"": ""them"",
+      ""typos"": [""thm"", ""tem"", ""them"", ""thme"", ""tehm"", ""them"", ""tjem"", ""theem"", ""thhem"", ""thrm""]
+    },
+    {
+      ""token"": ""education"",
+      ""typos"": [""educatin"", ""eduction"", ""education"", ""edukation"", ""eduaction"", ""education"", ""educatoin"", ""edcation"", ""educatn"", ""educateon""]
+    },
+    {
+      ""token"": ""mean"",
+      ""typos"": [""meen"", ""mena"", ""men"", ""mean"", ""menn"", ""meaan"", ""meann"", ""maen"", ""mene"", ""meaan""]
+    },
+    {
+      ""token"": ""friends"",
+      ""typos"": [""frends"", ""freinds"", ""frenz"", ""friendz"", ""friends"", ""freinds"", ""frrends"", ""freindz"", ""friens"", ""friiends""]
+    }
+  ]
+}"
+tweet-sno-1349,I’m so ready for today!!! Ladies don’t forget your pearls today In honor of RBG! 💙💙💙💙💙💙💙💙💙 #BidenHarris2020 #vote,"In the days leading up to the 2020 general election, social media users encouraged one another to wear pearls in honor of Democratic vice-presidential candidate Kamala Harris, not the late Justice Ruth Bader Ginsburg.","[""ready"", ""today""]","[""don\u2019t"", ""BidenHarris2020"", ""today"", ""honor"", ""your"", ""forget""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""ready"",
+      ""typos"": [""rdy"", ""reddy"", ""redy"", ""r3ady"", ""readdy"", ""reaady"", ""readdy"", ""redyy"", ""rddy"", ""reeady""]
+    },
+    {
+      ""token"": ""today"",
+      ""typos"": [""2day"", ""t0day"", ""todai"", ""tuday"", ""todaaay"", ""toddy"", ""tod4y"", ""tooday"", ""tody"", ""t'day""]
+    }
+  ]
+}"
+tweet-sno-1350,You know it’s going to be a landslide when the Amish start to rally and create their own Trump Train 😎🇺🇸,Photos and videos show members of the Amish community displaying their support for U.S. President Donald Trump.,"[""Trump"", ""Amish""]","[""know"", ""rally"", ""Trump"", ""create"", ""going"", ""Train""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Trump"",
+      ""typos"": [""Trum"", ""Tromp"", ""Trunp"", ""Truump"", ""Tramp"", ""Trmp"", ""Trrump"", ""Truumpf"", ""Trumpp"", ""Trumk""]
+    },
+    {
+      ""token"": ""Amish"",
+      ""typos"": [""Amsh"", ""Amis"", ""Ammish"", ""Amisch"", ""Amihs"", ""Amissh"", ""Aamish"", ""Amizh"", ""Amush"", ""Amosh""]
+    }
+  ]
+}"
+tweet-sno-1351,You don’t 👏🏾 have to 👏🏾 be registered 👏🏾 to go vote👏🏾 in Minnesota 👏🏾 we have 👏🏾 same day 👏🏾 registration 👏🏾 so you 👏🏾 can register 👏🏾 at the polls 👏🏾👏🏾,U.S. Rep. Ilhan Omar said Minnesota residents can vote without registering.,"[""register"", ""have""]","[""Minnesota"", ""polls"", ""registered"", ""don\u2019t"", ""registration""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""register"",
+      ""typos"": [""registr"", ""regestr"", ""regstr"", ""rgister"", ""rgstr"", ""rgisttr"", ""regsr"", ""rgsister"", ""rgsr""]
+    },
+    {
+      ""token"": ""have"",
+      ""typos"": [""hav"", ""haev"", ""hv"", ""hve"", ""hava"", ""havve"", ""haave"", ""heave"", ""hauve""]
+    }
+  ]
+}"
+tweet-sno-1352,"Real or fake? Hunter Biden Has Flipped, Biden Family $300 Million Stash In Switzerland… Rudy Guiliani Freestyles One Of Greatest Speeches Ever, A Summary Of Joe Biden's 30 Year Crime Spree, Saying Joe Biden Is ""The Prince Of Darkness""!! | Alternative","Joe Biden's son, Hunter, turned himself in to the FBI and ""flipped"" on his father.","[""Real"", ""Spree"", ""Family"", ""fake"", ""Prince""]","[""Crime"", ""Year"", ""Ever"", ""Alternative"", ""Million"", ""Flipped"", ""Biden"", ""Biden"", ""Speeches"", ""Greatest"", ""fake"", ""Saying"", ""Real""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Real"",
+      ""typos"": [""Reel"", ""Reall"", ""Rel"", ""Reelz"", ""Reeel""]
+    },
+    {
+      ""token"": ""Spree"",
+      ""typos"": [""Spre"", ""Spreee"", ""Sprea"", ""Sprey"", ""Spry""]
+    },
+    {
+      ""token"": ""Family"",
+      ""typos"": [""Famly"", ""Fmaily"", ""Familee"", ""Familie"", ""Famili""]
+    },
+    {
+      ""token"": ""fake"",
+      ""typos"": [""feke"", ""faek"", ""fak"", ""faake"", ""fak3""]
+    },
+    {
+      ""token"": ""Prince"",
+      ""typos"": [""Prinse"", ""Prinse"", ""Princ"", ""Princz"", ""Prinxe""]
+    }
+  ]
+}"
+tweet-sno-1353,I heard Hunter Biden turned himself in to FBI on the 28th and flipped on pops. Spilled his guts for no charges and was put into a treatment center. Have you heard anything about that?,"Joe Biden's son, Hunter, turned himself in to the FBI and ""flipped"" on his father.","[""turned"", ""into"", ""28th""]","[""treatment"", ""center"", ""anything"", ""heard"", ""guts"", ""Biden"", ""heard"", ""28th"", ""that""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""turned"",
+      ""typos"": [""turnd"", ""turn'd"", ""trned""]
+    },
+    {
+      ""token"": ""into"",
+      ""typos"": [""in2"", ""n2"", ""in-to""]
+    },
+    {
+      ""token"": ""28th"",
+      ""typos"": [""28thh"", ""28th."", ""28-th""]
+    }
+  ]
+}"
+tweet-sno-1354,Hunter Biden has flipped?,"Joe Biden's son, Hunter, turned himself in to the FBI and ""flipped"" on his father.",[],"[""Biden""]","{
+""typo_tokens"": [
+]
+}"
+tweet-sno-1355,14/n Reportedly #HunterBiden has flipped,"Joe Biden's son, Hunter, turned himself in to the FBI and ""flipped"" on his father.",[],"[""HunterBiden"", ""flipped""]","{
+	""typo_tokens"": []
+}"
+tweet-sno-1356,Biden turned himself in!,"Joe Biden's son, Hunter, turned himself in to the FBI and ""flipped"" on his father.",[],"[""Biden""]","{
+""typo_tokens"": []
+}"
+tweet-sno-1357,"Biden campaign cancels Austin rally; Armed Trump supporters reportedly harass campaign bus, ramming volunteer vehicles & blocking traffic. ""At least the Trump hearse is appropriate given the 200K+ Americans who have died due to his incompetence.” #VoteBlueToEndTheNightmare","Armed supporters of U.S. President Donald Trump harassed a Biden-Harris campaign bus in Texas, leading to the cancellation of three campaign events and a news conference.","[""harass"", ""Biden"", ""Trump"", ""died"", ""Armed""]","[""200K"", ""blocking"", ""Armed"", ""campaign"", ""have"", ""hearse"", ""supporters"", ""reportedly"", ""given"", ""vehicles"", ""campaign"", ""harass"", ""VoteBlueToEndTheNightmare""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""harass"",
+      ""typos"": [""harrass"", ""haras"", ""harras""]
+    },
+    {
+      ""token"": ""Biden"",
+      ""typos"": [""Biden"", ""Bidean"", ""Bidan""]
+    },
+    {
+      ""token"": ""Trump"",
+      ""typos"": [""Trum"", ""Trmp"", ""Trumpp""]
+    },
+    {
+      ""token"": ""died"",
+      ""typos"": [""deid"", ""diad"", ""ded""]
+    },
+    {
+      ""token"": ""Armed"",
+      ""typos"": [""Armd"", ""Arm'd"", ""Armedd""]
+    }
+  ]
+}"
+tweet-sno-1358,"See all these pickup trucks with Trump flags? They were sitting along I-35, waiting to ambush the Biden/Harris campaign bus as it traveled from San Antonio to Austin. 2/","Armed supporters of U.S. President Donald Trump harassed a Biden-Harris campaign bus in Texas, leading to the cancellation of three campaign events and a news conference.","[""Antonio"", ""Austin"", ""along""]","[""Antonio"", ""pickup"", ""traveled"", ""They"", ""Harris"", ""Biden"", ""sitting"", ""campaign"", ""Austin""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Antonio"",
+      ""typos"": [""Ant0nio"", ""Antinio"", ""Antonioo"", ""Anton!o"", ""An-0-nio"", ""Antnio"", ""Antnio""]
+    },
+    {
+      ""token"": ""Austin"",
+      ""typos"": [""Aust1n"", ""Ostin"", ""Austn"", ""Austyn"", ""Autin"", ""Austwn"", ""Awstin""]
+    },
+    {
+      ""token"": ""along"",
+      ""typos"": [""alng"", ""a1ong"", ""al0ng"", ""alogn"", ""alng"", ""alngg"", ""al0ng""]
+    }
+  ]
+}"
+tweet-sno-1359,"These Trump supporters, many of whom were armed, surrounded the bus on the interstate and attempted to drive it off the road. They outnumbered police 50-1, and they ended up hitting a staffer’s car. 3/","Armed supporters of U.S. President Donald Trump harassed a Biden-Harris campaign bus in Texas, leading to the cancellation of three campaign events and a news conference.","[""armed"", ""interstate"", ""many""]","[""These"", ""hitting"", ""road"", ""attempted"", ""police"", ""supporters"", ""ended"", ""interstate"", ""many""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""armed"",
+      ""typos"": [""armd"", ""ar-med"", ""arm'd"", ""amred"", ""aarmed"", ""armee'd"", ""ar' med"", ""a-rmed"", ""armed.""]
+    },
+    {
+      ""token"": ""interstate"",
+      ""typos"": [""intrstate"", ""inter-st8"", ""intersate"", ""intrst8"", ""interstatee"", ""interstat"", ""int-erstate"", ""interstae"", ""int3rstate""]
+    },
+    {
+      ""token"": ""many"",
+      ""typos"": [""mny"", ""maany"", ""manny"", ""man-y"", ""mny."", ""m4ny"", ""mnay"", ""m@ny"", ""ma'ny""]
+    }
+  ]
+}"
+tweet-sno-1360,"As the Biden bus rolled down 11th street toward I-35, Trump supporters scrambled to their trucks to follow it. ","Armed supporters of U.S. President Donald Trump harassed a Biden-Harris campaign bus in Texas, leading to the cancellation of three campaign events and a news conference.","[""11th"", ""rolled""]","[""supporters"", ""follow"", ""scrambled"", ""toward"", ""down"", ""their""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""11th"",
+      ""typos"": [""11th"", ""11th"", ""11th"", ""11th"", ""11th"", ""11th"", ""11th"", ""11th"", ""11th"", ""11th""]
+    },
+    {
+      ""token"": ""rolled"",
+      ""typos"": [""rolle"", ""roled"", ""rolledd"", ""rolld"", ""rollde"", ""roledd"", ""rooled"", ""rolldd"", ""rilled"", ""rollled""]
+    }
+  ]
+}"
+tweet-sno-1361,These people should be arrested for plotting to kill Biden by running him off the road. This is a violent right wing mob with weapons chasing Biden.,"Armed supporters of U.S. President Donald Trump harassed a Biden-Harris campaign bus in Texas, leading to the cancellation of three campaign events and a news conference.","[""running"", ""These"", ""chasing""]","[""Biden"", ""running"", ""right"", ""should"", ""violent"", ""kill"", ""plotting"", ""with""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""These"",
+      ""typos"": [""Theze"", ""Thes"", ""Thesee"", ""Deese"", ""Teese"", ""Thez"", ""Tse"", ""Thes""]
+    },
+    {
+      ""token"": ""running"",
+      ""typos"": [""runing"", ""runnin"", ""runinng"", ""runng"", ""runniing"", ""runin"", ""runni"", ""runnnig""]
+    },
+    {
+      ""token"": ""chasing"",
+      ""typos"": [""chasin"", ""chasng"", ""chasingg"", ""chasng"", ""chasig"", ""chassng"", ""chsng"", ""chasinng""]
+    }
+  ]
+}"
+tweet-sno-1362,"The legendary actor, 007 Sean Connery, has past on to even greener fairways. He was quite a guy, and a tough character. I was having a very hard time getting approvals for a big development in Scotland when Sean stepped in and shouted,“Let him build the damn thing”. That was….",Actor Sean Connery was instrumental in helping Donald Trump secure approval for a controversial golf course development in Scotland.,"[""even"", ""greener"", ""past"", ""time"", ""Connery""]","[""character"", ""fairways"", ""very"", ""tough"", ""damn"", ""quite"", ""Sean"", ""past"", ""hard"", ""actor"", ""Sean"", ""development"", ""stepped""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""even"",
+      ""typos"": [""evn"", ""evan"", ""een"", ""eveh"", ""eben"", ""evon"", ""evan'"", ""evven"", ""evan'"", ""evan"", ""evn'""]
+    },
+    {
+      ""token"": ""greener"",
+      ""typos"": [""greener"", ""greanr"", ""greenr"", ""grenr"", ""greenee"", ""greener"", ""greanrr"", ""geener"", ""grner"", ""greener"", ""grener""]
+    },
+    {
+      ""token"": ""past"",
+      ""typos"": [""pasd"", ""pastt"", ""psat"", ""pat"", ""pasdt"", ""paaast"", ""patst"", ""pazt"", ""pawst"", ""patz"", ""pazst""]
+    },
+    {
+      ""token"": ""time"",
+      ""typos"": [""timee"", ""timr"", ""tim"", ""tiem"", ""time-"", ""tme"", ""timem"", ""time."", ""timw"", ""t1me"", ""tnime""]
+    },
+    {
+      ""token"": ""Connery"",
+      ""typos"": [""Connerey"", ""Conery"", ""Conneri"", ""Connry"", ""Conery"", ""Conerey"", ""Conneree"", ""Conry"", ""Conerry"", ""Coneryy"", ""Conneree""]
+    }
+  ]
+}"
+tweet-sno-1363, please tell me why you are sold out of the Mexican Pizza at All locations?,"Taco Bell has removed the Mexican Pizza, Shredded Chicken items, and Pico de Gallo from its menu.","[""locations""]","[""please"", ""Pizza"", ""Mexican""]","{
+
+""typo_tokens"": [
+
+{
+
+""token"": ""locations"",
+
+""typos"": [""locashuns"", ""locatons"", ""loctions"", ""locayshuns"", ""lokations"", ""locasionz"", ""locati0ns"", ""locatzones"", ""loaction"", ""loc8ions""]
+
+}
+
+]
+
+}"
+tweet-sno-1364, why are you taking away the Mexican pizza??? 😭😭 #bringbackthemexicanpizza,"Taco Bell has removed the Mexican Pizza, Shredded Chicken items, and Pico de Gallo from its menu.","[""bringbackthemexicanpizza""]","[""taking"", ""bringbackthemexicanpizza""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""bringbackthemexicanpizza"",
+      ""typos"": [
+        ""bringbakthemexicanpizza"",
+        ""brngbackthemexicanpizza"",
+        ""bringbakthemxcanpizza"",
+        ""bringbackthmexcnpizza"",
+        ""bringbakthmxcnapizza"",
+        ""bringbakthemexcnpizza"",
+        ""bringbackthemexcanpiza"",
+        ""bringbackthemexicanpiza"",
+        ""brngbakthemexicanpizza"",
+        ""bringbakthmxcanpizza""
+      ]
+    }
+  ]
+}"
+tweet-sno-1365, Is the Mexican Pizza gone? Please say it ain’t so 😩 #savethemexicanpizza,"Taco Bell has removed the Mexican Pizza, Shredded Chicken items, and Pico de Gallo from its menu.","[""Pizza""]","[""Mexican"", ""gone"", ""savethemexicanpizza""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Pizza"",
+      ""typos"": [""Piza"", ""Pzza"", ""Pizaa"", ""Pizzzza"", ""Pizzza""]
+    }
+  ]
+}"
+tweet-sno-1366,Is taco bell still selling the mexican pizza?,"Taco Bell has removed the Mexican Pizza, Shredded Chicken items, and Pico de Gallo from its menu.","[""mexican""]","[""mexican"", ""taco"", ""pizza""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""mexican"",
+      ""typos"": [""mexian"", ""mexikn"", ""meixcan"", ""mexcn"", ""mexian"", ""mexicn"", ""mexkian"", ""mexicand"", ""mexicann"", ""meexican""]
+    }
+  ]
+}"
+tweet-sno-1367,TheMexican Pizza is already gone?!?,"Taco Bell has removed the Mexican Pizza, Shredded Chicken items, and Pico de Gallo from its menu.",[],"[""already"", ""TheMexican""]","{
+  ""typo_tokens"": []
+}"
+tweet-sno-1368,idk how much more i can take… cheesecake factory closing its doors and tb ousting the mexican pizza.,The Cheesecake Factory is closing all of its restaurants for good.,"[""much"", ""closing""]","[""take"", ""doors"", ""mexican"", ""pizza"", ""much""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""much"",
+      ""typos"": [""mch"", ""muhc"", ""mush"", ""muh"", ""mucj"", ""muchh"", ""muc"", ""muuch"", ""mucch""]
+    },
+    {
+      ""token"": ""closing"",
+      ""typos"": [""clozing"", ""cl0sing"", ""closng"", ""clsong"", ""cl0zing"", ""closin"", ""cl0sin"", ""closen"", ""clsing""]
+    }
+  ]
+}"
+tweet-sno-1369,I thought 2020 was bad but now they’re closing all of the cheesecake factory’s and that really put the icing on the cake. I’m done. I’m sad.,The Cheesecake Factory is closing all of its restaurants for good.,"[""cheesecake"", ""done""]","[""2020"", ""cake"", ""factory\u2019s"", ""thought"", ""closing""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""cheesecake"",
+      ""typos"": [""cheezcake"", ""cheesekake"", ""chesecake"", ""chzcake"", ""chezkake"", ""chzck"", ""cheeskake"", ""cheezeck"", ""cheezkeik"", ""cheskake""]
+    },
+    {
+      ""token"": ""done"",
+      ""typos"": [""dun"", ""dunno"", ""dne"", ""dunn"", ""don"", ""dn"", ""doone"", ""d1"", ""dun."", ""donne""]
+    }
+  ]
+}"
+tweet-sno-1370,Just read that the “Cheesecake Factory” is closing permanently. Every business that has had to close down can contribute it to Trump and the GOP. They have had basically no support or stimulus from these stingy bastards because they don’t care.,The Cheesecake Factory is closing all of its restaurants for good.,"[""They"", ""Trump"", ""don\u2019t"", ""read"", ""these""]","[""they"", ""these"", ""stimulus"", ""support"", ""business"", ""from"", ""don\u2019t"", ""Factory"", ""have"", ""that"", ""closing"", ""They"", ""that""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""They"",
+      ""typos"": [""Thay"", ""Thee"", ""Dey"", ""Thy""]
+    },
+    {
+      ""token"": ""Trump"",
+      ""typos"": [""Trmp"", ""Drump"", ""Thrump"", ""Truump""]
+    },
+    {
+      ""token"": ""don’t"",
+      ""typos"": [""dont"", ""dn't"", ""do'nt"", ""dnt""]
+    },
+    {
+      ""token"": ""read"",
+      ""typos"": [""reed"", ""red"", ""r3ad"", ""re4d""]
+    },
+    {
+      ""token"": ""these"",
+      ""typos"": [""thes"", ""thees"", ""thize"", ""th3se""]
+    }
+  ]
+}"
+tweet-sno-1371,Cheesecake factory is closing for good.,The Cheesecake Factory is closing all of its restaurants for good.,[],"[""Cheesecake"", ""closing""]","{
+""typo_tokens"": [
+    {
+        ""token"": ""Cheesecake"",
+        ""typos"": [""Cheezcake"", ""Cheesekake"", ""Cheesecak"", ""Cheeskake"", ""Chesecake"", ""Cheesecake"", ""Cheescake"", ""Chesekake"", ""Cheseecake"", ""Cheasecake""]
+    },
+    {
+        ""token"": ""factory"",
+        ""typos"": [""factry"", ""faktory"", ""facktory"", ""factorie"", ""factoree"", ""facktoree"", ""faktoree"", ""factoree"", ""faktory"", ""factoree""]
+    },
+    {
+        ""token"": ""closing"",
+        ""typos"": [""closin"", ""clozing"", ""closeing"", ""clozing"", ""closin"", ""clozin"", ""closin"", ""closeing"", ""clozzinh"", ""closin""]
+    },
+    {
+        ""token"": ""for"",
+        ""typos"": [""4"", ""four"", ""fer"", ""foor"", ""forr"", ""fer"", ""4"", ""foor"", ""fer"", ""4""]
+    },
+    {
+        ""token"": ""good"",
+        ""typos"": [""gud"", ""gud"", ""goood"", ""goood"", ""g00d"", ""gud"", ""guud"", ""gud"", ""gud"", ""gud""]
+    }
+]
+}"
+tweet-sno-1372,wow they are closing the cheesecake factory down for good.,The Cheesecake Factory is closing all of its restaurants for good.,"[""factory""]","[""cheesecake"", ""they"", ""down""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""factory"",
+      ""typos"": [""factry"", ""factori"", ""factury"", ""faktory"", ""faktori"", ""factoree"", ""factori"", ""factarie"", ""factoree"", ""factoryy""]
+    }
+  ]
+}"
+tweet-sno-1373,can’t believe the cheesecake factory closing 😢,The Cheesecake Factory is closing all of its restaurants for good.,"[""believe""]","[""factory"", ""believe""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""believe"",
+      ""typos"": [""believ"", ""beleive"", ""belive"", ""b3lieve"", ""beli3ve"", ""blieve"", ""believee"", ""believez"", ""believe.""]
+    }
+  ]
+}"
+tweet-sno-1374,The Cheesecake Factory is closing all of their restaurants for good. _LQ I thought you should know this lol,The Cheesecake Factory is closing all of its restaurants for good.,"[""know"", ""good""]","[""good"", ""their"", ""closing"", ""Cheesecake"", ""restaurants""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""know"",
+      ""typos"": [""kno"", ""knw"", ""no"", ""kn0w"", ""n0w""]
+    },
+    {
+      ""token"": ""good"",
+      ""typos"": [""god"", ""gud"", ""goood"", ""g00d"", ""gud""]
+    }
+  ]
+}"
+tweet-sno-1375,Not Cheesecake Factory closing for good ☹️,The Cheesecake Factory is closing all of its restaurants for good.,[],"[""good"", ""closing""]","{
+""typo_tokens"": []
+}"
+tweet-sno-1376,"Per your tweet, you deleted the congratulatory Amy Coney Barrett tweet because it was ""viewed as a political and partisan"" and theis ""nonpolitical"" but this tweet tohasn't been deleted. 🤔 #progressiveprivilege","A now-deleted tweet was shared by the Girl Scouts of the United States of America on Oct. 28, 2020, congratulating Barrett on “becoming the fifth woman appointed to the Supreme Court since its inception in 1789.”","[""your"", ""deleted"", ""theis""]","[""deleted"", ""Barrett"", ""viewed"", ""congratulatory"", ""political"", ""been"", ""tweet"", ""your"", ""tweet""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""your"",
+      ""typos"": [""ur"", ""yr"", ""yours""]
+    },
+    {
+      ""token"": ""deleted"",
+      ""typos"": [""deletd"", ""deltd"", ""deleeted""]
+    },
+    {
+      ""token"": ""theis"",
+      ""typos"": [""this"", ""thes"", ""thet""]
+    }
+  ]
+}"
+tweet-sno-1377,"The whole “she wore clothes in a magazine, let’s pretend they’re hers” gimmick is the classic Republican strategy of “let’s willfully act stupid, and if the public doesn’t take our performative stupidity seriously then we’ll claim bias.” GOP, get yourselves together. It’s sad.","U.S. Rep. Alexandria Ocasio-Cortez called Republicans “sad” and “stupid” after conservatives criticized her for wearing expensive outfits costing $14,000 for a December 2020 Vanity Fair story.","[""we\u2019ll"", ""clothes"", ""they\u2019re"", ""then"", ""claim""]","[""classic"", ""they\u2019re"", ""performative"", ""clothes"", ""let\u2019s"", ""bias"", ""then"", ""stupidity"", ""willfully"", ""claim"", ""seriously"", ""It\u2019s"", ""yourselves"", ""pretend""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""we’ll"",
+      ""typos"": [""wel"", ""we'll"", ""we wil"", ""wl"", ""wil""]
+    },
+    {
+      ""token"": ""clothes"",
+      ""typos"": [""clthes"", ""cloths"", ""cloz"", ""clotes"", ""cloze""]
+    },
+    {
+      ""token"": ""they’re"",
+      ""typos"": [""thre"", ""theyre"", ""thay'r"", ""they'r"", ""ther""]
+    },
+    {
+      ""token"": ""then"",
+      ""typos"": [""thn"", ""thn"", ""tn"", ""tenn"", ""thenn""]
+    },
+    {
+      ""token"": ""claim"",
+      ""typos"": [""clam"", ""cla"", ""calm"", ""cliam"", ""claime""]
+    }
+  ]
+}"
+tweet-sno-1378,Trump is calling for the assassination of his political opponent.,"In a speech on Oct. 27, 2020, U.S. President Donald Trump called for the assassination of Joe Biden.","[""political""]","[""opponent"", ""assassination""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""political"",
+      ""typos"": [""polical"", ""poltikcal"", ""polytikal"", ""politicl"", ""poltical"", ""polittical"", ""poltikal"", ""poitical"", ""polticcal""]
+    }
+  ]
+}"
+tweet-sno-1379,Joe Biden brags about having “the most extensive and inclusive voter fraud organization in the history of American politics”,"In October 2020, Joe Biden admitted to perpetrating voter fraud.","[""about"", ""having""]","[""American"", ""most"", ""brags"", ""politics"", ""about"", ""organization""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""about"",
+      ""typos"": [""abt"", ""abot"", ""abou"", ""ab0ut"", ""ab0ut"", ""aubot"", ""abouut"", ""abotu"", ""tabout""]
+    },
+    {
+      ""token"": ""having"",
+      ""typos"": [""havin"", ""havng"", ""hav1ng"", ""havingg"", ""havving"", ""havnig"", ""havign"", ""h@ving"", ""havig""]
+    }
+  ]
+}"
+tweet-sno-1380,"We are not prepared for a pandemic. Trump has rolled back progress President Obama and I made to strengthen global health security. We need leadership that builds public trust, focuses on real threats, and mobilizes the world to stop outbreaks before they reach our shores.","Joe Biden tweeted several weeks before the COVID-19 outbreak began that ""We are not prepared for a pandemic.""","[""health"", ""security"", ""progress"", ""before"", ""made"", ""builds""]","[""before"", ""public"", ""need"", ""strengthen"", ""shores"", ""rolled"", ""threats"", ""trust"", ""real"", ""they"", ""outbreaks"", ""President"", ""pandemic"", ""world"", ""progress""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""health"",
+      ""typos"": [""helth"", ""heath"", ""halth""]
+    },
+    {
+      ""token"": ""security"",
+      ""typos"": [""securrity"", ""securty"", ""secuirty""]
+    },
+    {
+      ""token"": ""progress"",
+      ""typos"": [""progres"", ""progess"", ""progrss""]
+    },
+    {
+      ""token"": ""before"",
+      ""typos"": [""befor"", ""b4"", ""befre""]
+    },
+    {
+      ""token"": ""made"",
+      ""typos"": [""mde"", ""mad"", ""mdae""]
+    },
+    {
+      ""token"": ""builds"",
+      ""typos"": [""bilds"", ""buids"", ""biulds""]
+    }
+  ]
+}"
+tweet-sno-1381,"As recently as last month, Webster’s Dictionary included a definition of “preference” as “orientation” or “sexual preference.” TODAY they changed it and added the word “offensive."" Insane – I just checked through Wayback Machine and it’s real. (via&)","Merriam-Webster updated its definition and usage guidelines of the term ""sexual preference"" to say its use is ""offensive"" after the Oct. 13, 2020, confirmation hearing of Judge Amy Coney Barrett, U.S. President Donald Trump’s pick for the Supreme Court.","[""Insane"", ""via&"", ""checked"", ""it\u2019s"", ""Dictionary""]","[""word"", ""Dictionary"", ""Wayback"", ""orientation"", ""Webster\u2019s"", ""month"", ""offensive"", ""Machine"", ""just"", ""TODAY"", ""through"", ""recently"", ""checked""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Insane"",
+      ""typos"": [""Insne"", ""Insaen"", ""Insn"", ""Insnae"", ""Insaneee"", ""Insne."", ""Insene"", ""Insan"", ""Insan3""]
+    },
+    {
+      ""token"": ""via&"",
+      ""typos"": [""vi@"", ""v!a&"", ""viaa&"", ""v1a&"", ""v1@"", ""via&."", ""viaa@"", ""v!a@"", ""vi@&""]
+    },
+    {
+      ""token"": ""checked"",
+      ""typos"": [""cheked"", ""chekced"", ""chcked"", ""checkd"", ""chekedd"", ""chekedd."", ""chcked."", ""checkedd"", ""cheked.""]
+    },
+    {
+      ""token"": ""it’s"",
+      ""typos"": [""its"", ""itz"", ""it s"", ""its'"", ""its."", ""itz."", ""it’s."", ""it'z"", ""it'z.""]
+    },
+    {
+      ""token"": ""Dictionary"",
+      ""typos"": [""Dictnary"", ""Dictinary"", ""Dictionry"", ""Dictonary"", ""Dictionarry"", ""Dictionery"", ""Dictionari"", ""Dicitonary"", ""Dictinari.""]
+    }
+  ]
+}"
+tweet-sno-1382,"Well where was the dignity and respect of Black Americans or in your words""Niggers"" when you made this statement? Democrats this is YOUR nominee for President of the United States andendorsed this scoundrel! Explain this please!",Joe Biden used racial slurs in referring to Black people during a Senate committee hearing in 1985.,"[""YOUR"", ""Explain"", ""when"", ""President"", ""where""]","[""Americans"", ""this"", ""where"", ""Niggers"", ""Black"", ""YOUR"", ""your"", ""this"", ""nominee"", ""Explain"", ""when"", ""andendorsed"", ""please""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""YOUR"",
+      ""typos"": [""UR"", ""YOURE"", ""YR"", ""YOR"", ""UR'S"", ""U'R"", ""YA'LLS"", ""YOURS""]
+    },
+    {
+      ""token"": ""Explain"",
+      ""typos"": [""Xplain"", ""Expain"", ""Explan"", ""Expln"", ""Expalin"", ""Explen"", ""Xsplain"", ""Explan""]
+    },
+    {
+      ""token"": ""when"",
+      ""typos"": [""wen"", ""whn"", ""whehn"", ""whem"", ""wein"", ""whan"", ""whern"", ""wne""]
+    },
+    {
+      ""token"": ""President"",
+      ""typos"": [""Pres',nt"", ""Preisdent"", ""PRes'dent"", ""Pres'dent"", ""Prez"", ""Presdent"", ""Presiden"", ""Prsdent""]
+    },
+    {
+      ""token"": ""where"",
+      ""typos"": [""wher"", ""wheer"", ""wheere"", ""wehr"", ""wer"", ""wher'e"", ""wherre"", ""wher'""]
+    }
+  ]
+}"
+tweet-sno-1383,Uhhhhh look at this picture of Mitch McConnell's hands thatfound on AP,An AP-distributed photograph shows Senate Majority Leader Mitch McConnell's hands looking bruised and discolored.,"[""Uhhhhh""]","[""picture"", ""Uhhhhh"", ""thatfound"", ""look""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Uhhhhh"",
+      ""typos"": [""Uh"", ""Uhm"", ""Uhh"", ""Uhhh"", ""Uhhhh"", ""Uhmmm"", ""Uhhmm"", ""Uuhhhh"", ""Uhhhhm"", ""Uhhhhhm""]
+    }
+  ]
+}"
+tweet-sno-1384,A nurse who has gained national attention for her service was arrested for shooting someone. The latest on this wild story:,"Amy Thorn, a West Virginia nurse who spoke at the Republican National Convention in August 2020, was charged with shooting a woman in the stomach in October 2020.","[""someone"", ""gained""]","[""this"", ""story"", ""arrested"", ""latest"", ""service"", ""someone""]","{
+    ""typo_tokens"": [
+        {
+            ""token"": ""someone"",
+            ""typos"": [""someone"", ""soneone"", ""some1"", ""sumone"", ""somone"", ""som1"", ""smeone"", ""someoine"", ""someonne""]
+        },
+        {
+            ""token"": ""gained"",
+            ""typos"": [""gained"", ""gaines"", ""gianed"", ""gaind"", ""ganeed"", ""gaained"", ""gned"", ""gainedd"", ""ganed""]
+        }
+    ]
+}"
+tweet-sno-1385,"Joe Biden surrogate Jane Fonda calls coronavirus ""God's gift to the Left.""","In October 2020, actress Jane Fonda said the COVID-19 coronavirus pandemic was ""God's gift to the Left.""","[""calls""]","[""calls"", ""Left"", ""Jane"", ""Fonda""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""calls"",
+      ""typos"": [""callz"", ""callz"", ""cals"", ""kalls"", ""calls"", ""clls"", ""calz"", ""call's"", ""c@lls""]
+    }
+  ]
+}"
+tweet-sno-1386,Joe Biden and Kamala Harris BOTH want to BAN FRACKING.,"In the 2020 presidential election, Democratic candidate Joe Biden's policy on fracking was to ban it outright.","[""Biden""]","[""Biden"", ""Kamala"", ""want""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Biden"",
+      ""typos"": [""Biden"", ""B1den"", ""Bid3n"", ""B!den"", ""Biiden"", ""Bide"", ""B!d3n"", ""Bid3"", ""Bden"", ""B1d3n""]
+    }
+  ]
+}"
+tweet-sno-1387,"10/13/60: ""Unlike the first two programs, however, the two candidates will not be sharing same platform. In New York…John F. Kennedy separated by 3,000 miles in a Los Angeles studio…Richard Nixon. Now joined for tonight's discussion by network of electronic facilities…""",U.S. presidential candidates John F. Kennedy and Richard Nixon participated in a virtual debate in 1960.,"[""facilities"", ""platform"", ""however"", ""10/13/60"", ""will""]","[""candidates"", ""separated"", ""10/13/60"", ""John"", ""discussion"", ""Unlike"", ""electronic"", ""miles"", ""programs"", ""will"", ""however"", ""Angeles"", ""first""]","{
+""typo_tokens"": [
+    {
+        ""token"": ""facilities"",
+        ""typos"": [""facilites"", ""facilitiees"", ""facilitiez"", ""facilites"", ""facilities"", ""facilitiez"", ""facilitis"", ""facilitees"", ""faciliteez""]
+    },
+    {
+        ""token"": ""platform"",
+        ""typos"": [""platfrm"", ""platfom"", ""pltfm"", ""platfrm"", ""platfom"", ""pltfm"", ""plattform"", ""platfrom"", ""pltfom""]
+    },
+    {
+        ""token"": ""however"",
+        ""typos"": [""howevr"", ""howvr"", ""howver"", ""howevr"", ""howvr"", ""howver"", ""howeever"", ""howefer"", ""howevir""]
+    },
+    {
+        ""token"": ""10/13/60"",
+        ""typos"": [""10/13/1960"", ""10-13-60"", ""10.13.60"", ""10\\13\\60"", ""10-13-60"", ""10.13.60"", ""X/13/60"", ""10/1/60"", ""10-13-1960""]
+    },
+    {
+        ""token"": ""will"",
+        ""typos"": [""wll"", ""wiill"", ""wil"", ""wll"", ""wiill"", ""wil"", ""wil"", ""wll"", ""wil""]
+    }
+]
+}"
+tweet-sno-1388,"The Rules: ""You will keep your mask on."" Meanwhile, Karen Pence:",U.S. second lady Karen Pence did not wear a mask during the vice presidential debate in October 2020.,"[""will""]","[""mask"", ""Rules"", ""Pence"", ""keep""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""will"",
+      ""typos"": [""wil"", ""willl"", ""wlil"", ""w1ll"", ""wiil"", ""will."", ""w1l"", ""wll"", ""wii"", ""wi1l""]
+    }
+  ]
+}"
+tweet-sno-1389,A Trump sign was erected on the hillside along the 405 Freeway near the Sepulveda Pass. It’s unclear who put it there 📹: Sky5,"A large ""TRUMP"" sign, similar to the iconic Hollywood sign, was erected near Los Angeles in October 2020.","[""there"", ""Pass""]","[""erected"", ""It\u2019s"", ""Trump"", ""Freeway"", ""Sky5"", ""unclear""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""there"",
+      ""typos"": [""their"", ""ther"", ""therr"", ""they're""]
+    },
+    {
+      ""token"": ""Pass"",
+      ""typos"": [""Pas"", ""Paz"", ""P@s"", ""Pa$$""]
+    }
+  ]
+}"
+tweet-sno-1390,"This is the Democrat nominee for VP instigating violent riots that have left multiple Americans dead: ""Everyone beware. They're not gonna stop before election day in November, and they're not gonna stop after election day… They’re not gonna let up and they should not.""","In a June 2020 interview, U.S. Democratic vice presidential candidate Kamala Harris said of the nationwide anti-police brutality protests: “Everyone beware. They're not gonna stop before election day in November, and they're not gonna stop after election day ... They’re not gonna let up, and they should not.”","[""dead"", ""This"", ""have"", ""Everyone"", ""beware""]","[""riots"", ""that"", ""November"", ""left"", ""Americans"", ""stop"", ""have"", ""gonna"", ""gonna"", ""dead"", ""This"", ""They're"", ""beware"", ""stop""]","{
+""typo_tokens"": [
+    {
+        ""token"": ""dead"",
+        ""typos"": [""ded"", ""deadd"", ""d3ad""]
+    },
+    {
+        ""token"": ""This"",
+        ""typos"": [""Dis"", ""Ths"", ""Tis""]
+    },
+    {
+        ""token"": ""have"",
+        ""typos"": [""hve"", ""hav"", ""haave""]
+    },
+    {
+        ""token"": ""Everyone"",
+        ""typos"": [""Evryone"", ""Evry1"", ""Every1""]
+    },
+    {
+        ""token"": ""beware"",
+        ""typos"": [""bware"", ""bewar"", ""bwaree""]
+    }
+]
+}"
+tweet-sno-1391,"Joe Biden called Trump supporters the ""dregs of society."" The idea that Biden is a unifier is a joke.","In a September 2018 speech, Joe Biden called Donald Trump's supporters ""the dregs of society.""","[""society"", ""unifier""]","[""joke"", ""unifier"", ""Trump"", ""called"", ""society""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""society"",
+      ""typos"": [""soceity"", ""socety"", ""societe"", ""socity"", ""socieity"", ""socyety"", ""socieety"", ""societe"", ""socity""]
+    },
+    {
+      ""token"": ""unifier"",
+      ""typos"": [""unifer"", ""unifir"", ""unifire"", ""unifir"", ""unifeir"", ""unifior"", ""uniffier"", ""unafier"", ""unifyer""]
+    }
+  ]
+}"
+tweet-sno-1392,Biden: ‘I Was Able to Stay Sequestered’ Thanks to ‘Some Black Woman’ Who Stocked Grocery Shelves,"U.S. Democratic presidential candidate Joe Biden said that Americans were able to stay home during the COVID-19 pandemic because ""some Black woman was able to stack the grocery shelf.""","[""Grocery"", ""Able""]","[""Thanks"", ""Black"", ""Grocery"", ""Stocked"", ""Some""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""Grocery"",
+      ""typos"": [""Grossery"", ""Grosery"", ""Grocry"", ""Grochery"", ""Groshery"", ""Grosery"", ""Grocerry"", ""Grocary"", ""Groshey""]
+    },
+    {
+      ""token"": ""Able"",
+      ""typos"": [""Abel"", ""Abl"", ""Ablee"", ""Abble"", ""Abel"", ""Aple"", ""Abl"", ""Abble""]
+    }
+  ]
+}"
+tweet-sno-1393,"Was Andy McCabe ever forced to pay back the $700,000 illegally given to him and his wife, for his wife’s political campaign, by Crooked Hillary Clinton while Hillary was under FBI investigation, and McCabe was the head of the FBI??? Just askin’?","Hillary Clinton illegally donated $700,000 to the political campaign of the wife of the FBI director who was supervising the investigation into her use of a private email server.","[""campaign"", ""political"", ""Just"", ""under""]","[""political"", ""Clinton"", ""while"", ""Just"", ""back"", ""under"", ""forced"", ""head"", ""Crooked"", ""Hillary"", ""wife""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""campaign"",
+      ""typos"": [""campain"", ""campgn"", ""cmpaign"", ""cmpgn"", ""cmpain"", ""campan"", ""campgn"", ""campgn"", ""campain"", ""cmpaign""]
+    },
+    {
+      ""token"": ""political"",
+      ""typos"": [""poltical"", ""politicl"", ""politcal"", ""politicl"", ""polticl"", ""plolitical"", ""politicial"", ""politcal"", ""poltical"", ""plolitical""]
+    },
+    {
+      ""token"": ""Just"",
+      ""typos"": [""Jst"", ""Jus"", ""Jst"", ""Juzt"", ""Juzz"", ""JlJust"", ""Juzt"", ""Juss"", ""Juzz"", ""Jst""]
+    },
+    {
+      ""token"": ""under"",
+      ""typos"": [""undr"", ""undr"", ""udner"", ""uder"", ""undr"", ""unnder"", ""udner"", ""unnder"", ""udr"", ""udr""]
+    }
+  ]
+}"
+tweet-sno-1394,"I wonder if the BTS and TikTok kids can help LGBTs with this. What if gay guys took pictures of themselves making out with each other or doing very gay things, then tagged themselves with #ProudBoys . I bet it would mess them up real bad. #ReclaimingMyShine",Gay men reclaimed the hashtag #ProudBoys from the white supremacist organization of the same name in order to celebrate LBGTQ love.,"[""help"", ""What"", ""with"", ""this"", ""ReclaimingMyShine""]","[""doing"", ""with"", ""ProudBoys"", ""each"", ""wonder"", ""LGBTs"", ""would"", ""What"", ""kids"", ""this"", ""ReclaimingMyShine"", ""tagged"", ""pictures"", ""very""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""help"",
+      ""typos"": [""halp"", ""hepl"", ""hlp"", ""help""]
+    },
+    {
+      ""token"": ""What"",
+      ""typos"": [""Wut"", ""Wat"", ""Whut"", ""Wht""]
+    },
+    {
+      ""token"": ""with"",
+      ""typos"": [""wit"", ""wth"", ""wid"", ""wif""]
+    },
+    {
+      ""token"": ""this"",
+      ""typos"": [""dis"", ""tis"", ""ths"", ""thiz""]
+    },
+    {
+      ""token"": ""ReclaimingMyShine"",
+      ""typos"": [""ReclamingMyShine"", ""ReclaimingMyShin"", ""ReclaimingMaShine"", ""ReclaimngMyShine""]
+    }
+  ]
+}"
+tweet-sno-1395,".and I are joining thousands of gay men on social media to reclaim #ProudBoys from white supremacists and bigoted neo-nazis. Let’s replace the hashtag with images of love, positivity, and true PRIDE! Your two favorite #ProudBoys are here standing by, ready to VOTE! 🏳️‍🌈🗳",Gay men reclaimed the hashtag #ProudBoys from the white supremacist organization of the same name in order to celebrate LBGTQ love.,"[""favorite"", ""joining"", ""\ud83c\udff3\ufe0f\u200d\ud83c\udf08"", ""bigoted"", ""ProudBoys""]","[""ProudBoys"", ""thousands"", ""here"", ""hashtag"", ""standing"", ""neo-nazis"", ""love"", ""social"", ""joining"", ""with"", ""supremacists"", ""VOTE"", ""\ud83c\udff3\ufe0f\u200d\ud83c\udf08"", ""bigoted""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""favorite"",
+      ""typos"": [""fav"", ""favourite"", ""favrite"", ""favort"", ""faverit"", ""favortie"", ""fave"", ""favirte"", ""favirit"", ""favrt"", ""favortt"", ""favotrite""]
+    },
+    {
+      ""token"": ""joining"",
+      ""typos"": [""joinng"", ""joing"", ""joiining"", ""joinin"", ""joinnig"", ""joingn"", ""joinning"", ""joingin"", ""joiing"", ""johnng"", ""johning"", ""joinig""]
+    },
+    {
+      ""token"": ""🏳️\t🌈"",
+      ""typos"": [""🏳️‍"", ""🌈"", ""🏳️🗳"", ""🏳️👍"", ""🌈🔥"", ""🏳️‍💥"", ""🌈❤️"", ""🏳️‍🎉"", ""🌈✨"", ""🏳️‍🎈"", ""🌈🎊"", ""🏳️‍🌹""]
+    },
+    {
+      ""token"": ""bigoted"",
+      ""typos"": [""biggted"", ""bigotd"", ""biogted"", ""bigotdd"", ""bigooted"", ""biggeoted"", ""bigottted"", ""bigoteted"", ""bioted"", ""bigtted"", ""bigtoed"", ""bigotted""]
+    },
+    {
+      ""token"": ""ProudBoys"",
+      ""typos"": [""Pr0udBoys"", ""ProudBoiz"", ""ProudBoyz"", ""ProudBois"", ""ProudB0ys"", ""ProudBoys1"", ""ProudBo1s"", ""ProudBoyss"", ""ProwdBoys"", ""ProodBoys"", ""ProudBoys!"", ""ProudB0ysz""]
+    }
+  ]
+}"
+tweet-sno-1396,"Wow! Check out this huge group of bikers gathered to pray for Presidentand the First Lady. The country is behind you, Mr. President! 🇺🇸",A video shows a group of bikers praying for U.S. President Donald Trump at Walter Reed National Military Medical Center.,"[""bikers"", ""President""]","[""huge"", ""Check"", ""gathered"", ""President"", ""Presidentand"", ""this""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""bikers"",
+      ""typos"": [""bikrs"", ""bykers"", ""bikrs"", ""bikr$"", ""bikerz"", ""bickrs"", ""bykrs"", ""bike_rs"", ""bik3rs""]
+    },
+    {
+      ""token"": ""President"",
+      ""typos"": [""Prezident"", ""Presdnt"", ""Prsident"", ""Prez"", ""Presi-dent"", ""Pre$ident"", ""Prezz"", ""Presdt"", ""Prezdnt""]
+    }
+  ]
+}"
+tweet-sno-1397,That “donate to help him recover” email that’s been going around looks fake to me.,The Trump campaign sent out a fundraiser email asking supporters to raise $421 million to help the president recover from COVID-19.,"[""email"", ""looks""]","[""recover"", ""fake"", ""been"", ""looks"", ""That""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""email"",
+      ""typos"": [""emial"", ""e-mail"", ""emailz"", ""emaill"", ""eamil"", ""eml"", ""mial"", ""email."", ""em@il"", ""eml.""]
+    },
+    {
+      ""token"": ""looks"",
+      ""typos"": [""loks"", ""lukz"", ""lukz"", ""lokz"", ""lukz"", ""lookz"", ""loox"", ""lookz"", ""lookz"", ""lookz.""]
+    }
+  ]
+}"
+tweet-sno-1398,This reporter just exposed Kayleigh McEnany for lying about Amy Coney Barrett being a Rhodes Scholar. Barrett attended Rhodes College.,Judge Amy Coney Barrett is a Rhodes Scholar.,"[""This"", ""about"", ""Barrett""]","[""about"", ""Coney"", ""Scholar"", ""This"", ""being"", ""McEnany"", ""just"", ""Rhodes""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""This"",
+      ""typos"": [""Dis"", ""Thiss"", ""Tis"", ""Thiis"", ""Thiz"", ""Diss"", ""Thi$"", ""Thes"", ""Th!s"", ""Ti$""]
+    },
+    {
+      ""token"": ""about"",
+      ""typos"": [""abt"", ""abou"", ""ab0ut"", ""abot"", ""abaut"", ""abouh"", ""aboit"", ""abovt"", ""abput"", ""aboyt""]
+    },
+    {
+      ""token"": ""Barrett"",
+      ""typos"": [""Baret"", ""Baretz"", ""Barett"", ""Barret"", ""Barritt"", ""Barettt"", ""Barretz"", ""Barrret"", ""B@rrett"", ""B@rret""]
+    }
+  ]
+}"
+tweet-sno-1399,"New ininterview Q: Do you condemn Antifa? BIDEN: Yes, I do — violence, no matter who it is.","As of Sept. 29, 2020, Joe Biden had not condemned antifa.","[""BIDEN""]","[""matter"", ""ininterview"", ""BIDEN""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""BIDEN"",
+      ""typos"": [""BIDAN"", ""BIDEN"", ""BIDON"", ""BIDENN"", ""BIDDN"", ""BIDAN"", ""BIDEM"", ""BIDUN"", ""BIDDEN"", ""BIDIN""]
+    }
+  ]
+}"
+tweet-sno-1400,Only three things happened tonight: 1. #DonaldTrump refused to condemn white supremacy. 2. The #POTUS refused to condemn white supremacy. 3. The #CommanderInChief REFUSED to condemn white supremacy on the GLOBAL STAGE. NOW LOOK AT WHAT IS HAPPENING ONLINE. THIS IS NOT OKAY.,"During the Sept. 29, 2020, presidential debate, U.S. President Donald Trump ""refused"" to condemn white supremacists.","[""HAPPENING"", ""Only"", ""OKAY"", ""LOOK"", ""supremacy""]","[""white"", ""happened"", ""condemn"", ""ONLINE"", ""HAPPENING"", ""DonaldTrump"", ""three"", ""OKAY"", ""REFUSED"", ""refused"", ""white"", ""STAGE"", ""THIS"", ""things""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""HAPPENING"",
+      ""typos"": [""HAPENNING"", ""HAPNING"", ""HAPPNING"", ""HAPPENINGG"", ""HAPENING""]
+    },
+    {
+      ""token"": ""Only"",
+      ""typos"": [""Onli"", ""Onlee"", ""Oni"", ""Onley"", ""Onlyy""]
+    },
+    {
+      ""token"": ""OKAY"",
+      ""typos"": [""OK"", ""O.K."", ""OKAYY"", ""OKAI"", ""OKAYY""]
+    },
+    {
+      ""token"": ""LOOK"",
+      ""typos"": [""LOK"", ""LOOKK"", ""LOKK"", ""LOOQ"", ""LUK""]
+    },
+    {
+      ""token"": ""supremacy"",
+      ""typos"": [""supremasy"", ""supremcy"", ""supremacie"", ""supremacey"", ""supremay""]
+    }
+  ]
+}"
+tweet-sno-1401,"Wow, nobody realized how far Mini Mike Bloomberg went in bribing ex-prisoners to go out and vote for Sleepy Joe. He is desperate to get back into the good graces of the people who not only badly beat him, but made him look like a total fool. Now he’s committed a serious crime!",Billionaire and former presidential candidate Michael Bloomberg raised more than $16 million to pay the fines and restitution of convicted felons in Florida so that they are able to register to vote ahead of the 2020 general election.,"[""like"", ""Mike"", ""fool"", ""back"", ""committed""]","[""crime"", ""beat"", ""people"", ""graces"", ""made"", ""look"", ""bribing"", ""serious"", ""went"", ""committed"", ""desperate"", ""good"", ""back"", ""vote""]","{
+  ""typo_tokens"": [
+    {
+      ""token"": ""like"",
+      ""typos"": [""lyk"", ""liek"", ""liike"", ""lke"", ""lyk3""]
+    },
+    {
+      ""token"": ""Mike"",
+      ""typos"": [""Mik"", ""Mikee"", ""Myke"", ""M1ke"", ""Mik3""]
+    },
+    {
+      ""token"": ""fool"",
+      ""typos"": [""fo0l"", ""ful"", ""foool"", ""f0ol"", ""f00l""]
+    },
+    {
+      ""token"": ""back"",
+      ""typos"": [""bck"", ""bak"", ""bakc"", ""baak"", ""backk""]
+    },
+    {
+      ""token"": ""committed"",
+      ""typos"": [""commited"", ""comitted"", ""commitd"", ""comitd"", ""comittd""]
+    }
+  ]
+}"
