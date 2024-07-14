@@ -32,7 +32,7 @@ def run():
         task="text-classification", model=model, tokenizer=tokenizer, device=device
     )
 
-    pred = verifier("Trump is the winner [SEP] The US Elections have not happened yet.")
+    pred = verifier("Messi is a football player [SEP] Let's go to the moon!")
     print(pred)
 
 

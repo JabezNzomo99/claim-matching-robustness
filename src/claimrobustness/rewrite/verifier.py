@@ -30,9 +30,6 @@ def run():
     config.read(os.path.join(args.experiment_path, "config.ini"))
     dataset = config["data"].get("dataset")
 
-    baseline = config["generation"].getint("baseline")
-    worstcase = config["generation"].getint("worstcase")
-
     verifier = utils.init_pipeline(
         model_name=config["verifier"].get("model_string"),
         model_path=config["verifier"].get("model_path"),
@@ -50,8 +47,8 @@ def run():
 
         for _, row in df.iterrows():
             try:
-                rewrites = json.loads(row["negated_claims"])
-                for rewrite in rewrites["negated_claims"]:
+                rewrites = json.loads(row["rewritten_claims"])
+                for rewrite in rewrites["rewritten_claims"]:
                     verifier_input = rewrite + defaults.SEPARATOR_TOKEN + row["target"]
                     candidate_sentences.append(verifier_input)
                     verified_list.append(
@@ -83,7 +80,7 @@ def run():
 
         print(f"Saved the verified llm rewrites to {verified_dataset_path}")
 
-    verify_llm_rewrite(verifier, baseline)
+    verify_llm_rewrite(verifier)
 
 
 if __name__ == "__main__":

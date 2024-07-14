@@ -2,7 +2,6 @@ import os
 import argparse
 from groq import Groq
 from openai import OpenAI
-from openai import AsyncOpenAI
 from claimrobustness import utils, defaults
 from tqdm import tqdm
 from ratelimit import limits, sleep_and_retry
@@ -16,7 +15,7 @@ import json
 tqdm.pandas()
 
 
-async def run():
+def run():
     # Parse the arguments
     parser = argparse.ArgumentParser()
     parser.add_argument("experiment_path", type=str, help="path where config lies")
@@ -67,7 +66,9 @@ async def run():
             {
                 "token": ent.text,
                 "type": ent.type,
-                "description": defaults.NAMED_ENTITIES_TYPE_DEFINITIONS[ent.type],
+                "description": defaults.NAMED_ENTITIES_TYPE_DEFINITIONS.get(
+                    ent.type, "Unknown"
+                ),
             }
             for sent in doc.sentences
             for ent in sent.ents
@@ -75,13 +76,13 @@ async def run():
         ]
         return json.dumps(entities)
 
-    nlp = stanza.Pipeline(lang="en", processors="tokenize")
+    nlp = stanza.Pipeline(lang="en", processors="tokenize,ner")
     run_queries["tokens_to_replace"] = run_queries["query"].progress_apply(
         lambda query: parse_ner(query, nlp)
     )
 
     if "gpt" in model_name:
-        client = AsyncOpenAI(api_key=os.environ["OPENAI_API_KEY"])
+        client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
     elif "llama" in model_name:
         client = Groq(
             api_key=os.environ["GROQ_API_KEY"],
@@ -89,7 +90,7 @@ async def run():
 
     @sleep_and_retry
     @limits(calls=500, period=timedelta(seconds=60).total_seconds())
-    async def get_ner_replacements(
+    def get_ner_replacements(
         client,
         prompt_template: str,
         claim: str,
@@ -107,7 +108,7 @@ async def run():
                     fact_check=fact_check,
                     named_entities=named_entities[:budget],
                 )
-                chat_completion = await client.chat.completions.create(
+                chat_completion = client.chat.completions.create(
                     messages=[
                         {
                             "role": "system",
@@ -125,8 +126,9 @@ async def run():
                     # Enable JSON mode by setting the response format
                     response_format={"type": "json_object"},
                 )
+                res = chat_completion.choices[0].message.content
 
-                return chat_completion.choices[0].message.content
+                return res
             except Exception as e:
                 retries += 1
                 if retries < max_retries:
@@ -142,7 +144,6 @@ async def run():
 
     def process_queries(queries: pd.DataFrame, budget: int, type: str):
         df = queries[queries["tokens_to_replace"].apply(len) >= budget]
-
         df.loc[:, "replaced_token"] = df.progress_apply(
             lambda row: get_ner_replacements(
                 client=client,

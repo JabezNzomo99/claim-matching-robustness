@@ -27,9 +27,7 @@ def run():
 
     model_name = config["model"].get("model_string")
     temparature = config["model"].getfloat("temperature")
-
-    samples = config["generation"].getint("number_of_samples")
-    prompt_template = config["generation"].get("prompt_template")
+    prompt_template = config["model"].get("prompt_template")
 
     # Load the test data used for generating misinformation edits
     data = utils.load_data(dataset=dataset)
@@ -67,11 +65,9 @@ def run():
         while retries < max_retries:
             try:
                 prompt = prompt_template.format(
-                    number_of_samples=samples,
                     claim=claim,
                     fact_check=fact_check,
                 )
-                print(prompt)
                 chat_completion = client.chat.completions.create(
                     messages=[
                         {

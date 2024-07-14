@@ -50,9 +50,7 @@ def run():
 
     def select_queries(process: str):
         # Load the dataset
-        dataset_path = os.path.join(
-            dataset_dir, f"verified_{process}_named_entity_replacements.csv"
-        )
+        dataset_path = os.path.join(dataset_dir, f"verified_{process}_typos.csv")
         df = utils.load_verifier_data(dataset_path)
         result_df = (
             df.groupby("query_id")

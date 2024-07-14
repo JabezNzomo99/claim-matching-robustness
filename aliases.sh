@@ -23,3 +23,9 @@ alias select-typos="python src/claimrobustness/typos/selector.py"
 alias generate-dialect="python src/claimrobustness/dialect/generator.py"
 alias verify-dialect="python src/claimrobustness/dialect/verifier.py"
 alias select-dialect="python src/claimrobustness/dialect/selector.py"
+
+alias generate-amplify-minimize="python src/claimrobustness/amplify_minimize/generator.py"
+alias verify-amplify-minimize="python src/claimrobustness/amplify_minimize/verifier.py"
+alias select-amplify-minimize="python src/claimrobustness/amplify_minimize/selector.py"
+
+alias evaluate-before-reranking="python src/claimrobustness/evaluate/before_reranking.py"

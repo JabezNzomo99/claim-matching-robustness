@@ -39,7 +39,7 @@ def run():
             return pd.DataFrame(
                 {
                     "query_id": group["query_id"].iloc[0],
-                    "original_claim": group["query"].iloc[0],
+                    "original_claim": group["original_claim"].iloc[0],
                     "baseline_claim": min_score_row["edited_claim"],
                     "baseline_edit_distance": min_score_row["edit_distance"],
                     "worstcase_claim": max_score_row["edited_claim"],
@@ -61,20 +61,27 @@ def run():
 
     # Save the original claims
     result_df[["query_id", "original_claim"]].to_csv(
-        os.path.join(dataset_dir, f"orig_llm_rewrites.tsv"),
+        os.path.join(dataset_dir, f"orig_baseline_rewrite.tsv"),
+        index=False,
+        header=True,
+    )
+
+    # Save the original claims
+    result_df[["query_id", "original_claim"]].to_csv(
+        os.path.join(dataset_dir, f"orig_worstcase_rewrite.tsv"),
         index=False,
         header=True,
     )
 
     # Save the baseline claims
     result_df[["query_id", "baseline_claim"]].to_csv(
-        os.path.join(dataset_dir, f"baseline_llm_rewrites.tsv"),
+        os.path.join(dataset_dir, f"edited_baseline_rewrite.tsv"),
         index=False,
         header=["query_id", "query"],
     )
 
     result_df[["query_id", "worstcase_claim"]].to_csv(
-        os.path.join(dataset_dir, f"worstcase_llm_rewrites.tsv"),
+        os.path.join(dataset_dir, f"edited_worstcase_rewrite.tsv"),
         index=False,
         header=["query_id", "query"],
     )

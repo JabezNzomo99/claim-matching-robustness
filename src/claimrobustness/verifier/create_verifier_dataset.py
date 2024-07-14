@@ -73,6 +73,13 @@ def run():
         n_ranks = [get_negative_ranks(r, g) for r, g in zip(ranks, claim_idx)]
         return np.array(n_ranks)
 
+    def cosine_similarity(a, b):
+        # Normalize the vectors
+        a_norm = a / np.linalg.norm(a, axis=1, keepdims=True)
+        b_norm = b / np.linalg.norm(b, axis=1, keepdims=True)
+        cosine_similarities = np.dot(a_norm, b_norm.T)
+        return cosine_similarities
+
     partitions = ["train", "dev", "test"]
     for ptn in partitions:
         if ptn == "train":
@@ -89,7 +96,7 @@ def run():
         tweet_embeds = model.encode(
             run_tweets["query"].tolist(), show_progress_bar=True, device=device
         )
-        scores = tweet_embeds @ embs.T
+        scores = cosine_similarity(tweet_embeds, embs)
         ranks = [scores.argsort()[::-1] for scores in scores]
         negative_ranks = get_negative_ranks_arr(ranks, claim_idx)
 
