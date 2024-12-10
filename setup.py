@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="claimrobustness",
-    version="0.1",
+    version="0.11",
     description="Claim Matching Robustness",
     author="Jabez Magomere",
     author_email="jabezmagomere@gmail.com",

@@ -62,8 +62,25 @@ def load_data(dataset) -> dict:
             targets=targets,
             test=(test_queries, test_qrels),
         )
+    elif dataset == "fact-check-tweet":
+        train_queries = get_queries(defaults.FC_EN_TRAIN_QUERY_PATH)
+        dev_queries = get_queries(defaults.FC_EN_DEV_QUERY_PATH)
+        test_queries = get_queries(defaults.FC_EN_TEST_QUERY_PATH)
+
+        train_qrels = get_qrels(defaults.FC_EN_TRAIN_QREL_PATH)
+        dev_qrels = get_qrels(defaults.FC_EN_DEV_QREL_PATH)
+        test_qrels = get_qrels(defaults.FC_EN_TEST_QREL_PATH)
+
+        targets = get_targets(defaults.FC_TARGETS_PATH, defaults.FC_TARGETS_KEY_NAMES)
+
+        return dict(
+            queries=(train_queries, dev_queries),
+            qrels=(train_qrels, dev_qrels),
+            targets=targets,
+            test=(test_queries, test_qrels),
+        )
     else:
-        raise ValueError(f"Dataset {dataset} not supported yet")
+        raise ValueError(f"Dataset {dataset} not supported yet test")
 
 
 def load_verifier_data(dataset_path) -> pd.DataFrame:
