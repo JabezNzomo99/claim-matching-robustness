@@ -67,3 +67,5 @@ options:
 ```
 
 #### Example
+To generate the rewrites;
+python src/claimrobustness/name_entity_replacement/generator.py experiments/named_entity_replacement/gpt4o/ fact-check-tweet

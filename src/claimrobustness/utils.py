@@ -12,6 +12,8 @@ from transformers import pipeline
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from rouge import Rouge
 import Levenshtein
+import backoff
+from openai import RateLimitError
 
 
 def get_queries(querypath):
@@ -273,3 +275,28 @@ def calculate_normalised_levenshtein_dist(
     normalized_lev_dist = levenshtein_dist / max_len
 
     return normalized_lev_dist
+
+
+@backoff.on_exception(backoff.expo, RateLimitError)
+async def request_llm(client, prompt, model_name, temparature, enable_json=False):
+    chat_completion = await client.chat.completions.create(
+        messages=[
+            {
+                "role": "system",
+                "content": "You are an intelligent social media user.",
+            },
+            {
+                "role": "user",
+                "content": prompt,
+            },
+        ],
+        model=model_name,
+        temperature=temparature,
+        # Streaming is not supported in JSON mode
+        stream=False,
+        # Enable JSON mode by setting the response format --> disabled for the moment
+        # Some papers have shown that json formatting can impact model generations
+        # response_format={"type": "json_object"},
+        response_format={"type": "json_object"} if enable_json else None,
+    )
+    return chat_completion.choices[0].message.content

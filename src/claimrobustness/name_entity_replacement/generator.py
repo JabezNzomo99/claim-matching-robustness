@@ -45,6 +45,7 @@ async def run():
     # Parse the arguments
     parser = argparse.ArgumentParser()
     parser.add_argument("experiment_path", type=str, help="path where config lies")
+    parser.add_argument("dataset", type=str, help="path where config lies")
     parser.add_argument(
         "--no-baseline", action="store_true", help="Skip generating baseline edits"
     )
@@ -57,17 +58,15 @@ async def run():
     config = configparser.ConfigParser()
     config.read(os.path.join(args.experiment_path, "config.ini"))
 
-    dataset = config["data"].get("dataset")
-
     model_name = config["model"].get("model_string")
     temparature = config["model"].getfloat("temperature")
     prompt_template_baseline = config["model"].get("prompt_template_baseline")
     prompt_template_worstcase = config["model"].get("prompt_template_worstcase")
 
     samples = config["generation"].getint("number_of_samples")
-
+    dataset = args.dataset
     # Load the test data used for generating misinformation edits
-    data = utils.load_data(dataset=dataset)
+    data = utils.load_data(dataset=args.dataset)
     test_queries, test_qrels = data["test"]
     targets = data["targets"]
 
