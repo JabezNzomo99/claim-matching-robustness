@@ -35,13 +35,12 @@ logger = logging.getLogger(__name__)
 all_experiments = {
     "named_entity_replacement": "experiments/named_entity_replacement/gpt4o/",
     "typos": "experiments/typos/gpt4o/",
-    # "dialect_aae": "experiments/dialect/gpt4o/",
+    "dialect_aae": "experiments/dialect/gpt4o/",
     "dialect_patois": "experiments/dialect/gpt4o/",
-    # "dialect_pidgin": "experiments/dialect/gpt4o/",
-    # "dialect_singlish": "experiments/dialect/gpt4o/",
+    "dialect_pidgin": "experiments/dialect/gpt4o/",
+    "dialect_singlish": "experiments/dialect/gpt4o/",
     "casing": "experiments/casing/",
     "rewrite": "experiments/rewrite/gpt4o/",
-    # "amplify_minimize": "experiments/amplify_minimize/gpt4o/",
     "negation": "experiments/negation/gpt4o/",
 }
 
