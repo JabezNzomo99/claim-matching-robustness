@@ -1,4 +1,7 @@
-# Evaluating robustness of claim matching methdods to misinformation edits
+# When Claims Evolve: Evaluating and Enhancing the Robustness of Embedding Models Against Misinformation Edits 
+[![Generic badge](https://img.shields.io/badge/arXiv-2309.15088-red.svg)](https://arxiv.org/abs/2503.03417)
+
+This repository contains the code for the paper [*When Claims Evolve*: Evaluating and Enhancing the Robustness of Embedding Models Against Misinformation Edits](https://arxiv.org/abs/2503.03417). If you have any questions, feel free to create a Github issue or reach out to the first author at jabez.magomere@keble.ox.ac.uk. 
 
 ## Data
 To load the data used in the experiments, run the script below to download the data from CLEFCheckThat22 edition.
@@ -69,3 +72,16 @@ options:
 #### Example
 To generate the rewrites;
 python src/claimrobustness/name_entity_replacement/generator.py experiments/named_entity_replacement/gpt4o/ fact-check-tweet
+
+## Citation
+```
+@misc{magomere2025claimsevolveevaluatingenhancing,
+      title={When Claims Evolve: Evaluating and Enhancing the Robustness of Embedding Models Against Misinformation Edits}, 
+      author={Jabez Magomere and Emanuele La Malfa and Manuel Tonneau and Ashkan Kazemi and Scott Hale},
+      year={2025},
+      eprint={2503.03417},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2503.03417}, 
+}
+```
