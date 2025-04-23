@@ -29,3 +29,4 @@ alias verify-amplify-minimize="python src/claimrobustness/amplify_minimize/verif
 alias select-amplify-minimize="python src/claimrobustness/amplify_minimize/selector.py"
 
 alias evaluate-before-reranking="python src/claimrobustness/evaluate/before_reranking.py"
+alias evaluate-before-reranking-paragraph="python src/claimrobustness/evaluate/before_reranking_paragraph.py"

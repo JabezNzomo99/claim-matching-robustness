@@ -1,37 +1,67 @@
 import os
 import argparse
-from groq import Groq
-from openai import OpenAI
+from openai import RateLimitError, AsyncOpenAI
 from claimrobustness import utils
 from tqdm import tqdm
-from ratelimit import limits, sleep_and_retry
-from datetime import timedelta
-from time import sleep
 import configparser
 import pandas as pd
+import asyncio
+import backoff
+import jsonlines
 
 tqdm.pandas()
 
 
-def run():
+@backoff.on_exception(backoff.expo, RateLimitError)
+async def request_llm(client, prompt, model_name, temparature):
+    chat_completion = await client.chat.completions.create(
+        messages=[
+            {
+                "role": "system",
+                "content": "You are an intelligent social media user.",
+            },
+            {
+                "role": "user",
+                "content": prompt,
+            },
+        ],
+        model=model_name,
+        temperature=temparature,
+        # Streaming is not supported in JSON mode
+        stream=False,
+        # Enable JSON mode by setting the response format --> disabled for the moment
+        # Some papers have shown that json formatting can impact model generations
+        # response_format={"type": "json_object"},
+    )
+    return chat_completion.choices[0].message.content
+
+
+async def run():
     # Parse the arguments
     parser = argparse.ArgumentParser()
     parser.add_argument("experiment_path", type=str, help="path where config lies")
+    parser.add_argument("dataset", type=str, help="path where config lies")
+    parser.add_argument(
+        "--no-baseline", action="store_true", help="Skip generating baseline edits"
+    )
+    parser.add_argument(
+        "--no-worstcase", action="store_true", help="Skip generating worstcase edits"
+    )
 
     # Parse the arguments
     args = parser.parse_args()
     config = configparser.ConfigParser()
     config.read(os.path.join(args.experiment_path, "config.ini"))
 
-    dataset = config["data"].get("dataset")
-
     model_name = config["model"].get("model_string")
     temparature = config["model"].getfloat("temperature")
     prompt_template = config["model"].get("prompt_template")
-    number_of_samples = config["generation"].getint("number_of_samples")
+    samples = config["generation"].getint("number_of_samples")
 
+    samples = config["generation"].getint("number_of_samples")
+    dataset = args.dataset
     # Load the test data used for generating misinformation edits
-    data = utils.load_data(dataset=dataset)
+    data = utils.load_data(dataset=args.dataset)
     test_queries, test_qrels = data["test"]
     targets = data["targets"]
 
@@ -48,83 +78,57 @@ def run():
     print("Cleaning the tweet query")
     run_queries["query"] = run_queries["query"].progress_apply(utils.clean_tweet)
 
-    # Currently supporting Llama3, need to add support for GPT models
-    if "gpt" in model_name:
-        client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
-    elif "llama" in model_name:
-        client = Groq(
-            api_key=os.environ["GROQ_API_KEY"],
-        )
+    # Init AsyncOpenAI client
+    client = AsyncOpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
-    @sleep_and_retry
-    @limits(calls=500, period=timedelta(seconds=60).total_seconds())
-    def amplify_minimize_claim(
-        client,
-        prompt_template: str,
-        claim: str,
-        fact_check: str,
-        number_of_samples: int,
-    ):
-        max_retries = 3
-        retries = 0
-        while retries < max_retries:
+    async def process_queries(queries: pd.DataFrame):
+        df = queries.copy()
+
+        # Save the file output
+        save_dir = f"{args.experiment_path}/{dataset}"
+        if not os.path.exists(save_dir):
+            os.makedirs(save_dir)
+
+        # Define jsonl file to save the generated edits
+        output_file = os.path.join(save_dir, f"amplify_minimize.jsonl")
+
+        # Load the existing ids
+        existing_ids = set()
+        with open(output_file, "a+", encoding="utf-8") as f:
+            f.seek(0)
             try:
+                with jsonlines.Reader(f) as reader:
+                    data = list(reader.iter())
+                for obj in data:
+                    existing_ids.add(obj["query_id"])
+            except jsonlines.jsonlines.InvalidLineError:
+                # This will be raised if the file is empty. You can handle it as you need.
+                pass
+
+        filtered_df = df[~df["query_id"].isin(existing_ids)]
+        print(f"Generating rewrites for {len(filtered_df)} tweets")
+
+        with jsonlines.open(output_file, mode="a") as writer:
+            for _, row in tqdm(filtered_df.iterrows()):
                 prompt = prompt_template.format(
-                    claim=claim,
-                    fact_check=fact_check,
-                    number_of_samples=number_of_samples,
+                    number_of_samples=samples,
+                    claim=row["query"],
+                    fact_check=row["target"],
                 )
-                chat_completion = client.chat.completions.create(
-                    messages=[
-                        {
-                            "role": "system",
-                            "content": "You are a highly intelligent social media user.",
-                        },
-                        {
-                            "role": "user",
-                            "content": prompt,
-                        },
-                    ],
-                    model=model_name,
-                    temperature=temparature,
-                    # Enable JSON mode by setting the response format
-                    response_format={"type": "json_object"},
+                llm_response = await request_llm(
+                    client, prompt, model_name, temparature
                 )
-                return chat_completion.choices[0].message.content
-            except Exception as e:
-                retries += 1
-                if retries < max_retries:
-                    print(
-                        f"Retrying ({retries}/{max_retries}) after BadRequestError: {e}"
-                    )
-                    sleep(2)  # Wait for 2 seconds before retrying
-                else:
-                    print(
-                        f"Failed after {max_retries} retries. Last BadRequestError: {e}"
-                    )
-                    raise  # Raise the exception after max retries
 
-    run_queries.loc[:, "rewritten_claims"] = run_queries.progress_apply(
-        lambda row: amplify_minimize_claim(
-            client=client,
-            prompt_template=prompt_template,
-            claim=row["query"],
-            fact_check=row["target"],
-            number_of_samples=number_of_samples,
-        ),
-        axis=1,
-    )
+                json_obj = {
+                    "query_id": row["query_id"],
+                    "query": row["query"],
+                    "target": row["target"],
+                    "rewrites": llm_response,
+                }
+                writer.write(json_obj)
 
-    # Save the file output
-    save_dir = f"{args.experiment_path}/{dataset}"
-    if not os.path.exists(save_dir):
-        os.makedirs(save_dir)
-
-    run_queries.to_csv(
-        os.path.join(save_dir, "amplify_minimize_rewrites.csv"), index=False
-    )
-    print(f"Saved the rewritten claims to {save_dir}")
+    await process_queries(run_queries)
 
 
 if __name__ == "__main__":
-    run()
+    asyncio.run(run())

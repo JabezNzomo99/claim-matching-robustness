@@ -1,23 +1,26 @@
-# Code to evaluate generations of typos
-# Typos may not need to be passed through a verifier
-import argparse
-import configparser
 import os
-from claimrobustness import utils, defaults
-import json
+import argparse
+from openai import AsyncOpenAI
+from claimrobustness import utils
+from tqdm import tqdm
+import configparser
 import pandas as pd
-from itertools import product
-import random
+import asyncio
+import jsonlines
+
+tqdm.pandas()
 
 
-def run():
-    parser = argparse.ArgumentParser(
-        description="Create a dataset for the verifier model"
-    )
+async def run():
+    # Parse the arguments
+    parser = argparse.ArgumentParser()
+    parser.add_argument("experiment_path", type=str, help="path where config lies")
+    parser.add_argument("dataset", type=str, help="path where config lies")
     parser.add_argument(
-        "experiment_path",
-        help="Path where config lies",
+        "--split",
         type=str,
+        default="test",
+        help="split to generate the perturbations on",
     )
     parser.add_argument(
         "--no-baseline", action="store_true", help="Skip generating baseline edits"
@@ -30,63 +33,68 @@ def run():
     args = parser.parse_args()
     config = configparser.ConfigParser()
     config.read(os.path.join(args.experiment_path, "config.ini"))
-    dataset = config["data"].get("dataset")
 
-    def select_replacements(process: str):
-        # Load the dataset
-        dataset_dir = f"{args.experiment_path}/{dataset}"
-        dataset_path = os.path.join(dataset_dir, f"{process}_typos.csv")
-        df = utils.load_verifier_data(dataset_path)
+    dataset = args.dataset
+    split = args.split
 
-        verified_list = []
+    model_name = config["model"].get("model_string")
+    temparature = config["model"].getfloat("verification_temperature")
+    verification_prompt_template = config["model"].get("verification_prompt_template")
 
-        for _, row in df.iterrows():
+    client = AsyncOpenAI(api_key=os.environ["OPENAI_API_KEY"])
+
+    async def verify_rewrites():
+        if split == "test":
+            rewrites_file_path = f"{args.experiment_path}/{dataset}/llm_typos.jsonl"
+            output_file = f"{args.experiment_path}/{dataset}/llm_typos_verified.jsonl"
+        else:
+            rewrites_file_path = (
+                f"{args.experiment_path}/{dataset}/{split}_llm_typos.jsonl"
+            )
+            output_file = (
+                f"{args.experiment_path}/{dataset}/{split}_llm_typos_verified.jsonl"
+            )
+        rewrites_df = pd.read_json(rewrites_file_path, lines=True)
+        # Load the existing verification file
+        # Load the existing ids
+        existing_ids = set()
+        with open(output_file, "a+", encoding="utf-8") as f:
+            f.seek(0)
             try:
-                input_claim = row["query"]
-                replaceable_entities = json.loads(row["replaced_token"])["typo_tokens"]
-                replacement_dict = {}
-                for entity in replaceable_entities:
-                    token_to_misspell = entity["token"]
-                    replacement_typo = random.choice(entity["typos"])
-                    replacement_dict[token_to_misspell] = replacement_typo
+                with jsonlines.Reader(f) as reader:
+                    data = list(reader.iter())
+                for obj in data:
+                    existing_ids.add(obj["query_id"])
+            except jsonlines.jsonlines.InvalidLineError:
+                # This will be raised if the file is empty. You can handle it as you need.
+                pass
 
-                # Replace tokens in the input_claim
-                edited_claim = input_claim
-                for token, typo in replacement_dict.items():
-                    edited_claim = edited_claim.replace(token, typo)
-                verified_list.append(
-                    {
-                        "query_id": row["query_id"],
-                        "original_claim": row["query"],
-                        "edited_claim": edited_claim,
-                    }
+        filtered_df = rewrites_df[~rewrites_df["query_id"].isin(existing_ids)]
+        print(f"Generating verifications for {len(filtered_df)} tweets")
+
+        with jsonlines.open(output_file, mode="a") as writer:
+            for _, row in tqdm(filtered_df.iterrows()):
+                prompt = verification_prompt_template.format(
+                    claim=row["query"],
+                    fact_check=row["target"],
+                    rewrites=row["rewrites"],
                 )
-            except Exception as e:
-                continue
+                llm_response = await utils.request_llm(
+                    client, prompt, model_name, temparature, enable_json=True
+                )
 
-        verified_df = pd.DataFrame(verified_list)
-        verified_dataset_path = os.path.join(
-            dataset_dir, f"edited_{process}_typos_queries.tsv"
-        )
-        orig_dataset_path = os.path.join(
-            dataset_dir, f"orig_{process}_typos_queries.tsv"
-        )
+                json_obj = {
+                    "query_id": row["query_id"],
+                    "query": row["query"],
+                    "target": row["target"],
+                    "rewrites": row["rewrites"],
+                    "verification": llm_response,
+                    "prompt": prompt,
+                }
+                writer.write(json_obj)
 
-        verified_df[["query_id", "edited_claim"]].to_csv(
-            verified_dataset_path, index=False, header=True
-        )
-        verified_df[["query_id", "original_claim"]].to_csv(
-            orig_dataset_path, index=False, header=True
-        )
-
-        print(f"Saved the verified typos for {process} to {verified_dataset_path}")
-
-    if not args.no_baseline:
-        select_replacements("baseline")
-
-    if not args.no_worstcase:
-        select_replacements("worstcase")
+    await verify_rewrites()
 
 
 if __name__ == "__main__":
-    run()
+    asyncio.run(run())

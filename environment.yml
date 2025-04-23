@@ -4,7 +4,6 @@ channels:
   - pytorch
   - conda-forge
   - nvidia
-  - intel
   - defaults
 dependencies:
   - _libgcc_mutex=0.1

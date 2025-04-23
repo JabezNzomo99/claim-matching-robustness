@@ -16,6 +16,7 @@ def run():
     # Parse the arguments
     parser = argparse.ArgumentParser()
     parser.add_argument("experiment_path", type=str, help="path where config lies")
+    parser.add_argument("dataset", type=str, help="path where config lies")
     parser.add_argument(
         "--no-baseline", action="store_true", help="Skip generating baseline edits"
     )
@@ -28,7 +29,7 @@ def run():
     config = configparser.ConfigParser()
     config.read(os.path.join(args.experiment_path, "config.ini"))
 
-    dataset = config["data"].get("dataset")
+    dataset = args.dataset
     baseline = config["generation"].get("baseline")
     worstcase = config["generation"].get("worstcase")
     # Load the test data used for generating misinformation edits
@@ -50,11 +51,13 @@ def run():
                 os.path.join(save_dir, f"orig_baseline_casing_queries.tsv"),
                 index=False,
                 header=True,
+                sep="\t",
             )
             test_queries[["query_id", "baseline_query"]].to_csv(
                 os.path.join(save_dir, f"edited_baseline_casing_queries.tsv"),
                 index=False,
                 header=["query_id", "query"],
+                sep="\t",
             )
         # Save output
         else:
@@ -67,11 +70,13 @@ def run():
                 os.path.join(save_dir, f"orig_worstcase_casing_queries.tsv"),
                 index=False,
                 header=True,
+                sep="\t",
             )
             test_queries[["query_id", "worstcase_query"]].to_csv(
                 os.path.join(save_dir, f"edited_worstcase_casing_queries.tsv"),
                 index=False,
                 header=["query_id", "query"],
+                sep="\t",
             )
         else:
             raise ValueError(f"Baseline {baseline} not supported")

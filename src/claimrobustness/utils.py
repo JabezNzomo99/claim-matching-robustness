@@ -7,7 +7,9 @@ import torch
 import datetime
 import seaborn as sns
 import matplotlib.pyplot as plt
+
 from torch.utils.data import Dataset
+
 from transformers import pipeline
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from rouge import Rouge
@@ -20,6 +22,12 @@ def get_queries(querypath):
     return pd.read_csv(
         querypath, sep="\t", names=["query_id", "query"], skiprows=[0]
     ).drop_duplicates()
+
+
+def get_queries_dedup(querypath):
+    return pd.read_csv(
+        querypath, sep="\t", names=["query_id", "query"], skiprows=[0]
+    ).drop_duplicates(subset=["query"])
 
 
 def get_qrels(qrelpath):
@@ -74,10 +82,21 @@ def load_data(dataset) -> dict:
         test_qrels = get_qrels(defaults.FC_EN_TEST_QREL_PATH)
 
         targets = get_targets(defaults.FC_TARGETS_PATH, defaults.FC_TARGETS_KEY_NAMES)
+        # Filter only english targets
+        targets = targets[targets["lang"] == "en"]
 
         return dict(
             queries=(train_queries, dev_queries),
             qrels=(train_qrels, dev_qrels),
+            targets=targets,
+            test=(test_queries, test_qrels),
+        )
+    elif dataset == "ood-dataset":
+        test_queries = get_queries_dedup(defaults.OOD_EN_TEST_QUERY_PATH)
+        test_qrels = get_qrels(defaults.OOD_EN_TEST_QREL_PATH)
+
+        targets = get_targets(defaults.OOD_TARGETS_PATH, defaults.OOD_TARGETS_KEY_NAMES)
+        return dict(
             targets=targets,
             test=(test_queries, test_qrels),
         )
@@ -224,6 +243,30 @@ class VerifierDataset(Dataset):
         return self.candidate_sentences[idx]
 
 
+@backoff.on_exception(backoff.expo, RateLimitError)
+async def request_llm(client, prompt, model_name, temparature):
+    chat_completion = await client.chat.completions.create(
+        messages=[
+            {
+                "role": "system",
+                "content": "You are an intelligent social media user.",
+            },
+            {
+                "role": "user",
+                "content": prompt,
+            },
+        ],
+        model=model_name,
+        temperature=temparature,
+        # Streaming is not supported in JSON mode
+        stream=False,
+        # Enable JSON mode by setting the response format --> disabled for the moment
+        # Some papers have shown that json formatting can impact model generations
+        # response_format={"type": "json_object"},
+    )
+    return chat_completion.choices[0].message.content
+
+
 def init_pipeline(
     model_name: str,
     model_path: str,
@@ -300,3 +343,61 @@ async def request_llm(client, prompt, model_name, temparature, enable_json=False
         response_format={"type": "json_object"} if enable_json else None,
     )
     return chat_completion.choices[0].message.content
+
+
+def get_bm25_preprocess_fn(dataset):
+    if dataset == "clef2021-checkthat-task2a--english":
+        return (
+            lambda targets: targets[["title", "subtitle", "target"]]
+            .apply(lambda x: x[0] + " " + x[1] + " " + x[2], axis=1)
+            .to_list()
+        )
+
+    elif dataset == "clef2022-checkthat-task2b--english":
+        return (
+            lambda targets: targets[["title", "target"]]
+            .apply(lambda x: x[0] + " " + x[1], axis=1)
+            .to_list()
+        )
+
+    elif dataset == "clef2022-checkthat-task2a--arabic":
+        return (
+            lambda targets: targets[["title", "target"]]
+            .apply(lambda x: x[0] + " " + x[1], axis=1)
+            .to_list()
+        )
+
+    elif dataset == "that-is-a-known-lie-snopes":
+        return lambda targets: targets.target.to_list()
+
+    elif dataset == "fact-check-tweet":
+        return lambda targets: targets.target.to_list()
+
+    elif dataset == "that-is-a-known-lie-politifact":
+        pass
+
+
+# Special parameters for NV-Embed
+task_name_to_instruct = {
+    "example": "Given a claim, retrieve fact checks that can help verify the claim",
+}
+nv_embed_query_prefix = "Instruct: " + task_name_to_instruct["example"] + "\nQuery: "
+
+
+def add_eos(input_examples, model):
+    input_examples = [
+        input_example + model.tokenizer.eos_token for input_example in input_examples
+    ]
+    return input_examples
+
+
+# Dictionary to support loading of fine-tuned models
+finetuned_models_path_mapping = {
+    "sentence-t5-large-ft": "/data/kebl7383/claimrobustness/sentence-t5-large-ft",
+    "all-mpnet-base-v2-ft": "/data/kebl7383/claimrobustness/all-mpnet-base-v2",
+    "all-mpnet-base-v2-adapted-lite": "/data/kebl7383/claimrobustness/output/original-perturbed-2025-01-28_10-27-36/final",
+    "all-mpnet-basev2-adapted-full": "/data/kebl7383/claimrobustness/output/original-perturbed-full-2025-01-28_10-34-06/final",
+    "all-mpnet-basev2-adapted-ft": "/data/kebl7383/claimrobustness/all-mpnet-base-v2-adapted",
+    "all-mpnet-basev2-robust": "/data/kebl7383/claimrobustness/output/original-perturbed-full-2025-01-28_11/final",
+    "all-mpnet-basev2-robust-ft": "/data/kebl7383/claimrobustness/all-mpnet-base-v2-adapted-full",
+}

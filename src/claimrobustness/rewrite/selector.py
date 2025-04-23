@@ -6,15 +6,22 @@ import os
 from claimrobustness import utils
 import json
 import pandas as pd
+import random
+from tqdm import tqdm
 
 
 def run():
     parser = argparse.ArgumentParser(
-        description="Create a dataset for the verifier model"
+        description="Script to select instances from the LLM that have been modified"
     )
     parser.add_argument(
         "experiment_path",
         help="Path where config lies",
+        type=str,
+    )
+    parser.add_argument(
+        "dataset",
+        help="Name of the dataset",
         type=str,
     )
 
@@ -22,69 +29,124 @@ def run():
     args = parser.parse_args()
     config = configparser.ConfigParser()
     config.read(os.path.join(args.experiment_path, "config.ini"))
-    dataset = config["data"].get("dataset")
+    dataset = args.dataset
     dataset_dir = f"{args.experiment_path}/{dataset}"
 
-    def find_min_max_score_matched_label(group):
-        # Filter rows where label is "LABEL_1"
-        matched_rows = group[
-            group["verifier_scores"].apply(
-                lambda x: json.loads(x)["label"] == "LABEL_1"
-            )
+    def parse_rewritten_tweets(text):
+        """
+        Parses a given string of rewritten tweets into a list of individual tweets.
+
+        Args:
+            text (str): The input string containing rewritten tweets.
+
+        Returns:
+            list: A list of individual rewritten tweets.
+        """
+        # Split the text by lines and filter out any empty lines
+        lines = [line.strip() for line in text.split("\n") if line.strip()]
+
+        # Extract tweets after the colon ": " in lines that start with "Rewritten Tweet"
+        tweets = [
+            line.split(": ", 1)[1]
+            for line in lines
+            if line.startswith("Rewritten Tweet") and ": " in line
         ]
-        if not matched_rows.empty:
-            # Find the row with the least score among the filtered rows
-            min_score_row = matched_rows.loc[matched_rows["edit_distance"].idxmin()]
-            max_score_row = matched_rows.loc[matched_rows["edit_distance"].idxmax()]
-            return pd.DataFrame(
-                {
-                    "query_id": group["query_id"].iloc[0],
-                    "original_claim": group["original_claim"].iloc[0],
-                    "baseline_claim": min_score_row["edited_claim"],
-                    "baseline_edit_distance": min_score_row["edit_distance"],
-                    "worstcase_claim": max_score_row["edited_claim"],
-                    "worstcase_edit_distance": max_score_row["edit_distance"],
-                },
-                index=[0],
-            )
-        else:
-            return None
 
-    # Load the dataset
-    dataset_path = os.path.join(dataset_dir, "verified_llm_rewrites.csv")
-    df = utils.load_verifier_data(dataset_path)
-    result_df = (
-        df.groupby("query_id")
-        .apply(find_min_max_score_matched_label)
-        .reset_index(drop=True)
-    )
+        return tweets
 
-    # Save the original claims
-    result_df[["query_id", "original_claim"]].to_csv(
-        os.path.join(dataset_dir, f"orig_baseline_rewrite.tsv"),
-        index=False,
-        header=True,
-    )
+    def select_queries():
+        # Load the jsonl file containing the verified labels
+        verified_jsonl_path = os.path.join(dataset_dir, f"llm_rewrites_verified.jsonl")
+        verified_df = pd.read_json(verified_jsonl_path, lines=True)
+        original_baseline_claims = []
+        rewritten_baseline_claims = []
+        orig_worstcase_claims = []
+        rewritten_worstcase_claims = []
 
-    # Save the original claims
-    result_df[["query_id", "original_claim"]].to_csv(
-        os.path.join(dataset_dir, f"orig_worstcase_rewrite.tsv"),
-        index=False,
-        header=True,
-    )
+        for idx, row in tqdm(verified_df.iterrows()):
+            rewrites = parse_rewritten_tweets(row["rewrites"])
+            verified_labels = json.loads(row["verification"])["labels"]
+            # Get indices where the label is 1
+            verified_idx = [
+                idx for idx, label in enumerate(verified_labels) if label == 1
+            ]
+            # Proceed only if there are verified indices with label 1
+            if verified_idx:
+                if len(verified_idx) == 1:
+                    selected_idx = verified_idx[0]
+                    orig_json = {
+                        "query_id": row["query_id"],
+                        "query": row["query"],
+                    }
+                    rewrite_json = {
+                        "query_id": row["query_id"],
+                        "query": rewrites[selected_idx],
+                    }
+                    original_baseline_claims.append(orig_json)
+                    rewritten_baseline_claims.append(rewrite_json)
+                else:
+                    # Select all the verified rewrites and calculate rouge score between the original and rewritten claims
+                    # Assign the original and rewritten claims to the baseline or worstcase based on the rouge score
+                    valid_rewrites = [rewrites[idx] for idx in verified_idx]
+                    original_claim = row["query"]
+                    edit_distances = [
+                        utils.calculate_normalised_levenshtein_dist(
+                            sentence1=original_claim, sentence2=rewrite
+                        )
+                        for rewrite in valid_rewrites
+                    ]
+                    baseline_idx = edit_distances.index(min(edit_distances))
+                    worstcase_idx = edit_distances.index(max(edit_distances))
+                    orig_json = {
+                        "query_id": row["query_id"],
+                        "query": row["query"],
+                    }
+                    baseline_rewrite_json = {
+                        "query_id": row["query_id"],
+                        "query": rewrites[baseline_idx],
+                    }
+                    worstcase_rewrite_json = {
+                        "query_id": row["query_id"],
+                        "query": rewrites[worstcase_idx],
+                    }
+                    original_baseline_claims.append(orig_json)
+                    rewritten_baseline_claims.append(baseline_rewrite_json)
+                    orig_worstcase_claims.append(orig_json)
+                    rewritten_worstcase_claims.append(worstcase_rewrite_json)
 
-    # Save the baseline claims
-    result_df[["query_id", "baseline_claim"]].to_csv(
-        os.path.join(dataset_dir, f"edited_baseline_rewrite.tsv"),
-        index=False,
-        header=["query_id", "query"],
-    )
+        # Save the original claims
+        pd.DataFrame(original_baseline_claims).to_csv(
+            os.path.join(dataset_dir, f"orig_baseline_rewrite.tsv"),
+            index=False,
+            header=["query_id", "query"],
+            sep="\t",
+        )
 
-    result_df[["query_id", "worstcase_claim"]].to_csv(
-        os.path.join(dataset_dir, f"edited_worstcase_rewrite.tsv"),
-        index=False,
-        header=["query_id", "query"],
-    )
+        # Save the rewritten claims
+        pd.DataFrame(rewritten_baseline_claims).to_csv(
+            os.path.join(dataset_dir, f"edited_baseline_rewrite.tsv"),
+            index=False,
+            header=["query_id", "query"],
+            sep="\t",
+        )
+
+        # Save the original worstcase claims
+        pd.DataFrame(orig_worstcase_claims).to_csv(
+            os.path.join(dataset_dir, f"orig_worstcase_rewrite.tsv"),
+            index=False,
+            header=["query_id", "query"],
+            sep="\t",
+        )
+
+        # Save the rewritten worstcase claims
+        pd.DataFrame(rewritten_worstcase_claims).to_csv(
+            os.path.join(dataset_dir, f"edited_worstcase_rewrite.tsv"),
+            index=False,
+            header=["query_id", "query"],
+            sep="\t",
+        )
+
+    select_queries()
 
 
 if __name__ == "__main__":

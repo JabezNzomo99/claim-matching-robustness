@@ -1,0 +1,3 @@
+[submodule "FlagEmbeddin"]
+	path = FlagEmbeddin
+	url = https://github.com/FlagOpen/FlagEmbedding

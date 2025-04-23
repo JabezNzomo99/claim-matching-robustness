@@ -5,15 +5,23 @@ import configparser
 import os
 from claimrobustness import utils
 import json
+import pandas as pd
+import random
+import re
 
 
 def run():
     parser = argparse.ArgumentParser(
-        description="Create a dataset for the verifier model"
+        description="Script to select instances from the LLM that have been modified"
     )
     parser.add_argument(
         "experiment_path",
         help="Path where config lies",
+        type=str,
+    )
+    parser.add_argument(
+        "dataset",
+        help="Name of the dataset",
         type=str,
     )
     parser.add_argument(
@@ -27,42 +35,82 @@ def run():
     args = parser.parse_args()
     config = configparser.ConfigParser()
     config.read(os.path.join(args.experiment_path, "config.ini"))
-    dataset = config["data"].get("dataset")
+    dataset = args.dataset
     dataset_dir = f"{args.experiment_path}/{dataset}"
 
-    def find_least_score_matched_label(group):
-        # Filter rows where label is "LABEL_1"
-        matched_rows = group[
-            group["verifier_scores"].apply(
-                lambda x: json.loads(x)["label"] == "LABEL_1"
-            )
-        ]
-        if not matched_rows.empty:
-            # Find the row with the least score among the filtered rows
-            min_score_row = matched_rows.loc[matched_rows["edit_distance"].idxmin()]
-            return min_score_row
-        else:
-            return None
+    def parse_claims(markdown_json_string):
+        """
+        Parses a JSON string formatted with Markdown-style backticks and returns the list of claims.
 
-    def select_queries(process: str):
-        # Load the dataset
-        dataset_path = os.path.join(dataset_dir, f"verified_{process}_negation.csv")
-        df = utils.load_verifier_data(dataset_path)
-        result_df = (
-            df.groupby("query_id")
-            .apply(find_least_score_matched_label)
-            .reset_index(drop=True)
-        )
-        result_df[["query_id", "original_claim"]].to_csv(
-            os.path.join(dataset_dir, f"orig_{process}_negation_queries.tsv"),
-            index=False,
-            header=True,
-        )
+        Args:
+            markdown_json_string (str): A string containing JSON wrapped in Markdown backticks.
 
-        result_df[["query_id", "edited_claim"]].to_csv(
-            os.path.join(dataset_dir, f"edited_{process}_negation_queries.tsv"),
+        Returns:
+            list: A list of claims from the JSON or an empty list if no claims are found.
+        """
+        try:
+            # Remove Markdown formatting (backticks and optional language labels)
+            cleaned_json_string = re.sub(
+                r"```(?:json)?\n", "", markdown_json_string.strip()
+            ).strip("`")
+
+            # Parse the cleaned JSON string
+            parsed_data = json.loads(cleaned_json_string)
+
+            # Return the list of claims
+            return parsed_data.get("negated_claims", [])
+        except (json.JSONDecodeError, AttributeError) as e:
+            # Handle errors gracefully and return an empty list
+            print(f"Error parsing JSON: {e}")
+            return []
+
+    def select_queries(budget: str):
+        # Define the verified jsonl paths
+        verified_jsonl_path = os.path.join(
+            dataset_dir, f"{budget}_negation_verified.jsonl"
+        )
+        verified_df = pd.read_json(verified_jsonl_path, lines=True)
+        original_claims = []
+        rewritten_claims = []
+        for idx, row in verified_df.iterrows():
+            rewrites = parse_claims(row["rewrites"])
+            verified_labels = json.loads(row["verification"])["labels"]
+            # Get indices where the label is 1
+            verified_idx = [
+                idx for idx, label in enumerate(verified_labels) if label == 1
+            ]
+            # Proceed only if there are verified indices with label 1
+            if verified_idx:
+                # Randomly sample an index
+                sampled_idx = random.choice(verified_idx)
+                # print(row["rewrites"])
+                selected_rewrite = rewrites[sampled_idx]
+                # Add the original claim and rewritten claim to their respective lists
+                orig_json = {
+                    "query_id": row["query_id"],
+                    "query": row["query"],
+                }
+                rewrite_json = {
+                    "query_id": row["query_id"],
+                    "query": selected_rewrite,
+                }
+                original_claims.append(orig_json)
+                rewritten_claims.append(rewrite_json)
+
+        # Save the original claims
+        pd.DataFrame(original_claims).to_csv(
+            os.path.join(dataset_dir, f"orig_{budget}_negation_queries.tsv"),
             index=False,
             header=["query_id", "query"],
+            sep="\t",
+        )
+
+        # Save the rewritten claims
+        pd.DataFrame(rewritten_claims).to_csv(
+            os.path.join(dataset_dir, f"edited_{budget}_negation_queries.tsv"),
+            index=False,
+            header=["query_id", "query"],
+            sep="\t",
         )
 
     if not args.no_baseline:

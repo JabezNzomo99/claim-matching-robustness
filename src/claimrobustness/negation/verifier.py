@@ -1,21 +1,26 @@
-# Code to evaluate generations of named entity replacements
-import argparse
-import configparser
 import os
-from claimrobustness import utils, defaults
-import json
+import argparse
+from openai import AsyncOpenAI
+from claimrobustness import utils
+from tqdm import tqdm
+import configparser
 import pandas as pd
-from transformers import pipeline
+import asyncio
+import jsonlines
+
+tqdm.pandas()
 
 
-def run():
-    parser = argparse.ArgumentParser(
-        description="Create a dataset for the verifier model"
-    )
+async def run():
+    # Parse the arguments
+    parser = argparse.ArgumentParser()
+    parser.add_argument("experiment_path", type=str, help="path where config lies")
+    parser.add_argument("dataset", type=str, help="path where config lies")
     parser.add_argument(
-        "experiment_path",
-        help="Path where config lies",
+        "--split",
         type=str,
+        default="test",
+        help="split to generate the perturbations on",
     )
     parser.add_argument(
         "--no-baseline", action="store_true", help="Skip generating baseline edits"
@@ -28,71 +33,79 @@ def run():
     args = parser.parse_args()
     config = configparser.ConfigParser()
     config.read(os.path.join(args.experiment_path, "config.ini"))
-    dataset = config["data"].get("dataset")
 
-    baseline = config["generation"].getint("baseline")
-    worstcase = config["generation"].getint("worstcase")
+    dataset = args.dataset
+    split = args.split
 
-    verifier = utils.init_pipeline(
-        model_name=config["verifier"].get("model_string"),
-        model_path=config["verifier"].get("model_path"),
-        num_labels=config["verifier"].getint("num_labels"),
-    )
+    model_name = config["model"].get("model_string")
+    temparature = config["model"].getfloat("temperature")
+    verification_prompt_template = config["model"].get("verification_prompt_template")
 
-    def verify_negation(process: str, verifier_model: pipeline, budget: int):
-        # Load the dataset
-        dataset_dir = f"{args.experiment_path}/{dataset}"
-        dataset_path = os.path.join(dataset_dir, f"{process}_negation.csv")
-        df = utils.load_verifier_data(dataset_path)
+    client = AsyncOpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
-        candidate_sentences = []
-        verified_list = []
+    # Create file containing the
+    # Read jsonl file containing the rewrites
+    # For each rewrite, generate the verification prompt
 
-        for _, row in df.iterrows():
+    async def verify_rewrites(budget: str):
+        if split == "test":
+            rewrites_file_path = (
+                f"{args.experiment_path}/{dataset}/{budget}_negation.jsonl"
+            )
+            output_file = (
+                f"{args.experiment_path}/{dataset}/{budget}_negation_verified.jsonl"
+            )
+        else:
+            rewrites_file_path = (
+                f"{args.experiment_path}/{dataset}/{split}_{budget}_negation.jsonl"
+            )
+            output_file = f"{args.experiment_path}/{dataset}/{split}_{budget}_negation_verified.jsonl"
+
+        rewrites_df = pd.read_json(rewrites_file_path, lines=True)
+        # Load the existing verification file
+        # Load the existing ids
+        existing_ids = set()
+        with open(output_file, "a+", encoding="utf-8") as f:
+            f.seek(0)
             try:
-                rewrites = json.loads(row["negated_claims"])
-                for rewrite in rewrites["negated_claims"]:
-                    verifier_input = rewrite + defaults.SEPARATOR_TOKEN + row["target"]
-                    candidate_sentences.append(verifier_input)
-                    verified_list.append(
-                        {
-                            "query_id": row["query_id"],
-                            "original_claim": row["query"],
-                            "edited_claim": rewrite,
-                            "rouge_score": utils.calculate_rouge_scores(
-                                row["query"], rewrite
-                            ),
-                            "edit_distance": utils.calculate_normalised_levenshtein_dist(
-                                row["query"], rewrite
-                            ),
-                        }
-                    )
-            except Exception as e:
-                continue
+                with jsonlines.Reader(f) as reader:
+                    data = list(reader.iter())
+                for obj in data:
+                    existing_ids.add(obj["query_id"])
+            except jsonlines.jsonlines.InvalidLineError:
+                # This will be raised if the file is empty. You can handle it as you need.
+                pass
 
-        verifier_dataset = utils.VerifierDataset(candidate_sentences)
-        verifier_scores = list(verifier_model(verifier_dataset))
-        # Convert verifier scores to JSON strings
-        verifier_scores_json = [json.dumps(score) for score in verifier_scores]
+        filtered_df = rewrites_df[~rewrites_df["query_id"].isin(existing_ids)]
+        print(f"Generating verifications for {len(filtered_df)} tweets")
 
-        verified_df = pd.DataFrame(verified_list)
-        verified_df["verifier_scores"] = verifier_scores_json
+        with jsonlines.open(output_file, mode="a") as writer:
+            for _, row in tqdm(filtered_df.iterrows()):
+                prompt = verification_prompt_template.format(
+                    claim=row["query"],
+                    fact_check=row["target"],
+                    rewrites=row["rewrites"],
+                )
+                llm_response = await utils.request_llm(
+                    client, prompt, model_name, temparature, enable_json=True
+                )
 
-        verified_dataset_path = os.path.join(
-            dataset_dir, f"verified_{process}_negation.csv"
-        )
-        verified_df.to_csv(verified_dataset_path, index=False, header=True)
-
-        print(
-            f"Saved the verified replacements for {process} to {verified_dataset_path}"
-        )
+                json_obj = {
+                    "query_id": row["query_id"],
+                    "query": row["query"],
+                    "target": row["target"],
+                    "rewrites": row["rewrites"],
+                    "verification": llm_response,
+                    "prompt": prompt,
+                }
+                writer.write(json_obj)
 
     if not args.no_baseline:
-        verify_negation("baseline", verifier, baseline)
+        await verify_rewrites("baseline")
 
     if not args.no_worstcase:
-        verify_negation("worstcase", verifier, worstcase)
+        await verify_rewrites("worstcase")
 
 
 if __name__ == "__main__":
-    run()
+    asyncio.run(run())

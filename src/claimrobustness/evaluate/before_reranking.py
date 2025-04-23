@@ -8,6 +8,18 @@ import pandas as pd
 from tqdm import tqdm
 import jsonlines
 import json
+import logging
+
+# Configure the root logger
+logging.basicConfig(
+    level=logging.DEBUG,  # Set the minimum log level
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",  # Log format
+    datefmt="%Y-%m-%d %H:%M:%S",  # Date format
+    handlers=[logging.StreamHandler()],  # Output logs to the console
+)
+
+# Create a logger
+logger = logging.getLogger(__name__)
 
 
 def run():
@@ -15,6 +27,8 @@ def run():
     # Parse the arguments
     parser = argparse.ArgumentParser()
     parser.add_argument("experiment_path", type=str, help="path where config lies")
+    parser.add_argument("dataset", type=str, help="path where config lies")
+    parser.add_argument("edit_type", type=str, help="Type of edit to evaluate")
     parser.add_argument("--save-embs", action="store_true")
     parser.add_argument("--save-ranks", action="store_true")
     parser.add_argument(
@@ -30,10 +44,12 @@ def run():
     config.read(os.path.join(args.experiment_path, "config.ini"))
 
     embedding_models = config["evaluation"].get("embedding_models").split(",")
-    print(f"Running evaluation on the following models: {embedding_models}")
+    logger.info(f"Running evaluation on the following models: {embedding_models}")
 
     # Load the dataset name
-    dataset = config["data"].get("dataset")
+    dataset = args.dataset
+
+    data_directory = config["evaluation"].get("data_directory")
 
     # Load the original baseline and edited baseline
     original_baseline_path = os.path.join(
@@ -57,7 +73,7 @@ def run():
 
     def load_evaluation_data(path: str) -> pd.DataFrame:
         return pd.read_csv(
-            path, names=["query_id", "query"], skiprows=[0]
+            path, names=["query_id", "query"], skiprows=[0], sep="\t"
         ).drop_duplicates()
 
     # Load the datasets
@@ -65,6 +81,7 @@ def run():
     targets = data["targets"]
     _, test_qrels = data["test"]
 
+    logger.info("Loading the evaluation data")
     original_baseline = load_evaluation_data(original_baseline_path)
     edited_baseline = load_evaluation_data(edited_baseline_path)
     original_worstcase = load_evaluation_data(original_worstcase_path)
@@ -113,30 +130,44 @@ def run():
 
     # Create a results directory if not exists
     # Save the file output
-    save_dir = f"{args.experiment_path}/results"
-    if not os.path.exists(save_dir):
-        os.makedirs(save_dir)
+    results_directory = f"{args.experiment_path}/{dataset}/results"
+    if not os.path.exists(results_directory):
+        os.makedirs(results_directory)
+
+    cache_dir = os.path.join(data_directory, args.edit_type, dataset)
+    # Create directory if it does not exist
+    os.makedirs(cache_dir, exist_ok=True)
+
+    all_claims_dir = os.path.join(data_directory, "embeddings", dataset)
 
     device = utils.get_device()
-    results_file_path = os.path.join(save_dir, "before_reranking_results.jsonl")
+    results_file_path = os.path.join(
+        results_directory, "before_reranking_results.jsonl"
+    )
     with jsonlines.open(results_file_path, mode="a") as writer:
         for embedding_model_path in tqdm(embedding_models):
-            print(f"Running evaluation on model: {embedding_model_path}")
-            embedding_save_dir = os.path.join(save_dir, embedding_model_path)
-            if not os.path.exists(embedding_save_dir):
-                os.makedirs(embedding_save_dir)
-
+            logger.info(f"Running evaluation on model: {embedding_model_path}")
+            cache_embedding_dir = os.path.join(all_claims_dir, embedding_model_path)
+            os.makedirs(cache_embedding_dir, exist_ok=True)
+            cached_emb_path = os.path.join(cache_embedding_dir, f"claim_embs.npy")
             model = SentenceTransformer(embedding_model_path)
-            # Check if cache exists
-            embs = model.encode(
-                targets.target.tolist(),
-                prompt="Represent the evidence for retrieval:",
-                show_progress_bar=True,
-                device=device,
-            )
+            pool = model.start_multi_process_pool()
+            # Check if embeddings are already cached
+            if os.path.exists(cached_emb_path):
+                logger.info(f"Loading embeddings from {cached_emb_path}")
+                embs = np.load(cached_emb_path)
+            else:
+                logger.info(f"Embeddings not found in cache. Generating embeddings")
+                embs = model.encode_multi_process(
+                    targets.target.tolist(),
+                    prompt="Represent the evidence for retrieval:",
+                    pool=pool,
+                    # device=device,
+                    # show_progress_bar=True,
+                )
             embedding_model_results = {}
             for key, test_queries in tqdm(evaluation_data_dict.items()):
-                print(f"Running evaluation on {key}")
+                logger.info(f"Running evaluation on {key}")
                 map_results = {}
                 map_recall_results = {}
                 all_tweet_embs = {}
@@ -144,22 +175,26 @@ def run():
                 run_tweets, claim_idx = get_idx(test_qrels, targets, test_queries)
                 tweet_embs = model.encode(
                     run_tweets["query"].to_list(),
-                    prompt="Represent the fact for retrieving supporting evidence:",
-                    show_progress_bar=True,
-                    device=device,
+                    prompt="Represent the tweet for retrieving supporting evidence:",
+                    pool=pool,
+                    # device=device,
+                    # show_progress_bar=True,
                 )
                 all_tweet_embs[ptn] = tweet_embs
                 scores = tweet_embs @ embs.T
                 ranks = [score.argsort()[::-1] for score in scores]
                 if args.save_ranks:
-                    np.save(
-                        os.path.join(embedding_save_dir, f"{key}_ranks_{ptn}.npy"),
-                        np.array(ranks),
-                    )
-                    # np.save(
-                    #     os.path.join(save_dir, f"{key}_ranks_{ptn}_negatives.npy"),
-                    #     get_negative_ranks_arr(ranks, claim_idx),
-                    # )
+                    embedding_save_dir = os.path.join(cache_dir, embedding_model_path)
+                    if not os.path.exists(embedding_save_dir):
+                        os.makedirs(embedding_save_dir)
+                        np.save(
+                            os.path.join(cache_dir, f"{key}_ranks_{ptn}.npy"),
+                            np.array(ranks),
+                        )
+                        # np.save(
+                        #     os.path.join(save_dir, f"{key}_ranks_{ptn}_negatives.npy"),
+                        #     get_negative_ranks_arr(ranks, claim_idx),
+                        # )
 
                 map_results[ptn] = []
                 for n in [1, 5, 10, 20]:
@@ -170,11 +205,11 @@ def run():
                     map_recall_results[ptn].append(mean_recall(claim_idx, ranks, n))
 
                 if args.save_embs:
-                    np.save(
-                        os.path.join(embedding_save_dir, f"{key}_tweet_embs.npy"),
-                        all_tweet_embs,
-                    )
-                    np.save(os.path.join(embedding_save_dir, f"claim_embs.npy"), embs)
+                    # np.save(
+                    #     os.path.join(embedding_save_dir, f"{key}_tweet_embs.npy"),
+                    #     all_tweet_embs,
+                    # )
+                    np.save(cached_emb_path, embs)
 
                 results = {
                     "map_results": map_results,
@@ -184,6 +219,7 @@ def run():
             all_embedding_model_results = {
                 embedding_model_path: embedding_model_results
             }
+            model.stop_multi_process_pool(pool)
             writer.write(all_embedding_model_results)
 
 

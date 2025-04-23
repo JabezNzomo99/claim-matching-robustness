@@ -1,17 +1,11 @@
 import os
 import argparse
-from groq import Groq
-from openai import OpenAI, RateLimitError, AsyncOpenAI
-from claimrobustness import utils, defaults
+from openai import AsyncOpenAI
+from claimrobustness import utils
 from tqdm import tqdm
-from ratelimit import limits, sleep_and_retry
-from datetime import timedelta
-from time import sleep
-import stanza
 import configparser
 import pandas as pd
 import asyncio
-import backoff
 import jsonlines
 
 tqdm.pandas()
@@ -23,6 +17,12 @@ async def run():
     parser.add_argument("experiment_path", type=str, help="path where config lies")
     parser.add_argument("dataset", type=str, help="path where config lies")
     parser.add_argument(
+        "--split",
+        type=str,
+        default="test",
+        help="split to generate the perturbations on",
+    )
+    parser.add_argument(
         "--no-baseline", action="store_true", help="Skip generating baseline edits"
     )
     parser.add_argument(
@@ -32,33 +32,52 @@ async def run():
     # Parse the arguments
     args = parser.parse_args()
     config = configparser.ConfigParser()
+    print("We are here...")
     config.read(os.path.join(args.experiment_path, "config.ini"))
 
     dataset = args.dataset
+    split = args.split
 
+    print("We are here again...")
     model_name = config["model"].get("model_string")
     temparature = config["model"].getfloat("temperature")
     verification_prompt_template = config["model"].get("verification_prompt_template")
 
-    if "gpt" in model_name:
-        client = AsyncOpenAI(api_key=os.environ["OPENAI_API_KEY"])
-    elif "llama" in model_name:
-        client = Groq(
-            api_key=os.environ["GROQ_API_KEY"],
-        )
+    client = AsyncOpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
     # Create file containing the
     # Read jsonl file containing the rewrites
     # For each rewrite, generate the verification prompt
 
     async def verify_rewrites(budget: str):
-        rewrites_file_path = (
-            f"{args.experiment_path}/{dataset}/{budget}_named_entity_replacements.jsonl"
-        )
-        output_file = f"{args.experiment_path}/{dataset}/{budget}_named_entity_replacements_verified.jsonl"
+        if split == "test":
+            rewrites_file_path = f"{args.experiment_path}/{dataset}/{budget}_named_entity_replacements.jsonl"
+            output_file = f"{args.experiment_path}/{dataset}/{budget}_named_entity_replacements_verified.jsonl"
+        else:
+            rewrites_file_path = f"{args.experiment_path}/{dataset}/{split}_{budget}_named_entity_replacements_fixed.jsonl"
+            output_file = f"{args.experiment_path}/{dataset}/{split}_{budget}_named_entity_replacements_verified.jsonl"
+
+        print("The problem is here . . .")
+        try:
+            with open(rewrites_file_path, "r") as f:
+                for i, line in enumerate(f, 1):  # Start counting lines from 1
+                    try:
+                        pd.read_json(line, lines=False)  # Try to parse each line
+                    except ValueError as ve:
+                        print(f"Error in line {i}: {line.strip()}")
+                        print("Error details:", ve)
+                        raise  # Re-raise the exception if needed
+            rewrites_df = pd.read_json(
+                rewrites_file_path, lines=True
+            )  # Proceed if no errors
+        except Exception as e:
+            print("Error while loading the JSON file:", e)
+
         rewrites_df = pd.read_json(rewrites_file_path, lines=True)
         # Load the existing verification file
         # Load the existing ids
+        print("The problem is here . . .")
+
         existing_ids = set()
         with open(output_file, "a+", encoding="utf-8") as f:
             f.seek(0)
@@ -68,6 +87,7 @@ async def run():
                 for obj in data:
                     existing_ids.add(obj["query_id"])
             except jsonlines.jsonlines.InvalidLineError:
+                print("WE ARE HERE :InvalidLineError")
                 # This will be raised if the file is empty. You can handle it as you need.
                 pass
 

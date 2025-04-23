@@ -78,7 +78,6 @@ def run():
             if verified_idx:
                 # Randomly sample an index
                 sampled_idx = random.choice(verified_idx)
-                # Select the rewrite at the sampled index
                 selected_rewrite = rewrites[sampled_idx]
                 # Add the original claim and rewritten claim to their respective lists
                 orig_json = {

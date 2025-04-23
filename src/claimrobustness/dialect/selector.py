@@ -6,15 +6,22 @@ import os
 from claimrobustness import utils
 import json
 import pandas as pd
+import random
+from tqdm import tqdm
 
 
 def run():
     parser = argparse.ArgumentParser(
-        description="Create a dataset for the verifier model"
+        description="Script to select instances from the LLM that have been modified"
     )
     parser.add_argument(
         "experiment_path",
         help="Path where config lies",
+        type=str,
+    )
+    parser.add_argument(
+        "dataset",
+        help="Name of the dataset",
         type=str,
     )
 
@@ -22,62 +29,89 @@ def run():
     args = parser.parse_args()
     config = configparser.ConfigParser()
     config.read(os.path.join(args.experiment_path, "config.ini"))
-    dataset = config["data"].get("dataset")
+    dataset = args.dataset
     dataset_dir = f"{args.experiment_path}/{dataset}"
 
-    def find_min_max_score_matched_label(group):
-        # Filter rows where label is "LABEL_1"
-        matched_rows = group[
-            group["verifier_scores"].apply(
-                lambda x: json.loads(x)["label"] == "LABEL_1"
-            )
+    def parse_rewritten_tweets(text):
+        """
+        Parses a given string of rewritten tweets into a list of individual tweets.
+
+        Args:
+            text (str): The input string containing rewritten tweets.
+
+        Returns:
+            list: A list of individual rewritten tweets.
+        """
+        # Split the text by lines and filter out any empty lines
+        lines = [line.strip() for line in text.split("\n") if line.strip()]
+
+        # Extract tweets after the colon ": " in lines that start with "Rewritten Tweet"
+        tweets = [
+            line.split(": ", 1)[1]
+            for line in lines
+            if line.startswith("Rewritten Tweet") and ": " in line
         ]
-        if not matched_rows.empty:
-            # Find the row with the least score among the filtered rows
-            min_score_row = matched_rows.loc[matched_rows["edit_distance"].idxmin()]
-            max_score_row = matched_rows.loc[matched_rows["edit_distance"].idxmax()]
-            return pd.DataFrame(
-                {
-                    "query_id": group["query_id"].iloc[0],
-                    "original_claim": group["original_claim"].iloc[0],
-                    "baseline_claim": min_score_row["edited_claim"],
-                    "baseline_edit_distance": min_score_row["edit_distance"],
-                    "worstcase_claim": max_score_row["edited_claim"],
-                    "worstcase_edit_distance": max_score_row["edit_distance"],
-                },
-                index=[0],
+
+        return tweets
+
+    dialect_idx_mapping = {
+        "aae": 0,
+        "pidgin": 1,
+        "singlish": 2,
+        "patois": 3,
+    }
+
+    def select_queries():
+        # Load the jsonl file containing the verified labels
+        verified_jsonl_path = os.path.join(
+            dataset_dir, f"dialect_rewrites_verified.jsonl"
+        )
+        verified_df = pd.read_json(verified_jsonl_path, lines=True)
+
+        for dialect, idx in tqdm(dialect_idx_mapping.items()):
+            print(f"Processing dialect: {dialect}")
+            # Create dialect subdirectory
+            dialect_dir = os.path.join(dataset_dir, dialect)
+            os.makedirs(dialect_dir, exist_ok=True)
+            original_claims = []
+            rewritten_dialect_claims = []
+
+            for _, row in tqdm(verified_df.iterrows()):
+                try:
+                    rewrites = parse_rewritten_tweets(row["rewrites"])
+                    verified_labels = list(json.loads(row["verification"])["labels"])
+                    # For this specific dialect, check whether the label is 1
+                    if len(verified_labels) > 0 and verified_labels[idx] == 1:
+                        orig_json = {
+                            "query_id": row["query_id"],
+                            "query": row["query"],
+                        }
+                        rewrite_json = {
+                            "query_id": row["query_id"],
+                            "query": rewrites[idx],
+                        }
+                        original_claims.append(orig_json)
+                        rewritten_dialect_claims.append(rewrite_json)
+                except Exception as e:
+                    continue
+
+            # Save the original claims
+            pd.DataFrame(original_claims).to_csv(
+                os.path.join(dialect_dir, f"orig_baseline_dialect.tsv"),
+                index=False,
+                header=["query_id", "query"],
+                sep="\t",
             )
-        else:
-            return None
 
-    # Load the dataset
-    dataset_path = os.path.join(dataset_dir, "verified_dialect_rewrites.csv")
-    df = utils.load_verifier_data(dataset_path)
-    result_df = (
-        df.groupby("query_id")
-        .apply(find_min_max_score_matched_label)
-        .reset_index(drop=True)
-    )
+            # Save the rewritten claims
+            pd.DataFrame(rewritten_dialect_claims).to_csv(
+                os.path.join(dialect_dir, f"edited_baseline_dialect.tsv"),
+                index=False,
+                header=["query_id", "query"],
+                sep="\t",
+            )
 
-    # Save the original claims
-    result_df[["query_id", "original_claim"]].to_csv(
-        os.path.join(dataset_dir, f"orig_dialect_rewrites.tsv"),
-        index=False,
-        header=True,
-    )
-
-    # Save the baseline claims
-    result_df[["query_id", "baseline_claim"]].to_csv(
-        os.path.join(dataset_dir, f"baseline_dialect_rewrites.tsv"),
-        index=False,
-        header=["query_id", "query"],
-    )
-
-    result_df[["query_id", "worstcase_claim"]].to_csv(
-        os.path.join(dataset_dir, f"worstcase_dialect_rewrites.tsv"),
-        index=False,
-        header=["query_id", "query"],
-    )
+    select_queries()
 
 
 if __name__ == "__main__":
