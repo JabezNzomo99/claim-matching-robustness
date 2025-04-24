@@ -1,7 +1,15 @@
 # When Claims Evolve: Evaluating and Enhancing the Robustness of Embedding Models Against Misinformation Edits 
-[![Generic badge](https://img.shields.io/badge/arXiv-2309.15088-red.svg)](https://arxiv.org/abs/2503.03417)
+[![Static Badge](https://img.shields.io/badge/Paper-arXiv%3A2503.03417-brightgreen?logoColor=Blue)
+](https://arxiv.org/abs/2503.03417)
+<a href=#bibtex><img src="https://img.shields.io/badge/Paper-BibTex-yellow"></a>
+
+[Jabez Magomere](), [Emanuele La Malfa](https://emanuelelm.github.io/), [Manuel Tonneau](https://manueltonneau.com/), [Ashkan Kazemi](https://ashkankzme.github.io/), [Scott Hale](https://www.oii.ox.ac.uk/people/profiles/scott-hale/)
 
 This repository contains the code for the paper [*When Claims Evolve*: Evaluating and Enhancing the Robustness of Embedding Models Against Misinformation Edits](https://arxiv.org/abs/2503.03417). If you have any questions, feel free to create a Github issue or reach out to the first author at jabez.magomere@keble.ox.ac.uk. 
+
+<p align="center">
+  <img src="assets/our_approach.png" alt="Our Approach" style="width: 100%;">
+</p>
 
 ## Intro
 - Figure of the overall approach of the paper
@@ -98,7 +106,7 @@ options:
 To generate the rewrites;
 python src/claimrobustness/name_entity_replacement/generator.py experiments/named_entity_replacement/gpt4o/ fact-check-tweet
 
-## Citation
+## Bibtex
 If you find our work useful, please consider citing our paper!
 
 ```bibtex
