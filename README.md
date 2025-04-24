@@ -3,6 +3,31 @@
 
 This repository contains the code for the paper [*When Claims Evolve*: Evaluating and Enhancing the Robustness of Embedding Models Against Misinformation Edits](https://arxiv.org/abs/2503.03417). If you have any questions, feel free to create a Github issue or reach out to the first author at jabez.magomere@keble.ox.ac.uk. 
 
+## Intro
+- Figure of the overall approach of the paper
+- Link to Hugging face datasets +
+- Small intro on each of the sections of the READ ME
+- Results, heatmap
+
+## Getting Started
+- Setup python environment
+- Install setup.py to project
+
+## Datasets
+- How to obtain the dataset
+- Description of all the datasets with links to repo and how to parse them to fit the current project
+- Data is formatted to TREC format i.e. vclaim, query_id
+- How data is loaded in the project
+
+## Generating Misinformation Edits
+- Description of Config
+- Prompt 
+- API key --> parsing the OpenAI api key
+- Directories to create the config
+ 
+ ### LLM 
+
+
 ## Data
 To load the data used in the experiments, run the script below to download the data from CLEFCheckThat22 edition.
 
@@ -74,7 +99,9 @@ To generate the rewrites;
 python src/claimrobustness/name_entity_replacement/generator.py experiments/named_entity_replacement/gpt4o/ fact-check-tweet
 
 ## Citation
-```
+If you find our work useful, please consider citing our paper!
+
+```bibtex
 @misc{magomere2025claimsevolveevaluatingenhancing,
       title={When Claims Evolve: Evaluating and Enhancing the Robustness of Embedding Models Against Misinformation Edits}, 
       author={Jabez Magomere and Emanuele La Malfa and Manuel Tonneau and Ashkan Kazemi and Scott Hale},
