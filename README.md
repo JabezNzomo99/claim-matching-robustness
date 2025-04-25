@@ -1,21 +1,37 @@
 # When Claims Evolve: Evaluating and Enhancing the Robustness of Embedding Models Against Misinformation Edits 
 [![Static Badge](https://img.shields.io/badge/Paper-arXiv%3A2503.03417-brightgreen?logoColor=Blue)
-](https://arxiv.org/abs/2503.03417)
-<a href=#bibtex><img src="https://img.shields.io/badge/Paper-BibTex-yellow"></a>
+](https://arxiv.org/abs/2503.03417) <a href=#bibtex><img src="https://img.shields.io/badge/Paper-BibTex-yellow"></a>
 
 [Jabez Magomere](), [Emanuele La Malfa](https://emanuelelm.github.io/), [Manuel Tonneau](https://manueltonneau.com/), [Ashkan Kazemi](https://ashkankzme.github.io/), [Scott Hale](https://www.oii.ox.ac.uk/people/profiles/scott-hale/)
 
 This repository contains the code for the paper [*When Claims Evolve*: Evaluating and Enhancing the Robustness of Embedding Models Against Misinformation Edits](https://arxiv.org/abs/2503.03417). If you have any questions, feel free to create a Github issue or reach out to the first author at jabez.magomere@keble.ox.ac.uk. 
 
+## Overall Description
+Online misinformation remains a critical challenge, and fact-checkers increasingly rely on embedding-based methods to retrieve relevant fact-checks. Yet, when debunked claims reappear in edited forms, the performance of these methods is unclear. In this work, we introduce a taxonomy of six common real-world misinformation edits and propose a perturbation framework that generates valid, natural claim variations. Our multi-stage retrieval evaluation reveals that standard embedding models struggle with user-introduced edits, while LLM-distilled embeddings offer improved robustness at a higher computational cost. Although a strong reranker helps mitigate some issues, it cannot fully compensate for first-stage retrieval gaps. Addressing these retrieval gaps, our train- and inference-time mitigation approaches enhance in-domain robustness by up to 17 percentage points and boost out-of-domain generalization by 10 percentage points over baseline models. Overall, our findings provide practical improvements to claim-matching systems, enabling more reliable fact-checking of evolving misinformation. A visual summary of our approach is provided below:
+
 <p align="center">
   <img src="assets/our_approach.png" alt="Our Approach" style="width: 100%;">
 </p>
 
-## Intro
-- Figure of the overall approach of the paper
-- Link to Hugging face datasets +
-- Small intro on each of the sections of the READ ME
-- Results, heatmap
+### Before Reranking Results on *CheckThat22* Dataset
+<p align="center">
+  <img src="assets/before_reranking_results_all_CheckThat2022_plot.png" alt="Our Approach" style="width: 100%;">
+</p>
+
+### After Reranking Results on *CheckThat22* Dataset
+
+<p align="center">
+  <img src="assets/after_reranking_results_all_CheckThat2022_plot.png" alt="Our Approach" style="width: 100%;">
+</p>
+
+### Mitigation Results on *CheckThat22* Dataset
+<p align="center">
+  <img src="assets/perturbations_split.png" alt="Our Approach" style="width: 100%;">
+</p>
+
+## Getting Started
+- Setup python environment
+- Install setup.py to project
 
 ## Getting Started
 - Setup python environment
@@ -24,7 +40,7 @@ This repository contains the code for the paper [*When Claims Evolve*: Evaluatin
 ## Datasets
 - How to obtain the dataset
 - Description of all the datasets with links to repo and how to parse them to fit the current project
-- Data is formatted to TREC format i.e. vclaim, query_id
+- Data is formatted to TREC format i.e. vclaim, query_id, description of the TREC format
 - How data is loaded in the project
 
 ## Generating Misinformation Edits
@@ -33,7 +49,25 @@ This repository contains the code for the paper [*When Claims Evolve*: Evaluatin
 - API key --> parsing the OpenAI api key
 - Directories to create the config
  
- ### LLM 
+ ### LLM As a Perturber
+ - Command to generate each perturbation type
+  
+ ### LLM As a Verifier
+ - Command to verify the generated perturbations 
+
+## Retrievers Evaluation (Before Reranking)
+- Code to call for before_reranking
+- Code to call for dialct ranking
+- Code implementation for BM25
+
+## Reranker Evaluation (After Reranking)
+
+## Mitigation
+### Knowledge distillation approach + code
+### Claim Normalization Approach 
+### 
+ 
+ 
 
 
 ## Data
