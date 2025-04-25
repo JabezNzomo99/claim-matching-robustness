@@ -1,0 +1,2 @@
+{"nvidia/NV-Embed-v2": {"original_baseline": {"map_results": {"test": [0.7115384615384616, 0.7600961538461538]}, "map_recall_results": {"test": [0.7115384615384616, 0.8365384615384616]}}}}
+{"all-mpnet-base-v2": {"original_baseline": {"map_results": {"test": [0.5, 0.5192307692307693]}, "map_recall_results": {"test": [0.5, 0.5480769230769231]}}}}

@@ -1,22 +1,11 @@
-data/
-clef2021-checkthat-lab/
-clef2022-checkthat-lab/
-That-is-a-Known-Lie/
-CT22/
 *.code-workspace
 # *.csv
 # *.tsv
 *.safetensors
-*.jsonl
 *.pt
 *.npy
 *.zip
-*.ipynb
-**/training/
-clef2021-checkthat-lab/
-clef2022-checkthat-lab/
-CheckThat-Arabic/
-temp.txt
+
 
 
 # Byte-compiled / optimized / DLL files

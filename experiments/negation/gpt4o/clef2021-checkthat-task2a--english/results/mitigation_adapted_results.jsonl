@@ -1,0 +1,4 @@
+{"all-mpnet-base-v2": {"original_worstcase": {"map_results": {"test": [{"map@20": 0.7788436253509783}]}}, "edited_worstcase": {"map_results": {"test": [{"map@20": 0.7365962490962492}]}}}}
+{"all-mpnet-basev2-robust": {"original_worstcase": {"map_results": {"test": [{"map@20": 0.8403054395701454}]}}, "edited_worstcase": {"map_results": {"test": [{"map@20": 0.8122539556363085}]}}}}
+{"all-mpnet-base-v2-ft": {"original_worstcase": {"map_results": {"test": [{"map@20": 0.8962733025233025}]}}, "edited_worstcase": {"map_results": {"test": [{"map@20": 0.8538558851058851}]}}}}
+{"all-mpnet-basev2-robust-ft": {"original_worstcase": {"map_results": {"test": [{"map@20": 0.8833972708972708}]}}, "edited_worstcase": {"map_results": {"test": [{"map@20": 0.8422887172887173}]}}}}

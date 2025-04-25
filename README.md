@@ -29,15 +29,88 @@ Online misinformation remains a critical challenge, and fact-checkers increasing
   <img src="assets/perturbations_split.png" alt="Our Approach" style="width: 100%;">
 </p>
 
-## Getting Started
-- Setup python environment
-- Install setup.py to project
+## 📁 Project Structure
 
-## Getting Started
-- Setup python environment
-- Install setup.py to project
+```
+├── annotations
+│   ├── annotator3
+│   ├── annotator2
+│   ├── annotator1
+├── ood_dataset
+├── rank_llm
+├── src
+│   ├── claimrobustness
+│   │   ├── dialect
+│   │   ├── threshold_classifier
+│   │   ├── name_entity_replacement
+│   │   ├── mitigation
+│   │   ├── negation
+│   │   ├── typos
+│   │   ├── amplify_minimize
+│   │   ├── casing
+│   │   ├── evaluate
+│   │   ├── rewrite
+│   │   ├── verifier
+├── experiments
+│   ├── train_verifier
+│   │   ├── debertaV3
+│   │   ├── create_dataset
+│   ├── dialect
+│   │   ├── gpt4o
+│   │   │   ├── clef2021-checkthat-task2a--english
+│   │   │   ├── fact-check-tweet
+│   ├── mitigation
+│   │   ├── gpt4o
+│   ├── negation
+│   │   ├── gpt4o
+│   ├── typos
+│   │   ├── gpt4o
+│   ├── amplify_minimize
+│   │   ├── gpt4o
+│   ├── casing
+│   │   ├── clef2021-checkthat-task2a--english
+│   │   ├── fact-check-tweet
+│   ├── rewrite
+│   │   ├── gpt4o
+│   ├── ood
+│   │   ├── ood-dataset
+│   ├── named_entity_replacement
+│   │   ├── gpt4o
+│   │   ├── llama3_70b
+├── notebooks
+├── clef2022-checkthat-lab
+├── fact-check_tweet_dataset
+```
 
-## Datasets
+
+## 📦 Getting Started
+### 1. 🐍 Set up the Conda environment
+
+```bash
+conda env create -f environment.yml
+conda activate your-env-name  # replace with the name in environment.yml
+```
+
+### 2. 🛠️ Install the project
+
+```bash
+python -m pip install .
+```
+
+## 📂 Datasets Access
+
+- The **CheckThat22** dataset is available under a research-use license and can be accessed from the [CheckThat Lab GitLab repository](https://gitlab.com/checkthat_lab/clef2022-checkthat-lab/clef2022-checkthat-lab.git).
+
+  We used this pipeline of the CLEF dataset. To download it directly, run:
+
+  ```bash
+  ./download_clef.sh
+  ```
+
+- The **FactCheckTweet** dataset can be accessed for research purposes [here](https://lit.eecs.umich.edu/publications.html).
+
+
+
 - How to obtain the dataset
 - Description of all the datasets with links to repo and how to parse them to fit the current project
 - Data is formatted to TREC format i.e. vclaim, query_id, description of the TREC format

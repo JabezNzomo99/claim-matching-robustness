@@ -1,0 +1,5 @@
+{"all-mpnet-base-v2": {"normalised_claims": {"map_results": {"test": [{"map@20": 0.7445337766369838}]}}}}
+{"all-mpnet-basev2-robust": {"normalised_claims": {"map_results": {"test": [{"map@20": 0.8207162412240537}]}}}}
+{"all-mpnet-base-v2-ft": {"normalised_claims": {"map_results": {"test": [{"map@20": 0.8795670520999469}]}}}}
+{"all-mpnet-basev2-robust-ft": {"normalised_claims": {"map_results": {"test": [{"map@20": 0.8855233787593985}]}}}}
+{"nvidia/NV-Embed-v2": {"ood": {"map_results": {"test": [{"map@20": 0.9663194444444444}]}}}}
