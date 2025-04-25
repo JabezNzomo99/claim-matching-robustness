@@ -1,3 +1,0 @@
-[submodule "rank_llm"]
-	path = rank_llm
-	url = https://github.com/castorini/rank_llm.git
