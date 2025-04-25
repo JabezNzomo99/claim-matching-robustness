@@ -234,6 +234,126 @@ iclaim_id <TAB> 0 <TAB> vclaim_id <TAB> relevance
 | tweet-en-0137  | 0 | vclaim-sno-00504  | 1         |
 
 
+## 🔁 Generating and Verifying Misinformation Edits
+
+This section outlines how we generate and verify misinformation edits using GPT4o. The process is modular and consistent across different perturbation types such as `rewrite`, `negation`, `typos`, `amplify_minimize`, etc.
+
+We use `rewrite` as the example below, but the same process applies for all other edit types.
+
+---
+
+### 🧠 LLM as a Perturber
+
+Perturbed versions of input claims are generated using an LLM configured via a `config.ini` file located in:
+
+```
+experiments/rewrite/gpt4o/config.ini
+```
+
+This configuration includes dataset selection, prompt templates, sampling temperature, and model settings.
+
+**Example `config.ini` (for `rewrite`):**
+
+```ini
+[data]
+dataset = clef2021-checkthat-task2a--english
+
+[model]
+model_string = gpt-4o
+temperature = 0.9
+verification_temperature = 0
+prompt_template = "You are now a social media user tasked with rewritting a given tweet in different ways. You will receive two inputs:
+    1. A claim (original tweet)  
+    2. A fact-check that supports or refutes the claim
+
+    Your task: 
+    - Rewrite the tweet in {number_of_samples} different ways while introducing as minimal edits as possible.
+
+    Ensure that:
+    - The fact-check is still applicable to the rewritten tweets.
+    - The rewritten tweets must convey the same main claim as the original.  
+    - The rewritten tweets should read naturally and not appear suspiciously altered.
+
+    **Example**:  
+    Original tweet: "Biden signed an executive order today banning the term 'China virus'."  
+    Fact-check: "President Joe Biden issued an executive order in January 2021 banning the term ‘China virus.’"  
+
+    Possible rewrites:  
+    - "President Biden officially signed an executive order today prohibiting the use of the term 'China virus.'"
+    - "Biden's executive order today included a ban on the term 'China virus."
+    - "The term 'China virus' has been banned under a new executive order signed by Biden today."
+    - "Today, Biden signed an executive order prohibiting the phrase 'China virus."
+    - "Biden's executive order banning the term 'China virus' was signed today."
+
+    Response Format:
+    Rewritten Tweet 1: [Your first rewritten version]
+    Rewritten Tweet 2: [Your second rewritten version]
+    Rewritten Tweet 3: [Your third rewritten version]
+    Rewritten Tweet 4: [Your fourth rewritten version]
+    Rewritten Tweet 5: [Your fifth rewritten version]
+
+    Inputs:
+    Tweet: {claim}
+    Fact Check: {fact_check}
+    Generate your response in the specified string format."
+
+verification_prompt_template = "You are now a fact checker tasked with verifying whether a fact check is applicable to a list of rewritten tweets. You will 
+    receive three inputs:
+    1. Fact-check: A statement supporting or refuting a claim.
+    2. Original Tweet: The source tweet conveying the claim.
+    3. Rewritten Tweets: A list of tweets rewritten based on the original tweet.
+
+    Your task: For each rewritten tweet, evaluate:
+    - Does the fact-check apply to it?
+    - Does it convey the same main claim as the original tweet?
+    - Does the rewritten tweet read naturally?
+
+    Your output:
+    - For each rewritten tweet, provide a binary label (1 or 0) indicating whether the constraints above are satisfied.
+
+    **Example**:
+    Fact-check: "President Joe Biden issued an executive order in January 2021 banning the term ‘China virus.’"
+    Original tweet: "Biden signed an executive order today banning the term 'China virus'."  
+
+    Rewritten tweets:  
+    - "President Biden officially signed an executive order today prohibiting the use of the term 'China virus.'"
+    - "Biden's executive order today included a ban on the term 'China virus."
+    - "The term 'China virus' has been banned under a new executive order signed by Biden today."
+    - "Today, Biden signed an executive order prohibiting the phrase 'China virus."
+    - "Biden's executive order banning the term 'Bejing virus' was signed today."
+
+    Output:
+    {
+        "labels": [1, 1, 1, 0]
+    }
+
+    Inputs:
+    Fact Check: {fact_check}
+    Original Tweet: {claim}
+    Rewritten Tweets: {rewrites}
+    Generate your response in the specified JSON format."
+
+[generation]
+number_of_samples = 5
+```
+
+### 📊 Evaluation Setup
+
+Finally, to evaluate robustness, the config includes an evaluation section:
+
+```ini
+[evaluation]
+data_directory = <path to cache all the embeddings outputs from evaluations>
+embedding_models = all-mpnet-base-v2,all-MiniLM-L12-v2,sentence-t5-base,sentence-t5-large,all-distilroberta-v1,hkunlp/instructor-base,hkunlp/instructor-large,nvidia/NV-Embed-v2,Salesforce/SFR-Embedding-Mistral,sentence-t5-large-ft,all-mpnet-base-v2-ft
+original_baseline_path = orig_baseline_rewrite.tsv
+edited_baseline_path = edited_baseline_rewrite.tsv
+original_worstcase_path = orig_worstcase_rewrite.tsv
+edited_worstcase_path = edited_worstcase_rewrite.tsv
+```
+---
+
+> 📝 To use other perturbation types (e.g., `negation`, `typos`, etc.), replicate the same structure under `experiments/<edit_name>/` and adjust the config accordingly.
+
 
 ## Generating Misinformation Edits
 - Description of Config
