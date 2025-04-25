@@ -7,7 +7,7 @@
 This repository contains the code for the paper [*When Claims Evolve*: Evaluating and Enhancing the Robustness of Embedding Models Against Misinformation Edits](https://arxiv.org/abs/2503.03417). If you have any questions, feel free to create a Github issue or reach out to the first author at jabez.magomere@keble.ox.ac.uk. 
 
 ## Overall Description
-Online misinformation remains a critical challenge, and fact-checkers increasingly rely on embedding-based methods to retrieve relevant fact-checks. Yet, when debunked claims reappear in edited forms, the performance of these methods is unclear. In this work, we introduce a taxonomy of six common real-world misinformation edits and propose a perturbation framework that generates valid, natural claim variations. Our multi-stage retrieval evaluation reveals that standard embedding models struggle with user-introduced edits, while LLM-distilled embeddings offer improved robustness at a higher computational cost. Although a strong reranker helps mitigate some issues, it cannot fully compensate for first-stage retrieval gaps. Addressing these retrieval gaps, our train- and inference-time mitigation approaches enhance in-domain robustness by up to 17 percentage points and boost out-of-domain generalization by 10 percentage points over baseline models. Overall, our findings provide practical improvements to claim-matching systems, enabling more reliable fact-checking of evolving misinformation. A visual summary of our approach is provided below:
+A visual summary of our approach is provided below:
 
 <p align="center">
   <img src="assets/our_approach.png" alt="Our Approach" style="width: 100%;">
@@ -23,65 +23,6 @@ Online misinformation remains a critical challenge, and fact-checkers increasing
 <p align="center">
   <img src="assets/after_reranking_results_all_CheckThat2022_plot.png" alt="Our Approach" style="width: 100%;">
 </p>
-
-### Mitigation Results on *CheckThat22* Dataset
-<p align="center">
-  <img src="assets/perturbations_split.png" alt="Our Approach" style="width: 100%;">
-</p>
-
-## 📁 Project Structure
-
-```
-├── annotations
-│   ├── annotator3
-│   ├── annotator2
-│   ├── annotator1
-├── ood_dataset
-├── rank_llm
-├── src
-│   ├── claimrobustness
-│   │   ├── dialect
-│   │   ├── threshold_classifier
-│   │   ├── name_entity_replacement
-│   │   ├── mitigation
-│   │   ├── negation
-│   │   ├── typos
-│   │   ├── amplify_minimize
-│   │   ├── casing
-│   │   ├── evaluate
-│   │   ├── rewrite
-│   │   ├── verifier
-├── experiments
-│   ├── train_verifier
-│   │   ├── debertaV3
-│   │   ├── create_dataset
-│   ├── dialect
-│   │   ├── gpt4o
-│   │   │   ├── clef2021-checkthat-task2a--english
-│   │   │   ├── fact-check-tweet
-│   ├── mitigation
-│   │   ├── gpt4o
-│   ├── negation
-│   │   ├── gpt4o
-│   ├── typos
-│   │   ├── gpt4o
-│   ├── amplify_minimize
-│   │   ├── gpt4o
-│   ├── casing
-│   │   ├── clef2021-checkthat-task2a--english
-│   │   ├── fact-check-tweet
-│   ├── rewrite
-│   │   ├── gpt4o
-│   ├── ood
-│   │   ├── ood-dataset
-│   ├── named_entity_replacement
-│   │   ├── gpt4o
-│   │   ├── llama3_70b
-├── notebooks
-├── clef2022-checkthat-lab
-├── fact-check_tweet_dataset
-```
-
 
 ## 📦 Getting Started
 ### 1. 🐍 Set up the Conda environment
@@ -354,18 +295,118 @@ edited_worstcase_path = edited_worstcase_rewrite.tsv
 
 > 📝 To use other perturbation types (e.g., `negation`, `typos`, etc.), replicate the same structure under `experiments/<edit_name>/` and adjust the config accordingly.
 
+--- 
 
-## Generating Misinformation Edits
-- Description of Config
-- Prompt 
-- API key --> parsing the OpenAI api key
-- Directories to create the config
- 
- ### LLM As a Perturber
- - Command to generate each perturbation type
-  
- ### LLM As a Verifier
- - Command to verify the generated perturbations 
+## 🚀 Example Usage: Generating Rewrites
+
+To generate misinformation edits (e.g., rewrites), use the `generate-rewrite` alias with the following arguments:
+
+```bash
+generate-rewrite <config_directory> <dataset_name>
+```
+
+- `config_directory`: Folder containing `config.ini`
+- `dataset_name`: Either `fact-check-tweet` or `clef2021-checkthat-task2a--english`
+
+### ✅ Example
+
+```bash
+/claim-matching-robustness$ generate-rewrite experiments/rewrite/gpt4o/ fact-check-tweet
+```
+
+This loads the config and generates rewrites using ``GPT4o`` and the specified dataset.
+
+### 📁 Output
+
+The output is saved to:
+
+```
+experiments/rewrite/gpt4o/fact-check-tweet/llm_rewrites.jsonl
+```
+
+Each line in the file is a JSON object representing a rewritten claim.
+
+---
+
+## 🚀 Example Usage: Verifying Rewrites
+
+To verify the generated misinformation edits (e.g., rewrites), use the `verify-rewrite` alias with the following arguments:
+
+```bash
+verify-rewrite <config_directory> <dataset_name>
+```
+
+- `config_directory`: Folder containing `config.ini`
+- `dataset_name`: Either `fact-check-tweet` or `clef2021-checkthat-task2a--english`
+
+### ✅ Example
+
+```bash
+/claim-matching-robustness$ verify-rewrite experiments/rewrite/gpt4o/ fact-check-tweet
+```
+
+This command loads the configuration and verifies the rewrites using `GPT-4o` on the specified dataset.
+
+### 📁 Output
+
+The verified rewrites are saved to:
+
+```
+experiments/rewrite/gpt4o/fact-check-tweet/llm_rewrites_verified.jsonl
+```
+
+Each line in the file is a JSON object representing the verification results.
+
+For a full example, see [experiments/rewrite/gpt4o/clef2021-checkthat-task2a--english/llm_rewrites_verified.jsonl](experiments/rewrite/gpt4o/clef2021-checkthat-task2a--english/llm_rewrites_verified.jsonl).
+
+
+
+> ⚠️ Make sure you’ve already generated rewrites before running verification. \
+> ⚠️ Ensure your `.env.local` file includes `OPENAI_API_KEY`, and load it into the session with:
+> 
+> ```bash
+> source .env.local
+> ```
+
+---
+
+## 🚀 Example Usage: Selecting Rewrites
+
+To select the verified misinformation edits (e.g., rewrites), use the `select-rewrite` alias with the following arguments:
+
+```bash
+select-rewrite <config_directory> <dataset_name>
+```
+
+- `config_directory`: Folder containing `config.ini`
+- `dataset_name`: Either `fact-check-tweet` or `clef2021-checkthat-task2a--english`
+
+### ✅ Example
+
+```bash
+/claim-matching-robustness$ select-rewrite experiments/rewrite/gpt4o/ fact-check-tweet
+```
+
+This command loads the configuration and selects verified rewrites by applying logic to identify both:
+- **Baseline rewrites** (least changed)
+- **Worst-case rewrites** (most significantly altered)
+
+### 📁 Output
+
+The selected rewrites are saved to four files:
+
+- `original_baseline_rewrite.tsv` — Original input claims linked to the baseline edits  
+- `edited_baseline_rewrite.tsv` — Baseline rewrites with minimal edits  
+- `original_worstcase_rewrite.tsv` — Original input claims linked to the worst-case edits  
+- `edited_worstcase_rewrite.tsv` — Worst-case rewrites 
+
+All output files are saved under:
+
+```
+experiments/rewrite/gpt4o/<dataset_name>/
+```
+
+> ⚠️ Make sure verification is complete before running selection.
 
 ## Retrievers Evaluation (Before Reranking)
 - Code to call for before_reranking
@@ -377,82 +418,8 @@ edited_worstcase_path = edited_worstcase_rewrite.tsv
 ## Mitigation
 ### Knowledge distillation approach + code
 ### Claim Normalization Approach 
-### 
- 
- 
 
-
-## Data
-To load the data used in the experiments, run the script below to download the data from CLEFCheckThat22 edition.
-
-```
-chmod +x download_clef.sh
-.\download_clef.sh
-```
-
-## Misinformation Edits
-### Named Entity Replacements
-To generate named entity replacement edits on input claims, set up the following config and specify the different parameters as shown below.
-
-```
-[data]
-dataset = clef2021-checkthat-task2a--english
-
-[model]
-model_string = llama3-70b-8192
-temperature = 0.9
-prompt_template = "You will receive three inputs:
-    1. A claim made on social media
-    2. A fact-check of that claim
-    3. A list of named entities (people, places, organizations, etc.) to replace in the original claim
-    
-    Your task is to generate a list of {number_of_samples} alternative name entities that can replace the each original one in the claim, while making sure the fact-check still applies to the modified claim
-    and the modified claim is grammatically correct. 
-    
-    Return your output as a JSON object containing the list of swappable name entity tokens.
-
-    Claim: {claim}
-    Fact Check: {fact_check}
-    Named Entity Tokens: {named_entities}
-
-    Response format: {{
-        "replaceable_entities": [
-            {{
-                "token": string,
-                "replacements": [string]
-            }}
-        ]
-    }}"
-
-[generation]
-number_of_samples = 3
-baseline = 1
-worstcase = 3
-
-[verifier]
-model_string = microsoft/deberta-v3-base
-model_path = /experiments/train_verifier/debertaV3/
-num_labels = 2
-```
-
-#### Usage
-```
-usage: generate.py [-h] [--no-baseline] [--no-worstcase] experiment_path
-
-positional arguments:
-  experiment_path  path where config lies
-
-options:
-  -h, --help       show this help message and exit
-  --no-baseline    Skip generating baseline edits
-  --no-worstcase   Skip generating worstcase edits
-```
-
-#### Example
-To generate the rewrites;
-python src/claimrobustness/name_entity_replacement/generator.py experiments/named_entity_replacement/gpt4o/ fact-check-tweet
-
-## Bibtex
+## 📚 BibTeX
 If you find our work useful, please consider citing our paper!
 
 ```bibtex
