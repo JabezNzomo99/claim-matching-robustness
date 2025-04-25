@@ -97,6 +97,21 @@ conda activate your-env-name  # replace with the name in environment.yml
 python -m pip install .
 ```
 
+### 3. ⚙️ Set Up Environment Variables
+
+Create a `.env.local` file in the project root and add your OpenAI API key for LLM-based generations:
+
+```dotenv
+OPENAI_API_KEY=your_openai_key_here
+```
+
+### 4. 🚀 Define Script Aliases (Optional)
+
+For quicker script execution, you can load predefined aliases:
+
+```bash
+source aliases.sh
+```
 ## 📂 Datasets Access
 
 This project uses three datasets, each stored locally in a standardized structure inspired by the [TREC format](https://trec.nist.gov/). All datasets are formatted with the following components:
