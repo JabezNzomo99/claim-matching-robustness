@@ -1,3 +1,6 @@
 [submodule "rank_llm"]
 	path = rank_llm
 	url = https://github.com/castorini/rank_llm
+[submodule "clef2022-checkthat-lab"]
+	path = clef2022-checkthat-lab
+	url = https://gitlab.com/checkthat_lab/clef2022-checkthat-lab/clef2022-checkthat-lab.git
