@@ -99,22 +99,126 @@ python -m pip install .
 
 ## 📂 Datasets Access
 
-- The **CheckThat22** dataset is available under a research-use license and can be accessed from the [CheckThat Lab GitLab repository](https://gitlab.com/checkthat_lab/clef2022-checkthat-lab/clef2022-checkthat-lab.git).
+This project uses three datasets, each stored locally in a standardized structure inspired by the [TREC format](https://trec.nist.gov/). All datasets are formatted with the following components:
 
-  We used this pipeline of the CLEF dataset. To download it directly, run:
+- A `vclaim/` directory containing JSON files with verified claims.
+- A **Queries** file containing input claims (iclaims).
+- A **Qrels** file defining relevance between iclaims and vclaims.
 
-  ```bash
-  ./download_clef.sh
-  ```
+Below is how to access each dataset and where they are located in this repository:
 
-- The **FactCheckTweet** dataset can be accessed for research purposes [here](https://lit.eecs.umich.edu/publications.html).
+---
+
+### 📌 CheckThat22 Dataset
+
+The **CheckThat22** dataset is available under a research-use license and can be accessed from the [CheckThat Lab GitLab repository](https://gitlab.com/checkthat_lab/clef2022-checkthat-lab/clef2022-checkthat-lab.git).
+
+To download it directly using our pipeline, run:
+
+```bash
+./download_clef.sh
+```
+
+📁 Stored locally in: `clef2022-checkthat-lab/`
+
+---
+
+### 📌 FactCheckTweet Dataset
+
+The **FactCheckTweet** dataset can be accessed for research purposes via the [University of Michigan LIT Lab](https://lit.eecs.umich.edu/publications.html).
+
+📁 Stored locally in: `fact-check_tweet_dataset/`
+
+---
+
+### 📌 OOD Dataset
+
+The **Out-of-Domain (OOD)** dataset is provided by [Meedan](https://meedan.com/research), compiled from fact-checking organizations running tiplines on WhatsApp. We use the data in accordance with its intended research use.
+
+📁 Stored locally in: `ood_dataset/`
+
+---
+
+## 📘 Dataset Format
+
+All datasets follow a consistent format. Here's a breakdown of the structure and what each file contains:
+
+---
+
+### 🧾 Verified Claims (`vclaim/*.json`)
+
+Each verified claim includes the following fields:
+
+```json
+{
+  "vclaim_id": "unique ID of the verified claim",
+  "vclaim": "text of the verified claim",
+  "date": "date the claim was verified",
+  "truth_label": "truth verdict (true/false)",
+  "speaker": "original source of the claim",
+  "url": "link to the fact-check article",
+  "title": "title of the fact-check article",
+  "text": "full text of the article"
+}
+```
+
+**Example:**
+
+```json
+{
+  "vclaim_id": 0,
+  "vclaim": "Schuyler VanValkenburg co-sponsored a bill that would have \"allowed abortion until the moment of birth.\"",
+  "url": "/factchecks/2019/oct/30/gaydonna-vandergriff/...",
+  "speaker": "GayDonna Vandergriff",
+  "truth_label": false,
+  "date": "stated on October 22, 2019 in a campaign mailer.",
+  "title": "Vandergriff inaccurately describes bill that would have eased late-term abortion laws",
+  "text": "Republican GayDonna Vandergriff has turned to abortion in her effort to portray ..."
+}
+```
+
+---
+
+### 🧵 Queries File (`queries.txt` or similar)
+
+A **TAB-separated** file with the list of input claims (referred to as `iclaim`):
+
+Format:
+```
+iclaim_id <TAB> iclaim
+```
+
+| iclaim_id      | iclaim                                                                                              |
+|----------------|-----------------------------------------------------------------------------------------------------|
+| tweet-en-0008  | im screaming. google featured a hoax article that claims Minecraft is being shut down in 2020...    |
+| tweet-en-0335  | BREAKING: Footage in Honduras giving cash 2 women & children 2 join the caravan...                 |
+| tweet-en-0622  | y’all really joked around so much that tide put their tide pods in plastic boxes…smh               |
+
+---
+
+### 📎 Qrels File (`qrels.txt`)
+
+A **TAB-separated** file that defines which verified claims are relevant to which input claims.
+
+Format:
+```
+iclaim_id <TAB> 0 <TAB> vclaim_id <TAB> relevance
+```
+
+- `0` is a placeholder required by the TREC format.
+- `relevance` is `1` if the vclaim proves the iclaim.
+- Only pairs with relevance = `1` are listed (relevance = `0` is assumed for all others).
+
+**Example:**
+
+| iclaim_id      | 0 | vclaim_id         | relevance |
+|----------------|---|-------------------|-----------|
+| tweet-en-0422  | 0 | vclaim-sno-00092  | 1         |
+| tweet-en-0538  | 0 | vclaim-sno-00454  | 1         |
+| tweet-en-0221  | 0 | vclaim-sno-00012  | 1         |
+| tweet-en-0137  | 0 | vclaim-sno-00504  | 1         |
 
 
-
-- How to obtain the dataset
-- Description of all the datasets with links to repo and how to parse them to fit the current project
-- Data is formatted to TREC format i.e. vclaim, query_id, description of the TREC format
-- How data is loaded in the project
 
 ## Generating Misinformation Edits
 - Description of Config
