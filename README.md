@@ -554,7 +554,7 @@ python src/claimrobustness/mitigation/generator.py experiments/mitigation/gpt4o/
 ```
 
 ## Analyse Results
-To analyse and visualise the results, we provide this [notebook](claim-matching-robustness/notebooks/analyse_results.ipynb) that we use for analysis. 
+To analyse and visualise the results, we provide this [notebook](notebooks/analyse_results.ipynb) that we use for analysis. 
 
 
 ## BibTeX
