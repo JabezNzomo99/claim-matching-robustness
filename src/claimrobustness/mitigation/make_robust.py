@@ -38,7 +38,7 @@ num_evaluation_steps = 500  # Evaluate every 500 steps
 train_path = "train_perturbed_queries_full_train.csv"
 eval_path = "train_perturbed_queries_full_eval.csv"
 
-data_dir = "/data/kebl7383/claimrobustness"
+data_dir = "./data/claimrobustness"
 output_dir = "output/original-perturbed-full-" + datetime.now().strftime("%Y-%m-%d_%H")
 # Merge the two paths
 output_dir = os.path.join(data_dir, output_dir)

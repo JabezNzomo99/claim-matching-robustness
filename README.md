@@ -89,9 +89,7 @@ The **FactCheckTweet** dataset can be accessed for research purposes via the [Un
 
 ### 📌 OOD Dataset
 
-The **Out-of-Domain (OOD)** dataset is provided by [Meedan](https://meedan.com/research), compiled from fact-checking organizations running tiplines on WhatsApp. We use the data in accordance with its intended research use.
-
-📁 Stored locally in: `ood_dataset/`
+The **Out-of-Domain (OOD)** dataset is provided by [Meedan](https://meedan.com/research), compiled from fact-checking organizations running tiplines on WhatsApp. We use the data in accordance with its intended research use. ⚠️ This dataset will soon be released for research purposes by Meedan. 
 
 ---
 
@@ -359,8 +357,6 @@ Each line in the file is a JSON object representing the verification results.
 
 For a full example, see [experiments/rewrite/gpt4o/clef2021-checkthat-task2a--english/llm_rewrites_verified.jsonl](experiments/rewrite/gpt4o/clef2021-checkthat-task2a--english/llm_rewrites_verified.jsonl).
 
-
-
 > ⚠️ Make sure you’ve already generated rewrites before running verification. \
 > ⚠️ Ensure your `.env.local` file includes `OPENAI_API_KEY`, and load it into the session with:
 > 
@@ -482,9 +478,10 @@ python src/claimrobustness/evaluate/reranker.py fact-check-tweet --n-candidates=
 ```
 
 This outputs a jsonl file in ```experiments/<edit_type>/<dataset>/before_reranking_results_all.jsonl``` 
+
 ## Mitigation
 
-### Knowledge distillation approach
+### Knowledge Distillation approach
 
 ### Claim Normalization Approach 
 
