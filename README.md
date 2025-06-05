@@ -1,6 +1,6 @@
 # When Claims Evolve: Evaluating and Enhancing the Robustness of Embedding Models Against Misinformation Edits 
 [![Static Badge](https://img.shields.io/badge/Paper-arXiv%3A2503.03417-brightgreen?logoColor=Blue)
-](https://arxiv.org/abs/2503.03417) <a href=#bibtex><img src="https://img.shields.io/badge/Paper-BibTex-yellow"></a>
+](https://arxiv.org/abs/2503.03417) <a href="#bibtex"><img src="https://img.shields.io/badge/Paper-BibTex-yellow"></a>
 
 [Jabez Magomere](), [Emanuele La Malfa](https://emanuelelm.github.io/), [Manuel Tonneau](https://manueltonneau.com/), [Ashkan Kazemi](https://ashkankzme.github.io/), [Scott Hale](https://www.oii.ox.ac.uk/people/profiles/scott-hale/)
 
@@ -553,7 +553,11 @@ Example Usage:
 python src/claimrobustness/mitigation/generator.py experiments/mitigation/gpt4o/ clef2021-checkthat-task2a--english
 ```
 
-## 📚 BibTeX
+## Analyse Results
+To analyse and visualise the results, we provide this [notebook](claim-matching-robustness/notebooks/analyse_results.ipynb) that we use for analysis. 
+
+
+## BibTeX
 If you find our work useful, please consider citing our paper!
 
 ```bibtex
