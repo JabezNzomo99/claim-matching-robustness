@@ -1,5 +1,7 @@
 # paths for clef checkthat task 2a english
-TASK_2A_EN_PATH = "/home/kebl7383/claim-matching-robustness/clef2022-checkthat-lab/task2/data/subtask-2a--english"
+TASK_2A_EN_PATH = (
+    "claim-matching-robustness/clef2022-checkthat-lab/task2/data/subtask-2a--english"
+)
 
 TASK_2A_EN_TRAIN_QUERY_PATH = (
     TASK_2A_EN_PATH + "/CT2022-Task2A-EN-Train-Dev_Queries.tsv"
@@ -27,7 +29,7 @@ TASK_2A_EN_TRAIN_QREL_PATH = TASK_2A_EN_PATH + "/CT2022-Task2A-EN-Train_QRELs.ts
 TASK_2A_EN_DEV_QREL_PATH = TASK_2A_EN_PATH + "/CT2022-Task2A-EN-Dev_QRELs.tsv"
 TASK_2A_EN_TEST21_QREL_PATH = TASK_2A_EN_PATH + "/CT2022-Task2A-EN-Dev-Test_QRELs.tsv"
 
-FC_DATASET_PATH = "/home/kebl7383/claim-matching-robustness/fact-check_tweet_dataset"  # TODO: Change this to the correct path
+FC_DATASET_PATH = "claim-matching-robustness/fact-check_tweet_dataset"  # TODO: Change this to the correct path
 FC_EN_TRAIN_QUERY_PATH = FC_DATASET_PATH + "/FC-EN-Train_Queries.tsv"
 FC_EN_DEV_QUERY_PATH = FC_DATASET_PATH + "/FC-EN-Dev_Queries.tsv"
 FC_EN_TEST_QUERY_PATH = FC_DATASET_PATH + "/FC-EN-Test_Queries.tsv"
@@ -46,7 +48,9 @@ FC_TARGETS_KEY_NAMES = [
     "lang",
 ]
 
-OOD_DATASET_PATH = "/home/kebl7383/claim-matching-robustness/ood_dataset"  # TODO: Change this to the correct path
+OOD_DATASET_PATH = (
+    "claim-matching-robustness/ood_dataset"  # TODO: Change this to the correct path
+)
 OOD_EN_TEST_QUERY_PATH = OOD_DATASET_PATH + "/OOD-EN-Queries.tsv"
 OOD_TARGETS_PATH = OOD_DATASET_PATH + "/vclaims"
 OOD_EN_TEST_QREL_PATH = OOD_DATASET_PATH + "/OOD-EN-QRELs.tsv"

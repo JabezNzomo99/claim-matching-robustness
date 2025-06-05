@@ -13,10 +13,10 @@ A visual summary of our approach is provided below:
   <img src="assets/our_approach.png" alt="Our Approach" style="width: 100%;">
 </p>
 
-### Before Reranking Results on *CheckThat22* Dataset
+<!-- ### Before Reranking Results on *CheckThat22* Dataset
 <p align="center">
   <img src="assets/before_reranking_results_all_CheckThat2022_plot.png" alt="Our Approach" style="width: 100%;">
-</p>
+</p> -->
 
 ### After Reranking Results on *CheckThat22* Dataset
 
@@ -480,10 +480,78 @@ python src/claimrobustness/evaluate/reranker.py fact-check-tweet --n-candidates=
 This outputs a jsonl file in ```experiments/<edit_type>/<dataset>/before_reranking_results_all.jsonl``` 
 
 ## Mitigation
+This section contains code and instructions for running the mitigation approaches. All the code and datasets can be found in this folder  📁 `mitigation/`
 
-### Knowledge Distillation approach
+### Knowledge Distillation Approach
+
+We use the same perturbation generation framework to create perturbed claims, which are then paired for training.
+
+- The **full training set** (70,954 claim pairs) is located at:  
+  ```mitigation/train_perturbed_queries_full_train.csv```
+
+- The **lite training set** (11,593 claim pairs) is located at:  
+  ```mitigation/train_perturbed_queries_lite_train.csv```
+
+To apply the knowledge distillation approach, we adapt the code from [`model_distillation.py`](https://github.com/UKPLab/sentence-transformers/blob/master/examples/sentence_transformer/training/distillation/model_distillation.py), based on the paper [*Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation*](https://arxiv.org/abs/2004.09813).
+
+Our implementation can be found in:  
+```mitigation/make_robust.py```
+
+To run the knowledge distillation approach, use:
+
+```bash
+python src/claimrobustness/mitigation/make_robust.py
+``` 
+
+This runs KD on the specified embedding model and outputs the robust model to the specified output file. The resulting model can then be evaluated by updating the list of embedding models in the evaluation scripts to include the newly generated model.
 
 ### Claim Normalization Approach 
+To run claim normalization (CN), use the command below specifying the folder that contains the config.ini and the dataset name.
+
+Example [config.ini](experiments/mitigation/gpt4o/config.ini)
+
+```ini
+[model]
+model_string = gpt-4o
+prompt_template = "You will be provided with a noisy input claim from a social media post. 
+    The input claim may contain informal language, typos, abbreviations, double negations and dialectal variations.
+    Your task is to normalise the claim to a more formal and standardised version while preserving the original meaning.
+
+    Ensure that:
+    - The normalised claim conveys the same main claim as the original.
+
+    Let's see an example:
+    Noisy Claim: "Wah, Biden just sign order today, cannot call ‘China virus’ liao"
+    Normalised Claim: "President Joe Biden issued an executive order today banning the term ‘China virus.’"
+
+    Noisy Claim: "Soros son sez he and dad pickd Harris 4 VP after pic interview!"
+    Normalised Claim: "George Soros son revealed that he and his father chose Kamala Harris as the Vice President after a picture interview."
+
+    Noisy Claim: "It is not untrue that President-elect Joe Biden’s German shepherd, Major, is set to become the first shelter dog in the White House."
+    Normalised Claim: "President-elect Joe Biden’s German shepherd, Major, is set to become the first shelter dog in the White House."
+
+    Response Format:
+    Normalised Claim: [Your normalised claim]
+
+    Inputs:
+    Noisy Claim: {claim}
+    Generate your response in the specified string format."
+```
+
+You can specify the dataset to run CN on by editing the dict at the start of the file.
+```python 
+data_paths = {
+    # "typos": "experiments/typos/gpt4o/clef2021-checkthat-task2a--english/orig_worstcase_typos.tsv",
+    # "entity_replacement": "experiments/named_entity_replacement/gpt4o/clef2021-checkthat-task2a--english/orig_worstcase_named_entity_replacements.tsv",
+    "dialect_pidgin": "experiments/dialect/gpt4o/clef2021-checkthat-task2a--english/pidgin/orig_baseline_dialect.tsv",
+    # "negation": "experiments/negation/gpt4o/clef2021-checkthat-task2a--english/orig_worstcase_negation_queries.tsv",
+}
+```  
+
+Example Usage:
+```bash
+python src/claimrobustness/mitigation/generator.py experiments/mitigation/gpt4o/ clef2021-checkthat-task2a--english
+```
 
 ## 📚 BibTeX
 If you find our work useful, please consider citing our paper!

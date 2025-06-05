@@ -38,7 +38,7 @@ dialect_folder_mapping = {
 
 # Set the model and vocab paths, and pick the corresponding tokenizer type
 # (spm for LASER, roberta for RoLASER, and char for c-RoLASER ):
-base_path = "/data/kebl7383/laser/RoLASER"  # TODO: Change this to the path where the model is stored
+base_path = "<path to ROLASER>"  # TODO: Change this to the path where the model is stored -> https://github.com/lydianish/RoLASER
 rolaser_model_path = os.path.join(base_path, "rolaser.pt")
 vocab = os.path.join(base_path, "rolaser.cvocab")
 tokenizer = "roberta"

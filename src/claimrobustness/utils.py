@@ -392,12 +392,15 @@ def add_eos(input_examples, model):
 
 
 # Dictionary to support loading of fine-tuned models
+BASE_PATH = os.environ.get("CLAIM_ROBUSTNESS_BASE", "/path/to/claimrobustness")
+
+# Dictionary to support loading of fine-tuned models
 finetuned_models_path_mapping = {
-    "sentence-t5-large-ft": "/data/kebl7383/claimrobustness/sentence-t5-large-ft",
-    "all-mpnet-base-v2-ft": "/data/kebl7383/claimrobustness/all-mpnet-base-v2",
-    "all-mpnet-base-v2-adapted-lite": "/data/kebl7383/claimrobustness/output/original-perturbed-2025-01-28_10-27-36/final",
-    "all-mpnet-basev2-adapted-full": "/data/kebl7383/claimrobustness/output/original-perturbed-full-2025-01-28_10-34-06/final",
-    "all-mpnet-basev2-adapted-ft": "/data/kebl7383/claimrobustness/all-mpnet-base-v2-adapted",
-    "all-mpnet-basev2-robust": "/data/kebl7383/claimrobustness/output/original-perturbed-full-2025-01-28_11/final",
-    "all-mpnet-basev2-robust-ft": "/data/kebl7383/claimrobustness/all-mpnet-base-v2-adapted-full",
+    "sentence-t5-large-ft": f"{BASE_PATH}/sentence-t5-large-ft",
+    "all-mpnet-base-v2-ft": f"{BASE_PATH}/all-mpnet-base-v2",
+    "all-mpnet-base-v2-adapted-lite": f"{BASE_PATH}/output/original-perturbed-2025-01-28_10-27-36/final",
+    "all-mpnet-basev2-adapted-full": f"{BASE_PATH}/output/original-perturbed-full-2025-01-28_10-34-06/final",
+    "all-mpnet-basev2-adapted-ft": f"{BASE_PATH}/all-mpnet-base-v2-adapted",
+    "all-mpnet-basev2-robust": f"{BASE_PATH}/output/original-perturbed-full-2025-01-28_11/final",
+    "all-mpnet-basev2-robust-ft": f"{BASE_PATH}/all-mpnet-base-v2-adapted-full",
 }
