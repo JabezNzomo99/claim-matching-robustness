@@ -29,9 +29,9 @@ experiments_dict = {
     "named_entity_replacement": "experiments/named_entity_replacement/gpt4o/",
     "typos": "experiments/typos/gpt4o/",
     "dialect": "experiments/dialect/gpt4o/",
-    # "casing": "experiments/casing/",
-    # "rewrite": "experiments/rewrite/gpt4o/",
-    # "amplify_minimize": "experiments/amplify_minimize/gpt4o/",
+    "casing": "experiments/casing/",
+    "rewrite": "experiments/rewrite/gpt4o/",
+    "amplify_minimize": "experiments/amplify_minimize/gpt4o/",
     "negation": "experiments/negation/gpt4o/",
     # "ood": "experiments/ood/",
 }
@@ -47,7 +47,7 @@ file_paths = {
 
 # Set the model and vocab paths, and pick the corresponding tokenizer type
 # (spm for LASER, roberta for RoLASER, and char for c-RoLASER ):
-base_path = "/data/kebl7383/laser/RoLASER"  # TODO: Change this to the path where the model is stored
+base_path = "<PATH_TO_MODEL_DIRECTORY>"  # TODO: Replace with the actual path to your model directory
 rolaser_model_path = os.path.join(base_path, "rolaser.pt")
 vocab = os.path.join(base_path, "rolaser.cvocab")
 tokenizer = "roberta"
@@ -95,29 +95,29 @@ def run():
 
         data_directory = config["evaluation"].get("data_directory")
 
-        # # Load the original baseline and edited baseline
-        # original_baseline_path = os.path.join(
-        #     experiment_path,
-        #     dataset,
-        #     config["evaluation"].get("original_baseline_path"),
-        # )
-        # edited_baseline_path = os.path.join(
-        #     experiment_path,
-        #     dataset,
-        #     config["evaluation"].get("edited_baseline_path"),
-        # )
+        # Load the original baseline and edited baseline
+        original_baseline_path = os.path.join(
+            experiment_path,
+            dataset,
+            config["evaluation"].get("original_baseline_path"),
+        )
+        edited_baseline_path = os.path.join(
+            experiment_path,
+            dataset,
+            config["evaluation"].get("edited_baseline_path"),
+        )
 
-        # # Load the original worstcase and edited worstcase
-        # original_worstcase_path = os.path.join(
-        #     experiment_path,
-        #     dataset,
-        #     config["evaluation"].get("original_worstcase_path"),
-        # )
-        # edited_worstcase_path = os.path.join(
-        #     experiment_path,
-        #     dataset,
-        #     config["evaluation"].get("edited_worstcase_path"),
-        # )
+        # Load the original worstcase and edited worstcase
+        original_worstcase_path = os.path.join(
+            experiment_path,
+            dataset,
+            config["evaluation"].get("original_worstcase_path"),
+        )
+        edited_worstcase_path = os.path.join(
+            experiment_path,
+            dataset,
+            config["evaluation"].get("edited_worstcase_path"),
+        )
 
         def load_evaluation_data(path: str) -> pd.DataFrame:
             return pd.read_csv(
@@ -129,26 +129,27 @@ def run():
         targets = data["targets"]
         test_queries, test_qrels = data["test"]
 
-        # logger.info("Loading the evaluation data")
-        # original_baseline = load_evaluation_data(original_baseline_path)
-        # edited_baseline = load_evaluation_data(edited_baseline_path)
-        # original_worstcase = load_evaluation_data(original_worstcase_path)
-        # edited_worstcase = load_evaluation_data(edited_worstcase_path)
+        logger.info("Loading the evaluation data")
+        original_baseline = load_evaluation_data(original_baseline_path)
+        edited_baseline = load_evaluation_data(edited_baseline_path)
+        original_worstcase = load_evaluation_data(original_worstcase_path)
+        edited_worstcase = load_evaluation_data(edited_worstcase_path)
 
-        # print("original_baseline", original_baseline.shape)
-        # print("edited_baseline", edited_baseline.shape)
-        # print("original_worstcase", original_worstcase.shape)
-        # print("edited_worstcase", edited_worstcase.shape)
-        # evaluation_data_dict = {
-        #     # "original_baseline": original_baseline,
-        #     # "edited_baseline": edited_baseline,
-        #     "original_worstcase": original_worstcase,
-        #     "edited_worstcase": edited_worstcase,
-        # }
+        print("original_baseline", original_baseline.shape)
+        print("edited_baseline", edited_baseline.shape)
+        print("original_worstcase", original_worstcase.shape)
+        print("edited_worstcase", edited_worstcase.shape)
         evaluation_data_dict = {
-            "normalised_claims": load_evaluation_data(file_paths[experiment])
+            "original_baseline": original_baseline,
+            "edited_baseline": edited_baseline,
+            "original_worstcase": original_worstcase,
+            "edited_worstcase": edited_worstcase,
         }
-        evaluation_data_dict = {"ood": load_evaluation_data(file_paths[experiment])}
+
+        # evaluation_data_dict = {
+        #     "normalised_claims": load_evaluation_data(file_paths[experiment])
+        # }
+        # evaluation_data_dict = {"ood": load_evaluation_data(file_paths[experiment])}
 
         print("targets", targets.shape)
         print("test_queries", test_queries.shape)
@@ -204,7 +205,7 @@ def run():
 
         device = utils.get_device()
         results_file_path = os.path.join(
-            results_directory, "mitigation_cm_edited_results.jsonl"
+            results_directory, "before_reranking_results_all.jsonl"
         )
         # Load existing results to check for already evaluated models
         evaluated_models = set()
@@ -361,25 +362,20 @@ def run():
                         # )
 
                     map_results[ptn] = []
-                    # for n in [1, 5, 10, 20, 50, 100]:
-                    #     map_results[ptn].append(
-                    #         {f"map@{n}": mean_avg_prec(claim_idx, ranks, n)}
-                    #     )
-
-                    for n in [20]:
+                    for n in [1, 5, 10, 20, 50, 100]:
                         map_results[ptn].append(
                             {f"map@{n}": mean_avg_prec(claim_idx, ranks, n)}
                         )
 
-                    # map_recall_results[ptn] = []
-                    # for n in [1, 5, 10, 20, 50, 100]:
-                    #     map_recall_results[ptn].append(
-                    #         {f"recall@{n}": mean_recall(claim_idx, ranks, n)}
-                    #     )
+                    map_recall_results[ptn] = []
+                    for n in [1, 5, 10, 20, 50, 100]:
+                        map_recall_results[ptn].append(
+                            {f"recall@{n}": mean_recall(claim_idx, ranks, n)}
+                        )
 
                     results = {
                         "map_results": map_results,
-                        # "map_recall_results": map_recall_results,
+                        "map_recall_results": map_recall_results,
                     }
                     embedding_model_results[key] = results
                 all_embedding_model_results = {

@@ -135,7 +135,7 @@ Each verified claim includes the following fields:
 
 ---
 
-### 🧵 Queries File (`queries.txt` or similar)
+###  Queries File (`queries.txt` or similar)
 
 A **TAB-separated** file with the list of input claims (referred to as `iclaim`):
 
@@ -183,7 +183,7 @@ We use `rewrite` as the example below, but the same process applies for all othe
 
 ---
 
-### 🧠 LLM as a Perturber
+### LLM as a Perturber
 
 Perturbed versions of input claims are generated using an LLM configured via a `config.ini` file located in:
 
@@ -408,15 +408,84 @@ experiments/rewrite/gpt4o/<dataset_name>/
 
 > ⚠️ Make sure verification is complete before running selection.
 
-## Retrievers Evaluation (Before Reranking)
-- Code to call for before_reranking
-- Code to call for dialct ranking
-- Code implementation for BM25
+# Retrievers Evaluation (Before Reranking)
+
+This section explains how to evaluate different embedding models before reranking. All embedding models are used off-the-shelf with default hyperparameters, using the [SentenceTransformers library](https://sbert.net/).
+
+Use the following flags with the scripts:
+
+- `--save-embs`: Saves verified claim embeddings to speed up future runs.
+- `--save-ranks`: Saves rankings from first-stage retrieval for use in reranking.
+
+### clef2021-checkthat-task2a--english
+
+Run the following command to evaluate retrievers on the `clef2021-checkthat-task2a--english` dataset:
+
+```bash
+python src/claimrobustness/evaluate/before_reranking_all.py clef2021-checkthat-task2a--english --save-embs --save-ranks
+``` 
+
+### fact-check-tweet
+The ``fact-check-tweet`` dataset contains longer articles, and many embedding models support only up to 512 tokens. For this reason, articles are split into paragraphs, and similarity is computed between each paragraph and the input text.
+
+Run the following script:
+
+```bash
+python src/claimrobustness/evaluate/before_reranking_paragraph_all.py fact-check-tweet --save-embs --save-ranks
+``` 
+
+## BM25 Evaluation
+BM25 evaluation is implemented separately. To run BM25 on a specific dataset, use the script below:
+
+```bash
+python src/claimrobustness/evaluate/before_reranking_bm25_all.py clef2021-checkthat-task2a--english
+```
+
+## Running evaluations on Dialect 
+Since dialect transformations differ from other misinformation edits, they use different scripts for evaluation.
+
+### Without splitting paragraphs - clef2021-checkthat-task2a--english
+
+```bash
+python src/claimrobustness/evaluate/dialect_ranking.py clef2021-checkthat-task2a--english --save-embs --save-ranks
+```
+
+### With paragraph splitting
+Use this script for datasets like ``fact-check-tweet`` that require splitting into paragraphs:
+
+```bash
+python src/claimrobustness/evaluate/dialect_ranking_paragraph.py fact-check-tweet --save-embs --save-ranks
+```
+
+### BM25 on Dialect Edits
+To run BM25 retrieval on dialect edits:
+
+```bash 
+python src/claimrobustness/evaluate/dialect_bm25.py clef2021-checkthat-task2a--english --save-ranks
+```
+
+Note: Run all scripts from the root of the project directory. Adjust paths if running from another location. The scripts above output results to:
+
+> ```experiments/<edit_type>/<dataset>/before_reranking_results_all.jsonl```
 
 ## Reranker Evaluation (After Reranking)
 
+To evaluate different reranker models after running the retrieval step above, run the script below. We use a default of 50 candidates but this can be changed for different experimentation. List of experiments supported - 
+
+```bash
+python src/claimrobustness/evaluate/reranker.py <dataset> --n-candidates=50 --model-name=<reranker> --experiments [list of experiments] --include-bm25
+``` 
+
+### Example Usage:
+```
+python src/claimrobustness/evaluate/reranker.py fact-check-tweet --n-candidates=50 --model-name=bge_llm --experiments casing rewrite negation --include-bm25
+```
+
+This outputs a jsonl file in ```experiments/<edit_type>/<dataset>/before_reranking_results_all.jsonl``` 
 ## Mitigation
-### Knowledge distillation approach + code
+
+### Knowledge distillation approach
+
 ### Claim Normalization Approach 
 
 ## 📚 BibTeX
